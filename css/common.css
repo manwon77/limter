@@ -177,10 +177,11 @@ button::-moz-focus-inner{padding:0; margin:0;}
 /* 최고가, 최저가 */
 .priceComp{z-index:44; position:absolute; left:0; top:-96px; z-index:50;}
 .priceComp .pcList{padding:3px 20px 0px 20px; width:177px;}
-.priceComp .pcList li{border-top:1px solid #efefef; padding:10px 0 5px; overflow:hidden;}
+.priceComp .pcList li{border-top:1px solid #efefef; padding:10px 0 10px; overflow:hidden;}
 .priceComp .pcList li span{float:left; width:95px;}
 .priceComp .pcList li a{float:left; text-align:right; font-weight:bold; color:#5a5a5a; width:82px;}
 .priceComp .pcList li:first-child{border-top:0; padding-top:0;}
+.priceComp .pcList li.last{padding-bottom:0;}
 
 /* paging */
 .paging{font-size:0; text-align:center;}
