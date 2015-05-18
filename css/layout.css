@@ -1,5 +1,11 @@
 @charset "utf-8";
 @import "common.css";
+/*------------------------------------------------------
+ Description : layout.css
+ Auther : Dam & Ock
+ date : 2015.05
+ update : 
+ ------------------------------------------------------*/
 
 /* Contents Shortcut */
 #skipnavi {position:absolute;top:-50px;left:0; z-index:999; width:100%;}
@@ -11,7 +17,7 @@
 #wrap {width:100%;}
 
 /* header */
-#header {position:relative; height:164px; z-index:10;}
+#header {position:relative; height:164px; z-index:60;}
 #header h1{float:left; padding:24px 0 0 29px;}
 
 /* TopUtil */
@@ -25,7 +31,7 @@
 
 
 /* gnb */
-div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:10;}
+div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:60;}
 div.gnbWrap .menu{clear:both;}
 
 /* allmenu */
@@ -52,7 +58,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .menuAside .ttm.on a{background-image:url(../images/common/layout/btn_allmenu_text_on.png);}
 .menuAside .im a{background:url(../images/common/layout/allmenu_img.png) no-repeat 0 0;}
 .menuAside .im.on a{background-image:url(../images/common/layout/allmenu_img_on.png);}
-.menuWrap{float:left; background-color:#fff; width:1096px; height:589px; overflow:hidden;}
+.menuWrap{float:left; background-color:#fff; width:1096px; height:589px;}
 
 /* 텍스트형 */
 #AllMenuText{border-top:1px solid #010101;}
@@ -77,7 +83,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 #AllMenuText .dep2List > li.active > a span,
 #AllMenuText .dep2List > li > a:hover span{ display:block; background:#f73f48 url(../images/common/layout/bg_menu_over_rig.png) no-repeat 100% 0; padding-right:2px;}
 
-#AllMenuText .dep2List > li.active{position:relative; z-index:10;}
+#AllMenuText .dep2List > li.active{position:relative; z-index:999;}
 /* dep3 */
 .dep3_Layer{position:absolute; left:133px; top:-63px; background:#fff; border:1px solid #f73f48; width:151px; z-index:10;
 	padding:10px 6px 7px 6px;}
@@ -86,7 +92,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .dep3_Layer .tl { background:url(../images/common/dep3_Layer_tl.png) no-repeat 0 0; left:-1px; top:-1px;}
 .dep3_Layer .tr { background:url(../images/common/dep3_Layer_tr.png) no-repeat 0 0; right:-1px; top:-1px;}
 .dep3_Layer .bl { background:url(../images/common/dep3_Layer_bl.png) no-repeat 0 0; left:-1px; bottom:-1px;}
-.dep3_Layer .br { background:url(../images/common/dep3_Layer_br.png) no-repeat 0 0; left:-1px; bottom:-1px;}
+.dep3_Layer .br { background:url(../images/common/dep3_Layer_br.png) no-repeat 0 0; right:-1px; bottom:-1px;}
 .dep3_Layer .arr { background:url(../images/common/bg_arrow_ty2.png) no-repeat 0 0; left:-5px; top:70px; position:absolute; width:6px; height:11px;}
 .dep3_Layer ul > li > a{display:block; font-size:11px; color:#606060; padding-left:10px; height:22px; line-height:22px;}
 .dep3_Layer ul > li.active a,
@@ -134,7 +140,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 /* section */
 .section{color:#a7a7a7;}
 
-.asideFixBar{position:fixed; right:0; top:0; width:56px; height:100%; background-color:#f73f48; padding:18px 0 0 0; z-index:20;}
+.asideFixBar{position:fixed; right:0; top:0; width:56px; height:100%; background-color:#f73f48; padding:18px 0 0 0; z-index:61;}
 .asideMenu li a{display:block;}
 .asideMenu .menu1 a{background:url(../images/common/layout/bg_side01.png) no-repeat 0 0; width:56px; height:59px;}
 .asideMenu .menu1 a.on{background-image:url(../images/common/layout/bg_side01_on.png);}
