@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*------------------------------------------------------
+ Description : main.css
+ Auther : Dam & Ock
+ date : 2015.05
+ update : 
+  ------------------------------------------------------*/
+
+/* container */
+#container{padding:35px 0 100px 0;}
+.smartchoise{margin:70px 0 0 0;}
+.smarCnt .col{display:block; overflow:hidden;}
+.smarCnt .col a{float:left; margin-left:14px;}
+.smarCnt .col a:first-child{margin-left:0;}
+.smarCnt .col{margin-top:14px;}
+.smarCnt .col:first-child{margin-top:0px;}
