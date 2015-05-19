@@ -6,10 +6,7 @@ define(['jquery'],function($){
 			var plusBtn = tar.find(".plus");
 			var minusBtn = tar.find(".minus");
 
-
-
 			btnGroup.data({"cnt" : 0});
-
 
 			tar.off( "mouseenter", $.proxy( this.emerge,this ) ).on( "mouseenter", $.proxy( this.emerge,this ) );
 			tar.off( "mouseleave", $.proxy( this.disappear,this ) ).on( "mouseleave", $.proxy( this.disappear,this ) );
@@ -19,17 +16,23 @@ define(['jquery'],function($){
 
 		}
 		, emerge : function( e ){
-			var target = $(e.currentTarget).find(".thumOver");
+			var current = $(e.currentTarget);
+			var target = current.find(".thumOver");
 			var countBox = target.next();
+			var priceBox = current.find(".priceComp");			
 			target.show();
 			countBox.hide();
+			priceBox.show();
 		}
 		, disappear : function( e ){
-			var target = $(e.currentTarget).find(".thumOver");
+			var current = $(e.currentTarget);
+			var target = current.find(".thumOver");
 			var countBox = target.next();
+			var priceBox = current.find(".priceComp");
 			var item = target.find(".item");
 			var cnt = item.text();
 			target.hide();
+			priceBox.hide();
 
 			if(cnt){
 				countBox.text( cnt );

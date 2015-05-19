@@ -7,6 +7,7 @@ requirejs.config({
 
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb'
+
        
     },
     shim: {
@@ -33,7 +34,7 @@ requirejs.config({
 });
 
 
-define(['shopping','gnb'],function(shopping, gnb){
+define(['jquery, shopping','gnb'],function($, shopping, gnb){
     shopping.init();
     gnb.init();
 })
