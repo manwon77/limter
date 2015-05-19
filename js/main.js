@@ -6,7 +6,8 @@ requirejs.config({
         'pie'    : 'lib/PIE',
 
         'shopping' : 'ui/shopping',
-        'gnb' : 'ui/gnb'
+        'gnb' : 'ui/gnb',
+        'rolling' : 'ui/rolling'
 
        
     },
@@ -34,7 +35,8 @@ requirejs.config({
 });
 
 
-define(['jquery, shopping','gnb'],function($, shopping, gnb){
+define(['jquery','shopping','gnb', 'rolling'],function($,shopping, gnb, rolling){
     shopping.init();
     gnb.init();
+    rolling.init();
 })
