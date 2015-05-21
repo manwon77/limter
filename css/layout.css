@@ -141,7 +141,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .section{color:#a7a7a7;}
 
 .asideFixBar{position:fixed; right:0; top:0; height:100%;  z-index:61;}
-.asideMenu{position:absolute; right:0; top:0; height:100%; background-color:#f73f48; padding:18px 0 0 0; width:56px;}
+.asideMenu{position:absolute; right:0; top:0; height:100%; background-color:#f73f48; padding:18px 0 0 0; width:56px; z-index:10;}
 .asideMenu li a{display:block;}
 .asideMenu .menu1 a{background:url(../images/common/layout/bg_side01.png) no-repeat 0 0; width:56px; height:59px;}
 .asideMenu .menu1 a.on{background-image:url(../images/common/layout/bg_side01_on.png);}
@@ -150,7 +150,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .asideMenu .menu3 a{background:url(../images/common/layout/bg_side03.png) no-repeat 0 0; width:56px; height:59px;}
 .asideMenu .menu3 a.on{background-image:url(../images/common/layout/bg_side03_on.png);}
 
-.asdLayer{width:290px; position:absolute; left:-346px; top:0; bottom:0; height:100%; background-color:#fff; border-left:1px solid #dddddd;}
+.asdLayer{width:290px; position:absolute; left:-346px; top:0; bottom:0; height:100%; background-color:#fff; border-left:1px solid #dddddd;z-index:5;}
 .asdLayer > div{ margin:78px 0 0 12px;}
 
 /* aside close */
