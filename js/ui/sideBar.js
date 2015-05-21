@@ -4,7 +4,7 @@ define(['jquery','easing'],function($,easing){
 			var btn = $(".asideBtn");
 			this.layer = $(".asdLayer");
 			this.closeBtn = $(".asd_close");
-			this.dx = this.layer.outerWidth(true)+55;//사이드바 넓이가 55인데 구하기 귀찮아서 저렇게 박음		
+			this.dx = this.layer.outerWidth(true);//사이드바 넓이가 55인데 구하기 귀찮아서 저렇게 박음		
 			this.oldLayer = null;
 			
 			this.layer.show();
