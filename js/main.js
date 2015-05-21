@@ -8,7 +8,8 @@ requirejs.config({
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
-        'mainTop' : 'ui/mainTop'
+        'mainTop' : 'ui/mainTop',
+        'sideBar' : 'ui/sideBar'
 
        
     },
@@ -36,19 +37,18 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'mainTop'  
         }
+         , 'sideBar' : {
+            deps : ["jquery"],
+            exports: 'sideBar'  
+        }
     }
 });
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop'],function($,shopping, gnb, rolling, mainTop){
-    
-
-
-
-
-
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar'],function($,shopping, gnb, rolling, mainTop, sideBar){
     shopping.init();
     gnb.init();
     rolling.init();
     mainTop.init();
+    sideBar.init()
 })

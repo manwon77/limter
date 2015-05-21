@@ -1087,21 +1087,21 @@
 	</div>
 	<div class="asideFixBar">
 		<ul class="asideMenu">
-			<li class="menu1"><a href="#none"><span class="hidden">검색</span></a></li>
-			<li class="menu2"><a href="#none"><span class="hidden">로그인</span></a></li>
-			<li class="menu3"><a href="#none"><span class="hidden">장바구니</span></a></li>
+			<li class="menu1 asideBtn"><a href="#search"><span class="hidden">검색</span></a></li>
+			<li class="menu2 asideBtn"><a href="#member"><span class="hidden">로그인</span></a></li>
+			<li class="menu3 asideBtn"><a href="#cart"><span class="hidden">장바구니</span></a></li>
 		</ul>
 		<!-- 윈도우의 하단에 fix -->
 		<div class="asdBtmFix">
 			<span>
-				<a href="#none">guide</a>
-				<a href="#none">app</a>
+				<a href="#guide" class="asideBtn">guide</a>
+				<a href="#app" class="asideBtn">app</a>
 			</span>
 			<a class="gotop" href="#wrap"><img src="images/common/layout/img_gotop.png" alt="" /></a>
 		</div>
 
 		
-		<div class="asdLayer" style="display:none;">
+		<div class="asdLayer" id="search" style="display:none;">
 			<button class="asd_close">닫기</button>
 
 			<!-- 검색영역 -->
@@ -1146,7 +1146,7 @@
 			</div>
 		</div>
 
-		<div class="asdLayer" style="display:none;">
+		<div class="asdLayer" id="member" style="display:none;">
 			<button class="asd_close">닫기</button>
 			<!-- 로그인영역 -->
 			<div class="loginWrap">
@@ -1234,7 +1234,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="asdLayer" style="display:block;">
+		<div class="asdLayer" id="cart" style="display:none;">
 			<button class="asd_close">닫기</button>
 			<!-- 장바구니 -->
 			<div class="cartWrap">
@@ -1345,7 +1345,7 @@
 			</div>
 		</div>
 
-		<div class="asdLayer" style="display:none;">
+		<div class="asdLayer" id="guide" style="display:none;">
 			<button class="asd_close">닫기</button>
 			<!-- guide -->
 			<div class="gudeContent guide">
@@ -1369,7 +1369,7 @@
 			</ul>
 		</div>
 
-		<div class="asdLayer" style="display:none;">
+		<div class="asdLayer" id="app" style="display:none;">
 			<button class="asd_close">닫기</button>	
 				<!-- app -->
 				<div class="appContent guide">
