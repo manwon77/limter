@@ -14,15 +14,25 @@ define(['jquery','easing'],function($,easing){
 			this.closeBtn.on("click", $.proxy( this.offSlide, this ) );
 		}
 		, slideLayer : function( e ){
-			var tar = $(e.currentTarget.hash);			
+			var tar = $(e.currentTarget.hash);
+			var that = this;
 			if( this.oldLayer ){
+				if(tar.attr("id") == this.oldLayer.attr("id")) return false;
+				this.oldLayer.animate(
+					{"left" : 0}
+					, "800"
+					, "easeOutBack"
+					, function(){
+
+					}
+				);
 			}
 			tar.animate(
 				{"left" : this.dx*-1}
 				, "800"
 				, "easeOutBack"
 				, function(){
-
+					that.oldLayer = tar;
 				}
 			)
 			e.preventDefault();
