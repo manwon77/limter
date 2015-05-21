@@ -15,22 +15,25 @@ define(['jquery','easing'],function($,easing){
 		}
 		, slideLayer : function( e ){
 			var tar = $(e.currentTarget.hash);
+			console.log(tar)
 			if( this.oldLayer ){
 
 			}
 
 			tar.animate(
-				{"left" : this.dx-1}
+				{"left" : this.dx*-1-1}
 				, "800"
 				, "easeOutBack"
 				, function(){
 
 				}
 			)
+			e.preventDefault();
 		}
 		, offSlide : function( e ){
 
 		}
+
 
 	}
 	return sideBar;
