@@ -3,7 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>MartMore</title>
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />	
 </head>
@@ -1238,7 +1237,7 @@
 		<div class="asdLayer" style="display:block;">
 			<button class="asd_close">닫기</button>
 			<!-- 장바구니 -->
-			<div class="cartWrap" style="display:block;">
+			<div class="cartWrap">
 				<div class="box_ty1 userInfo">
 					<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
 					<span class="profile">
@@ -1256,29 +1255,7 @@
 							<div class="thumInfo">
 								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
 								<div class="thumOver">
-									<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-									<div class="actWrap">
-										<strong class="item"></strong>
-										<span class="act">
-											<a href=""><img src="" alt="빼기" /></a>
-											<a href=""><img src="" alt="담기" /></a>
-										</span>
-										<a href="#none">삭제</a>
-									</div>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver" style="display:block;">
-									<strong class="item"></strong>
+									<strong class="item">0</strong>
 									<span class="act">
 										<button class="minus"><span class="hidden">빼기</span></button>
 										<button class="plus"><span class="hidden">담기</span></button>
@@ -1297,7 +1274,7 @@
 							<div class="thumInfo">
 								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
 								<div class="thumOver">
-									<strong class="item"></strong>
+									<strong class="item">0</strong>
 									<span class="act">
 										<button class="minus"><span class="hidden">빼기</span></button>
 										<button class="plus"><span class="hidden">담기</span></button>
@@ -1316,7 +1293,26 @@
 							<div class="thumInfo">
 								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
 								<div class="thumOver">
-									<strong class="item"></strong>
+									<strong class="item">0</strong>
+									<span class="act">
+										<button class="minus"><span class="hidden">빼기</span></button>
+										<button class="plus"><span class="hidden">담기</span></button>
+									</span>
+									<button class="cartDel"><span class="hidden">삭제</span></button>
+								</div>
+							</div>
+							<div class="textInfo">
+								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+								<span class="price" >
+									<strong>6,900원</strong>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class="thumInfo">
+								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+								<div class="thumOver">
+									<strong class="item">0</strong>
 									<span class="act">
 										<button class="minus"><span class="hidden">빼기</span></button>
 										<button class="plus"><span class="hidden">담기</span></button>
@@ -1347,12 +1343,6 @@
 					<a href="#none"><img src="images/common/btn_order.png" alt="주문하러가기" /></a>
 				</div>
 			</div>
-			<!-- 스마트링크는 giude 및 카트일때만 노출 -->
-			<ul class="smartLinkList" style="display:block;">
-				<li><a href="#none"><img src="images/common/temp/@temp_aside_smart01.png" alt="" /></a></li>
-				<li><a href="#none"><img src="images/common/temp/@temp_aside_smart02.png" alt="" /></a></li>
-				<li><a href="#none"><img src="images/common/temp/@temp_aside_smart03.png" alt="" /></a></li>
-			</ul>
 		</div>
 
 		<div class="asdLayer" style="display:none;">
@@ -1399,9 +1389,6 @@
 					<li><a href="#none"><img src="images/common/temp/@temp_aside_smart03.png" alt="" /></a></li>
 				</ul>
 			</div>
-
-
-
 		</div>
 	</div>
 	<div class="useGuideLayer" style="width:960px; display: none; position: fixed; left: 50%; top: 50%; z-index: 99999;
