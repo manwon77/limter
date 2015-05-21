@@ -32,6 +32,10 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'gnb'   
         }
+        , 'mainTop' : {
+            deps : ["jquery"],
+            exports: 'mainTop'  
+        }
     }
 });
 

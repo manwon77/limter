@@ -1,7 +1,7 @@
 define(['jquery'],function($){
 	var mainTop = {
 		init : function(){
-			
+		
 		}
 	}
 
