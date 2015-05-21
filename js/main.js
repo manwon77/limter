@@ -7,7 +7,8 @@ requirejs.config({
 
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
-        'rolling' : 'ui/rolling'
+        'rolling' : 'ui/rolling',
+        'mainTop' : 'ui/mainTop'
 
        
     },
@@ -35,8 +36,15 @@ requirejs.config({
 });
 
 
-define(['jquery','shopping','gnb', 'rolling'],function($,shopping, gnb, rolling){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop'],function($,shopping, gnb, rolling, mainTop){
+    
+
+
+
+
+
     shopping.init();
     gnb.init();
     rolling.init();
+    mainTop.init();
 })
