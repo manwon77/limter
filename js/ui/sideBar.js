@@ -4,7 +4,7 @@ define(['jquery','easing'],function($,easing){
 			var btn = $(".asideBtn");
 			this.layer = $(".asdLayer");
 			this.closeBtn = $(".asd_close");
-			this.dx = this.layer.outerWidth(true);			
+			this.dx = this.layer.outerWidth(true)+55;//사이드바 넓이가 55인데 구하기 귀찮아서 저렇게 박음		
 			this.oldLayer = null;
 			
 			this.layer.show();
@@ -14,14 +14,11 @@ define(['jquery','easing'],function($,easing){
 			this.closeBtn.on("click", $.proxy( this.offSlide, this ) );
 		}
 		, slideLayer : function( e ){
-			var tar = $(e.currentTarget.hash);
-			console.log(tar)
+			var tar = $(e.currentTarget.hash);			
 			if( this.oldLayer ){
-
 			}
-
 			tar.animate(
-				{"left" : this.dx*-1-1}
+				{"left" : this.dx*-1}
 				, "800"
 				, "easeOutBack"
 				, function(){
@@ -31,7 +28,18 @@ define(['jquery','easing'],function($,easing){
 			e.preventDefault();
 		}
 		, offSlide : function( e ){
+			this.oldLayer = null;
+			var par = $(e.currentTarget).parents(".asdLayer");
 
+			par.animate(
+				{"left" : 0}
+				, "800"
+				, "easeOutBack"
+				, function(){
+
+				}
+			);
+			e.preventDefault();
 		}
 
 
