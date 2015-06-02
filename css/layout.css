@@ -29,9 +29,8 @@
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
 
-
 /* gnb */
-div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:60;}
+div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
 div.gnbWrap .menu{clear:both;}
 
 /* allmenu */
@@ -39,8 +38,9 @@ div.gnbWrap .allmenu{background:url(../images/common/layout/btn_amopen.png) no-r
 	position:absolute; left:0; top:16px; z-index:20;}
 div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClose.png)}
 
-.menu{clear:both; border-top:1px solid #7f7f7f; position:relative; z-index:9;}
-.menu > li{float:left; background:url(../images/common/layout/bg_gnbBar.png) no-repeat 0 50%;  height:87px; }
+.menu{clear:both; border-top:1px solid #7f7f7f; border-bottom:1px solid #7f7f7f; position:relative; z-index:9;}
+.menu:after{content:"";display:block;clear:both;}
+.menu > li{float:left; background:url(../images/common/layout/bg_gnbBar.png) no-repeat 0 50%;  height:85px; }
 .menu > li:first-child{background-image:none;}
 .menu > li > a{display:block; padding: 35px 35px 0 35px; font-size:18px; font-family:Myriad Pro;}
 .menu > li > a:hover,
@@ -61,7 +61,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .menuWrap{float:left; background-color:#fff; width:1096px; height:589px;}
 
 /* 텍스트형 */
-#AllMenuText{border-top:1px solid #010101;}
+#AllMenuText{}
 #AllMenuText > ul > li {float:left; width:142px; padding:0 20px 0 20px;  border-left:1px solid #ececec; height:247px;}
 #AllMenuText > ul > li.last{width:141px;}
 #AllMenuText > ul > li > h2 {font-size:14px; color:#606060; font-weight:bold; background:url(../images/common/bg_bd_ty1.png) repeat-x 0 100%; padding:0 0 6px 19px;}
