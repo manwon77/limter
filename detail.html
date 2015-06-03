@@ -8,10 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/sub.css" />	
 </head>
 <body class="main">
-	<div class="topContents" style="height:180px; background-color:red;">
-		<a href="#" class="close" style="border:3px solid black;">화면닫기 클릭</a>
-	</div>
-	<div id="wrap">
+<div id="wrap">
 		<div id="skipnavi">
 			<a href="#header">주메뉴바로가기</a>
 			<a href="#container">본문으로 바로가기</a>
@@ -24,10 +21,10 @@
 			<li>
 				<a href="#none"><img src="images/common/layout/btn_share.png" alt="링크" /></a>
 				<div class="snsWrap">
-					<a href="#none"><img src="images/common/layout/img_fb.png" alt="페이스북" /></a>
-					<a href="#none"><img src="images/common/layout/img_tw.png" alt="트위터" /></a>
-					<a href="#none"><img src="images/common/layout/img_ka.png" alt="카카오스토리" /></a>
-					<a href="#none"><img src="images/common/layout/img_cl.png" alt="링크카피" /></a>
+					<a href="#none"><img src="images/common/layout/img_fb.png" alt="페이스북"></a>
+					<a href="#none"><img src="images/common/layout/img_tw.png" alt="트위터"></a>
+					<a href="#none"><img src="images/common/layout/img_ka.png" alt="카카오스토리"></a>
+					<a href="#none"><img src="images/common/layout/img_cl.png" alt="링크카피"></a>
 				</div>
 			</li>
 			<li><a href="#none">Customer</a></li>
@@ -305,349 +302,506 @@
 		</div>
 	</div>
 	<!-- //header -->	
-	<div class="visual">
-		<h2 class="hidden">쿨한 마트모아 <strong>쇼핑방법</strong></h2>
-		<ol class="hidden">
-			<li>구매 원하는 상품을 장바구니에 담기</li>
-			<li>추천장바구니와 비교</li>
-			<li>결정한 상품구매</li>
-		</ol>
-	</div>
+	
 	<div id="container">
-		<div class="home_wrap">
-			<h2><a href="#none"><img src="images/common/img_home.png" alt="home" /></a></h2>
-			<div class="select_bx">
-				<div class="bx">
-					<span class="tl"></span>
-					<span class="tr"></span>
-					<span class="bl"></span>
-					<span class="br"></span>
-					<h3 class="tit"><a href="#none">음료/간식<img src="images/common/bg_arrow_ty4.gif" alt="열림" /></a></h3>
-					<div class="set_list" style="display:none">
-						<ul>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-						</ul>
-						<span class="bl"></span>
-						<span class="br"></span>
-					</div>
-				</div>
-			</div>
-			<div class="select_bx">
-				<div class="bx">
-					<span class="tl"></span>
-					<span class="tr"></span>
-					<span class="bl"></span>
-					<span class="br"></span>
-					<h3 class="tit"><a href="#none">음료/간식<img src="images/common/bg_arrow_ty4.gif" alt="닫힘" /></a></h3>
-					<div class="set_list" style="display:none">
-						<ul>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-						</ul>
-						<span class="bl"></span>
-						<span class="br"></span>
-					</div>
-				</div>
-			</div>
-			<div class="select_bx">
-				<div class="bx">
-					<span class="tl"></span>
-					<span class="tr"></span>
-					<span class="bl"></span>
-					<span class="br"></span>
-					<h3 class="tit"><a href="#none">음료/간식<img src="images/common/bg_arrow_ty4.gif" alt="열림" /></a></h3>
-					<div class="set_list" style="display:none">
-						<ul>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-							<li><a href="#none">간식1</a></li>
-						</ul>
-						<span class="bl"></span>
-						<span class="br"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- width에 따른 grid class추가  -->
-		<div class="grid grid_ty1">
-			<p class="line_first"></p>
-			<div class="thumbWrap">
-				<div class="thumb_ty1">
-					<h3 class="tit_ty2">일반생수<span class="explain">130개<span>상품이 있습니다.</span></span></h3>
-					<div class="sch_list">
-						<ul>
-							<li><a href="#none">가격차높은순</a></li>
-							<li><a href="#none">낮은가격순</a></li>
-							<li><a href="#none">높은가격순</a></li>
-						</ul>
-						<div class="schForm">
-							<input type="text" class="text" value="카테고리 내 검색(예:햇반->검은콩 햇반)" style="width:190px;">
-							<button class="btnSch"><span class="hidden">검색</span></button>
+		
+		<!-- 상품 상세 -->
+		<div class="grid pro_detail">
+			<div class="pro_wrap">
+				<div class="left">
+					<div class="tit_money">
+						<h3>동원 쎈쿡 발아현미밥(3입) (210g*3)</h3>
+						<div class="low_price">
+							<span class="low">최저가</span>
+							<span class="detailForm">
+								<input type="text" id="" value="2,750원" />
+							</span>
 						</div>
 					</div>
-				</div>
-				<div class="thumbList list_ty1">
-					<ul class="col">
-						<li>
-							<div class="infobox">
-								<a href="#none" class="discountInfo">80%</a>
-								<!-- 최고가, 최저가 툴팁 -->
-								<div class="priceComp box_ty4" style="display:none;">
-									<span class="arr"></span>
-									<div class="box_ty4_btm">
-										<div class="box_ty4_mid">
-											<ul class="pcList">
-												<li><span><img src="images/common/img_emart.gif" alt="이마트" /></span><a href="#none">5,700원</a></li>
-												<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼" /></span><a href="#none">15,600원</a></li>
-												<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-											</ul>
+					<div class="img_hover">
+						<div class="photo">
+							<p class="pho_img">
+								<img src="images/common/img_pro1.gif" class="img" alt="" />
+							</p>
+							<ul>
+								<li><a href="#none"><img src="images/common/img_pro1.gif" alt="" /></a></li>
+								<li><a href="#none"><img src="images/common/img_pro1.gif" alt="" /></a></li>
+								<li><a href="#none"><img src="images/common/img_pro1.gif" alt="" /></a></li>
+								<li><a href="#none"><img src="images/common/img_pro1.gif" alt="" /></a></li>
+								<li><a href="#none"><img src="images/common/img_pro1.gif" alt="" /></a></li>
+							</ul>
+						</div>
+						<div class="txt_detail">
+							<ul>
+								<li> 
+									<dl>
+										<dt>판매몰</dt>
+										<dd><img src="images/common/logo_emart.jpg" alt="emart" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>판매가</dt>
+										<dd>2,750원</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>단가</dt>
+										<dd>229원 / 100ml</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>원산지</dt>
+										<dd>상품상세참조</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>배송정보</dt>
+										<dd class="pr">점포택배 <strong>(3만원 이상 무료)</strong>
+											<a href="#none"><img src="images/common/img_qm.png" alt="배송규정 표시" /></a>
+										</dd>
+									</dl>
+								</li>
+								<!-- 옵션이 있을경우에만 보여짐 -->
+								<li>
+									<dl>
+										<dt>옵션</dt>
+										<dd>
+											<select id="">
+												<option>불고기</option>
+												<option></option>
+											</select>
+										</dd>
+									</dl>
+								</li>
+								<li class="last">
+									<dl>
+										<dt>구매예정금액</dt>
+										<dd>2.750원</dd>
+									</dl>
+								</li>
+							</ul>
+							<p><span>※</span> 구매 예정 금액은 실제 결제금액과 다를 수 있습니다.</p>
+							<span class="sns">
+								<a href="#none"><img src="images/common/img_fa1.gif" alt="페이스북 공유" /></a>
+								<a href="#none"><img src="images/common/img_tw1.gif" alt="트위터 공유" /></a>
+								<a href="#none"><img src="images/common/img_ca1.gif" alt="카카오스토리 공유" /></a>
+								<a href="#none"><img src="images/common/img_cl1.gif" alt="url복사" /></a>
+							</span>
+							<p class="btn"><a href="#none"><img src="images/common/btn_put_ty1.gif" alt="장바구니 담기" /></a></p>
+						</div>
+					</div>
+				
+					<div class="compare">
+						<h3 class="tit_cp">가격비교</h3>
+						<table class="tb_cp" width="100%">
+							<caption>가격비교 요약</caption>
+							<colgroup>
+								<col width="20%" />
+								<col width="30%" />
+								<col width="15%" />
+								<col width="10%" />
+								<col width="20%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><img src="images/common/logo_emart_ty1.gif" alt="emart" /></th>
+									<td>동원 쎈쿡 발아 현미밥(210g*3)</td>
+									<td>2,750원 <span class="red">(+2,700원)</span></td>
+									<td class="tc">50%</td>
+									<td class="tc">
+										<a href="#none"><img src="images/common/btn_de.png" alt="상세보기" /></a>
+										<a href="#none"><img src="images/common/btn_go.png" alt="바로보기" /></a>
+									</td>
+								</tr>
+								<tr>
+									<th><img src="images/common/logo_home_ty1.gif" alt="home plus" /></th>
+									<td>동원 쎈쿡 발아 현미밥(210g*3)</td>
+									<td>2,750원</td>
+									<td class="tc">50%</td>
+									<td class="tc">
+										<a href="#none"><img src="images/common/btn_de.png" alt="상세보기" /></a>
+										<a href="#none"><img src="images/common/btn_go.png" alt="바로보기" /></a>
+									</td>
+								</tr>
+								<tr>
+									<th><img src="images/common/logo_lotte_ty1.gif" alt="lotte mart" /></th>
+									<td>동원 쎈쿡 발아 현미밥(210g*3)</td>
+									<td>2,750원</td>
+									<td class="tc">50%</td>
+									<td class="tc">
+										<a href="#none"><img src="images/common/btn_de.png" alt="상세보기" /></a>
+										<a href="#none"><img src="images/common/btn_go.png" alt="바로보기" /></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
+					<div class="pro_tab">
+						<ul>
+							<li class="active"><a href="#pro1"><span>절약상품</span></a></li>
+							<li><a href="#pro2"><span>인기상품</span></a></li>
+						</ul>
+						<div id="pro1" class="thumbList tab_cnt">
+							<span class="pro_prew"><a href="#none"><img src="images/common/bg_arr_le_off.png" alt="이전" /></a></span>
+							<ul class="col">
+								<li>
+									<div class="infobox"> 
+										<a href="#none" class="discountInfo">80%</a>
+										<!-- 최고가, 최저가 툴팁 -->
+										<div class="priceComp box_ty4" style="display: none;">
+											<span class="arr"></span>
+											<div class="box_ty4_btm">
+												<div class="box_ty4_mid">
+													<ul class="pcList">
+														<li><span><img src="images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+														<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+														<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- // 최고가, 최저가 툴팁 -->
+										<div class="thumInfo">
+											<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+											<div class="thumOver" style="display: none;">
+												<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창"></span>
+												<strong class="item"></strong>
+												<span class="act">
+													<button class="minus"><span class="hidden">빼기</span></button>
+													<button class="plus"><span class="hidden">담기</span></button>
+												</span>
+												<span class="deliInfo">* 택배 / 무료</span>
+											</div>
+											<!-- 장바구니에 담고 난후 -->
+											<span class="count" style="display: none;"></span>
+										</div>
+										<div class="txtInfo">
+											<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+											<span class="price">
+												<strong>6,900원</strong>
+												<span class="fs_ty1">636원/100g</span>
+											</span>
 										</div>
 									</div>
-								</div>
-								<!-- // 최고가, 최저가 툴팁 -->
-								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt="" /></a>
-									<div class="thumOver">
-										<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-										<strong class="item"></strong>
-										<span class="act">
-											<button class="minus"><span class="hidden">빼기</span></button>
-											<button class="plus"><span class="hidden">담기</span></button>
-										</span>
-										<span class="deliInfo">* 택배 / 무료</span>
-									</div>
-									<!-- 장바구니에 담고 난후 -->
-									<span class="count"></span>
-								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
-									<span class="price" >
-										<strong>6,900원</strong>
-										<span class="fs_ty1">636원/100g</span>
-									</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="infobox">
-								<a href="#none" class="discountInfo">80%</a>
-								<!-- 최고가, 최저가 툴팁 -->
-								<div class="priceComp box_ty4" style="display:none;">
-									<span class="arr"></span>
-									<div class="box_ty4_btm">
-										<div class="box_ty4_mid">
-											<ul class="pcList">
-												<li><span><img src="images/common/img_emart.gif" alt="이마트" /></span><a href="#none">5,700원</a></li>
-												<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼" /></span><a href="#none">15,600원</a></li>
-												<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-											</ul>
+								</li>
+								<li>
+									<div class="infobox"> 
+										<a href="#none" class="discountInfo">80%</a>
+										<!-- 최고가, 최저가 툴팁 -->
+										<div class="priceComp box_ty4" style="display: none;">
+											<span class="arr"></span>
+											<div class="box_ty4_btm">
+												<div class="box_ty4_mid">
+													<ul class="pcList">
+														<li><span><img src="images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+														<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+														<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- // 최고가, 최저가 툴팁 -->
+										<div class="thumInfo">
+											<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+											<div class="thumOver" style="display: none;">
+												<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창"></span>
+												<strong class="item"></strong>
+												<span class="act">
+													<button class="minus"><span class="hidden">빼기</span></button>
+													<button class="plus"><span class="hidden">담기</span></button>
+												</span>
+												<span class="deliInfo">* 택배 / 무료</span>
+											</div>
+											<!-- 장바구니에 담고 난후 -->
+											<span class="count" style="display: none;"></span>
+										</div>
+										<div class="txtInfo">
+											<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+											<span class="price">
+												<strong>6,900원</strong>
+												<span class="fs_ty1">636원/100g</span>
+											</span>
 										</div>
 									</div>
-								</div>
-								<!-- // 최고가, 최저가 툴팁 -->
-								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt="" /></a>
-									<div class="thumOver">
-										<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-										<strong class="item"></strong>
-										<span class="act">
-											<button class="minus"><span class="hidden">빼기</span></button>
-											<button class="plus"><span class="hidden">담기</span></button>
-										</span>
-										<span class="deliInfo">* 택배 / 무료</span>
-									</div>
-									<!-- 장바구니에 담고 난후 -->
-									<span class="count"></span>
-								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
-									<span class="price" >
-										<strong>6,900원</strong>
-										<span class="fs_ty1">636원/100g</span>
-									</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="infobox">
-								<a href="#none" class="discountInfo">80%</a>
-								<!-- 최고가, 최저가 툴팁 -->
-								<div class="priceComp box_ty4" style="display:none;">
-									<span class="arr"></span>
-									<div class="box_ty4_btm">
-										<div class="box_ty4_mid">
-											<ul class="pcList">
-												<li><span><img src="images/common/img_emart.gif" alt="이마트" /></span><a href="#none">5,700원</a></li>
-												<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼" /></span><a href="#none">15,600원</a></li>
-												<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-											</ul>
+								</li>
+								<li>
+									<div class="infobox"> 
+										<a href="#none" class="discountInfo">80%</a>
+										<!-- 최고가, 최저가 툴팁 -->
+										<div class="priceComp box_ty4" style="display: none;">
+											<span class="arr"></span>
+											<div class="box_ty4_btm">
+												<div class="box_ty4_mid">
+													<ul class="pcList">
+														<li><span><img src="images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+														<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+														<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- // 최고가, 최저가 툴팁 -->
+										<div class="thumInfo">
+											<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+											<div class="thumOver" style="display: none;">
+												<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창"></span>
+												<strong class="item"></strong>
+												<span class="act">
+													<button class="minus"><span class="hidden">빼기</span></button>
+													<button class="plus"><span class="hidden">담기</span></button>
+												</span>
+												<span class="deliInfo">* 택배 / 무료</span>
+											</div>
+											<!-- 장바구니에 담고 난후 -->
+											<span class="count" style="display: none;"></span>
+										</div>
+										<div class="txtInfo">
+											<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+											<span class="price">
+												<strong>6,900원</strong>
+												<span class="fs_ty1">636원/100g</span>
+											</span>
 										</div>
 									</div>
-								</div>
-								<!-- // 최고가, 최저가 툴팁 -->
-								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt="" /></a>
-									<div class="thumOver">
-										<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-										<strong class="item"></strong>
-										<span class="act">
-											<button class="minus"><span class="hidden">빼기</span></button>
-											<button class="plus"><span class="hidden">담기</span></button>
-										</span>
-										<span class="deliInfo">* 택배 / 무료</span>
-									</div>
-									<!-- 장바구니에 담고 난후 -->
-									<span class="count"></span>
-								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
-									<span class="price" >
-										<strong>6,900원</strong>
-										<span class="fs_ty1">636원/100g</span>
-									</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="infobox">
-								<a href="#none" class="discountInfo">80%</a>
-								<!-- 최고가, 최저가 툴팁 -->
-								<div class="priceComp box_ty4" style="display:none;">
-									<span class="arr"></span>
-									<div class="box_ty4_btm">
-										<div class="box_ty4_mid">
-											<ul class="pcList">
-												<li><span><img src="images/common/img_emart.gif" alt="이마트" /></span><a href="#none">5,700원</a></li>
-												<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼" /></span><a href="#none">15,600원</a></li>
-												<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-											</ul>
+								</li>
+							</ul>
+							<span class="pro_next"><a href="#none"><img src="images/common/bg_arr_r_on.png" alt="다음" /></a></span>
+						</div>
+						<div id="pro2" class="thumbList tab_cnt" style="display:none">
+							<span class="pro_prew"><a href="#none"><img src="images/common/bg_arr_le_off.png" alt="이전" /></a></span>
+							<ul class="col">
+								<li>
+									<div class="infobox"> 
+										<a href="#none" class="discountInfo">80%</a>
+										<!-- 최고가, 최저가 툴팁 -->
+										<div class="priceComp box_ty4" style="display: none;">
+											<span class="arr"></span>
+											<div class="box_ty4_btm">
+												<div class="box_ty4_mid">
+													<ul class="pcList">
+														<li><span><img src="images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+														<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+														<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- // 최고가, 최저가 툴팁 -->
+										<div class="thumInfo">
+											<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+											<div class="thumOver" style="display: none;">
+												<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창"></span>
+												<strong class="item"></strong>
+												<span class="act">
+													<button class="minus"><span class="hidden">빼기</span></button>
+													<button class="plus"><span class="hidden">담기</span></button>
+												</span>
+												<span class="deliInfo">* 택배 / 무료</span>
+											</div>
+											<!-- 장바구니에 담고 난후 -->
+											<span class="count" style="display: none;"></span>
+										</div>
+										<div class="txtInfo">
+											<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+											<span class="price">
+												<strong>6,900원</strong>
+												<span class="fs_ty1">636원/100g</span>
+											</span>
 										</div>
 									</div>
-								</div>
-								<!-- // 최고가, 최저가 툴팁 -->
-								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt="" /></a>
-									<div class="thumOver">
-										<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-										<strong class="item"></strong>
-										<span class="act">
-											<button class="minus"><span class="hidden">빼기</span></button>
-											<button class="plus"><span class="hidden">담기</span></button>
-										</span>
-										<span class="deliInfo">* 택배 / 무료</span>
-									</div>
-									<!-- 장바구니에 담고 난후 -->
-									<span class="count"></span>
-								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
-									<span class="price" >
-										<strong>6,900원</strong>
-										<span class="fs_ty1">636원/100g</span>
-									</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="infobox">
-								<a href="#none" class="discountInfo">80%</a>
-								<!-- 최고가, 최저가 툴팁 -->
-								<div class="priceComp box_ty4" style="display:none;">
-									<span class="arr"></span>
-									<div class="box_ty4_btm">
-										<div class="box_ty4_mid">
-											<ul class="pcList">
-												<li><span><img src="images/common/img_emart.gif" alt="이마트" /></span><a href="#none">5,700원</a></li>
-												<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼" /></span><a href="#none">15,600원</a></li>
-												<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-											</ul>
+								</li>C
+								<li>
+									<div class="infobox"> 
+										<a href="#none" class="discountInfo">80%</a>
+										<!-- 최고가, 최저가 툴팁 -->
+										<div class="priceComp box_ty4" style="display: none;">
+											<span class="arr"></span>
+											<div class="box_ty4_btm">
+												<div class="box_ty4_mid">
+													<ul class="pcList">
+														<li><span><img src="images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+														<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+														<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- // 최고가, 최저가 툴팁 -->
+										<div class="thumInfo">
+											<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+											<div class="thumOver" style="display: none;">
+												<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창"></span>
+												<strong class="item"></strong>
+												<span class="act">
+													<button class="minus"><span class="hidden">빼기</span></button>
+													<button class="plus"><span class="hidden">담기</span></button>
+												</span>
+												<span class="deliInfo">* 택배 / 무료</span>
+											</div>
+											<!-- 장바구니에 담고 난후 -->
+											<span class="count" style="display: none;"></span>
+										</div>
+										<div class="txtInfo">
+											<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+											<span class="price">
+												<strong>6,900원</strong>
+												<span class="fs_ty1">636원/100g</span>
+											</span>
 										</div>
 									</div>
-								</div>
-								<!-- // 최고가, 최저가 툴팁 -->
-								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt="" /></a>
-									<div class="thumOver">
-										<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-										<strong class="item"></strong>
-										<span class="act">
-											<button class="minus"><span class="hidden">빼기</span></button>
-											<button class="plus"><span class="hidden">담기</span></button>
-										</span>
-										<span class="deliInfo">* 택배 / 무료</span>
-									</div>
-									<!-- 장바구니에 담고 난후 -->
-									<span class="count"></span>
-								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
-									<span class="price" >
-										<strong>6,900원</strong>
-										<span class="fs_ty1">636원/100g</span>
-									</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="infobox">
-								<a href="#none" class="discountInfo">80%</a>
-								<!-- 최고가, 최저가 툴팁 -->
-								<div class="priceComp box_ty4" style="display:none;">
-									<span class="arr"></span>
-									<div class="box_ty4_btm">
-										<div class="box_ty4_mid">
-											<ul class="pcList">
-												<li><span><img src="images/common/img_emart.gif" alt="이마트" /></span><a href="#none">5,700원</a></li>
-												<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼" /></span><a href="#none">15,600원</a></li>
-												<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-											</ul>
+								</li>
+								<li>
+									<div class="infobox"> 
+										<a href="#none" class="discountInfo">80%</a>
+										<!-- 최고가, 최저가 툴팁 -->
+										<div class="priceComp box_ty4" style="display: none;">
+											<span class="arr"></span>
+											<div class="box_ty4_btm">
+												<div class="box_ty4_mid">
+													<ul class="pcList">
+														<li><span><img src="images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+														<li class="last"><span><img src="images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+														<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- // 최고가, 최저가 툴팁 -->
+										<div class="thumInfo">
+											<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+											<div class="thumOver" style="display: none;">
+												<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창"></span>
+												<strong class="item"></strong>
+												<span class="act">
+													<button class="minus"><span class="hidden">빼기</span></button>
+													<button class="plus"><span class="hidden">담기</span></button>
+												</span>
+												<span class="deliInfo">* 택배 / 무료</span>
+											</div>
+											<!-- 장바구니에 담고 난후 -->
+											<span class="count" style="display: none;"></span>
+										</div>
+										<div class="txtInfo">
+											<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+											<span class="price">
+												<strong>6,900원</strong>
+												<span class="fs_ty1">636원/100g</span>
+											</span>
 										</div>
 									</div>
-								</div>
-								<!-- // 최고가, 최저가 툴팁 -->
-								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_176.png" width="176" height="176" alt="" /></a>
-									<div class="thumOver">
-										<span class="icoLayer"><img src="images/common/ico_layer.png" alt="새창" /></span>
-										<strong class="item"></strong>
-										<span class="act">
-											<button class="minus"><span class="hidden">빼기</span></button>
-											<button class="plus"><span class="hidden">담기</span></button>
-										</span>
-										<span class="deliInfo">* 택배 / 무료</span>
-									</div>
-									<!-- 장바구니에 담고 난후 -->
-									<span class="count"></span>
-								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
-									<span class="price" >
-										<strong>6,900원</strong>
-										<span class="fs_ty1">636원/100g</span>
-									</span>
-								</div>
+								</li>
+							</ul>
+							<span class="pro_next"><a href="#none"><img src="images/common/bg_arr_r_on.png" alt="다음" /></a></span>
+						</div>
+					</div>
+				
+					<div class="detail_data">
+						<h3>상품상세정보</h3>
+						<table summary="상품상세정보입니다." width="100%">
+							<caption>상품상세정보 요약</caption>
+							<colgroup>
+								<col width="30%" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>포장 단위별 용량(중량), 수량, 크기</th>
+									<td>100g</td>
+								</tr>
+								<tr>
+									<th>생산자</th>
+									<td>(주)신세계 이마트 부문</td>
+								</tr>
+								<tr>
+									<th>제조국(원산지)</th>
+									<td>상세설명참조</td>
+								</tr>
+								<tr>
+									<th>수입자</th>
+									<td>해당사항 없음</td>
+								</tr>
+								<tr>
+									<th>제조연월일</th>
+									<td>점포 배송 상품으로 각 점포별 제조일과 입고일이 상이하여, 유통기한이 다릅니다. 이마트 점포상품과 동일한 품질을 유지한 
+									상품이 배송됩니다. ※ 해당 정보에 대한 문의는 고객센터(1588-4349)로 문의해주세요</td>
+								</tr>
+								<tr>
+									<th>유통기한 또는 품절유지기한</th>
+									<td>점포 배송 상품으로 각 점포별 제조일과 입고일이 상이하여, 유통기한이 다릅니다. 이마트 점포상품과 동일한 품질을 유지한
+									상품이 배송됩니다. ※ 해당 정보에 대한 문의는 고객센터(1588-4349)로 문의해주세요</td>
+								</tr>
+								<tr>
+									<th>축산법에 따른 등급표시</th>
+									<td>1</td>
+								</tr>
+								<tr>
+									<th>축산물이력제 표시유무</th>
+									<td>이력관리에 따른 표시있음</td>
+								</tr>
+								<tr>
+									<th>주원료/함량(원료 원산지)</th>
+									<td>[상세설명참조]</td>
+								</tr>
+								<tr>
+									<th>상품 구성</th>
+									<td>[상세설명참조]</td>
+								</tr>
+								<tr>
+									<th>보관방법 또는 취급방법</th>
+									<td>냉장(-2~10도)</td>
+								</tr>
+								<tr>
+									<th>소비자 상담 관련 전화번호</th>
+									<td>1588-4349</td>
+								</tr>
+								<tr>
+									<th>식품위생법에 따른 수입신고 필함 여부</th>
+									<td>해당사항 없음</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
+					<div class="pro_photo">
+						<h4><img src="images/common/img_product_img1.gif" alt="" /></h4>
+						<div class="p_img">
+							<img src="images/common/img_product_img2.gif" alt="" />
+							<img src="images/common/img_product_img3.gif" alt="" />
+							<img src="images/common/img_product_img4.gif" alt="" />
+						</div>
+						<!-- 상세 정보 영역집입시 보임 스크롤에 따라다님 -->
+						<div class="mini_product">
+							<h4>동원쎈쿡 발아현미밥(3입) (210g*3)</h4>
+							<p>
+								<span>구매예정금액</span>
+								<span>2,750원</span>
+							</p>
+							<a href="#none"><img src="images/common/btn_put_ty2.png" alt="장바구니 담기" /></a>
+							<!-- 장바구니에 담고 난 후 -->
+							<div class="thumOver" style="display: none;">
+								<span class="act">
+									<button class="minus"><span class="hidden">빼기</span></button>
+									<strong class="item"></strong>
+									<button class="plus"><span class="hidden">담기</span></button>
+								</span>
 							</div>
-						</li>
-					</ul>
-
-					<!-- more 클릭시 ul로 반복 -->
-					<a href="#none" class="btn_listMore"><span>more(48 / 28,422)</span></a>
+						</div>
+					</div>
+				</div>	
+				<div class="right">
+					<h3>MARTMOA <span>Smart choise</span></h3>
+					<p><img src="images/common/bner1.gif" alt="" /></p>
+					<p><img src="images/common/bner2.gif" alt="" /></p>
+					
 				</div>
 			</div>
 		</div>
+		
 	</div>
 	<div class="asideFixBar">
 		<ul class="asideMenu">

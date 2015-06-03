@@ -288,7 +288,8 @@
 .tbl_form td .fileList .btn{margin-left:10px;} 
 
 /* home 리스트 검색 */
-.home_wrap{margin-bottom:75px;padding-bottom:37px;border-bottom:1px solid #dbdbdb; }
+.home_wrap{margin-left:121px;}
+.home_wrap + .grid{margin-top:37px;}
 .home_wrap:after{content:"";display:block;clear:both;}
 .home_wrap h2{float:left;background:url(../images/common/bg_line_ty2.gif) no-repeat right 9px;padding-right:38px;margin-right:20px;margin-top:13px;}
 
@@ -342,50 +343,98 @@ div.gnbWrap.gnbScroll .AllmenuLayer{top:88px;}
 .select_bx .bx.st_choice{border-radius:5px;height:22px;line-height:22px;background-color:#ee2e24;color:#fff;display:block;}
 
 /* 상품상세 */
+.pro_detail{position:relative;background:url(../images/common/bg_line_ty6.gif) repeat-y 1072px 0;}
+.pro_detail:after{content:"";display:block;clear:both;}
+.pro_detail .pro_wrap{padding-top:40px;}
+.pro_detail .left{float:left;width:1034px;overflow:hidden;border:1px solid #dbdbdb;background:#fff;padding:32px 0;margin-right:30px;}
+.pro_detail .left .tit_money, .img_hover {font-family:'NanumGothic';padding:0 32px;}
+.pro_detail .left .tit_money{padding-bottom:25px;border-bottom:1px solid #dbdbdb;}
+.pro_detail .left .tit_money:after{content:"";display:block;clear:both;}
+.pro_detail .left .tit_money h3{float:left;font-size:26px;font-family:'NanumGothicBold';width:750px;}
 
+.low_price {float:right;}
+.low_price .low{font-size:15px;color:#bababa;margin-right:10px;}
+.low_price .detailForm{background:url(../images/common/bg_input_ty1.gif) no-repeat 0 0;width:164px;height:45px;display:inline-block;}
+.low_price .detailForm input{height:35px;line-height:35px;border:0;background:none;font-family:'NanumGothicBold';color:#fff;
+font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 
+.img_hover{padding:0 31px;height:540px;background:url(../images/common/bg_bder_ty1.gif) repeat-y 517px 0;}
+.img_hover:after{content:"";display:block;clear:both;}
+.img_hover .photo {width:485px;position:relative;float:left;}
+.img_hover .photo ul{position:absolute;right:12px;top:13px;}
+.img_hover .photo ul li{background:url(../images/common/bg_box_ty7.gif) no-repeat 0 0;margin-top:10px;width:78px;height:78px;}
+.img_hover .photo .pho_img{width:396px;height:396px;overflow:hidden;text-align:center;padding-top:100px;}
+.img_hover .photo .pho_img img{width:300px;height:300px;overflow:hidden;}
+.img_hover .photo ul li a img {width:76px;height:76px;overflow:hidden;padding:1px;}
+.img_hover .photo ul li:hover{background:url(../images/common/bg_box_ty7_on.gif) no-repeat 0 0;}
+.img_hover .photo ul li:first-child{margin-top:0;}
 
+.img_hover .txt_detail{float:right;}
+.img_hover .txt_detail ul{margin-top:40px;}
+.img_hover .txt_detail ul li{border-top:1px solid #dbdbdb;padding:14px 0;font-size:15px;}
+.img_hover .txt_detail ul li:after{content:"";display:block;clear:both;}
+.img_hover .txt_detail ul li:first-child{border-top:0;}
+.img_hover .txt_detail ul li dl dt{float:left;width:100px;color:#34363c;}
+.img_hover .txt_detail ul li dl dd{color:#929292;}
+.img_hover .txt_detail ul li dl dd strong{color:#ee2e24;}
+.img_hover .txt_detail ul li dl dd.pr{position:relative;}
+.img_hover .txt_detail ul li dl dd.pr a{position:absolute;right:0;top:}
+.img_hover .txt_detail ul li.last{border-top:2px solid #a0a0a0;padding-bottom:0;}
+.img_hover .txt_detail ul li.last {}
+.img_hover .txt_detail ul li.last dd{float:right;color:#ee2e24;font-size:24px;}
+ 
+.img_hover .txt_detail p{color:#bdbdbd;}
+.img_hover .txt_detail p span{font-size:15px;}
+.img_hover .txt_detail .btn {margin-top:10px;}
+.img_hover .sns{text-align:right;display:block;margin-top:10px;}
 
+.compare{margin-top:40px;margin:0 31px;}
+.compare .tit_cp{font-size:20px;color:#000;margin:40px 0 10px;}
+.compare .tb_cp{border-bottom:1px solid #dbdbdb;color:#999;}
+.compare .tb_cp th, .compare .tb_cp td{border-top:1px solid #dbdbdb;padding:15px;}
+.compare .tb_cp th{text-align:center;}
+.compare .tb_cp td:first-child{text-align:left;}
+.compare .tb_cp td span.red{color:#ee2e24;}
 
+/* 탭 */
+.pro_tab {margin:80px 30px 0 31px;}
+.pro_tab > ul{background:url(../images/common/bg_bder1.gif) repeat-x 0 bottom;height:45px;}
+.pro_tab > ul > li{float:left;font-size:16px;color:#cbcbcb;height:45px;margin-left:4px;}
+.pro_tab > ul > li:first-child{margin-left:0;}
+.pro_tab > ul > li a{background:url(../images/common/bg_le_off.png) no-repeat 0 0;padding-left:5px;float:left;}
+.pro_tab > ul > li a span{background:url(../images/common/bg_r_off.png) no-repeat right 0;padding:12px 4px 14px 0;text-align:center;float:left;min-width:151px;}
+.pro_tab > ul > li.active{float:left;font-size:16px;height:45px;}
+.pro_tab > ul > li.active a{background:url(../images/common/bg_le_on.png) no-repeat 0 0;padding-left:5px;float:left; color:#000;}
+.pro_tab > ul > li.active a span{background:url(../images/common/bg_r_on.png) no-repeat right 0;padding:12px 4px 14px 0;text-align:center;float:left;min-width:151px;}
+.pro_tab .tab_cnt{position:relative;padding:41px 0 0 64px;}
+.pro_tab .tab_cnt .pro_prew {position:absolute;left:0;top:50%;margin-top:-23px;}
+.pro_tab .tab_cnt .pro_next {position:absolute;right:0;top:50%;margin-top:-23px;}
+.pro_tab .tab_cnt > ul > li {float:left;margin-left:16px;}
+.pro_tab .tab_cnt > ul > li:first-child{margin-left:0;}
 
+.detail_data{margin-top:75px;margin:0 31px;}
+.detail_data h3 + table{border-top:1px solid #c1c1c1;border-bottom:1px solid #c1c1c1;text-align:left;margin-top:10px;}
+.detail_data h3 + table th, .detail_data h3 + table td{border-top:1px solid #dededf;padding:10px 0 10px 20px;font-size:11px;color:#999;}
+.detail_data h3 + table th{background:#f8f8f9;}
 
+.pro_photo{margin:30px 0 30px 31px;position:relative;}
+.pro_photo .p_img img{margin-top:30px;}
 
+/* 상세페이지 라인 */
+.line_first{background:url(../images/common/bg_line_ty4.gif) repeat-x 0 0;padding-top:3px;height:2px;}
 
+/* 상세정보 후 보여지는 미니 장바구니 */
+.mini_product{position:absolute;left:710px;top:0;z-index:100;background:#f9f9f9;width:234px;padding:10px;}
+.mini_product h4{font-size:15px;font-family:'NanumGothicBold';padding-bottom:40px;}
+.mini_product p {text-align:right;}
+.mini_product p span:first-child{color:#86878d;font-size:12px;}
+.mini_product p span{color:#ee2e24;font-size:24px;font-family:'NanumGothic';display:block;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 상세- 마트모아 배너 */
+.pro_detail .right{float:left;margin-left:37px;}
+.pro_detail .right h3 {font-size:20px;font-family:'NanumGothic';color:#333;}
+.pro_detail .right h3 span {color:#696868;}
+.pro_detail .right p{margin-top:13px;}
 
 
 
