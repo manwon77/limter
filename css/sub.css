@@ -491,7 +491,9 @@ padding-top:90px;}
 /* quick바로가기 */
 .faq_ico{float:right;}
 .faq_ico li{float:left;margin:11px 0 0 11px;}
+.faq_ico ul{overflow:hidden;}
 .faq_ico ul.first li{margin:0 0 0 11px;}
+
 
 /* 그래프 */
 .graphWrap{margin-top:13px;}
