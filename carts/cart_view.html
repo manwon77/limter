@@ -3,9 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>MartMore</title>
-	<!-- [if it ie9]>
-	<script src="js/lib/PIE.js"></script>
-	<![endif] -->
 	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="../css/main.css" />	
 	<link rel="stylesheet" type="text/css" href="../css/sub.css" />	
@@ -324,157 +321,337 @@
 						</div>
 					</div>
 
-					<!-- 2라인 -->
-					<p class="line_first"></p>
-
 					<div class="cart_listWrap">
-						<!-- 가격비교리스트 -->
-						<div class="view_left">
-							<div class="view_btm">
-								<div class="view_mid">
-									<!-- 버튼 -->
-									<div class="btns">
-										<a href="#none" class="ab"><img src="../images/common/btn_money_view.png" alt="마트별 가격비교 보기" /></a>
-										<span class="btnR">
-											<a href="#none"><img src="../images/common/btn_soldout.png" alt="" /></a>
-											<a href="#none"><img src="../images/common/btn_alldel.png" alt="" /></a>
-										</span>
-									</div>
-									
-									<!-- 리스트 -->
-									<div class="tb_list">
-										<table width="100%">
-											<colgroup>
-												<col width="15%" />
-												<col width="45%" />
-												<col width="7%" />
-												<col width="15%" />
-												<col width="10%" />
-												<col width="8%" />
-											</colgroup>
-											<thead>
-												<tr>
-													<th colspan="2">상품정보</th>
-													<th>수량</th>
-													<th>합계</th>
-													<th>배송비</th>
-													<th class="last">상품<br />삭제</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td colspan="6">
-														<div class="tb_list_ty1">
-															<div class="tb_list_head">
-																<span class="ft_l"><img src="../images/common/logo_e_ty1.png" alt="e" />이마트(3)</span>
-																<span class="ft_r">
-																	주문금액 5,750원
-																	<a href="#none"><img src="../images/common/btn_slide_off.png" alt="닫힘" /></a>
-																	<!-- 
-																		<a href="#none"><img src="../images/common/btn_slide_off.png" alt="열림" /></a>
-																	-->
-																</span>
-															</div>
-															<div class="tb_list_body" style="display:block;">
-																<table width="100%">
-																	<colgroup>
-																		<col width="15%" />
-																		<col width="45%" />
-																		<col width="7%" />
-																		<col width="15%" />
-																		<col width="10%" />
-																		<col width="8%" />
-																	</colgroup>
-																	<tbody>
-																		<tr>
-																			<td><img src="../images/common/item1.gif" alt="" /></td>
-																			<td class="tl pl">
-																				<div class="">
-																					<p>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)</p>
-																					<p>24,700원<span>(3528원/100g)</span></p>
-																					<div class="">
-																						<a href="#none" class="ft_l"><img src="../images/common/btn_parcel.png" alt="택배" /></a>	
-																						<div class="select_bx set_ty1">
-																							<div class="bx">
-																								<span class="tl"></span>
-																								<span class="tr"></span>
-																								<span class="bl"></span>
-																								<span class="br"></span>
-																								<h3 class="tit"><a href="#none">옵션 : 새집증후군<img src="../images/common/bg_arrow_ty4.gif" alt="열림" /></a></h3>
-																								<div class="set_list" style="display:none">
-																									<ul>
-																										<li><a href="#none">간식1</a></li>
-																									</ul>
+						<div class="comp_top">
+							<div class="comp_btm">
+								<div class="comp_mid">
+									<!-- 가격비교리스트 -->
+									<div class="view_left">
+										<!-- 버튼 -->
+										<div class="btns">
+											<a href="#none" class="ab"><img src="../images/common/btn_money_view.png" alt="마트별 가격비교 보기" /></a>
+											<span class="btnR">
+												<a href="#none"><img src="../images/common/btn_soldout.png" alt="" /></a>
+												<a href="#none"><img src="../images/common/btn_alldel.png" alt="" /></a>
+											</span>
+										</div>
+										
+										<!-- 리스트 -->
+										<div class="tb_list">
+											<table width="100%">
+												<colgroup>
+													<col width="15%" />
+													<col width="45%" />
+													<col width="7%" />
+													<col width="15%" />
+													<col width="10%" />
+													<col width="8%" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th colspan="2">상품정보</th>
+														<th>수량</th>
+														<th>합계</th>
+														<th>배송비</th>
+														<th class="last">상품<br />삭제</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="6">
+															<div class="tb_list_ty1">
+																<div class="tb_list_head">
+																	<h4 class="ft_l"><img src="../images/common/logo_e_ty1.png" alt="e" /><span>이마트(3)</span></h4>
+																	<span class="ft_r">
+																		<span>주문금액 5,750원</span>
+																		<a href="#none"><img src="../images/common/btn_slide_off.png" alt="닫힘" /></a>
+																		<!-- 
+																			<a href="#none"><img src="../images/common/btn_slide_off.png" alt="열림" /></a>
+																		-->
+																	</span>
+																</div>
+																<div class="tb_list_body" style="display:block;">
+																	<table width="100%">
+																		<colgroup>
+																			<col width="15%" />
+																			<col width="45%" />
+																			<col width="7%" />
+																			<col width="13%" />
+																			<col width="10%" />
+																			<col width="8%" />
+																		</colgroup>
+																		<tbody>
+																			<!-- 이마트 tr반복 -->
+																			<tr>
+																				<td><img src="../images/common/item1.gif" alt="이마트" /></td>
+																				<td class="tl pl">
+																					<div class="tb_option">
+																						<p>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)<span class="money">24,700원<span>(3528원/100g)</span></span></p>
+																						<div class="tb_op_btns">
+																							<a href="#none" class="ft_l"><img src="../images/common/btn_parcel.png" alt="택배" /></a>	
+																							<div class="select_bx set_ty1">
+																								<div class="bx">
+																									<span class="tl"></span>
+																									<span class="tr"></span>
 																									<span class="bl"></span>
 																									<span class="br"></span>
+																									<h3 class="tit"><a href="#none">옵션 : 새집증후군<img src="../images/common/bg_arrow_ty5.gif" alt="열림" /></a></h3>
+																									<div class="set_list" style="display:none">
+																										<ul>
+																											<li><a href="#none">간식1</a></li>
+																										</ul>
+																										<span class="bl"></span>
+																										<span class="br"></span>
+																									</div>
 																								</div>
 																							</div>
 																						</div>
 																					</div>
-																				</div>
-																			</td>
-																			<td>
-																				<ul>
-																					<li><a href="#none"><img src="../images/common/btn_plus.png" alt="담기" /></a></li>
-																					<li>99</li>
-																					<li><a href="#none"><img src="../images/common/btn_minus.png" alt="빼기" /></a></li>
-																				</ul>
-																			</td>
-																			<td>99,999,900원</td>
-																			<td>+3,000원</td>
-																			<td><a href="#none"><img src="../images/common/btn_del1.png" alt="삭제" /></a></td>
-																		</tr>
-																	</tbody>
-																</table>	
+																				</td>
+																				<td>
+																					<ul class="count_ty1">
+																						<li><a href="#none"><img src="../images/common/btn_plus.png" alt="담기" /></a></li>
+																						<li>99</li>
+																						<li><a href="#none"><img src="../images/common/btn_minus.png" alt="빼기" /></a></li>
+																					</ul>
+																				</td>
+																				<td>99,999,900원</td>
+																				<td rowspan="3">+3,000원</td>
+																				<td><a href="#none"><img src="../images/common/btn_del1.png" alt="삭제" /></a></td>
+																			</tr>
+																			<tr>
+																				<td><img src="../images/common/item1.gif" alt="" /></td>
+																				<td class="tl pl">
+																					<div class="tb_option">
+																						<p>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)<span class="money">24,700원<span>(3528원/100g)</span></span></p>
+																						<div class="tb_op_btns">
+																							<div class="select_bx set_ty1">
+																								<div class="bx">
+																									<span class="tl"></span>
+																									<span class="tr"></span>
+																									<span class="bl"></span>
+																									<span class="br"></span>
+																									<h3 class="tit"><a href="#none">옵션 : 새집증후군<img src="../images/common/bg_arrow_ty5.gif" alt="열림" /></a></h3>
+																									<div class="set_list" style="display:none">
+																										<ul>
+																											<li><a href="#none">간식1</a></li>
+																										</ul>
+																										<span class="bl"></span>
+																										<span class="br"></span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</td>
+																				<td>
+																					<ul class="count_ty1">
+																						<li><a href="#none"><img src="../images/common/btn_plus.png" alt="담기" /></a></li>
+																						<li>99</li>
+																						<li><a href="#none"><img src="../images/common/btn_minus.png" alt="빼기" /></a></li>
+																					</ul>
+																				</td>
+																				<td>99,999,900원</td>
+																				<td><a href="#none"><img src="../images/common/btn_del1.png" alt="삭제" /></a></td>
+																			</tr>
+																			<tr>
+																				<td><img src="../images/common/item1.gif" alt="" /></td>
+																				<td class="tl pl">
+																					<div class="tb_option">
+																						<p>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)<span class="money">24,700원<span>(3528원/100g)</span></span></p>
+																					</div>
+																				</td>
+																				<td>
+																					<ul class="count_ty1">
+																						<li><a href="#none"><img src="../images/common/btn_plus.png" alt="담기" /></a></li>
+																						<li>99</li>
+																						<li><a href="#none"><img src="../images/common/btn_minus.png" alt="빼기" /></a></li>
+																					</ul>
+																				</td>
+																				<td>99,999,900원</td>
+																				<td><a href="#none"><img src="../images/common/btn_del1.png" alt="삭제" /></a></td>
+																			</tr>
+																		</tbody>
+																	</table>	
+																</div>
 															</div>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td></td>
-													<td></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>	
-
-								</div>
-							</div>
-						</div>
-
-						<!-- 가격비교 주문금액 -->
-						<div class="view_right"> 
-							<div class="view_btm">
-								<div class="view_mid">
-									
-									<!-- 주문금액 -->
-									<div class="order_mney">
-										<p>주문금액</p>
-										<p><strong>57,850,000원</strong></p>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="6">
+															<div class="tb_list_ty1">
+																<div class="tb_list_head">
+																	<h4 class="ft_l"><img src="../images/common/logo_h_ty1.png" alt="e" /><span>롯데마트(1)</span></h4>
+																	<span class="ft_r">
+																		<span>주문금액 5,750원</span>
+																		<a href="#none"><img src="../images/common/btn_slide_off.png" alt="닫힘" /></a>
+																		<!-- 
+																			<a href="#none"><img src="../images/common/btn_slide_off.png" alt="열림" /></a>
+																		-->
+																	</span>
+																</div>
+																<div class="tb_list_body" style="display:block;">
+																	<table width="100%">
+																		<colgroup>
+																			<col width="15%" />
+																			<col width="45%" />
+																			<col width="7%" />
+																			<col width="13%" />
+																			<col width="10%" />
+																			<col width="8%" />
+																		</colgroup>
+																		<tbody>
+																			<!-- 롯데마트 tr 반복 -->
+																			<tr>
+																				<td><img src="../images/common/item1.gif" alt="" /></td>
+																				<td class="tl pl">
+																					<div class="tb_option">
+																						<p>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)<span class="money">24,700원<span>(3528원/100g)</span></span></p>
+																						<div class="tb_op_btns">
+																							<a href="#none" class="ft_l"><img src="../images/common/btn_parcel.png" alt="택배" /></a>	
+																							<div class="select_bx set_ty1">
+																								<div class="bx">
+																									<span class="tl"></span>
+																									<span class="tr"></span>
+																									<span class="bl"></span>
+																									<span class="br"></span>
+																									<h3 class="tit"><a href="#none">옵션 : 새집증후군<img src="../images/common/bg_arrow_ty5.gif" alt="열림" /></a></h3>
+																									<div class="set_list" style="display:none">
+																										<ul>
+																											<li><a href="#none">간식1</a></li>
+																										</ul>
+																										<span class="bl"></span>
+																										<span class="br"></span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</td>
+																				<td>
+																					<ul class="count_ty1">
+																						<li><a href="#none"><img src="../images/common/btn_plus.png" alt="담기" /></a></li>
+																						<li>99</li>
+																						<li><a href="#none"><img src="../images/common/btn_minus.png" alt="빼기" /></a></li>
+																					</ul>
+																				</td>
+																				<td>99,999,900원</td>
+																				<td rowspan="3">+3,000원</td>
+																				<td><a href="#none"><img src="../images/common/btn_del1.png" alt="삭제" /></a></td>
+																			</tr>
+																		</tbody>
+																	</table>	
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="6">
+															<div class="tb_list_ty1">
+																<div class="tb_list_head">
+																	<h4 class="ft_l"><img src="../images/common/logo_l_ty1.png" alt="e" /><span>홈플러스(1)</span></h4>
+																	<span class="ft_r">
+																		<span>주문금액 5,750원</span>
+																		<a href="#none"><img src="../images/common/btn_slide_off.png" alt="닫힘" /></a>
+																		<!-- 
+																			<a href="#none"><img src="../images/common/btn_slide_off.png" alt="열림" /></a>
+																		-->
+																	</span>
+																</div>
+																<div class="tb_list_body" style="display:block;">
+																	<table width="100%">
+																		<colgroup>
+																			<col width="15%" />
+																			<col width="45%" />
+																			<col width="7%" />
+																			<col width="13%" />
+																			<col width="10%" />
+																			<col width="8%" />
+																		</colgroup>
+																		<tbody>
+																			<!-- 홈플러스 tr 반복 -->
+																			<tr>
+																				<td><img src="../images/common/item1.gif" alt="" /></td>
+																				<td class="tl pl">
+																					<div class="tb_option">
+																						<p>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)<span class="money">24,700원<span>(3528원/100g)</span></span></p>
+																						<div class="tb_op_btns">
+																							<a href="#none" class="ft_l"><img src="../images/common/btn_parcel.png" alt="택배" /></a>	
+																							<div class="select_bx set_ty1">
+																								<div class="bx">
+																									<span class="tl"></span>
+																									<span class="tr"></span>
+																									<span class="bl"></span>
+																									<span class="br"></span>
+																									<h3 class="tit"><a href="#none">옵션 : 새집증후군<img src="../images/common/bg_arrow_ty5.gif" alt="열림" /></a></h3>
+																									<div class="set_list" style="display:none">
+																										<ul>
+																											<li><a href="#none">간식1</a></li>
+																										</ul>
+																										<span class="bl"></span>
+																										<span class="br"></span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</td>
+																				<td>
+																					<ul class="count_ty1">
+																						<li><a href="#none"><img src="../images/common/btn_plus.png" alt="담기" /></a></li>
+																						<li>99</li>
+																						<li><a href="#none"><img src="../images/common/btn_minus.png" alt="빼기" /></a></li>
+																					</ul>
+																				</td>
+																				<td>99,999,900원</td>
+																				<td rowspan="3">+3,000원</td>
+																				<td><a href="#none"><img src="../images/common/btn_del1.png" alt="삭제" /></a></td>
+																			</tr>
+																		</tbody>
+																	</table>	
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>	
 									</div>
-
-									<!-- 장바구니 -->
-									<div class="order_bx">
-										<h4>마트모아 추천 장바구니</h4>
-										<ul>
-											<li><span class=""></span><span class=""></span></li>
-											<li><span class=""></span><span class=""></span></li>
-											<li><span class=""></span><span class=""></span></li>
-										</ul>
-										<p class="ico_ty1">현재 장바구니 상품과 매칭하여 최적의 장바구니를 추천해드립니다.</p>
+							
+									<!-- 가격비교 주문금액 -->
+									<div class="view_right"> 
+										<div class="view_bder">
+											<!-- 주문금액 -->
+											<div class="order_mney">
+												<p>주문금액</p>
+												<p><strong>57,850,000원</strong></p>
+											</div>
+											
+											<!-- 장바구니 -->
+											<div class="order_bx">
+												<h4>마트모아 추천 장바구니</h4>
+												<div class="order_btm">
+													<ul>
+														<li><a href="#none" class="red">추천1<span class="won">27,459,000 원</span></a></li>
+														<li><a href="#none" class="red">추천2<span class="won">459,000 원</span></a></li>
+														<li><a href="#none" class="red">추천3<span class="won">59,000 원</span></a></li>
+													</ul>
+												</div>
+												<p class="ico_ty1">현재 장바구니 상품과 매칭하여 최적의 장바구니를 추천해드립니다.</p>
+											</div>
+											
+											<!-- 마트모아 설명 -->
+											<div class="order_use">
+												<ul>
+													<li><a href="#none">마트모아 장바구니 활용법</a></li>
+													<li><a href="#none">마트별 무이자 혜택</a></li>
+													<li><a href="#none">마트별 배송비 안내</a></li>
+													<li><a href="#none">마트별 이벤트 모음</a></li>
+												</ul>
+											</div>
+										</div>
 									</div>
-
-									<!-- 마트모아 설명 -->
-									<div class="order_use">
-										<ul>
-											<li><a href="#none">마트모아 장바구니 활용법</a></li>
-											<li><a href="#none">마트별 무이자 혜택</a></li>
-											<li><a href="#none">마트별 배송비 안내</a></li>
-											<li><a href="#none">마트별 이벤트 모음</a></li>
-										</ul>
-									</div>
-
-
+							
 								</div>
 							</div>
 						</div>
@@ -841,7 +1018,7 @@
 		</div>
 	</div>
 </div>
- <script data-main="../js/mypage" src="../js/lib/require2.1.17.js"></script>
+<script data-main="../js/mypage" src="../js/lib/require2.1.17.js"></script>
  
 </body>
 </html>
