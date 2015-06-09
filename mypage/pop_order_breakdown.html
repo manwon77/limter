@@ -4,27 +4,142 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>MartMore</title>
 	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
-	<link rel="stylesheet" type="text/css" href="../css/main.css" />	
-	<link rel="stylesheet" type="text/css" href="../css/sub.css" />	
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<style type="text/css">
+		
+	</style>
 </head>
 <body>
 
 	<!-- layerPopup -->
-	<div class="useGuideLayer" style="width:960px; display: block; position: fixed; left: 50%; top: 50%; z-index: 99999;
+	<div id="popWrap" style="width:960px; display: block; position: fixed; left: 50%; top: 50%; z-index: 99999;
   margin-left: -480px; margin-top: -372px;">
-		<div class="stepCont">
-			<ul>
-				<li style="display: none; opacity: 0;"><img src="images/common/img_useGuide1.png" alt="" /></li>
-				<li style="display: block; opacity: 1;"><img src="images/common/img_useGuide2.png" alt="" /></li>
-			</ul>
+		<div class="pop_head">
+			<h2>쇼핑마트 계정 관리</h2>
+			<a href="#none" class="close"><img src="../images/common/btn_pop_close1.gif" alt="닫기" /></a>
 		</div>
-		<div class="layerFooter">
-			<a href="#none" class="next">Next</a>
-			<span class="pageNum">
-				<a href="#none" class="active"><span class="hidden">1</span></a>
-				<a href="#none"><span class="hidden">2</span></a>
-				<a href="#none"><span class="hidden">3</span></a>
-			</span>
+		<div class="pop_container">
+			<div class="pop_cnt">
+				<div class="pop_mid">
+					<div class="pop_tit">
+						<span class="photo">
+							<span class="bg"></span>
+							<img src="../images/common/@300.gif" alt="" />
+						</span>
+						<span class="pfile">ID_z101234</span>
+						<a href="#none" class="ico_ca"><img src="../images/common/ico_camera.png" alt="" /></a>
+					</div>
+					<div class="pop_modi">
+						<h3><img src="../images/common/ico_pop_user1.gif" alt="" /> 마트계정 관리</h3>	
+						<table width="100%" class="popForm">
+							<colgroup>
+								<col width="20%" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<img src="../images/common/logo_emart_ty1.gif" alt="emart" />
+									</th>
+									<td>
+										<div class="acc">
+											<span class="stg">z101234</span>
+											<span class="red">계정이 맞지 않습니다.</span>
+											<a href="#none"><img src="../images/common/btn_modify2_off.gif" alt="수정닫기" /></a>
+											<!-- a href="#none"><img src="../images/common/btn_modify2.gif" alt="수정 닫기" /></a -->
+										</div>
+										<div class="join" style="display:block">
+											<ul>
+												<li>
+													<span class="ipt"><input type="text" value="아이디입력" class="sp" style="width:368px;" /></span>
+												</li>
+												<li>
+													<span class="ipt"><input type="text" value="비밀번호 입력" class="sp" style="width:368px;" /></span>
+												</li>
+											</ul>
+											<div class="join_btns">
+												<a href="#none"><img src="../images/common/btn_big_enter1.gif" alt="등록" /></a>
+												<a href="#none"><img src="../images/common/btn_big_del1.gif" alt="삭제" /></a>
+											</div>
+											<div class="join_list">
+												<a href="#none">회원가입 /</a>
+												<a href="#none">아이디 찾기 /</a>
+												<a href="#none">비밀번호 찾기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><img src="../images/common/logo_home_ty1.gif" alt="homeplus" /></th>
+									<td>
+										<div class="acc">
+											<span>고객님의 계정을 등록해주세요</span>
+											<a href="#none"><img src="../images/common/btn_enter2.gif" alt="등록" /></a>
+										</div>
+										<div class="join" style="display:none">
+											<ul>
+												<li>
+													<span class="ipt"><input type="text" value="아이디입력" class="sp" style="width:368px;" /></span>
+												</li>
+												<li>
+													<span class="ipt"><input type="text" value="비밀번호 입력" class="sp" style="width:368px;" /></span>
+												</li>
+											</ul>
+											<div class="join_btns">
+												<a href="#none"><img src="../images/common/btn_big_enter1.gif" alt="등록" /></a>
+												<a href="#none"><img src="../images/common/btn_big_del1.gif" alt="삭제" /></a>
+											</div>
+											<div class="join_list">
+												<a href="#none">회원가입 /</a>
+												<a href="#none">아이디 찾기 /</a>
+												<a href="#none">비밀번호 찾기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><img src="../images/common/logo_lotte_ty1.gif" alt="homeplus" /></th>
+									<td>
+										<div class="acc">
+											<span>고객님의 계정을 등록해주세요</span>
+											<a href="#none"><img src="../images/common/btn_enter2.gif" alt="등록" /></a>
+										</div>
+										<div class="join" style="display:none">
+											<ul>
+												<li>
+													<span class="ipt"><input type="text" value="아이디입력" class="sp" style="width:368px;" /></span>
+												</li>
+												<li>
+													<span class="ipt"><input type="text" value="비밀번호 입력" class="sp" style="width:368px;" /></span>
+												</li>
+											</ul>
+											<div class="join_btns">
+												<a href="#none"><img src="../images/common/btn_big_enter1.gif" alt="등록" /></a>
+												<a href="#none"><img src="../images/common/btn_big_del1.gif" alt="삭제" /></a>
+											</div>
+											<div class="join_list">
+												<a href="#none">회원가입 /</a>
+												<a href="#none">아이디 찾기 /</a>
+												<a href="#none">비밀번호 찾기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p class="pop_help_detail">
+							계정이 없을 경우 <span class="red">마트 회원가입</span> 후 이용하셔야 합니다.<br /><br />
+							마트 계정을 등록하실 경우 계정 정보가 자동으로 저장됩니다.<br />
+							비밀번호가 변경될 경우 <span class="red">재 등록 후</span> 이용하셔야 합니다.<br />
+							<span class="red">* 등록하신 계정 정보는 장바구니에 담긴 상품을 해당 마트에 전송하기 위한 목적으로만 사용됩니다.</span>
+						</p>
+			
+					</div>	
+				</div>
+			</div>
+			
 		</div>
 	</div>
 	<div class="mask_ty2"></div>
