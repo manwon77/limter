@@ -140,6 +140,7 @@ button::-moz-focus-inner{padding:0; margin:0;}
 
 /* 176*176 thumblist ty1 */
 .thumbList.list_ty1{margin-left:-14px;}
+.thumbList.list_ty1:after{content:"";display:block;clear:both;}
 .thumbList.list_ty1 > ul > li{width:270px; height:276px; border:1px solid #f0f0f0;}
 .thumbList.list_ty1 > ul > li{float:left; margin:0 0 23px 14px;}
 
