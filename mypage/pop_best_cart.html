@@ -7,10 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/main.css" />
 	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
 </head>
-<body>
+<body style="height:3000px;">
 
 	<!-- layerPopup -->
-	<div id="popWrap" style="width:1236px; display: block; position: fixed; left: 50%; top: 50%; z-index: 99999;
+	<div id="popWrap" style="width:1236px; display: block; position: relative; left: 50%; top: 50%; z-index: 99999;
   margin-left: -618px; margin-top: -372px;">
 		<div class="pop_head pop_head_ty1">
 			<h2>마트모아 추천 장바구니</h2>
@@ -22,94 +22,538 @@
 			<div class="pop_recommend">
 				<ul>
 					<li>
+					<!-- 현재 장바구니 -->
 						<div class="carts">
 							<div class="present">
 								<h3>현재 장바구니</h3>
 								<div class="icon">
-									<a href="#none"><img src="../images/common/ico_best2.gif" alt="" /></a>
-									<a href="#none"><img src="../images/common/ico_best3.gif" alt="" /></a>
+									
+									<a href="#cart_detail"><img src="../images/common/ico_best2.gif" alt="" /></a>
+									<!-- 툴팁 -->
+									<div class="bestCart">
+										<div class="bc_l">
+											<div class="bc_r">
+												<div class="bc_m">
+													<span class="arr"><img src="../images/common/bg_tip_arr.png" alt="" /></span>
+													※ 추천 장바구니 상세보기
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 툴팁 -->
+									
+									<a href="#cart_list"><img src="../images/common/ico_best3.gif" alt="" /></a>
+
+									<!-- 툴팁 -->
+									<div class="bestCart bc_ty1" style="display:none">
+										<div class="bc_l">
+											<div class="bc_r">
+												<div class="bc_m">
+													<span class="arr"><img src="../images/common/bg_tip_arr.png" alt="" /></span>
+													※ 추천 장바구니 상품리스트 보기
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 툴팁 -->
 								</div>
 							</div>
-							<p class="mart_nmber">2개마트</p>
-							<div class="carts_money">
-								<p>
-									상품금액<span>1111,990원</span>
+							<div id="cart_detail" class="cd_ty1">
+								<p class="mart_nmber">
+									<span class="m1">2개마트</span>
 								</p>
-								<p>
-									배송비<span>777원</span>
+								<div class="carts_money">
+									<p>
+										상품금액<span>1,111,990원</span>
+									</p>
+									<p>
+										배송비<span>777원</span>
+									</p>
+								</div>
+								<div class="gray_head">
+									주문예정금액<span class="mney">188,930<span>원</span></span>
+								</div>
+								<div class="list_scr">
+									<ul class="list">
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="cart_list" class="cd_ty2" style="display:none">
+								<p class="mart_nmber">
+									<span class="m1">마트 2개</span>
+									<span class="m2">주문예정금액</span>
+									<span class="m3">188,890원</span>
 								</p>
+								<div class="list_scr">
+									<ul class="list">
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="gray_head">
-								주문예정금액<span class="mney">188,930<span>원</span></span>
-							</div>
-							<div class="list_scr">
-								<ul class="list">
-									<li>
-										<dl>
-											<dt><img src="../images/common/logo_emart_ty1.gif" alt="" /></dt>
-											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)</dd>
-											<dd class="img"><img src="../images/common/img_product1.gif" alt="" /></dd>
-										</dl>
-									</li>
-								</ul>
-							</div>
-							<a href="#none" class="cho">현재 장바구니 선택하기</a>
 						</div>
+						<a href="#none" class="cho">현재 장바구니 선택하기</a>
+						<!-- //현재 장바구니 -->
 					</li>
 					<li>
 						<div class="carts">
 							<div class="present best">
 								<h3>추천 장바구니</h3>
 								<div class="icon">
-									<a href="#none"><img src="../images/common/ico_best2.gif" alt="" /></a>
-									<a href="#none"><img src="../images/common/ico_best3.gif" alt="" /></a>
+									
+									<a href="#cart_detail1"><img src="../images/common/ico_best2.gif" alt="" /></a>
+									<!-- 툴팁 -->
+									<div class="bestCart" style="display:none;">
+										<div class="bc_l">
+											<div class="bc_r">
+												<div class="bc_m">
+													<span class="arr"><img src="../images/common/bg_tip_arr.png" alt="" /></span>
+													※ 추천 장바구니 상세보기
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 툴팁 -->
+									
+									<a href="#cart_list1"><img src="../images/common/ico_best3.gif" alt="" /></a>
+
+									<!-- 툴팁 -->
+									<div class="bestCart bc_ty1">
+										<div class="bc_l">
+											<div class="bc_r">
+												<div class="bc_m">
+													<span class="arr"><img src="../images/common/bg_tip_arr.png" alt="" /></span>
+													※ 추천 장바구니 상품리스트 보기
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 툴팁 -->
 								</div>
 							</div>
-							<p class="mart_nmber">2개마트</p>
-							<div class="carts_money">
-								<p>
-									상품금액<span>1111,990원</span>
+							<div id="cart_detail1" class="cd_ty1">
+								<p class="mart_nmber">2개마트</p>
+								<div class="carts_money">
+									<p>
+										상품금액<span>1,111,990원</span>
+									</p>
+									<p>
+										배송비<span>777원</span>
+									</p>
+								</div>
+								<div class="gray_head red_head">
+									주문예정금액<span class="mney">188,930<span>원</span></span>
+								</div>
+								<div class="list_scr">
+									<ul class="list">
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="cart_list1" class="cd_ty2 cd_red" style="display:none">
+								<p class="mart_nmber">
+									<span class="m1">마트 2개</span>
+									<span class="m2">주문예정금액</span>
+									<span class="m3">188,890원</span>
 								</p>
-								<p>
-									배송비<span>777원</span>
-								</p>
+								<div class="list_scr">
+									<ul class="list">
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="../images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+												<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+													<span>&nbsp;</span>
+												</dd>
+												<dd class="img">
+													<img src="../images/common/img_product1.gif" alt="" />
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="gray_head">
-								주문예정금액<span class="mney">188,930<span>원</span></span>
-							</div>
-							<div class="list_scr">
-								<ul>
-									<li><img src="" alt="" /></li>
-									<li><a href="#none"><img src="" alt="대체상품" /></a></li>
-								</ul>
-								<ul class="list">
-									<li>
-										<dl>
-											<dt><img src="../images/common/logo_emart_ty1.gif" alt="" /></dt>
-											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)</dd>
-											<dd class="view"><img src="../images/common/" alt="다른 상품보기" /></dd>
-										</dl>
-									</li>
-								</ul>
-							</div>
-							<a href="#none" class="cho cho_ty1">장바구니 변경하기</a>
 						</div>
+						<a href="#none" class="cho cho_ty1">장바구니 변경하기</a>
 					</li>
 				</ul>
 				
 				<div class="graph_circle">
-					<p><img src="" alt="" /></p>
-					<div class="">
-						<span class="">28888원</span>
-						<span class="">arr</span>
+					<p class="ico"><img src="../images/common/ico_best5.gif" alt="" /></p>
+					<div class="gray red">
+						<div class="circle">
+							<div class="txt">
+								<span class="nmber">999,999<span>원</span></span>
+								<span class="arr"><img src="../images/common/ico_red_arr_b.gif" alt="" /></span>
+							</div>
+							<span class="arr_r"><img src="../images/common/ico_red_arr.gif" alt="" /></span>
+						</div>
 					</div>
-					<p>마트모아 추천1 장바구니에 대한 할인 금액입니다.</p>
+					<p class="det">마트모아 추천1 장바구니에 대한 할인 금액입니다.</p>
 				</div>
+
+				<div class="btns_ty2">
+					<a href="#none"><img src="../images/common/btn_arrow_right_on.gif" alt="" /></a>
+					<a href="#none"><img src="../images/common/btn_arrow_left.gif" alt="" /></a>
+				</div>
+			
 				
 			</div>
 			<!-- //content -->			
 		</div>
-	</div>
+		<!-- 추천장바구니 -->
+		<div class="layer2" style="position:fixed;left:50%;top:50%;z-index:999999;width:481px;height:315px;margin:-150px 0 0 -234px;display:none;">
+			<div class="tit">
+				<h3>[추천 장바구니1] 로 변경하실건가요?
+					<a href="#none" class="close"><img src="../images/common/btn_pop_close1.gif" alt="닫기" /></a>
+				</h3>
+			</div>
+			<div class="cnt">
+				<img src="../images/common/ico_warring.gif" alt="경고" />
+				<p>변경하시면 기존 장바구니는 없어집니다.</p>
+				<div class="btns">
+					<a href="#none"><img src="../images/common/btn_layer_yes.gif" alt="예" /></a>
+					<a href="#none"><img src="../images/common/btn_layer_no.gif" alt="아니요" /></a>
+				</div>
+			</div>
+		</div>
+		<!-- //추천장바구니 -->
+
+		<!-- 상품변경 -->
+		<div class="layer3" style="position:fixed;left:50%;top:50%;z-index:99999;width:771px;height:869px;margin:-385px 0 0 -434px;">
+			<div class="tit">
+				<h3>상품변경
+					<a href="#none" class="close"><img src="../images/common/btn_pop_close1.gif" alt="닫기" /></a>
+				</h3>
+			</div>
+			<ul class="btns_ty1">
+				<li><a href="#none"><img src="../images/common/btn_l.gif" alt="" /></a></li>
+				<li><a href="#none"><img src="../images/common/btn_r_on.gif" alt="" /></a></li>
+			</ul>
+			<div class="cnt">
+				<div class="thumbList list_ty1">
+					<div class="thumCenter">
+						<div class="infobox">
+							<a href="#none" class="discountInfo">80%</a>
+							<div class="thumInfo">
+								<a href="#none" class="thumImg"><img src="../images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+							</div>
+							<div class="txtInfo">
+								<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+								<span class="price">
+									<strong>6,900원</strong>
+									<span class="fs_ty1">636원/100g</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="present_ch">
+					<a href="#none"><img src="../images/common/btn_pre_change.gif" alt="현재 상품 변경하기" /></a>
+				</div>
+
+				<div class="thumbList list_ty1">
+					<ul class="col">
+						<li>
+							<div class="infobox">
+								<a href="#none" class="discountInfo">80%</a>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="../images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+								</div>
+								<div class="txtInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+									<span class="price">
+										<strong>6,900원</strong>
+										<span class="fs_ty1">636원/100g</span>
+									</span>
+								</div>
+							</div>
+							<div class="btn_change">
+								<a href="#none"><img src="../images/common/btn_change_on.gif" alt="상품변경" /></a>
+							</div>
+						</li>
+						<li>
+							<div class="infobox">
+								<a href="#none" class="discountInfo">80%</a>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="../images/common/temp/@temp_176.png" width="176" height="176" alt=""></a>
+								</div>
+								<div class="txtInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+									<span class="price">
+										<strong>6,900원</strong>
+										<span class="fs_ty1">636원/100g</span>
+									</span>
+								</div>
+							</div>
+							<div class="btn_change">
+								<a href="#none"><img src="../images/common/btn_change.gif" alt="상품변경" /></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="paging">
+					2/<span class="">6</span>
+				</div>
+
+			</div>
+			
+		</div>
+		<!-- //상품변경 -->
+
+		<div class="mask_ty2"></div>
+	</div> 
 	<div class="mask_ty2"></div>
 
  </body>
