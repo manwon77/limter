@@ -70,8 +70,9 @@ input[type=text]::-ms-clear {display: none;}
 
 .fc_ty1{color:#1d2088 !important;}
 
-
+.mt10{margin-top:10px;}
 .mt50{margin-top:50px !important;}
+.mt60{margin-top:60px;}
 .mt30{margin-top:30px !important;}
 
 /* button */
@@ -171,7 +172,7 @@ button::-moz-focus-inner{padding:0; margin:0;}
 .thumInfo .count{background:url(../images/common/bg_count.png) no-repeat 0 0; width:75px; height:75px; position:absolute; left:50%; top:50%;
 	margin:-37px 0 0 -37px; font-size:36px; display:block; color:#fff; text-align:center; font-family:'NanumGothicBold'; line-height:75px;}
 .thumbList .txtInfo{padding:0 20px 0 20px;}
-.thumbList .txtInfo .pdName{float:left; color:#a3a3a3; font-size:12px;}
+.thumbList .txtInfo .pdName{float:left; color:#a3a3a3; font-size:12px;width:140px;line-height:120%;}
 .thumbList .txtInfo .price{float:right;}
 .thumbList .txtInfo .price{width:81px; height:35px; border-left:1px solid #e9e9e9; text-align:right;}
 .thumbList .txtInfo .price strong,
@@ -198,6 +199,8 @@ button::-moz-focus-inner{padding:0; margin:0;}
 .paging .next{margin-left:12px; background:url(../images/common/bg_pagingNext.gif) no-repeat 0 0; text-indent:-9999px;}
 .paging .prev{margin-right:12px; background:url(../images/common/bg_pagingPrev.gif) no-repeat 0 0;text-indent:-9999px;}
 .paging strong{background-color:#fff; color:#444; border:1px solid #444444; font-weight:normal;}
+
+
 
 
 
