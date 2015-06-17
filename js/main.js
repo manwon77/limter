@@ -10,6 +10,7 @@ requirejs.config({
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
         'mainTop' : 'ui/mainTop',
+		'circle'  : 'ui/circle',
         'sideBar' : 'ui/sideBar'
 
        
@@ -42,15 +43,21 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'sideBar'  
         }
+		, 'circle' : {
+            deps : ["jquery"],
+            exports: 'circle'  
+        }
+
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar'],function($,shopping, gnb, rolling, mainTop, sideBar){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar','circle'],function($,shopping, gnb, rolling, mainTop, sideBar, circle){
     shopping.init();
     gnb.init();
     rolling.init();
     mainTop.init();
-    sideBar.init()
+    sideBar.init();
+    circle.init()
 })

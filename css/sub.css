@@ -719,9 +719,9 @@ padding-top:90px;}
 .popForm .join > ul > li{margin-top:5px;}
 .popForm .join > ul > li:first-child{margin-top:0;}
 .popForm .join .join_btns{position:absolute;right:20px;top:15px;}
-.popForm .join .join_list{margin-top:14px;}
+.popForm .join .join_list{margin-top:14px;font-size:11px;}
 
-.pop_help_detail{background:url(../images/common/ico_q1.gif) no-repeat 16px 0;padding:0 0 0 50px;margin-top:17px;}
+.pop_help_detail{background:url(../images/common/ico_q2.png) no-repeat 16px 0;padding:0 0 0 50px;margin-top:17px;}
 .pop_help_detail .red{color:#ff6a71;}
 .popForm td.line{background:url(../images/common/bg_line_ty5.gif) no-repeat 0 50%;}
 .pop_container .popForm td.line{padding-left:20px; color:#b7b7b7;}
@@ -1002,7 +1002,7 @@ padding-top:90px;}
 .tbForm tr th{vertical-align:top;}
 .tbForm tr th,  .tbForm tr td{border-top:1px dotted #d1d1d5;}
 .tbForm tr:first-child th,  .tbForm tr:first-child td{border-top:0;}
-.tbForm tr th{padding:22px 0 14px 20px;}
+.tbForm tr th{padding:22px 0 14px 20px;font-size:14px;}
 .tbForm tr td{padding:14px 0 14px 5px;}
 .tbForm .red{color:#ff6a71;}
 .tbForm .switchWrap{padding-top:10px;}
@@ -1015,9 +1015,10 @@ padding-top:90px;}
 .tbForm .pw li:first-child{margin-top:0;}
 .tbForm .dash{background:url(../images/common/bg_dash1.gif) no-repeat 0 0;width:19px;height:33px;display:inline-block;padding-right:5px;}
 .tbForm .contact > span{float:left;}
-.tbForm .ipt {background:url(../images/common/bg_input_ty2.png) no-repeat right 0;height:29px;line-height:29px;padding:2px 5px 2px 0;display:inline-block;margin:0 0 0 5px;}
+.tbForm .ipt {background:url(../images/common/bg_input_ty2.png) no-repeat right 0;height:29px;line-height:29px;padding:2px 5px 2px 0;display:inline-block;}
 .tbForm .ipt .sp{background:url(../images/common/bg_input_ty2.png) no-repeat 0 0;line-height:33px;height:33px;display:inline-block;padding-left:5px;margin:-2px 0 0 -5px;}
 .tbForm .ipt input{border:0;height:25px;line-height:25px;margin-top:4px;}
+.tbForm .ipt + .red{padding-left:5px;font-size:11px;}
 .tbForm .textarea {background:url(../images/common/bg_textarea1.gif) no-repeat 0 0;width:726px;height:173px;}
 .tbForm .textarea textarea{width:706px;height:163px;margin:5px;border:0;background:none;}
 
@@ -1026,13 +1027,14 @@ padding-top:90px;}
 .account_modify .ico_pw{background:url(../images/common/ico_pw.gif) no-repeat 0 0;height:30px;line-height:30px;padding:0 0 15px 45px;font-size:17px;color:#212324;}
 .account_modify .tbForm{background:#fafafa;}
 .account_modify .tbForm .join{background:url(../images/common/bg_dot_ty1.gif) repeat-x 0 0;padding:15px 20px;position:relative;margin-top:15px;}
-.account_modify .tbForm .join > ul > li {position:relative;overflow:hidden;}
+.account_modify .tbForm .join > ul > li{position:relative;}
+.account_modify .tbForm .join > ul > li:after{content:"";display:block;clear:both;}
 .account_modify .tbForm .join > ul > li > span.ipt{float:left;margin-right:10px;}
 .account_modify .tbForm .join > ul > li > span.ipt > input{color:#a5a5a5;}
 .account_modify .tbForm .join > ul > li > a {float:left;}
 .account_modify .tbForm .join .join_btns {position:absolute;left:408px;top:15px;}
 
-/* 회원가입 */
+/* 회원가입 step1*/
 .customer .cus_top .cus_line > .mber_join{width:auto;margin-top:70px;}
 .customer .cus_top .cus_line .mber_join > li{background:url(../images/common/bg_cart_arr.gif) no-repeat 20px 0;padding-left:57px;margin:0;}
 .customer .cus_top .cus_line .mber_join > li:first-child{background:none;padding-left:0;}
@@ -1052,24 +1054,25 @@ padding-top:90px;}
 .join_clause .clau > p{text-align:right;padding:10px 10px 0 0;color:#808080;font-size:12px;}
 .join_clause .clau.clau_dot {margin-bottom:40px;padding-bottom:40px;background:url(../images/common/bg_dot_ty1.gif) repeat-x 0 bottom;}
 
+/* 회원가입 step2 */
+.tbForm .profile_img{text-align:center;width:137px;}
+.tbForm .profile_img .profile{width:138px;height:138px;margin:0 auto;}
+.tbForm .profile_img .profile .imgMask{background:url(../images/common/img_mask1.png) no-repeat 0 0;width:138px;height:138px;margin:-69px 0 0 -69px;}
+.tbForm .profile_img .img_sch{height:27px;line-height:27px;margin-top:10px;display:inline-block;}
+.ico_mart{background:url(../images/common/ico_pop_user1.gif) no-repeat 0 0;height:38px;line-height:38px;padding:0 0 0 45px;font-size:17px;color:#212324;}
 
+.joinCnt_ty1{border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;}
+.joinCnt_ty1 .tit{height:472px;line-height:472px;text-align:center;font-size:35px;font-family:'NanumGothic';color:#484848;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 장바구니-주문완료 */
+.orderCnt{text-align:center;background:url(../images/common/bg_dot_ty1.gif) repeat-x 0 bottom;padding-bottom:70px;}
+.orderCnt h4{font-size:35px;font-family:'NanumGothic';margin-bottom:40px;}
+.orderCnt .circle2{width:395px;margin:auto;position:relative;}
+.orderCnt .circle2 > span{color:#fff;font-size:40px;position:absolute;left:50%;top:10px;z-index:10;width:106px;margin-left:-53px;letter-spacing:-1px;text-align:center;}
+dl.pop_help_detail dt{font-weight:bold;}
+.orderCnt .txt{color:#ee3f24;font-size:20px;font-family:'NanumGothic';padding-top:54px;}
+.order_quick{margin-top:10px;}
+.orderCnt.orderCnt_end{padding-bottom:1px;}
 
 
 
