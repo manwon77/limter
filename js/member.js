@@ -1,5 +1,5 @@
 requirejs.config({    
-    baseUrl: '../../js',    
+    baseUrl: '../js',    
 
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
@@ -10,10 +10,10 @@ requirejs.config({
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
         'mainTop' : 'ui/mainTop',
-		'circle'  : 'ui/circle',
-        'sideBar' : 'ui/sideBar'
+        'sideBar' : 'ui/sideBar',
+        'calendar' : 'lib/zabuto_calendar',
 
-       
+       'myPage' : 'ui/mypage'
     },
     shim: {
         'jquery' : {
@@ -43,9 +43,13 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'sideBar'  
         }
-		, 'circle' : {
+        , 'calendar' : {
             deps : ["jquery"],
-            exports: 'circle'  
+            exports : 'calendar'
+        }
+        , 'myPage' : {
+            deps : ["jquery"],
+            exports : 'myPage'
         }
 
     }
@@ -53,11 +57,12 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar','circle'],function($,shopping, gnb, rolling, mainTop, sideBar, circle){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar){
     shopping.init();
     gnb.init();
     rolling.init();
     mainTop.init();
     sideBar.init();
-    circle.init()
+
+    myPage.init();
 })

@@ -10,9 +10,10 @@ requirejs.config({
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
         'mainTop' : 'ui/mainTop',
-        'sideBar' : 'ui/sideBar'
+        'sideBar' : 'ui/sideBar',
+        'calendar' : 'lib/zabuto_calendar',
 
-       
+       'myPage' : 'ui/mypage'
     },
     shim: {
         'jquery' : {
@@ -42,15 +43,26 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'sideBar'  
         }
+        , 'calendar' : {
+            deps : ["jquery"],
+            exports : 'calendar'
+        }
+        , 'myPage' : {
+            deps : ["jquery"],
+            exports : 'myPage'
+        }
+
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar'],function($,shopping, gnb, rolling, mainTop, sideBar){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar){
     shopping.init();
     gnb.init();
     rolling.init();
     mainTop.init();
-    sideBar.init()
+    sideBar.init();
+
+    myPage.init();
 })
