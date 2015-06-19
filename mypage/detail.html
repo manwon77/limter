@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="../css/main.css" />	
 	<link rel="stylesheet" type="text/css" href="../css/sub.css" />	
+	<link rel="stylesheet" type="text/css" href="../css/zabuto_calendar.css" />
 </head>
 <body class="main">
 <div id="wrap">
@@ -22,8 +23,8 @@
 		<h1><a href="#none"><img src="../images/common/layout/logo.png" alt="martMoa" /></a></h1>
 		<ul class="utilMenu">
 			<li>
-				<a href="#none"><img src="../images/common/layout/btn_share.png" alt="링크" /></a>
-				<div class="snsWrap">
+				<a href="#snsWrap"><img src="../images/common/layout/btn_share.png" alt="링크" /></a>
+				<div id="snsWrap" class="snsWrap" style="display:none;">
 					<a href="#none"><img src="../images/common/layout/img_fb.png" alt="페이스북"></a>
 					<a href="#none"><img src="../images/common/layout/img_tw.png" alt="트위터"></a>
 					<a href="#none"><img src="../images/common/layout/img_ka.png" alt="카카오스토리"></a>
@@ -388,8 +389,8 @@
 					<!-- 상품 탭 -->
 					<div class="pro_tab tab_ty1">
 						<ul>
-							<li class="active"><a href="#pro1"><span>추천상품</span></a></li>
-							<li><a href="#pro2"><span>주문했던 상품</span></a></li>
+							<li class="active" rel="pro1"><a href="#none"><span>추천상품</span></a></li>
+							<li rel="pro2"><a href="#none"><span>주문했던 상품</span></a></li>
 						</ul>
 						<div id="pro1" class="thumbList tab_cnt">
 							<span class="pro_prew"><a href="#none"><img src="../images/common/bg_arr_le_off.png" alt="이전" /></a></span>
@@ -516,10 +517,10 @@
 									</div>
 								</li>
 							</ul>
-							<span class="pro_next"><a href="#none"><img src="../images/common/bg_arr_r_on.png" alt="다음" /></a></span>
+							<span class="pro_next"><a href="#none"><img src="../images/common/bg_arr_r_off.png" alt="다음" /></a></span>
 							<span class="all_vew"><a href="#none"><img src="../images/common/btn_vew_ty1.png" alt="전체보기" /></a></span>
 						</div>
-						<div id="pro2" class="thumbList tab_cnt" style="display:none">
+						<div id="pro2" class="thumbList tab_cnt">
 							<span class="pro_prew"><a href="#none"><img src="../images/common/bg_arr_le_off.png" alt="이전" /></a></span>
 							<ul class="col">
 								<li>
@@ -561,7 +562,7 @@
 											</span>
 										</div>
 									</div>
-								</li>C
+								</li>
 								<li>
 									<div class="infobox"> 
 										<a href="#none" class="discountInfo">80%</a>
@@ -643,8 +644,8 @@
 									</div>
 								</li>
 							</ul>
-							<span class="pro_next"><a href="#none"><img src="../images/common/bg_arr_r_on.png" alt="다음" /></a></span>
-							<span class="all_vew"><a href="#none"><img src="../imagees/common/btn_vew_ty1.png" alt="전체보기" /></a></span>
+							<span class="pro_next"><a href="#none"><img src="../images/common/bg_arr_r_off.png" alt="다음" /></a></span>
+							<span class="all_vew"><a href="#none"><img src="../images/common/btn_vew_ty1.png" alt="전체보기" /></a></span>
 						</div>
 					</div>
 				
@@ -666,114 +667,120 @@
 						
 						<!-- 달력ty1 -->
 						<div class="date_ty1">
-							<div class="date_tit">
-								<a href="#none" class="day">25</a>
-								<p class="buy_his">이현철 님의 주문내역</p>
-								<div class="mon">
-									<a href="#none" class="prew"><img src="../images/common/btn_arr_left.png" alt="이전달" /></a>
-									<span class="en_mon">November<span>2015</span></span>
+							<span class="ml"></span>
+							<span class="mr"></span>
+                            <div>
+								<div class="date_tit">
+                            	    <a href="#none" class="day">25</a>
+                            	    <p class="buy_his">이현철 님의 주문내역</p>
+                            	    <!--<div class="mon">
+                            	        <a href="#none" class="prew"><img src="../images/common/btn_arr_left.png" alt="이전달" /></a>
+                            	        <span class="en_mon">November<span>2015</span></span>
+                            	
+                            	        <a href="#none" class="next"><img src="../images/common/btn_arr_right.png" alt="다음달" /></a>
+                            	    </div>-->
+                            	</div>
+                            	<div id="calendarArea">
 									
-									<a href="#none" class="next"><img src="../images/common/btn_arr_right.png" alt="다음달" /></a>
 								</div>
-							</div>
-							<div class="date_day">
-								<table summary="" width="100%">
-									<caption>달력</caption>
-									<colgroup>
-										<col width="15%" />
-										<col width="14%" />
-										<col width="14%" />
-										<col width="14%" />
-										<col width="14%" />
-										<col width="14%" />
-										<col width="15%" />
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">SUN</th>
-											<th scope="col">MON</th>
-											<th scope="col">TUE</th>
-											<th scope="col">WED</th>
-											<th scope="col">THU</th>
-											<th scope="col">FRI</th>
-											<th scope="col">SAT</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td><a href="#none" class="sun">26</a></td>
-											<td><a href="#none" class="no_day">27</a></td>
-											<td><a href="#none" class="no_day">28</a></td>
-											<td><a href="#none" class="no_day">29</a></td>
-											<td><a href="#none" class="no_day">30</a></td>
-											<td><a href="#none">1</a></td>
-											<td class="sat"><a href="#none">2</a></td>
-										</tr>
-										<tr>
-											<td><a href="#none" class="sun">3</a></td>
-											<td><a href="#none">4</a></td>
-											<td><a href="#none">5</a></td>
-											<td><a href="#none">6</a></td>
-											<td><a href="#none">7</a></td>
-											<td><a href="#none">8</a></td>
-											<td class="sat"><a href="#none">9</a></td>
-										</tr>
-										<tr>
-											<td><a href="#none" class="sun">10</a></td>
-											<td><a href="#none">11</a></td>
-											<td><a href="#none">12</a></td>
-											<td><a href="#none">13</a></td>
-											<td><a href="#none">14</a></td>
-											<td><a href="#none">15</a></td>
-											<td class="sat"><a href="#none">16</a></td>
-										</tr>
-										<tr>
-											<td><a href="#none" class="sun">17</a></td>
-											<!-- class="his" 주문내역 이력 -->
-											<td><a href="#none" class="his">18</a></td>
-											<td><a href="#none">19</a></td>
-											<!-- class="bdown" 현재클릭한 주문내역 이력 -->
-											<td>
-												<a href="#none" class="bdown">20</a>
-												<!-- 최고가, 최저가 툴팁 -->
-												<div class="priceComp box_ty4" style="display:block;">
-													<span class="arr"></span>
-													<div class="box_ty4_btm">
-														<div class="box_ty4_mid">
-															<ul class="pcList">
-																<li><span><img src="../images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
-																<li class="last"><span><img src="../images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
-																<!-- box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. -->
-															</ul>
-														</div>
-													</div>
-												</div>
-											</td>
-											<td><a href="#none" class="his">21</a></td>
-											<td><a href="#none">22</a></td>
-											<td class="sat"><a href="#none">23</a></td>
-										</tr>
-										<tr>
-											<td><a href="#none" class="sun">24</a></td>
-											<td><a href="#none">25</a></td>
-											<td><a href="#none">26</a></td>
-											<td><a href="#none">27</a></td>
-											<td><a href="#none">28</a></td>
-											<td><a href="#none">29</a></td>
-											<td class="sat"><a href="#none">30</a></td>
-										</tr>
-										<tr>
-											<td><a href="#none" class="sun">31</a></td>
-											<td><a href="#none" class="no_day">1</a></td>
-											<td><a href="#none" class="no_day">2</a></td>
-											<td><a href="#none" class="no_day">3</a></td>
-											<td><a href="#none" class="no_day">4</a></td>
-											<td><a href="#none" class="no_day">5</a></td>
-											<td class="sat"><a href="#none" class="no_day">6</a></td>
-										</tr>
-									</tbody>
-								</table>
-								
+								<!--<div class="date_day">
+                            	    <table summary="" width="100%">
+                            	        <caption>달력</caption>
+                            	        <colgroup>
+                            	            <col width="15%" />
+                            	            <col width="14%" />
+                            	            <col width="14%" />
+                            	            <col width="14%" />
+                            	            <col width="14%" />
+                            	            <col width="14%" />
+                            	            <col width="15%" />
+                            	        </colgroup>
+                            	        <thead>
+                            	        <tr>
+                            	            <th scope="col">SUN</th>
+                            	            <th scope="col">MON</th>
+                            	            <th scope="col">TUE</th>
+                            	            <th scope="col">WED</th>
+                            	            <th scope="col">THU</th>
+                            	            <th scope="col">FRI</th>
+                            	            <th scope="col">SAT</th>
+                            	        </tr>
+                            	        </thead>
+                            	        <tbody>
+                            	        <tr>
+                            	            <td><a href="#none" class="sun">26</a></td>
+                            	            <td><a href="#none" class="no_day">27</a></td>
+                            	            <td><a href="#none" class="no_day">28</a></td>
+                            	            <td><a href="#none" class="no_day">29</a></td>
+                            	            <td><a href="#none" class="no_day">30</a></td>
+                            	            <td><a href="#none">1</a></td>
+                            	            <td class="sat"><a href="#none">2</a></td>
+                            	        </tr>
+                            	        <tr>
+                            	            <td><a href="#none" class="sun">3</a></td>
+                            	            <td><a href="#none">4</a></td>
+                            	            <td><a href="#none">5</a></td>
+                            	            <td><a href="#none">6</a></td>
+                            	            <td><a href="#none">7</a></td>
+                            	            <td><a href="#none">8</a></td>
+                            	            <td class="sat"><a href="#none">9</a></td>
+                            	        </tr>
+                            	        <tr>
+                            	            <td><a href="#none" class="sun">10</a></td>
+                            	            <td><a href="#none">11</a></td>
+                            	            <td><a href="#none">12</a></td>
+                            	            <td><a href="#none">13</a></td>
+                            	            <td><a href="#none">14</a></td>
+                            	            <td><a href="#none">15</a></td>
+                            	            <td class="sat"><a href="#none">16</a></td>
+                            	        </tr>
+                            	        <tr>
+                            	            <td><a href="#none" class="sun">17</a></td>
+                            	            &lt;!&ndash; class="his" 주문내역 이력 &ndash;&gt;
+                            	            <td><a href="#none" class="his">18</a></td>
+                            	            <td><a href="#none">19</a></td>
+                            	            &lt;!&ndash; class="bdown" 현재클릭한 주문내역 이력 &ndash;&gt;
+                            	            <td>
+                            	                <a href="#none" class="bdown">20</a>
+                            	                &lt;!&ndash; 최고가, 최저가 툴팁 &ndash;&gt;
+                            	                <div class="priceComp box_ty4" style="display:block;">
+                            	                    <span class="arr"></span>
+                            	                    <div class="box_ty4_btm">
+                            	                        <div class="box_ty4_mid">
+                            	                            <ul class="pcList">
+                            	                                <li><span><img src="../images/common/img_emart.gif" alt="이마트"></span><a href="#none">5,700원</a></li>
+                            	                                <li class="last"><span><img src="../images/common/img_lotte.gif" alt="롯데슈퍼"></span><a href="#none">15,600원</a></li>
+                            	                                &lt;!&ndash; box bg bottom 간격때문에 마지막요소에 last클래스를 추가해야함. &ndash;&gt;
+                            	                            </ul>
+                            	                        </div>
+                            	                    </div>
+                            	                </div>
+                            	            </td>
+                            	            <td><a href="#none" class="his">21</a></td>
+                            	            <td><a href="#none">22</a></td>
+                            	            <td class="sat"><a href="#none">23</a></td>
+                            	        </tr>
+                            	        <tr>
+                            	            <td><a href="#none" class="sun">24</a></td>
+                            	            <td><a href="#none">25</a></td>
+                            	            <td><a href="#none">26</a></td>
+                            	            <td><a href="#none">27</a></td>
+                            	            <td><a href="#none">28</a></td>
+                            	            <td><a href="#none">29</a></td>
+                            	            <td class="sat"><a href="#none">30</a></td>
+                            	        </tr>
+                            	        <tr>
+                            	            <td><a href="#none" class="sun">31</a></td>
+                            	            <td><a href="#none" class="no_day">1</a></td>
+                            	            <td><a href="#none" class="no_day">2</a></td>
+                            	            <td><a href="#none" class="no_day">3</a></td>
+                            	            <td><a href="#none" class="no_day">4</a></td>
+                            	            <td><a href="#none" class="no_day">5</a></td>
+                            	            <td class="sat"><a href="#none" class="no_day">6</a></td>
+                            	        </tr>
+                            	        </tbody>
+                            	    </table>
+                            	</div>-->
 							</div>
 						</div>
 					</div>
@@ -783,7 +790,6 @@
 					<h3>MARTMOA <span>Smart choise</span></h3>
 					<p><img src="../images/common/bner1.gif" alt="" /></p>
 					<p><img src="../images/common/bner2.gif" alt="" /></p>
-					
 				</div>
 			</div>
 		</div>
@@ -1137,6 +1143,7 @@
 		</div>
 	</div>
 </div>
+
  <script data-main="../js/mypage" src="../js/lib/require2.1.17.js"></script>
  
 </body>

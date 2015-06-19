@@ -335,8 +335,8 @@
 .sch_list ul{float:left;}
 .sch_list ul li{background:url(../images/common/bg_line_ty3.gif) no-repeat 0 11px;float:left;padding:0 15px;height:29px;line-height:29px;color:#84858c;}
 .sch_list ul li:first-child{background:none;}
-.sch_list .schForm {background:url(../images/common/bg_sch_form_ty1.gif) no-repeat 0 0;font-size:0;height:29px;padding:1px 0 0 1px;position:relative;width:284px;float:left;}
-.sch_list .schForm input{color:#c1c1c1;border:none;height:24px;line-height:24px;position:absolute;left:10px;top:3px;}
+.sch_list .schForm {position:relative;float:left;background:none;width:380px;}
+.sch_list .schForm input{color:#c1c1c1;height:27px;line-height:27px;position:absolute;left:10px;top:0;border:1px solid #989898;padding:0 5px;}
 .sch_list .schForm .btnSch{background:url(../images/common/btn_sch_ty1.gif) no-repeat 0 0;height:29px;position:absolute;right:0;top:0;width:52px;}
 
 /* 스크롤 메뉴 */
