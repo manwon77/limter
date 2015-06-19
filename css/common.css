@@ -87,6 +87,8 @@ button::-moz-focus-inner{padding:0; margin:0;}
 .btn *{cursor:pointer; cursor:hand; vertical-align:middle;}
 .btn span{text-indent:-99999px; font-size:0; }
 
+.strong{font-weight:bold;}
+
 /* input */
 input{font-family:"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-serif;}
 
