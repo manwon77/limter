@@ -14,7 +14,10 @@ requirejs.config({
         'sideBar' : 'ui/sideBar',
         'tab' : 'ui/tab',
 		'myPage' : 'ui/mypage',
-		'sns' : 'ui/sns'
+		'sns' : 'ui/sns',
+		'selectUl' : 'ui/selectUl',
+		'resolution' : 'ui/resolution',
+		'etc' : 'ui/etc'
 
     },
     shim: {
@@ -61,13 +64,25 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'sns'
         }
+		, 'selectUl' : {
+            deps : ["jquery"],
+            exports : 'selectUl'
+        }
+		, 'resolution' : {
+            deps : ["jquery"],
+            exports : 'resolution'
+        }
+		, 'etc' : {
+            deps : ["jquery"],
+            exports : 'etc'
+        }
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -75,6 +90,9 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     sideBar.init();
     tab.init();
     sns.init();
+    selectUl.init();
+    resolution.init();
+	etc.init();
 
     myPage.init();
 })

@@ -25,14 +25,9 @@
 .utilMenu li{float:left; padding:0 30px; height:34px;}
 .utilMenu > li > a{display:block; line-height:34px; font-size:18px; font-family:Myriad Pro; font-weight:200; color:#757575;}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
-.utilMenu .snsWrap{ position:absolute; left:-195px; top:0px; width:195px; height:34px;}
+.utilMenu .snsWrap{ position:absolute; left:200px; top:0px; width:195px; height:34px;}
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
-
-/*
-.utilMenu > li > a + .snsWrap{display:none;}
-.utilMenu > li > a.active + .snsWrap {display:block;}
-*/
 
 /* gnb */
 div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
@@ -297,3 +292,5 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 #footer address strong{font-weight:normal; margin-left:18px;}
 #footer address > p strong:first-child{margin-left:0;}
 #footer address .copy{}
+
+

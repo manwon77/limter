@@ -11,7 +11,7 @@ define(['jquery','easing'],function($,easing){
 				$(this).addClass("active");
 				$(".tab_cnt").hide()
 				var activeTab = $(this).attr("rel");
-				$("#" + activeTab).fadeIn()
+				$("#" + activeTab).show()
 			}),	
 
 			$(".pop_tab > ul > li").click(function () {

@@ -1,7 +1,7 @@
 define(['jquery'],function($){
     var myPage = {
         init : function(){
-            console.log('My Page');
+
             var eventData = [
                 {"date":"2015-06-11","badge":false, "title": "123", "body":"asdasdasdtest111", "footer" : "footer test11111"},
                 {"date":"2015-06-15","badge":false,"title":"234", "body":"bobobobobobotest222", "footer" : "footer test22222"}
