@@ -29,6 +29,11 @@
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
 
+/*
+.utilMenu > li > a + .snsWrap{display:none;}
+.utilMenu > li > a.active + .snsWrap {display:block;}
+*/
+
 /* gnb */
 div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
 div.gnbWrap .menu{clear:both;}
