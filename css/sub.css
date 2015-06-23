@@ -370,9 +370,10 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .img_hover .photo ul{position:absolute;right:12px;top:13px;}
 .img_hover .photo ul li{background:url(../images/common/bg_box_ty7.gif) no-repeat 0 0;margin-top:10px;width:78px;height:78px;}
 .img_hover .photo .pho_img{width:396px;height:396px;overflow:hidden;text-align:center;padding-top:100px;}
+.img_hover .photo .pho_img > p{display:none;}
 .img_hover .photo .pho_img img{width:300px;height:300px;overflow:hidden;}
-.img_hover .photo ul li a img {width:76px;height:76px;overflow:hidden;padding:1px;}
-.img_hover .photo ul li:hover{background:url(../images/common/bg_box_ty7_on.gif) no-repeat 0 0;}
+.img_hover .photo ul li a img {width:72px;height:72px;overflow:hidden;padding:3px;}
+.img_hover .photo ul li:hover{background:url(../images/common/bg_box_ty7_on.gif) no-repeat 0 0;z-index:10;}
 .img_hover .photo ul li:first-child{margin-top:0;}
 
 .img_hover .txt_detail{float:right;}
@@ -388,17 +389,17 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .img_hover .txt_detail ul li.last{border-top:2px solid #a0a0a0;padding-bottom:0;}
 .img_hover .txt_detail ul li.last {}
 .img_hover .txt_detail ul li.last dd{float:right;color:#ee2e24;font-size:24px;}
- 
 .img_hover .txt_detail p{color:#bdbdbd;}
 .img_hover .txt_detail p span{font-size:15px;}
 .img_hover .txt_detail .btns {margin-top:10px;}
 .img_hover .txt_detail .btns > span{float:left;}
+.img_hover .txt_detail .btns > span > a {display:block;}
 .img_hover .txt_detail .btns .views{margin-left:5px;}
 .img_hover .sns{text-align:right;display:block;margin-top:10px;}
 .img_hover .put_ty2{background:url(../images/common/bg_put_ty2.gif) no-repeat 0 0;position:relative;width:273px;height:70px;}
-.img_hover .put_ty2 .prev{position:absolute;left:25px;top:25px;background:url(../images/common/bg_line_ty1.gif) no-repeat right center;padding-right:24px;}
-.img_hover .put_ty2 .cen{text-align:center;font-size:24px;font-family:'NanumGothic';color:#656565;margin:auto;width:96px;position:absolute;left:50%;top:50%;margin:-18px 0 0 -48px;}
-.img_hover .put_ty2 .next{position:absolute;right:25px;top:25px;background:url(../images/common/bg_line_ty1.gif) no-repeat left center;padding-left:24px;}
+.img_hover .put_ty2 .minus{position:absolute;left:25px;top:25px;background:url(../images/common/bg_line_ty1.gif) no-repeat right center;padding-right:24px;}
+.img_hover .put_ty2 .item{text-align:center;font-size:24px;font-family:'NanumGothic';color:#656565;margin:auto;width:96px;position:absolute;left:50%;top:50%;margin:-18px 0 0 -48px;}
+.img_hover .put_ty2 .plus{position:absolute;right:25px;top:25px;background:url(../images/common/bg_line_ty1.gif) no-repeat left center;padding-left:24px;}
 
 .compare{margin-top:40px;margin:0 31px;}
 .compare .tit_cp{font-size:20px;color:#000;margin:40px 0 10px;}
@@ -420,7 +421,7 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .pro_tab > ul > li.active > a span{background:url(../images/common/bg_r_on.png) no-repeat right 0;padding:12px 4px 14px 0;text-align:center;float:left;min-width:151px;}
 .pro_tab .tab_cnt{position:relative;padding:41px 0 0 64px;}
 .pro_tab .tab_cnt:after{content:"";display:block;clear:both;}
-.pro_tab .tab_cnt .pro_prew {position:absolute;left:0;top:50%;margin-top:-23px;}
+.pro_tab .tab_cnt .pro_prev {position:absolute;left:0;top:50%;margin-top:-23px;}
 .pro_tab .tab_cnt .pro_next {position:absolute;right:0;top:50%;margin-top:-23px;}
 .pro_tab .tab_cnt > ul > li {float:left;margin-left:16px;}
 .pro_tab .tab_cnt > ul > li:first-child{margin-left:0;}
@@ -430,8 +431,8 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .pro_tab.tab_ty1:after{content:"";display:block;clear:both;}
 .pro_tab.tab_ty1 > ul{background-position:2px bottom;margin-left:1px;}
 .pro_tab.tab_ty1 .tab_cnt{background:url(../images/common/bg_bder_bx4.png) no-repeat 0 0;padding:63px 77px 0; height:355px;width:880px;position:absolute;left:-1px;top:90px;z-index:1;}
-.pro_tab.tab_ty1 .tab_cnt .pro_prew{left:26px;}
-.pro_tab.tab_ty1 .tab_cnt .pro_next{right:27px;}
+.pro_tab.tab_ty1 .tab_cnt .pro_prev{left:26px;z-index:100;}
+.pro_tab.tab_ty1 .tab_cnt .pro_next{right:27px;z-index:100;}
 .pro_tab.tab_ty1 .tab_cnt > ul {width:100%;}
 .pro_tab.tab_ty1 .tab_cnt > ul > li:first-child{margin-left:16px;}
 .pro_tab.tab_ty1 .tab_cnt > ul > li{width:274px;}

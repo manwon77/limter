@@ -2,7 +2,7 @@ define(['jquery','easing'],function($,easing){
 	var sns = {
 		init : function(){
 		
-			var $btn = $(".utilMenu > li > a");
+			var $btn = $(".utilMenu > li > .link");
 			var $sns = $(".snsWrap");
 
 			$btn.click(function (e) {

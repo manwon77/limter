@@ -17,7 +17,8 @@ requirejs.config({
 		'sns' : 'ui/sns',
 		'selectUl' : 'ui/selectUl',
 		'resolution' : 'ui/resolution',
-		'etc' : 'ui/etc'
+		'etc' : 'ui/etc',
+		'slide' : 'ui/slide'
 
     },
     shim: {
@@ -76,13 +77,17 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'etc'
         }
+		, 'slide' : {
+            deps : ["jquery"],
+            exports : 'slide'
+        }
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -93,6 +98,7 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     selectUl.init();
     resolution.init();
 	etc.init();
+	slide.init();
 
     myPage.init();
 })

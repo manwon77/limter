@@ -1,19 +1,24 @@
 requirejs.config({    
-    baseUrl: '../js',    
+    baseUrl: '../../js',    
 
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
         'pie'    : 'lib/PIE',
-		'calendar' : 'lib/zabuto_calendar',
+        'calendar' : 'lib/zabuto_calendar',
 
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
         'mainTop' : 'ui/mainTop',
         'sideBar' : 'ui/sideBar',
-		'tab' : 'ui/tab',
-		'myPage' : 'ui/mypage'
+        'tab' : 'ui/tab',
+		'myPage' : 'ui/mypage',
+		'sns' : 'ui/sns',
+		'selectUl' : 'ui/selectUl',
+		'resolution' : 'ui/resolution',
+		'etc' : 'ui/etc',
+		'gallery' : 'ui/gallery'
 
     },
     shim: {
@@ -56,19 +61,44 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'tab'
         }
+		, 'sns' : {
+            deps : ["jquery"],
+            exports : 'sns'
+        }
+		, 'selectUl' : {
+            deps : ["jquery"],
+            exports : 'selectUl'
+        }
+		, 'resolution' : {
+            deps : ["jquery"],
+            exports : 'resolution'
+        }
+		, 'etc' : {
+            deps : ["jquery"],
+            exports : 'etc'
+        }
+		, 'gallery' : {
+            deps : ["jquery"],
+            exports : 'gallery'
+        }
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','gallery'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, gallery){
     shopping.init();
     gnb.init();
     rolling.init();
     mainTop.init();
     sideBar.init();
-	tab.init();
+    tab.init();
+    sns.init();
+    selectUl.init();
+    resolution.init();
+	etc.init();
+	gallery.init();
 
     myPage.init();
 })

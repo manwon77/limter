@@ -2,83 +2,66 @@ define(['jquery','easing'],function($){
 	var etc = {
 		init : function(){
 
-			var $btn = $(".img_hover > .photo > ul > li > a");
-			var $over = $(".img_hover > .photo > .pho_img");
+			// 썸네일
+			var thumbnail = $('.img_hover > .photo');
+			var container = thumbnail.find('> ul');
+			var thumb = container.find('> li');
+			var image = $('.img_hover > .photo > .pho_img > p');
 			
-			$btn.off( "mouseenter", $.proxy( this.imgHover, this ) ).on( "mouseenter", $.proxy( this.imgHover, this ) );
+			// 장바구니 담기 버튼 체인지
+			this.btn = $('.putBtns > .put_ty1 > a');
+			this.btnView = $('.putBtns > .put_ty2');
+			this.btn.off( "click", $.proxy( this.putBtn, this ) ).on( "click", $.proxy( this.putBtn, this ) );
+						
+			// 수량 업다운
+			var tar = $(".putBtns");
+			var btnGroup = $(".put_ty2");
+			var plusBtn = tar.find(".plus");
+			var minusBtn = tar.find(".minus");
 
-			$btn.hover(
-				function(e){
-					$(this).
-				}	
-			)
+			btnGroup.data({"cnt" : 0});
 			
+			plusBtn.off( "click", $.proxy( this.add,this ) ).on( "click", $.proxy( this.add,this ) );
+			minusBtn.off( "click", $.proxy( this.remove,this ) ).on( "click", $.proxy( this.remove,this ) );
+			
+			// 썸네일  
+			thumb.off().on('mouseover', function(){
+				image.css('display', 'none');
+				var i = $(this).index();
+				image.eq(i).css('display', 'block');
+			});
+
+		}
+
+		// 장바구니 담기 버튼 체인지
+		, putBtn : function(){
+			this.btn.parent().css('display','none');
+			this.btnView.css('display','block');
 		}
 		
-
-			/*
-			var gnb = $(".col .dep2List >li > a");
-			var twoTabs = $(".dep3_Layer");
-			var allmenu = $(".allmenu");
-
-			this.menuAside = $(".menuAside > ul > li > a");
-			this.menuLayars = $(".menuLayerWrap > div");			
-
-			gnb.off( "mouseenter", $.proxy( this.activeGnb, this ) ).on( "mouseenter", $.proxy( this.activeGnb, this ) );
-			gnb.off( "mouseleave", $.proxy( this.normal, this ) ).on( "mouseleave", $.proxy( this.normal, this ) );
-
-			twoTabs.off( "mouseenter", $.proxy( this.activeGnb, this ) ).on( "mouseenter", $.proxy( this.activeGnb, this ) );
-			twoTabs.off( "mouseleave", $.proxy( this.normal, this ) ).on( "mouseleave", $.proxy( this.normal, this ) );
-
-			this.menuAside.off( "click", $.proxy( this.classifyMenu, this ) ).on( "click", $.proxy( this.classifyMenu, this ) );
-			allmenu.off("click", $.proxy( this.showAllmenu, this ) ).on("click", $.proxy( this.showAllmenu, this ) );
-			*/
+		// 수량 업다운
+		, add : function( e ){
+			var par = $(e.currentTarget).parent(".put_ty2");
+			var item = par.find(".item"); 
+			var data = par.data("cnt"); 
+			data++;
+			par.data({ "cnt" : data });
+			item.text( data );
 
 		}
-		/*
-		, showAllmenu : function( e ){
-			var allmenuLayer = $("#AllmenuLayer");
-			if( $(e.currentTarget).attr("class").match(/open/) != "open" ){
-				$(e.currentTarget).addClass("open");				
-				allmenuLayer.show();
-			}else{
-				$(e.currentTarget).removeClass("open");				
-				allmenuLayer.hide();
-			}			
-			e.preventDefault();
-		}
-		, activeGnb : function( e ){
-			var parent = $(e.currentTarget).parent();
-			var layer;
-			if( e.currentTarget.tagName == "A" ){
-				layer = $(e.currentTarget).next();				
-			}else{
-				layer = $(e.currentTarget);
-			}			
-			layer.show();
-			parent.addClass("active");
-
-		}
-		, normal : function( e ){
-			var parent = $(e.currentTarget).parent();
-			var layer;
-			if( e.currentTarget.tagName == "A" ){
-				layer = $(e.currentTarget).next();				
-			}else{
-				layer = $(e.currentTarget);
+		, remove : function( e ){
+			var par = $(e.currentTarget).parent(".put_ty2");
+			var item = par.find(".item");
+			var data = par.data("cnt");			
+			if( data > 0 ){
+				data--;
+				par.data({ "cnt" : data });
+				item.text( data );
 			}
-			layer.hide();
-			parent.removeClass("active");
 		}
-		, classifyMenu : function( e ){
-			this.menuAside.parent().removeClass("on");
-			$(e.currentTarget).parent().addClass("on");
-			this.menuLayars.hide();
-			$(e.currentTarget.hash).show();
-			e.preventDefault();
-		}
-		*/
+
 	}
 
 	return etc;
 })
+
