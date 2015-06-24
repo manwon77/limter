@@ -22,6 +22,7 @@ define(['jquery','easing'],function($,easing){
 				var activeTab = $(this).attr("rel");
 				$("#" + activeTab).show()
 			})	
+
 		}
 		
 	}

@@ -21,7 +21,7 @@
 #header h1{float:left; padding:24px 0 0 29px;}
 
 /* TopUtil */
-.utilMenu {float:right; color:#d7dade; padding:22px 56px 0 0;}
+.utilMenu {float:right; color:#d7dade; padding:22px 56px 0 200px;overflow:hidden;}
 .utilMenu li{float:left; padding:0 30px; height:34px;}
 .utilMenu > li > a{display:block; line-height:34px; font-size:18px; font-family:Myriad Pro; font-weight:200; color:#757575;}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
