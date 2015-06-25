@@ -7,6 +7,7 @@ requirejs.config({
         'pie'    : 'lib/PIE',
         'calendar' : 'lib/zabuto_calendar',
         'bxSlider' : 'lib/jquery.bxslider.min',
+        'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
@@ -19,8 +20,8 @@ requirejs.config({
 		'selectUl' : 'ui/selectUl',
 		'resolution' : 'ui/resolution',
 		'etc' : 'ui/etc',
-		'slide' : 'ui/slide'
-		
+		'slide' : 'ui/slide',
+	
 
     },
     shim: {
@@ -87,14 +88,18 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'slide'
         }
-		
+		, 'scrollBar' : {
+            deps : ["jquery"],
+            exports : 'scrollBar'
+        }
+
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider','scrollBar'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider, scrollBar){
     shopping.init();
     gnb.init();
     rolling.init();

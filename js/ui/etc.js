@@ -1,4 +1,4 @@
-define(['jquery','easing'],function($){
+define(['jquery','easing','scrollBar'],function($){
 	var etc = {
 		init : function(){
 
@@ -31,6 +31,9 @@ define(['jquery','easing'],function($){
 				image.eq(i).css('display', 'block');
 			});
 
+			// 스크롤
+			$(".scrBar").mCustomScrollbar();
+
 		}
 
 		// 장바구니 담기 버튼 체인지
@@ -59,6 +62,10 @@ define(['jquery','easing'],function($){
 				item.text( data );
 			}
 		}
+
+		
+
+
 
 	}
 

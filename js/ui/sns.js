@@ -4,7 +4,7 @@ define(['jquery','easing'],function($,easing){
 		
 			var $btn = $(".utilMenu > li > .link");
 			var $sns = $(".snsWrap");
-
+			
 			$btn.click(function (e) {
 				if ($btn.hasClass("active")){
 					$btn.removeClass("active");
@@ -32,4 +32,6 @@ define(['jquery','easing'],function($,easing){
 	}
 	return sns;
 });
+
+
 
