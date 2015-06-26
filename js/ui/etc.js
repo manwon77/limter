@@ -20,7 +20,6 @@ define(['jquery','easing','scrollBar'],function($){
 			var minusBtn = tar.find(".minus");
 
 			btnGroup.data({"cnt" : 0});
-			
 			plusBtn.off( "click", $.proxy( this.add,this ) ).on( "click", $.proxy( this.add,this ) );
 			minusBtn.off( "click", $.proxy( this.remove,this ) ).on( "click", $.proxy( this.remove,this ) );
 			
@@ -33,6 +32,17 @@ define(['jquery','easing','scrollBar'],function($){
 
 			// 스크롤
 			$(".scrBar").mCustomScrollbar();
+
+			// form radio
+			// this.btn.off( "click", $.proxy( this.intRadio, this ) ).on( "click", $.proxy( this.intRadio, this ) );
+			
+			// form check
+			// this.btn.off( "click", $.proxy( this.intCheck, this ) ).on( "click", $.proxy( this.intCheck, this ) );
+
+			// 여닫
+			this.orderClose = $('.order_close > a');
+			this.orderClose.off( "click", $.proxy( this.martClose, this ) ).on( "click", $.proxy( this.martClose, this ) );
+		
 
 		}
 
@@ -63,9 +73,40 @@ define(['jquery','easing','scrollBar'],function($){
 			}
 		}
 
-		
+		/*
+		// form radio
+		, intRadio : function( e ){
+			$('input[name="ra1"]').each(funtion(){
+				this.checked = true;
+			});
+		}
+		// form check
+		, intCheck : function( e ){
+			
+			$('.checkImg').on('click',function(){
+				$('.checkImg').attr('src','images/common/bg_check1.gif');
+				$(this).attr('src','images/common/bg_check1.gif');
 
+			});
+			
+		}
+		*/
+		// cart view 닫기
+		, martClose : function(e){
+			this.btn = $('.order_table').find('.order_close');
+			var tar = $('.order_table').find('.order_cnt');
 
+			if (tar.attr('class').match(/active/) != "active"){
+				tar.addClass('active');
+				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_on.gif","_off.gif"));
+				tar.slideUp();
+			}else{
+				tar.removeClass('active')
+				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_off.gif","_on.gif"));
+				tar.slideDown();
+			}
+
+		}
 
 	}
 

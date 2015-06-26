@@ -10,7 +10,7 @@
 <body style="height:3000px;">
 
 	<!-- layerPopup -->
-	<div id="popWrap" style="width:1236px; display: block; position: relative; left: 50%; top: 50%; z-index: 99999;margin-left: -618px; margin-top: -372px;">
+	<div id="popWrap" style="width:1236px; display: block; position: fixed; left: 50%; top: 50%; z-index: 99999;margin-left: -618px; margin-top: -372px;">
 		<div class="pop_head pop_head_ty1">
 			<h2>마트모아 추천 장바구니</h2>
 			<a href="#none" class="close"><img src="../images/common/btn_pop_close1.gif" alt="닫기" /></a>
@@ -23,7 +23,7 @@
 					<li>
 					<!-- 현재 장바구니 -->
 						<div class="carts">
-							<div class="present">
+							<div class="present" styl>
 								<h3>현재 장바구니</h3>
 								<div class="icon">
 									
@@ -72,7 +72,7 @@
 								<div class="gray_head">
 									주문예정금액<span class="mney">188,930<span>원</span></span>
 								</div>
-								<div class="list_scr">
+								<div class="list_scr scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
 									<ul class="list">
 										<li>
 											<dl>
@@ -132,13 +132,14 @@
 									</ul>
 								</div>
 							</div>
-							<div id="cart_list" class="cd_ty2" style="display:none">
+							<!-- 리스트 -->
+							<div id="cart_list" class="cd_ty2" style="display:none;">
 								<p class="mart_nmber">
 									<span class="m1">마트 2개</span>
 									<span class="m2">주문예정금액</span>
 									<span class="m3">188,890원</span>
 								</p>
-								<div class="list_scr">
+								<div class="list_scr scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
 									<ul class="list">
 										<li>
 											<dl>
@@ -273,7 +274,7 @@
 								<div class="gray_head red_head">
 									주문예정금액<span class="mney">188,930<span>원</span></span>
 								</div>
-								<div class="list_scr">
+								<div class="list_scr scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
 									<ul class="list">
 										<li>
 											<dl>
@@ -333,13 +334,14 @@
 									</ul>
 								</div>
 							</div>
+							<!-- 리스트 -->
 							<div id="cart_list1" class="cd_ty2 cd_red" style="display:none">
 								<p class="mart_nmber">
 									<span class="m1">마트 2개</span>
 									<span class="m2">주문예정금액</span>
 									<span class="m3">188,890원</span>
 								</p>
-								<div class="list_scr">
+								<div class="list_scr scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
 									<ul class="list">
 										<li>
 											<dl>
@@ -445,7 +447,6 @@
 					<a href="#none"><img src="../images/common/btn_arrow_left.gif" alt="" /></a>
 				</div>
 			
-				
 			</div>
 			<!-- //content -->			
 		</div>
@@ -468,7 +469,7 @@
 		<!-- //추천장바구니 -->
 
 		<!-- 상품변경 -->
-		<div class="layer3" style="position:fixed;left:50%;top:50%;z-index:99999;width:771px;height:869px;margin:-385px 0 0 -434px;">
+		<div class="layer3" style="position:fixed;left:50%;top:50%;z-index:99999;width:771px;height:869px;margin:-434px 0 0 -385px;">
 			<div class="tit">
 				<h3>상품변경
 					<a href="#none" class="close"><img src="../images/common/btn_pop_close1.gif" alt="닫기" /></a>
@@ -551,9 +552,9 @@
 		</div>
 		<!-- //상품변경 -->
 
-		<div class="mask_ty2"></div>
+		<div class="mask_ty2" style="display:block"></div>
 	</div> 
 	<div class="mask_ty2"></div>
-
- </body>
+	<script data-main="../js/mypage" src="../js/lib/require2.1.17.js"></script>
+</body>
 </html>
