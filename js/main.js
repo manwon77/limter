@@ -7,20 +7,14 @@ requirejs.config({
         'pie'    : 'lib/PIE',
         'calendar' : 'lib/zabuto_calendar',
 
+        'isotope' : 'ui/isotope',
+        'viewPort' : 'ui/viewPort',
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
         'mainTop' : 'ui/mainTop',
         'sideBar' : 'ui/sideBar',
-        'tab' : 'ui/tab',
-		'myPage' : 'ui/mypage',
-		'sns' : 'ui/sns',
-		'selectUl' : 'ui/selectUl',
-		'resolution' : 'ui/resolution',
-		'etc' : 'ui/etc',
-		'slide' : 'ui/slide'
-		
-
+        'sns' : 'ui/sns',
     },
     shim: {
         'jquery' : {
@@ -34,6 +28,11 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'pie'
         }
+        , 'isotope' : {
+            deps : ["jquery"],
+            exports: 'isotope'
+        }
+
         , 'shopping' : {
             deps : ["jquery"],
             exports: 'shopping'   
@@ -50,55 +49,28 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'sideBar'  
         }
-        , 'calendar' : {
-            deps : ["jquery"],
-            exports : 'calendar'
+        , 'viewPort' : {
+            deps : ["jquery","isotope"],
+            exports: 'viewPort'
         }
-        , 'myPage' : {
-            deps : ["jquery"],
-            exports : 'myPage'
-        }
-		, 'tab' : {
-            deps : ["jquery"],
-            exports : 'tab'
-        }
+
 		, 'sns' : {
             deps : ["jquery"],
             exports : 'sns'
         }
-		, 'selectUl' : {
-            deps : ["jquery"],
-            exports : 'selectUl'
-        }
-		, 'resolution' : {
-            deps : ["jquery"],
-            exports : 'resolution'
-        }
-		, 'etc' : {
-            deps : ["jquery"],
-            exports : 'etc'
-        }
-		, 'slide' : {
-            deps : ["jquery"],
-            exports : 'slide'
-        }
+
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide',],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide){
+define(['jquery', 'isotope', 'shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'sns','viewPort'],function($, isotope ,shopping, gnb, rolling, mainTop, sideBar, sns, viewPort){
     shopping.init();
     gnb.init();
     rolling.init();
     mainTop.init();
     sideBar.init();
-    tab.init();
     sns.init();
-    selectUl.init();
-    resolution.init();
-	etc.init();
-	slide.init();
-    myPage.init();
+    viewPort.init();
 })

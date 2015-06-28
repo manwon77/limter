@@ -138,11 +138,11 @@ input{font-family:"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-
 .mask_ty2{position: fixed;left: 0;top: 0px; width: 100%; height: 100%; z-index: 999; background: url(../images/common/bg_mask.png);}
 
 /* grid */
-.grid{margin-left:121px;}
+/*.grid{margin-left:121px;}
 .grid_ty1{width:1702px;}
 .grid_ty2{width:1416px;}
 .grid_ty3{width:1130px;}
-
+*/
 /* 176*176 thumblist ty1 */
 .thumbList.list_ty1{margin-left:-14px;}
 .thumbList.list_ty1:after{content:"";display:block;clear:both;}

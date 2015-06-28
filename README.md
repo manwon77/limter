@@ -31,3 +31,10 @@ on/off 이미지슬라이드
  - 3순위
 // 스마트 초이스 메뉴
 // 퀵메뉴
+C:\Users\sang\Desktop\martmoa-best\products\list_Category.html
+
+인풋박스 
+이미지를 클릭하면 이미지가 on이미지로 바뀌면서
+인풋박스를 체크드한다. 
+반대로 또 클릭이되면 이미지를 off를 해주고 인풋박스의 체크드를 헤제한다.
+
