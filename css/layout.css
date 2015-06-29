@@ -25,7 +25,8 @@
 .utilMenu li{float:left; padding:0 30px; height:34px;}
 .utilMenu > li > a{display:block; line-height:34px; font-size:18px; font-family:Myriad Pro; font-weight:200; color:#757575;}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
-.utilMenu .snsWrap{ position:absolute; left:200px; top:0px; width:195px; height:34px;}
+.utilMenu .snsWrap{ position:absolute; left:-170px; z-index:-1; opacity:0; top:0; width:195px; height:34px; display:none;}
+.utilMenu .snsWrap.active{display:block;}
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
 
@@ -228,8 +229,8 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 /* 장바구니 */
 .asdLayer .cartWrap{margin-left:0;}
 .asdLayer .cartWrap .userInfo{margin-left:12px;}
-.cartList{margin-top:16px;}
-.cartList li{border-top:1px solid #e5e5e5; overflow:hidden; padding:17px 35px 8px 0; height:54px; position:relative;}
+.cartList{margin-top:16px;height:395px;overflow:hidden;overflow-y:auto;}
+.cartList li{border-top:1px solid #e5e5e5; overflow:hidden; padding:17px 35px 8px 0; position:relative;}
 .cartList li:first-child{border-top:0;}
 .cartList li .thumInfo{width:49px; float:left; margin:0 21px 0 28px;}
 .cartList li .thumInfo .thumImg{width:49px; height:44px;}

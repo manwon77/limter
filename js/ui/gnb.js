@@ -4,9 +4,10 @@ define(['jquery'],function($){
 			var gnb = $(".col .dep2List >li > a");
 			var twoTabs = $(".dep3_Layer");
 			var allmenu = $(".allmenu");
-
+			
+			this.mask = $(".mask_ty1");
 			this.menuAside = $(".menuAside > ul > li > a");
-			this.menuLayars = $(".menuLayerWrap > div");			
+			this.menuLayars = $(".menuLayerWrap > div");	
 
 			gnb.off( "mouseenter", $.proxy( this.activeGnb, this ) ).on( "mouseenter", $.proxy( this.activeGnb, this ) );
 			gnb.off( "mouseleave", $.proxy( this.normal, this ) ).on( "mouseleave", $.proxy( this.normal, this ) );
@@ -16,15 +17,18 @@ define(['jquery'],function($){
 
 			this.menuAside.off( "click", $.proxy( this.classifyMenu, this ) ).on( "click", $.proxy( this.classifyMenu, this ) );
 			allmenu.off("click", $.proxy( this.showAllmenu, this ) ).on("click", $.proxy( this.showAllmenu, this ) );
+			
 
 		}
 		, showAllmenu : function( e ){
 			var allmenuLayer = $("#AllmenuLayer");
 			if( $(e.currentTarget).attr("class").match(/open/) != "open" ){
 				$(e.currentTarget).addClass("open");				
+				this.mask.show();
 				allmenuLayer.show();
 			}else{
-				$(e.currentTarget).removeClass("open");				
+				$(e.currentTarget).removeClass("open");		
+				this.mask.hide();	
 				allmenuLayer.hide();
 			}			
 			e.preventDefault();
@@ -58,6 +62,9 @@ define(['jquery'],function($){
 			this.menuLayars.hide();
 			$(e.currentTarget.hash).show();
 			e.preventDefault();
+		}
+		, loca : function( e ){
+			
 		}
 	}
 

@@ -9,8 +9,7 @@
 /* container */
 #container{padding:35px 0 100px 0;}
 .smartchoise{margin:70px 0 0 0;}
-.smarCnt .col{display:block; overflow:hidden;}
+.smarCnt .col{display:block;margin-left:-14px;margin-top:14px;overflow:hidden;}
 .smarCnt .col a{float:left; margin-left:14px;}
-.smarCnt .col a:first-child{margin-left:0;}
-.smarCnt .col{margin-top:14px;}
 .smarCnt .col:first-child{margin-top:0px;}
+.smarCnt .col > a{margin-bottom:15px;}

@@ -9,7 +9,7 @@ define(['jquery','easing'],function($,easing){
 				if ($btn.hasClass("active")){
 					$btn.removeClass("active");
 					$sns.clearQueue().animate(
-					{"opacity":"0","left" : 200}
+					{"opacity":"0","left" : -170, "z-index":"-1"}
 					, "800"
 					, "easeOutSine"
 					, function(){
@@ -19,7 +19,7 @@ define(['jquery','easing'],function($,easing){
 				} else {
 					$(this).addClass("active");
 					$sns.clearQueue().animate(
-					{"opacity":"1","left" : -195}
+					{"opacity":"1","left" : -195, "z-index" : "1"}
 					, "800"
 					, "easeOutSine"
 					, function(){

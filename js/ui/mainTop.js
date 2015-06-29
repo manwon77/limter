@@ -8,12 +8,14 @@ define(['jquery','easing'],function($,easing){
 
 		}
 		, sladeLAyer : function( e ){
+			this.tar.addClass("active");
 			this.tar.animate(
 				{"margin-top" : this.dy*-1}
 				,"800"
 				, "easeOutBack"
 			)
 		}
+
 	}
 
 

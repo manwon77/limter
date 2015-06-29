@@ -3,19 +3,29 @@ define(['jquery', "ui/isotope.pkgd"],function($, isotope){
 
         init : function(){
 
-            //ÃÖÀú ÇØ»óµµ (1280)
-            //ÃÖ´ë ÇØ»óµµ (¼¶³×ÀÏ ÀÌ¹ÌÁö6°³)
-            //¹Ú½º ÇÏ³ª´ç 290;
+            //ìµœì € í•´ìƒë„ (1280)
+            //ìµœëŒ€ í•´ìƒë„ (ì„¬ë„¤ì¼ ì´ë¯¸ì§€6ê°œ)
+            //ë°•ìŠ¤ í•˜ë‚˜ë‹¹ 288;
+			// ë©”ì¸
 
-            this.obj = $(".grid");
-            this.boxSize = 290;
+            this.obj = $(".main_grid");
+            this.boxSize = 288;
+			this.marginSize = 14;
             this.winSize = $(window).width();
-            this.thumbList = $(".thumbList > ul");
-
-
+            this.thumbList = $(".main_grid .thumbList > ul");
+			
             this.paint();
             $(window).on("resize", $.proxy( this.paint, this ));
 
+			/*
+			// sub ì •ë ¬
+			this.subObj = $(".grid");
+			this.sThumbList = $(".grid .thumbList > ul");
+
+			this.subPaint();
+			$(window).on("resize", $.proxy( this.subPaint, this ));
+			*/
+			
         }
         , paint : function(){
             var elementNumber =  parseInt(this.winSize / this.boxSize);
@@ -26,11 +36,27 @@ define(['jquery', "ui/isotope.pkgd"],function($, isotope){
                 elementNumber = 6;
             }
             var wid = this.boxSize * elementNumber;
-            this.thumbList.css({ "width" : wid, "overflow": "hidden" ,"height" : "276px"});
+            this.thumbList.css({ "width" : wid, "overflow": "hidden" ,"height" : "276px", "padding-top" : "94px"});
             this.obj.css({"width":wid, "margin": "0 auto"});
         }
+		/*
+        , subPaint : function(){
+            var eleNumber =  parseInt(this.winSize / this.boxSize);
+            if( eleNumber < 4 ){
+                eleNumber = 4;
+            }else if( eleNumber > 6 )
+            {
+                eleNumber = 6;
+            }
+            var wid = this.boxSize * eleNumber;
+            this.sThumbList.css({ "width" : wid, "height" : "276px"});
+            this.subObj.css({"width":wid, "margin": "0 auto"});
+        }
+        */
+
     }
 
     return viewPort;
+
 
 });

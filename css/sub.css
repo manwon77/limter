@@ -309,7 +309,7 @@
 .select_bx.active ul li {height:28px;line-height:28px;}
 .select_bx.active .tit{padding-bottom:1px;}
 .select_bx.active .tit a{color:#ee2e24;}
-.select_bx .bx .tit > a > img {position:absolute;right:19px;top:50%;margin-top:-4px;}
+.select_bx .bx .tit > a > img {position:absolute;right:19px;top:24px;margin-top:-4px;}
 .select_bx ul li:first-child{padding-top:9px;}
 .select_bx ul > li > a{display:block; font-size:13px; color:#ababab; padding-left:7px; height:29px; line-height:29px;}
 .select_bx ul > li.active a,
@@ -1153,6 +1153,10 @@ dl.pop_help_detail dt{font-weight:bold;}
 .fileWrap .file_btn.file_sch{background:url(../images/common/btn_file_sch.gif) no-repeat 6px 0;}
 
 /* input - file - end */
+.custom_check{position:relative;float:left;}
+.custom_check:after{content:"";display:block;clear:both;}
+.custom_check label{position:absolute;left:0;top:0;height:15px;padding:0 0 0 25px;width:15px;background:url(../images/common/bg_check1.gif) no-repeat 0 0;float:left;}
+.custom_check input[type="radio"]:checked + label {background-position:0 -15px;float:left;}
 
 
 

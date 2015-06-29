@@ -4,16 +4,14 @@ requirejs.config({
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
-        'pie'    : 'lib/PIE',
-        'calendar' : 'lib/zabuto_calendar',
 
-        'isotope' : 'ui/isotope',
+        'isotope'  : 'ui/isotope',
         'viewPort' : 'ui/viewPort',
         'shopping' : 'ui/shopping',
-        'gnb' : 'ui/gnb',
-        'rolling' : 'ui/rolling',
-        'mainTop' : 'ui/mainTop',
-        'sideBar' : 'ui/sideBar',
+        'gnb'      : 'ui/gnb',
+        'rolling'  : 'ui/rolling',
+        'mainTop'  : 'ui/mainTop',
+        'sideBar'  : 'ui/sideBar',
         'sns' : 'ui/sns',
     },
     shim: {
@@ -23,10 +21,6 @@ requirejs.config({
         , 'easing' : {
             deps : ["jquery"],
              exports: 'easing'
-        }
-        , 'pie' : {
-            deps : ["jquery"],
-            exports: 'pie'
         }
         , 'isotope' : {
             deps : ["jquery"],

@@ -80,6 +80,7 @@ define(['jquery','easing','scrollBar'],function($){
 				this.checked = true;
 			});
 		}
+		*/
 		// form check
 		, intCheck : function( e ){
 			
@@ -90,7 +91,6 @@ define(['jquery','easing','scrollBar'],function($){
 			});
 			
 		}
-		*/
 		// cart view 닫기
 		, martClose : function(e){
 			this.btn = $('.order_table').find('.order_close');
@@ -100,10 +100,12 @@ define(['jquery','easing','scrollBar'],function($){
 				tar.addClass('active');
 				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_on.gif","_off.gif"));
 				tar.slideUp();
+				this.btn.find(">a>span").text("열기");
 			}else{
 				tar.removeClass('active')
 				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_off.gif","_on.gif"));
 				tar.slideDown();
+				this.btn.find(">a>span").text("닫기");
 			}
 
 		}

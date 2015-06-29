@@ -135,32 +135,36 @@ input{font-family:"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-
 
 /* mask type */
 .mask_ty1{position: fixed;left: 0;top: 78px; width: 100%; height: 100%; z-index: 9; background: url(../images/common/bg_mask.png);}
-.mask_ty2{position: fixed;left: 0;top: 0px; width: 100%; height: 100%; z-index: 999; background: url(../images/common/bg_mask.png);}
+.mask_ty2{position: fixed;left: 0;top: 0; width: 100%; height: 100%; z-index: 999; background: url(../images/common/bg_mask.png);}
+
+.topContents + #wrap #header .gnbWrap .mask_ty1{top:258px;}
+.topContents.active + #wrap #header .gnbWrap .mask_ty1{top:78px;}
 
 /* grid */
-/*.grid{margin-left:121px;}
-.grid_ty1{width:1702px;}
-.grid_ty2{width:1416px;}
-.grid_ty3{width:1130px;}
-*/
+.grid{margin-left:121px;}
+.grid_ty1{width:1710px;}
+.grid_ty2{width:1424px;}
+.grid_ty3{width:1138px;}
+
 /* 176*176 thumblist ty1 */
 .thumbList.list_ty1{margin-left:-14px;}
 .thumbList.list_ty1:after{content:"";display:block;clear:both;}
-.thumbList.list_ty1 > ul > li{width:270px; height:276px; border:1px solid #f0f0f0;}
-.thumbList.list_ty1 > ul > li{float:left; margin:0 0 23px 14px;}
+.thumbList.list_ty1 > ul > li{width:274px; height:276px;}
+.thumbList.list_ty1 > ul > li{float:left; margin:0 0 23px 13px;}
 
 
 /* 공통 */
 .thumbWrap{margin-top:70px;}
 .thumbWrap:first-child{margin-top:0;}
 .thumbList .col{margin-bottom:19px;}
-.thumbList .btn_listMore{display:block; clear:both; height:37px; line-height:37px; background-color:#e9e8ea; font-family:'NanumGothicBold'; color:#979797; font-size:12px; text-align:center; margin-left:14px;}
+.thumbList .btn_listMore{display:block; clear:both; height:37px; line-height:37px; background-color:#e9e8ea; font-family:'NanumGothicBold'; color:#979797; font-size:12px; text-align:center; margin:0 14px;}
 .thumbList .infobox{position:relative; background-color:#fff; width:272px; height:274px; border:1px solid #f0f0f0;}
 .thumbList .infobox .count{display:none;}
 .thumbList .discountInfo{position:absolute; left:0px; top:0px; width:56px; height:34px; line-height:34px; background-color:#a9a9a9; text-align:center; color:#fff;
 	font-family:NanumGothic; font-size:13px; display:inline-block; z-index:2;}
 .thumInfo{margin:34px 0 0 46px;}
 .thumInfo .thumImg{display:block;}
+
 /* 마우스 오버시 */
 .thumOver{display:none; background:url(../images/common/bg_thumOver.png) repeat 0 0; position:absolute; left:1px; top:1px; bottom:1px; right:1px;
 	padding:94px 0 0 0;
