@@ -8,7 +8,7 @@ define(['jquery','easing'],function($,easing){
 			this.selectText = this.setList.find(">ul>li>a");
 			this.selectTit = this.setTag.find(".tit > a")
 			this.dy = [];
-			
+
 			this.setList.show();
 			this.setList.css({"overflow":"hidden","position":"absolute"});
 			for( var i = 0; i < this.setList.length; i++ ){
@@ -19,7 +19,6 @@ define(['jquery','easing'],function($,easing){
 
 			this.setList.height(0);
 			this.selectLink.on("click", $.proxy( this.layerOn, this ) );
-			this.selectText.on("click", $.proxy( this.selectOn, this ) );
 
 		}
 		, layerOn : function(e){
@@ -30,16 +29,19 @@ define(['jquery','easing'],function($,easing){
 				this.selectLink.eq(index).find("> img").attr("src", this.selectLink.eq(index).find("img").attr("src").replace("_on.gif","_off.gif") );
 				this.setList.eq(index).animate(
 					{"height" : 0}
+					, 300
 				)
 			}else{
 				this.setTag.eq(index).addClass("active");
 				this.selectLink.eq(index).find("> img").attr("src", this.selectLink.eq(index).find("img").attr("src").replace("_off.gif","_on.gif") );
 				this.setList.eq(index).animate(
 					{"height" : this.dy[index]}
+					, 300
 				)
 			}
 		}
 
+		/*
 		, selectOn : function(e){
 			var index = $(e.currentTarget).parents(".set_list").data("index");
 		
@@ -60,6 +62,7 @@ define(['jquery','easing'],function($,easing){
 			// 텍스트 입력
 			this.selectTit.eq(index).text( $(e.currentTarget).text() )
 		}
+		*/
 		
 	}
 	return selectUl;

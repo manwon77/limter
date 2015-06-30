@@ -48,20 +48,16 @@
 									<th>이메일</th>
 									<td>
 										<!-- input file -->
-										<div class="fileWrap">
-											<span class="ipt">
-												<input type="text" id="fileName" class="sp" style="width:270px" />
-											</span>
-											<div class="intFile">
-												<input type="button" class="file_btn" />
-												<input type="file" class="file_hide" onchange="document.getElementById('fileName').value=this.value" />
-											</div>
-										</div>
+										<span class="ipt">
+											<input type="text" id="imgFileName" name="imgFileName" class="sp" style="width:260px" />
+										</span>
+										<input type="file" id="imgFile" name="imgFile" style="position:absolute; width: 96px; height: 32px; filter:alpha(opacity=0); opacity:0; -moz-opacity:0; cursor:pointer;" />
+										<a href="#none"><img src="../images/common/btn_modify1.gif" alt="변경하기" /></a>
 										<!-- //input file -->
 
 										<p class="switchWrap">
 											<span class="switch">
-												<span style="display:block">ON</span>
+												<span style="display:block">OFF</span>
 												<a href="#none"><img src="../images/common/bg_switch_ball.png" alt="" /></a>
 											</span>
 											<span class="gray">마트모아 업데이트 및 이벤트 소식</span>
@@ -87,7 +83,7 @@
 												<span class="bl"></span>
 												<span class="br"></span>
 												<h3 class="tit">
-													<a href="#none">010<img src="../images/common/bg_arrow_ty5.gif" alt="열림"></a>
+													<a href="#none">010<img src="../images/common/bg_arrow_ty5_off.gif" alt="열림"></a>
 												</h3>
 												<div class="set_list" style="display:none">
 													<ul>
@@ -111,24 +107,14 @@
 								<tr>
 									<th>성별</th>
 									<td>
-										<div class="custom_check">
+										<div class="custom_check cus_ty1">
 											<input type="radio" id="men" name="men" class="sp" />
 											<label for="men">남</label>
 										</div>
-										<div class="custom_check">
+										<div class="custom_check cus_ty1">
 											<input type="radio" id="girl" name="men" class="sp" />
 											<label for="girl">여</label>
 										</div>
-										
-
-										<!-- <span class="ipt_ch">
-											
-										</span>
-										
-										<span class="ipt_ch">
-											<input type="checkbox" id="girl" name="girl" class="sp" />
-										</span>
-										<label for="girl">여</label> -->
 									</td>
 								</tr>
 							</tbody>

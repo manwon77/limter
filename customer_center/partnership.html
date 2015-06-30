@@ -369,15 +369,11 @@
 													<th>파일첨부</th>
 													<td>
 														<!-- input file -->
-														<div class="fileWrap inBlock">
-															<span class="ipt">
-																<input type="text" id="fileName" class="sp" style="width:174px" />
-															</span>
-															<div class="intFile">
-																<input type="button" class="file_btn" />
-																<input type="file" class="file_hide" onchange="document.getElementById('fileName').value=this.value" />
-															</div>
-														</div>
+														<span class="ipt">
+															<input type="text" id="imgFileName" name="imgFileName" class="sp" style="width:260px" />
+														</span>
+														<input type="file" id="imgFile" name="imgFile" style="position:absolute; width: 96px; height: 32px; filter:alpha(opacity=0); opacity:0; -moz-opacity:0; cursor:pointer;" />
+														<a href="#none"><img src="../images/common/btn_modify1.gif" alt="변경하기" /></a>
 														<!-- //input file -->
 														<span class="txt">총 2MB미만의 Jpg, gif, png 파일만 업로드 가능</span>
 													</td>
@@ -410,7 +406,7 @@
 																<span class="bl"></span>
 																<span class="br"></span>
 																<h3 class="tit">
-																	<a href="#none">010<img src="../images/common/bg_arrow_ty5.gif" alt="열림"></a>
+																	<a href="#none">010<img src="../images/common/bg_arrow_ty5_off.gif" alt="열림"></a>
 																</h3>
 																<div class="set_list" style="display:none">
 																	<ul>

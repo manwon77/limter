@@ -9,7 +9,7 @@ define(['jquery','easing'],function($,easing){
 				$(".pro_tab > ul > li").removeClass("active");
 
 				$(this).addClass("active");
-				$(".tab_cnt").hide()
+				$(".tab_cnt").hide();
 				var activeTab = $(this).attr("rel");
 				$("#" + activeTab).show()
 			}),	
@@ -18,7 +18,7 @@ define(['jquery','easing'],function($,easing){
 				$(".pop_tab > ul > li").removeClass("active");
 
 				$(this).addClass("active");
-				$(".tab_cnt").hide()
+				$(".tab_cnt").hide();
 				var activeTab = $(this).attr("rel");
 				$("#" + activeTab).show()
 			})	

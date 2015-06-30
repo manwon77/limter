@@ -33,17 +33,16 @@ define(['jquery','easing','scrollBar'],function($){
 			// 스크롤
 			$(".scrBar").mCustomScrollbar();
 
-			// form radio
-			// this.btn.off( "click", $.proxy( this.intRadio, this ) ).on( "click", $.proxy( this.intRadio, this ) );
-			
 			// form check
 			// this.btn.off( "click", $.proxy( this.intCheck, this ) ).on( "click", $.proxy( this.intCheck, this ) );
 
 			// 여닫
 			this.orderClose = $('.order_close > a');
 			this.orderClose.off( "click", $.proxy( this.martClose, this ) ).on( "click", $.proxy( this.martClose, this ) );
+			
+			// 아코디언 메뉴
+			
 		
-
 		}
 
 		// 장바구니 담기 버튼 체인지
@@ -73,14 +72,6 @@ define(['jquery','easing','scrollBar'],function($){
 			}
 		}
 
-		/*
-		// form radio
-		, intRadio : function( e ){
-			$('input[name="ra1"]').each(funtion(){
-				this.checked = true;
-			});
-		}
-		*/
 		// form check
 		, intCheck : function( e ){
 			
@@ -93,22 +84,26 @@ define(['jquery','easing','scrollBar'],function($){
 		}
 		// cart view 닫기
 		, martClose : function(e){
-			this.btn = $('.order_table').find('.order_close');
-			var tar = $('.order_table').find('.order_cnt');
 
-			if (tar.attr('class').match(/active/) != "active"){
-				tar.addClass('active');
+			this.btn = $('.order_table').find('.order_close');
+			this.tar = $('.order_table').find('.order_cnt');
+
+			if ( this.tar.attr('class').match(/active/) != "active"){
+				this.tar.addClass('active');
 				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_on.gif","_off.gif"));
-				tar.slideUp();
+				this.tar.slideUp();
 				this.btn.find(">a>span").text("열기");
 			}else{
-				tar.removeClass('active')
+				this.tar.removeClass('active')
 				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_off.gif","_on.gif"));
-				tar.slideDown();
+				this.tar.slideDown();
 				this.btn.find(">a>span").text("닫기");
 			}
 
 		}
+		
+		// 아코디언메뉴
+		
 
 	}
 
