@@ -4,11 +4,12 @@ requirejs.config({
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
-        'pie'    : 'lib/PIE',
         'calendar' : 'lib/zabuto_calendar',
         'bxSlider' : 'lib/jquery.bxslider.min',
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
+		'isotope' : 'ui/isotope',
+        'viewPort' : 'ui/viewPort',
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
@@ -20,7 +21,7 @@ requirejs.config({
 		'selectUl' : 'ui/selectUl',
 		'resolution' : 'ui/resolution',
 		'etc' : 'ui/etc',
-		'slide' : 'ui/slide',
+		'slide' : 'ui/slide'
 	
 
     },
@@ -32,9 +33,13 @@ requirejs.config({
             deps : ["jquery"],
              exports: 'easing'
         }
-        , 'pie' : {
+         , 'viewPort' : {
+            deps : ["jquery", "isotope"],
+            exports: 'viewPort'
+        }
+		 , 'isotope' : {
             deps : ["jquery"],
-            exports: 'pie'
+            exports: 'isotope'
         }
         , 'shopping' : {
             deps : ["jquery"],
@@ -99,7 +104,7 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider','scrollBar'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider, scrollBar){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider','scrollBar','isotope','viewPort'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider, scrollBar, isotope, viewPort){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -111,6 +116,7 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     resolution.init();
 	etc.init();
 	slide.init();
+	viewPort.init();
     myPage.init();
 
 })

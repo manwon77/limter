@@ -9,7 +9,6 @@ requirejs.config({
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
 		'isotope' : 'ui/isotope',
-        'viewPort' : 'ui/viewPort',
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
@@ -21,6 +20,7 @@ requirejs.config({
 		'selectUl' : 'ui/selectUl',
 		'resolution' : 'ui/resolution',
 		'etc' : 'ui/etc',
+		'layout' : 'ui/layout',
 		'slide' : 'ui/slide'
 	
 
@@ -32,10 +32,6 @@ requirejs.config({
         , 'easing' : {
             deps : ["jquery"],
              exports: 'easing'
-        }
-         , 'viewPort' : {
-            deps : ["jquery", "isotope"],
-            exports: 'viewPort'
         }
 		 , 'isotope' : {
             deps : ["jquery"],
@@ -93,6 +89,10 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'slide'
         }
+		, 'layout' : {
+            deps : ["jquery"],
+            exports : 'layout'
+        }
 		, 'scrollBar' : {
             deps : ["jquery"],
             exports : 'scrollBar'
@@ -104,7 +104,7 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider','scrollBar','isotope','viewPort'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider, scrollBar, isotope, viewPort){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider','scrollBar','isotope','layout'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider, scrollBar, isotope, layout){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -116,7 +116,7 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     resolution.init();
 	etc.init();
 	slide.init();
-	viewPort.init();
+	layout.init();
     myPage.init();
 
 })

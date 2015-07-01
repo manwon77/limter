@@ -36,13 +36,16 @@ define(['jquery','easing','scrollBar'],function($){
 			// form check
 			// this.btn.off( "click", $.proxy( this.intCheck, this ) ).on( "click", $.proxy( this.intCheck, this ) );
 
-			// 여닫
-			this.orderClose = $('.order_close > a');
-			this.orderClose.off( "click", $.proxy( this.martClose, this ) ).on( "click", $.proxy( this.martClose, this ) );
-			
-			// 아코디언 메뉴
-			
-		
+			// 주문내역 팝업
+			this.orderClose = $(".order_close");
+			this.orderTar = $(".order_cnt");
+			this.orderClose.on("click", $.proxy( this.martClose, this ) );
+
+			for (var i = 0; i < this.orderClose.length; i++ ){
+				this.orderClose.eq(i).data("index", i);
+				this.orderTar.eq(i).data("index", i);
+			}
+
 		}
 
 		// 장바구니 담기 버튼 체인지
@@ -82,28 +85,31 @@ define(['jquery','easing','scrollBar'],function($){
 			});
 			
 		}
-		// cart view 닫기
+
+		// 주문내역 팝업
 		, martClose : function(e){
 
-			this.btn = $('.order_table').find('.order_close');
-			this.tar = $('.order_table').find('.order_cnt');
+			var idx = $(e.currentTarget).data("index")
+				, Layer = this.orderTar.eq(idx)
+				, isopen = Layer.is(":visible")? true : false;
 
-			if ( this.tar.attr('class').match(/active/) != "active"){
-				this.tar.addClass('active');
-				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_on.gif","_off.gif"));
-				this.tar.slideUp();
-				this.btn.find(">a>span").text("열기");
+			if (!isopen){
+				this.orderTar.removeClass('active');
+				this.orderTar.slideUp();
+				this.orderClose.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_on.gif","_off.gif"));
+				this.orderClose.find(">a>span").text("닫기");
+				Layer.addClass('active');
+				Layer.slideDown();
+				Layer.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_off.gif","_on.gif"));
+				Layer.find(">a>span").text("열기");
 			}else{
-				this.tar.removeClass('active')
-				this.btn.find('a img').attr('src', this.btn.find('a img').attr("src").replace("_off.gif","_on.gif"));
-				this.tar.slideDown();
-				this.btn.find(">a>span").text("닫기");
+				this.orderTar.removeClass('active')
+				this.orderTar.slideUp();
+				this.orderClose.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_off.gif","_on.gif"));
+				this.orderClose.find(">a>span").text("열기");
 			}
 
 		}
-		
-		// 아코디언메뉴
-		
 
 	}
 

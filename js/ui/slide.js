@@ -40,16 +40,24 @@ define(['jquery','easing','bxSlider'],function($){
 			this.ball = this.swWrap.find("> a");
 			this.ball.on("click", $.proxy( this.ballOn, this ) );
 
-			// accor
-			this.btn = $(".faq > ul > li.que");
-			this.tar = $(".faq > ul > li.faq_q");
-			this.btn.on("click", $.proxy( this.accor, this ) );
-
+			// accordion
+			this.btn = $(".accBtn");
+			this.tar = $(".accCnt");
+			this.btn.on("click", $.proxy( this.accordion, this ) );
 			for (var i = 0; i < this.btn.length; i++ ){
 				this.btn.eq(i).data("index", i);
 				this.tar.eq(i).data("index", i);
 			}
 
+			// accordion - img
+			this.accBtn = $(".frmBtn");
+			this.accTar = $(".frmCnt");
+			this.accBtn.on("click", $.proxy( this.accImgOn, this ) );
+			for (var i = 0; i < this.accBtn.length; i++ ){
+				this.accBtn.eq(i).data("index", i);
+				this.accTar.eq(i).data("index", i);
+			}
+			
 		}
 
 		// ball
@@ -61,7 +69,7 @@ define(['jquery','easing','bxSlider'],function($){
 					{"left" : 5}
 					, 500
 					, "easeOutCubic"
-					
+
 				)
 			}else{
 				this.swWrap.addClass("active");
@@ -75,21 +83,44 @@ define(['jquery','easing','bxSlider'],function($){
 			}
 		}
 
-		// accodion
-		, accor : function( e ){
-
-			var index = $(e.currentTarget).data("index");
-
-			if ( this.btn.hasClass("active") ){
-				this.btn.eq(index).removeClass("active");
-				this.tar.hide();
+		// accordion
+		, accordion : function( e ){
+			var idx = $(e.currentTarget).data("index")
+				, Layer = this.tar.eq(idx)
+				, isopen = Layer.is(":visible")? true : false;
+				
+			if(!isopen){
+				this.tar.removeClass("active");
+				this.tar.slideUp();
+				Layer.addClass("active");
+				Layer.slideDown();
 			}else{
-				this.btn.eq(index).addClass("active");
-				this.tar.show();
+				this.tar.removeClass("active");
+				this.tar.slideUp();
 			}
 
 		}
-
+		, accImgOn : function(e){
+			var idx = $(e.currentTarget).data("index")
+				, Layer = this.accTar.eq(idx)
+				//, button = this.accBtn
+				, isopen = Layer.is(":visible")? true : false;
+				
+			if(!isopen){
+				this.accTar.removeClass("active");
+				this.accTar.slideUp();
+				//this.accBtn.find('>img').attr('src', this.accBtn.find('>img').attr("src").replace("_on.gif","_off.gif"));
+				Layer.addClass("active");
+				Layer.slideDown();
+				//button.find('>img').attr('src', this.accBtn.find('>img').attr("src").replace("_off.gif","_on.gif"));
+			}else{
+				this.accTar.removeClass("active");
+				this.accTar.slideUp();
+				//this.accBtn.find('>img').attr('src', this.accBtn.find('>img').attr("src").replace("_on.gif","_off.gif"));
+			}
+		}
+		
 	}
 	return slide;
 })
+

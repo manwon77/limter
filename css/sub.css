@@ -757,6 +757,7 @@ padding-top:90px;}
 .popForm .join > ul > li:first-child{margin-top:0;}
 .popForm .join .join_btns{position:absolute;right:20px;top:15px;}
 .popForm .join .join_list{margin-top:14px;font-size:11px;}
+.popForm.popForm_ty1 th, .popForm.popForm_ty1 td{background-color:#fafafa;}
 
 .pop_help_detail{background:url(../images/common/ico_q2.png) no-repeat 16px 0;padding:0 0 0 50px;margin-top:17px;}
 .pop_help_detail .red{color:#ff6a71;}
@@ -1008,8 +1009,8 @@ padding-top:90px;}
 .faq > ul > li > span.img{width:66px;text-align:center;float:left;padding-top:20px;}
 .faq > ul > li > span.txt{color:#393b44;font-size:15px;float:left;width:884px;}
 .faq > ul > li > span.txt > a{padding:15px 0 14px;display:block;}
-.faq > ul > li.que + .faq_q{display:none;}
-.faq > ul > li.que.active + .faq_q {display:block;}
+.faq > ul > li.accBtn + .accCnt{display:none;}
+.faq > ul > li.accBtn.active + .accCnt {display:block;}
 .faq > ul > li.faq_q > div{display:block;clear:both;}
 .faq > ul > li.faq_q > div > .imgA{width:66px;float:left;text-align:center;}
 .faq > ul > li.faq_q > div > .txt_detail{float:left;width:884px;}
@@ -1101,9 +1102,13 @@ padding-top:90px;}
 .join_clause .clau > div > span.tr{right:-1px;top:-1px;background:url(../images/common/bg_bx_tr.gif) no-repeat;}
 .join_clause .clau > div > span.bl{left:-1px;bottom:-1px;background:url(../images/common/bg_bx_bl.gif) no-repeat;}
 .join_clause .clau > div > span.br{right:-1px;bottom:-1px;background:url(../images/common/bg_bx_br.gif) no-repeat;}
-.join_clause .clau > div > div{height:153px;overflow:hidden;overflow-y:auto;padding:5px;}
+.join_clause .clau > div > div{height:153px;overflow:hidden;padding:5px 3px 0 5px;margin-bottom:20px;}
 .join_clause .clau > p{text-align:right;padding:10px 10px 0 0;color:#808080;font-size:12px;}
 .join_clause .clau.clau_dot {margin-bottom:40px;padding-bottom:40px;background:url(../images/common/bg_dot_ty1.gif) repeat-x 0 bottom;}
+
+.join_clause .clau div.custom_check.cus_ty2{border:0;margin-top:7px;display:inline-block;float:right;white-space:nowrap;}
+.join_clause .clau div.custom_check.cus_ty2 label {position:relative;}
+.join_clause .clau div.custom_check.cus_ty2 input {position:absolute;left:2px;top:2px;}
 
 /* 회원가입 step2 */
 .tbForm .profile_img{text-align:center;width:137px;}
