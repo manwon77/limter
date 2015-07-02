@@ -5,11 +5,9 @@ requirejs.config({
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
         'calendar' : 'lib/zabuto_calendar',
-        'bxSlider' : 'lib/jquery.bxslider.min',
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
 		'isotope' : 'ui/isotope',
-        'viewPort' : 'ui/viewPort',
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
@@ -19,8 +17,8 @@ requirejs.config({
 		'myPage' : 'ui/mypage',
 		'sns' : 'ui/sns',
 		'selectUl' : 'ui/selectUl',
-		'resolution' : 'ui/resolution',
 		'etc' : 'ui/etc',
+		'layout' : 'ui/layout',
 		'slide' : 'ui/slide'
 	
 
@@ -32,10 +30,6 @@ requirejs.config({
         , 'easing' : {
             deps : ["jquery"],
              exports: 'easing'
-        }
-         , 'viewPort' : {
-            deps : ["jquery", "isotope"],
-            exports: 'viewPort'
         }
 		 , 'isotope' : {
             deps : ["jquery"],
@@ -77,21 +71,17 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'selectUl'
         }
-		, 'resolution' : {
-            deps : ["jquery"],
-            exports : 'resolution'
-        }
 		, 'etc' : {
             deps : ["jquery"],
             exports : 'etc'
         }
-		, 'bxSlider' : {
-            deps : ["jquery"],
-            exports : 'bxSlider'
-        }
 		, 'slide' : {
             deps : ["jquery"],
             exports : 'slide'
+        }
+		, 'layout' : {
+            deps : ["jquery"],
+            exports : 'layout'
         }
 		, 'scrollBar' : {
             deps : ["jquery"],
@@ -104,7 +94,7 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','resolution','etc','slide','bxSlider','scrollBar','isotope','viewPort'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, resolution, etc, slide, bxSlider, scrollBar, isotope, viewPort){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','etc','slide','scrollBar','isotope','layout'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, etc, slide, scrollBar, isotope, layout){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -113,10 +103,9 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     tab.init();
     sns.init();
     selectUl.init();
-    resolution.init();
 	etc.init();
 	slide.init();
-	viewPort.init();
+	layout.init();
     myPage.init();
 
 })

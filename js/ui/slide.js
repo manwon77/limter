@@ -1,4 +1,4 @@
-define(['jquery','easing','bxSlider'],function($){
+define(['jquery','easing'],function($){
 	var slide = {
 		init : function(){
 			
@@ -14,14 +14,14 @@ define(['jquery','easing','bxSlider'],function($){
 			cntWrap.data("current", 0)
 			
 			next.on('click',function( e ){
-				var tar = $(e.currentTarget).parent().find(".bx-viewport > ul");
+				var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
 				var current = tar.data("current")
 				if (current < maxSize / thumbListSize -2 ) current++; // 수정필요
 				tar.data("current", current);
 				listMove( tar );
 			});
 			prev.on('click',function( e ){
-				var tar = $(e.currentTarget).parent().find(".bx-viewport > ul");
+				var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
 				var current = tar.data("current");
 				if (current > 0) current--;
 				tar.data("current", current);

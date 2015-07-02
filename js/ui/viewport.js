@@ -16,15 +16,6 @@ define(['jquery', "ui/isotope.pkgd"],function($, isotope){
 			
             this.paint();
             $(window).on("resize", $.proxy( this.paint, this ));
-
-			/*
-			// sub 정렬
-			this.subObj = $(".grid");
-			this.sThumbList = $(".grid .thumbList > ul");
-
-			this.subPaint();
-			$(window).on("resize", $.proxy( this.subPaint, this ));
-			*/
 			
         }
         , paint : function(){
@@ -39,21 +30,7 @@ define(['jquery', "ui/isotope.pkgd"],function($, isotope){
             this.thumbList.css({ "width" : wid, "overflow": "hidden" ,"height" : "276px", "padding-top" : "94px"});
             this.obj.css({"width":wid, "margin": "0 auto"});
         }
-		/*
-        , subPaint : function(){
-            var eleNumber =  parseInt(this.winSize / this.boxSize);
-            if( eleNumber < 4 ){
-                eleNumber = 4;
-            }else if( eleNumber > 6 )
-            {
-                eleNumber = 6;
-            }
-            var wid = this.boxSize * eleNumber;
-            this.sThumbList.css({ "width" : wid, "height" : "276px"});
-            this.subObj.css({"width":wid, "margin": "0 auto"});
-        }
-        */
-
+		
     }
 
     return viewPort;

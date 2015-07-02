@@ -9,8 +9,8 @@ define(['jquery', "ui/isotope.pkgd"],function($, isotope){
 			columnWidth:'220'
 		  });
 
-
 		}
 	}
 	return layout;
 });
+
