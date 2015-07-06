@@ -134,11 +134,14 @@ input{font-family:"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-
 .box_ty4_mid{background:url(../images/common/bg_box_ty4_mid.png) repeat-y 0 0; padding:0px 4px 0px 2px;}
 
 /* mask type */
-.mask_ty1{position: fixed;left: 0;top: 78px; width: 100%; height: 100%; z-index: 9; background: url(../images/common/bg_mask.png);}
+.mask_ty1{position:fixed;left: 0;top: 0; width:100%; height:100%; z-index:10; background: url(../images/common/bg_mask.png);}
 .mask_ty2{position: fixed;left: 0;top: 0; width: 100%; height: 100%; z-index: 999; background: url(../images/common/bg_mask.png);}
 
+.topContents{position:relative;z-index:100;}
+/*
 .topContents + #wrap #header .gnbWrap .mask_ty1{top:258px;}
 .topContents.active + #wrap #header .gnbWrap .mask_ty1{top:78px;}
+*/
 
 /* grid */
 .grid{margin-left:121px;}

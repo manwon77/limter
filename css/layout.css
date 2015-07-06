@@ -21,6 +21,8 @@
 #header h1{float:left; padding:24px 0 0 29px;}
 
 /* TopUtil */
+.topUtilWrap{height:77px;position:relative;z-index:200;width:100%;background:#fff;}
+
 .utilMenu {float:right; color:#d7dade; padding:22px 56px 0 200px;overflow:hidden;}
 .utilMenu li{float:left; padding:0 30px; height:34px;}
 .utilMenu > li > a{display:block; line-height:34px; font-size:18px; font-family:Myriad Pro; font-weight:200; color:#757575;}
@@ -30,12 +32,12 @@
 .utilMenu .snsWrap a:first-child{margin-left:0;}
 
 /* gnb */
-div.gnbWrap{clear:both; position:relative; padding:16px 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
+div.gnbWrap{clear:both; position:relative; padding:0 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
 div.gnbWrap .menu{clear:both;}
 
 /* allmenu */
 div.gnbWrap .allmenu{background:url(../images/common/layout/btn_amopen.png) no-repeat 0 0; width:88px; height:87px; display:inline-block;
-	position:absolute; left:0; top:16px; z-index:20;}
+	position:absolute; left:0; top:0; z-index:20;}
 div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClose.png)}
 
 .menu{clear:both; border-top:1px solid #7f7f7f; border-bottom:1px solid #7f7f7f; position:relative; z-index:9;}
@@ -49,7 +51,8 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .menu > li.on > a span{display:inline-block; padding-bottom:3px; border-bottom:2px solid #ee2e24;}
 
 /* 전체메뉴 */
-.AllmenuLayer{position:absolute; left:0; top:103px; background-color:#fff; height:600px; width:1184px; z-index:9999; background:url(../images/common/layout/bg_AllmenuLayer.png) repeat-x 0 100%;}
+.allmenuWrap{position:relative;left:-88px;top:-87px;}
+.AllmenuLayer{position:absolute; left:0; top:87px; background-color:#fff; height:600px; width:1184px; z-index:9999; background:url(../images/common/layout/bg_AllmenuLayer.png) repeat-x 0 100%;}
 .AllmenuLayer .arr{position:absolute; left:40px; top:-4px; background:url(../images/common/bg_arrow_ty1.png) no-repeat 0 0; width:9px; height:5px; z-index:30; display:inline-block;}
 .menuAside{float:left; height:588px; width:88px; background-color:#ee2e24; border-top:1px solid #000;}
 .menuAside li:first-child{background:url(../images/common/bg_allmenuBar.png) no-repeat 50% 100%; height:85px;}
@@ -140,7 +143,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 /* section */
 .section{color:#a7a7a7;}
 
-.asideFixBar{position:fixed; right:0; top:0; height:100%;  z-index:61; width:56px;}
+.asideFixBar{position:fixed; right:0; top:0; height:100%;  z-index:61; width:56px;z-index:200;}
 .asideMenu{position:absolute; right:0; top:0; height:100%; background-color:#f73f48; padding:18px 0 0 0; width:56px; z-index:10;}
 .asideMenu li a{display:block;}
 .asideMenu .menu1 a{background:url(../images/common/layout/bg_side01.png) no-repeat 0 0; width:56px; height:59px;}
@@ -150,7 +153,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .asideMenu .menu3 a{background:url(../images/common/layout/bg_side03.png) no-repeat 0 0; width:56px; height:59px;}
 .asideMenu .menu3 a.on{background-image:url(../images/common/layout/bg_side03_on.png);}
 
-.asdLayer{width:290px; position:absolute; left:-290px; top:0; bottom:0; height:100%; background-color:#fff; border-left:1px solid #dddddd;z-index:5;}
+.asdLayer{width:290px; position:absolute; left:-290px; top:0; bottom:0; height:100%; background-color:#fff; border-left:1px solid #dddddd;}
 .asdLayer > div{ margin:78px 0 0 12px;}
 
 /* aside close */

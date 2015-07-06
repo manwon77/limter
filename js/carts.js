@@ -5,7 +5,8 @@ requirejs.config({
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
         'calendar' : 'lib/zabuto_calendar',
-        
+        'd3' : 'lib/d3.min',
+        'radialProgress' : 'lib/radialProgress',
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
 		'isotope' : 'ui/isotope',
@@ -20,7 +21,7 @@ requirejs.config({
 		'selectUl' : 'ui/selectUl',
 		'etc' : 'ui/etc',
 		'layout' : 'ui/layout',
-		
+		'progress' : 'ui/progress',
 		'slide' : 'ui/slide'
 	
 
@@ -85,6 +86,18 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'layout'
         }
+		, 'progress' : {
+            deps : ["jquery"],
+            exports : 'progress'
+        }
+		, 'd3' : {
+            deps : ["jquery"],
+            exports : 'd3'
+        }
+		, 'radialProgress' : {
+            deps : ["jquery"],
+            exports : 'radialProgress'
+        }
 		, 'scrollBar' : {
             deps : ["jquery"],
             exports : 'scrollBar'
@@ -96,7 +109,7 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','etc','slide','scrollBar','isotope','layout'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, etc, slide, scrollBar, isotope, layout){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','etc','slide','scrollBar','isotope','layout','progress','d3','radialProgress'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, etc, slide, scrollBar, isotope, layout, progress, d3, radialProgress){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -108,6 +121,7 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
 	etc.init();
 	slide.init();
 	layout.init();
+	progress.init();
     myPage.init();
 
 })

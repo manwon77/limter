@@ -5,6 +5,7 @@ define(['jquery'],function($){
 			var twoTabs = $(".dep3_Layer");
 			var allmenu = $(".allmenu");
 			
+			this.homeWrap = $(".home_wrap");
 			this.mask = $(".mask_ty1");
 			this.menuAside = $(".menuAside > ul > li > a");
 			this.menuLayars = $(".menuLayerWrap > div");	
@@ -23,11 +24,13 @@ define(['jquery'],function($){
 		, showAllmenu : function( e ){
 			var allmenuLayer = $("#AllmenuLayer");
 			if( $(e.currentTarget).attr("class").match(/open/) != "open" ){
-				$(e.currentTarget).addClass("open");				
+				$(e.currentTarget).addClass("open");	
+				this.homeWrap.css({ "display":"none" });
 				this.mask.show();
 				allmenuLayer.show();
 			}else{
-				$(e.currentTarget).removeClass("open");		
+				$(e.currentTarget).removeClass("open");	
+				this.homeWrap.show();
 				this.mask.hide();	
 				allmenuLayer.hide();
 			}			
