@@ -5,10 +5,8 @@ requirejs.config({
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
         'calendar' : 'lib/zabuto_calendar',
-        
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
-		'isotope' : 'ui/isotope',
         'shopping' : 'ui/shopping',
         'gnb' : 'ui/gnb',
         'rolling' : 'ui/rolling',
@@ -17,12 +15,7 @@ requirejs.config({
         'tab' : 'ui/tab',
 		'myPage' : 'ui/mypage',
 		'sns' : 'ui/sns',
-		'selectUl' : 'ui/selectUl',
-		'etc' : 'ui/etc',
-		'layout' : 'ui/layout',
-		
 		'slide' : 'ui/slide'
-	
 
     },
     shim: {
@@ -32,10 +25,6 @@ requirejs.config({
         , 'easing' : {
             deps : ["jquery"],
              exports: 'easing'
-        }
-		 , 'isotope' : {
-            deps : ["jquery"],
-            exports: 'isotope'
         }
         , 'shopping' : {
             deps : ["jquery"],
@@ -69,34 +58,21 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'sns'
         }
-		, 'selectUl' : {
-            deps : ["jquery"],
-            exports : 'selectUl'
-        }
-		, 'etc' : {
-            deps : ["jquery"],
-            exports : 'etc'
-        }
 		, 'slide' : {
             deps : ["jquery"],
             exports : 'slide'
-        }
-		, 'layout' : {
-            deps : ["jquery"],
-            exports : 'layout'
         }
 		, 'scrollBar' : {
             deps : ["jquery"],
             exports : 'scrollBar'
         }
 
-
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','selectUl','etc','slide','scrollBar','isotope','layout'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, selectUl, etc, slide, scrollBar, isotope, layout){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','slide','scrollBar'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, slide, scrollBar){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -104,10 +80,7 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     sideBar.init();
     tab.init();
     sns.init();
-    selectUl.init();
-	etc.init();
 	slide.init();
-	layout.init();
     myPage.init();
 
 })

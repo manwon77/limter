@@ -50,7 +50,7 @@ input[type="text"],input[type="password"],textarea { margin:0; font-size:12px; c
 input[type="text"]:disabled, textarea:disabled { background-color:#e2e2e2; color:#999; }
 input[type="radio"]:disabled { cursor:default;}
 input[type="radio"] { width:13px; height:13px; padding:0; margin:0; vertical-align:middle; margin:0 0 1px; cursor:default; }
-input[type="checkbox"] { width:13px; height:13px; padding:0; margin:0; vertical-align:middle; margin:-1px 0 1px; }
+input[type="checkbox"] { width:13px; height:13px; padding:0; margin:0; vertical-align:middle; margin:0 0 1px; }
 input[type=text]::-ms-clear {display: none;}
 .input_img{margin:0;padding:0;vertical-align:middle;}
 

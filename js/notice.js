@@ -1,5 +1,5 @@
 requirejs.config({    
-    baseUrl: '../../js',    
+    baseUrl: '../js',    
 
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
@@ -11,10 +11,11 @@ requirejs.config({
         'rolling' : 'ui/rolling',
         'mainTop' : 'ui/mainTop',
         'sideBar' : 'ui/sideBar',
-        'selectUl' : 'ui/selectUl',
 		'sns' : 'ui/sns',
-		'etc' : 'ui/etc',
-		'slide' : 'ui/slide'
+		'selectUl' : 'ui/selectUl',
+		'isotope' : 'ui/isotope',
+		'noticeLayout' : 'ui/noticeLayout',
+		'slide' : 'ui/slide',
 
     },
     shim: {
@@ -24,10 +25,6 @@ requirejs.config({
         , 'easing' : {
             deps : ["jquery"],
              exports: 'easing'
-        }
-		 , 'isotope' : {
-            deps : ["jquery"],
-            exports: 'isotope'
         }
         , 'shopping' : {
             deps : ["jquery"],
@@ -49,14 +46,6 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'sns'
         }
-		, 'selectUl' : {
-            deps : ["jquery"],
-            exports : 'selectUl'
-        }
-		, 'etc' : {
-            deps : ["jquery"],
-            exports : 'etc'
-        }
 		, 'slide' : {
             deps : ["jquery"],
             exports : 'slide'
@@ -65,14 +54,25 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'scrollBar'
         }
-
+		, 'selectUl' : {
+            deps : ["jquery"],
+            exports : 'selectUl'
+        }
+		, 'isotope' : {
+            deps : ["jquery"],
+            exports : 'isotope'
+        }
+		, 'noticeLayout' : {
+            deps : ["jquery"],
+            exports : 'noticeLayout'
+        }
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar','sns','selectUl','etc','slide','scrollBar',],function($,shopping, gnb, rolling, mainTop, sideBar, sns, selectUl, etc, slide, scrollBar){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'sns','slide','scrollBar','selectUl','isotope','noticeLayout'],function($,shopping, gnb, rolling, mainTop, sideBar, sns, slide, scrollBar, selectUl, isotope, noticeLayout){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -80,7 +80,7 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar','sns','select
     sideBar.init();
     sns.init();
     selectUl.init();
-	etc.init();
 	slide.init();
-
+	noticeLayout.init();
+	
 })

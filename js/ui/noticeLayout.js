@@ -1,5 +1,5 @@
 define(['jquery', "ui/isotope.pkgd"],function($, isotope){
-    var layout = {
+    var noticeLayout = {
         init : function(){
 
 		  var $notice = $('.notice_cnt > div > ul');
@@ -11,6 +11,6 @@ define(['jquery', "ui/isotope.pkgd"],function($, isotope){
 
 		}
 	}
-	return layout;
+	return noticeLayout;
 });
 

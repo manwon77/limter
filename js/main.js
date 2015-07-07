@@ -22,6 +22,7 @@ requirejs.config({
             deps : ["jquery"],
              exports: 'easing'
         }
+
         , 'isotope' : {
             deps : ["jquery"],
             exports: 'isotope'

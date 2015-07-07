@@ -1,4 +1,4 @@
-define(['jquery','easing'],function($,easing){
+define(['jquery','easing','scrollBar'],function($,easing){
 	var sideBar = {
 		init : function(){
 			var btn = $(".asideBtn");
@@ -12,6 +12,7 @@ define(['jquery','easing'],function($,easing){
 
 			btn.on("click", $.proxy( this.slideLayer, this ) );
 			this.closeBtn.on("click", $.proxy( this.offSlide, this ) );
+
 		}
 		, slideLayer : function( e ){
 			var tar = $(e.currentTarget.hash);

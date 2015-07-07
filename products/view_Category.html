@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>MartMore</title>
 	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="../css/main.css" />	
@@ -492,10 +493,10 @@
 							<caption>가격비교 요약</caption>
 							<colgroup>
 								<col width="20%" />
-								<col width="30%" />
+								<col width="*" />
 								<col width="15%" />
 								<col width="10%" />
-								<col width="20%" />
+								<col width="15%" />
 							</colgroup>
 							<tbody>
 								<tr>
@@ -504,7 +505,6 @@
 									<td>2,750원 <span class="red">(+2,700원)</span></td>
 									<td class="tc">50%</td>
 									<td class="tc">
-										<a href="#none"><img src="../images/common/btn_de.png" alt="상세보기" /></a>
 										<a href="#none"><img src="../images/common/btn_go.png" alt="바로보기" /></a>
 									</td>
 								</tr>
@@ -514,7 +514,6 @@
 									<td>2,750원</td>
 									<td class="tc">50%</td>
 									<td class="tc">
-										<a href="#none"><img src="../images/common/btn_de.png" alt="상세보기" /></a>
 										<a href="#none"><img src="../images/common/btn_go.png" alt="바로보기" /></a>
 									</td>
 								</tr>
@@ -524,7 +523,6 @@
 									<td>2,750원</td>
 									<td class="tc">50%</td>
 									<td class="tc">
-										<a href="#none"><img src="../images/common/btn_de.png" alt="상세보기" /></a>
 										<a href="#none"><img src="../images/common/btn_go.png" alt="바로보기" /></a>
 									</td>
 								</tr>
@@ -1163,15 +1161,52 @@
 					<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
 					<span class="profile">
 						<span class="imgMask"></span>
-						<img src="../images/common/temp/@tamp_profile_108.png" width="108" alt="" />
+						<img src="../images/common/temp/@tamp_profile_90.png" width="90" alt="" />
 					</span>
 					<span class="user">
-						<strong>이현철</strong>님의 장바구니 입니다.
+						<strong>이현철</strong><br/>님의 장바구니 입니다.
 					</span>
 					<a href="#none" class="help"><img src="../images/common/layout/btn_guide.png" alt="" /></a>
 				</div>
 				<div class="cartList scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
 					<ul>
+						<li>
+							<div class="thumInfo">
+								<a href="#none" class="thumImg"><img src="../images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+								<div class="thumOver">
+									<strong class="item">0</strong>
+									<span class="act">
+										<button class="minus"><span class="hidden">빼기</span></button>
+										<button class="plus"><span class="hidden">담기</span></button>
+									</span>
+									<button class="cartDel"><span class="hidden">삭제</span></button>
+								</div>
+							</div>
+							<div class="textInfo">
+								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+								<span class="price" >
+									<strong>6,900원</strong>
+								</span>
+							</div>
+						<li>
+							<div class="thumInfo">
+								<a href="#none" class="thumImg"><img src="../images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+								<div class="thumOver">
+									<strong class="item">0</strong>
+									<span class="act">
+										<button class="minus"><span class="hidden">빼기</span></button>
+										<button class="plus"><span class="hidden">담기</span></button>
+									</span>
+									<button class="cartDel"><span class="hidden">삭제</span></button>
+								</div>
+							</div>
+							<div class="textInfo">
+								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+								<span class="price" >
+									<strong>6,900원</strong>
+								</span>
+							</div>
+						</li>
 						<li>
 							<div class="thumInfo">
 								<a href="#none" class="thumImg"><img src="../images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
@@ -1354,6 +1389,6 @@
 		</div>
 	</div>
 </div>
-<script data-main="../js/mypage" src="../js/lib/require2.1.17.js"></script>
+<script data-main="../js/product" src="../js/lib/require2.1.17.js"></script>
 </body>
 </html>
