@@ -11,6 +11,52 @@ define(['jquery','easing'],function($,easing){
 				this.orderClose.eq(i).data("index", i);
 				this.orderTar.eq(i).data("index", i);
 			}
+
+			// 도넛로딩
+			$('.pie_progress').asPieProgress({
+				namespace: 'pie_progress'
+			});
+
+			// Example with grater loading time - loads longer
+			$('.pie_progress--slow').asPieProgress({
+				namespace: 'pie_progress',
+				goal: 1000,
+				min: 0,
+				max: 1000,
+				speed: 200,
+				easing: 'linear'
+			});
+
+			// Example with grater loading time - loads longer
+			$('.pie_progress--countdown').asPieProgress({
+				namespace: 'pie_progress',
+				easing: 'linear',
+				first: 120,
+				max: 120,
+				goal: 0,
+				speed: 1200, // 120 s * 1000 ms per s / 100
+				numberCallback: function(n){
+					var minutes = Math.floor(this.now/60);
+					var seconds = this.now % 60;
+					if(seconds < 10) {
+						seconds = '0' + seconds;
+					}
+					return minutes + ': ' + seconds;
+				}
+			});
+			/*
+			$('.pie_progress').on('mouseover', function(){
+				$('.pie_progress').asPieProgress('start');
+			});
+			*/
+			/*
+			$('.pie_progress').asPieProgress();
+			*/
+			/*
+			setTimeOut(function(){ 
+				$('.pie_progress').load(
+			} );
+			*/
 		}
 
 		// 주문내역 팝업
@@ -36,15 +82,9 @@ define(['jquery','easing'],function($,easing){
 				this.orderClose.find(">a>span").text("열기");
 			}
 		}
-		/*
-		// form check
-		, intCheck : function( e ){
-			$('.checkImg').on('click',function(){
-				$('.checkImg').attr('src','images/common/bg_check1.gif');
-				$(this).attr('src','images/common/bg_check1.gif');
-			});
-		}
-		*/
+
+		
+		
 		
 	}
 	return order;
