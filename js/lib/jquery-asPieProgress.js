@@ -111,7 +111,7 @@
         speed: 10, // speed of 1/100
         barcolor: '#ff7878',
         barsize: '1',
-        trackcolor: '#f2f2f2',
+        trackcolor: '#dadada',
         fillcolor: 'none',
         easing: 'ease',
         numberCallback: function(n) {
@@ -205,6 +205,7 @@
                 "version": "1.1",
                 "preserveAspectRatio": "xMinYMin meet",
                 "viewBox": "0 0 " + this.width + " " + this.height
+				
             });
 
             this.buildTrack();

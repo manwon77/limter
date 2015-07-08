@@ -1217,9 +1217,16 @@ dl.pop_help_detail dt{font-weight:bold;}
 #popWrap.popWrap_ty3 .pop_container .pl5{padding-left:5px;}
 
 /* 로딩circle */
-
+.row{height:396px;position:relative;}
+.row .sub{width:396px;margin:auto;position:relative;height:396px;}
+.row .cartImg{position:absolute;left:50%;top:50%;margin:-80px 0 0 -104px;}
+.row .cartImg > img {position:relative;z-index:100;}
+.row .cartImg .bg{background:#4e5568;width:180px;height:168px;position:absolute;left:0;top:0;z-index:1;}
+.row .cartImg .bg2{background:#ff7878;width:180px;height:0;position:absolute;left:0;bottom:0;z-index:1;}
+.row .line{background:url(../images/common/bg_line_cart.gif) no-repeat 0 0;display:inline-block;width:1px;height:84px;position:absolute;left:50%;top:43px;z-index:10;}
+.row .title{font-size:24px;color:#bbc1d3;font-family:"NanumGothic";position:absolute;left:50%;top:315px;width:200px;margin-left:-100px;}
 .pie_progress {width:396px;margin:0 auto 0;position:relative;}
 .pie_progress .pie_progress__number{font-size:40px;line-height:40px;color:#fff;text-align:center;background:url(../images/common/bg_cart_sm.gif) no-repeat 0 0;width:105px;height:65px;padding-top:20px;display:inline-block;position:absolute;left:50%;top:-42px;margin-left:-52.5px;}
-.pie_progress__svg ellipse{background:url(../images/common/bg_gr_ty1.png) no-repeat 0 0;}
+.pie_progress__svg{width:396px;height:396px;}
 
 

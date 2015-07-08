@@ -18,21 +18,6 @@ define(['jquery'],function($){
 
 			this.btn.on("click", $.proxy( this.moveRoll, this ) );
 
-			// tabRoll
-			/*
-			var tabRollWrap = $(".pro_tab");
-			var prev = $(".pro_prev");
-			var next = $(".pro_next");
-
-			prev.off( "mouseleave", $.proxy( this.tabRoll,this ) ).on( "mouseleave", $.proxy( this.tabRoll,this ) );
-			next.off( "mouseleave", $.proxy( this.tabRoll,this ) ).on( "mouseleave", $.proxy( this.tabRoll,this ) );
-			*/
-
-			/*
-			plusBtn.off( "click", $.proxy( this.add,this ) ).on( "click", $.proxy( this.add,this ) );
-			minusBtn.off( "click", $.proxy( this.remove,this ) ).on( "click", $.proxy( this.remove,this ) );
-			*/
-		
 		}
 		, moveRoll : function( e ){
 			if( !this.flag ){

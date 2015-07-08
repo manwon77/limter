@@ -6,15 +6,14 @@ requirejs.config({
         'easing' : 'lib/jquery.easing.1.3',
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 
-        'shopping' : 'ui/shopping',
-        'gnb' : 'ui/gnb',
-        'rolling' : 'ui/rolling',
-        'mainTop' : 'ui/mainTop',
-        'sideBar' : 'ui/sideBar',
-        'selectUl' : 'ui/selectUl',
-		'sns' : 'ui/sns',
-		'etc' : 'ui/etc',
-		'slide' : 'ui/slide'
+        'shopping' : 'ui/shopping',		// 상품 업다운, 
+        'gnb' : 'ui/gnb',				// 전체메뉴 
+        'rolling' : 'ui/rolling',		// 전체메뉴 롤링
+        'sideBar' : 'ui/sideBar',		// 사이드바
+        'selectUl' : 'ui/selectUl',		// 상품 선택
+		'sns' : 'ui/sns',				// 상단 아이콘열림(페이스북, 트위터 등)
+		'etc' : 'ui/etc',				//	썸네일 , 장바구니 담기 버튼 체인지, 수량 업다운
+		'slide' : 'ui/slide'			// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
 
     },
     shim: {
@@ -27,7 +26,7 @@ requirejs.config({
         }
 		 , 'isotope' : {
             deps : ["jquery"],
-            exports: 'isotope'
+            exports: 'isotope' 
         }
         , 'shopping' : {
             deps : ["jquery"],
@@ -36,10 +35,6 @@ requirejs.config({
         , 'gnb' : {
             deps : ["jquery"],
             exports: 'gnb'   
-        }
-        , 'mainTop' : {
-            deps : ["jquery"],
-            exports: 'mainTop'  
         }
          , 'sideBar' : {
             deps : ["jquery"],
@@ -72,11 +67,10 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar','sns','selectUl','etc','slide','scrollBar',],function($,shopping, gnb, rolling, mainTop, sideBar, sns, selectUl, etc, slide, scrollBar){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar','sns','selectUl','etc','slide','scrollBar',],function($,shopping, gnb, rolling, sideBar, sns, selectUl, etc, slide, scrollBar){
     shopping.init();
     gnb.init();
     rolling.init();
-    mainTop.init();
     sideBar.init();
     sns.init();
     selectUl.init();

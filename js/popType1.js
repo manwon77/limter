@@ -4,10 +4,10 @@ requirejs.config({
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
-        'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
+        'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',		// 스크롤 플러그인
 
-		'scroll' : 'ui/scroll',
-		'order' : 'ui/order'
+		'scroll' : 'ui/scroll',			// 스크롤	
+		'order' : 'ui/order'			// 주문내역 팝업 , 장바구니 step3 주문완료 
         
     },
     shim: {

@@ -19,7 +19,7 @@ requirejs.config({
 
     },
     shim: {
-        'jquery' : {
+        'jquery' : { 
             exports: '$'
         }
         , 'easing' : {

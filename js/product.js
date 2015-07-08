@@ -4,19 +4,17 @@ requirejs.config({
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
-		'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
+		'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min', // 스크롤 플러그인
         
-		'rolling' : 'ui/rolling',
-		'shopping' : 'ui/shopping',
-        'gnb' : 'ui/gnb',
-		'mainTop' : 'ui/mainTop',
-        'sideBar' : 'ui/sideBar',
-		'sns' : 'ui/sns',
-        'tab' : 'ui/tab',
-		'selectUl' : 'ui/selectUl',
-		'etc' : 'ui/etc',
-		'fixLayer' : 'ui/fixLayer',
-		'slide' : 'ui/slide'
+		'rolling' : 'ui/rolling',			// 전체메뉴 롤링
+		'shopping' : 'ui/shopping',			// 상품 업다운, 
+        'gnb' : 'ui/gnb',					// 전체메뉴 
+        'sideBar' : 'ui/sideBar',			// 사이드바
+		'sns' : 'ui/sns',					// 상단 아이콘열림(페이스북, 트위터 등)
+        'tab' : 'ui/tab',					// 탭
+		'selectUl' : 'ui/selectUl',			// 상품 선택
+		'etc' : 'ui/etc',					//	썸네일 , 장바구니 담기 버튼 체인지, 수량 업다운
+		'slide' : 'ui/slide'				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
 
     },
     shim: {
@@ -36,13 +34,9 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'gnb'   
         }
-        , 'mainTop' : {
-            deps : ["jquery"],
-            exports: 'mainTop'  
-        }
          , 'sideBar' : {
             deps : ["jquery"],
-            exports: 'sideBar'  
+            exports: 'sideBar'   
         }
 		, 'tab' : {
             deps : ["jquery"],
@@ -64,10 +58,6 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'slide'
         }
-		, 'fixLayer' : {
-            deps : ["jquery"],
-            exports : 'fixLayer'
-        }
 		, 'scrollBar' : {
             deps : ["jquery"],
             exports : 'scrollBar'
@@ -78,17 +68,15 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'tab','sns','selectUl','etc','slide','scrollBar','fixLayer'],function($,shopping, gnb, rolling, mainTop, sideBar, tab, sns, selectUl, etc, slide, scrollBar, fixLayer){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','selectUl','etc','slide','scrollBar'],function($,shopping, gnb, rolling, sideBar, tab, sns, selectUl, etc, slide, scrollBar){
     shopping.init();
     gnb.init();
     rolling.init();
-    mainTop.init();
     sideBar.init();
     tab.init();
     sns.init();
     selectUl.init();
 	etc.init();
 	slide.init();
-	fixLayer.init();
-	
+
 })

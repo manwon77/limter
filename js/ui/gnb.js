@@ -66,9 +66,7 @@ define(['jquery'],function($){
 			$(e.currentTarget.hash).show();
 			e.preventDefault();
 		}
-		, loca : function( e ){
-			
-		}
+		
 	}
 
 	return gnb;

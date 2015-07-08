@@ -4,18 +4,17 @@ requirejs.config({
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
-        'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
+        'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',		// 스크롤 플러그인
 
-        'shopping' : 'ui/shopping',
-        'gnb' : 'ui/gnb',
-        'rolling' : 'ui/rolling',
-        'mainTop' : 'ui/mainTop',
-        'sideBar' : 'ui/sideBar',
-		'sns' : 'ui/sns',
-		'selectUl' : 'ui/selectUl',
-		'isotope' : 'ui/isotope',
-		'noticeLayout' : 'ui/noticeLayout',
-		'slide' : 'ui/slide',
+        'shopping' : 'ui/shopping',				// 상품 업다운, 
+        'gnb' : 'ui/gnb',						// 전체메뉴 
+        'rolling' : 'ui/rolling',				// 전체메뉴 롤링
+        'sideBar' : 'ui/sideBar',				// 사이드바
+		'sns' : 'ui/sns',						// 상단 아이콘열림(페이스북, 트위터 등)
+		'selectUl' : 'ui/selectUl',				// 상품 선택
+		'isotope' : 'ui/isotope',				// 마트모아 소식 컨텐츠 정렬
+		'noticeLayout' : 'ui/noticeLayout',		// 마트모아 소식 컨텐츠 정렬
+		'slide' : 'ui/slide',					// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
 
     },
     shim: {
@@ -33,10 +32,6 @@ requirejs.config({
         , 'gnb' : {
             deps : ["jquery"],
             exports: 'gnb'   
-        }
-        , 'mainTop' : {
-            deps : ["jquery"],
-            exports: 'mainTop'  
         }
          , 'sideBar' : {
             deps : ["jquery"],
@@ -57,7 +52,7 @@ requirejs.config({
 		, 'selectUl' : {
             deps : ["jquery"],
             exports : 'selectUl'
-        }
+        } 
 		, 'isotope' : {
             deps : ["jquery"],
             exports : 'isotope'
@@ -72,11 +67,10 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'sns','slide','scrollBar','selectUl','isotope','noticeLayout'],function($,shopping, gnb, rolling, mainTop, sideBar, sns, slide, scrollBar, selectUl, isotope, noticeLayout){
+define(['jquery','shopping','gnb', 'rolling','sideBar', 'sns','slide','scrollBar','selectUl','isotope','noticeLayout'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, selectUl, isotope, noticeLayout){
     shopping.init();
     gnb.init();
     rolling.init();
-    mainTop.init();
     sideBar.init();
     sns.init();
     selectUl.init();

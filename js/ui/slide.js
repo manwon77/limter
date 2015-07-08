@@ -104,20 +104,16 @@ define(['jquery','easing'],function($){
 		, accImgOn : function(e){
 			var idx = $(e.currentTarget).data("index")
 				, Layer = this.accTar.eq(idx)
-				//, button = this.accBtn
 				, isopen = Layer.is(":visible")? true : false;
 				
 			if(!isopen){
 				this.accTar.removeClass("active");
 				this.accTar.slideUp();
-				//this.accBtn.find('>img').attr('src', this.accBtn.find('>img').attr("src").replace("_on.gif","_off.gif"));
 				Layer.addClass("active");
 				Layer.slideDown();
-				//button.find('>img').attr('src', this.accBtn.find('>img').attr("src").replace("_off.gif","_on.gif"));
 			}else{
 				this.accTar.removeClass("active");
 				this.accTar.slideUp();
-				//this.accBtn.find('>img').attr('src', this.accBtn.find('>img').attr("src").replace("_on.gif","_off.gif"));
 			}
 		}
 		

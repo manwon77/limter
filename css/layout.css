@@ -27,7 +27,7 @@
 .utilMenu li{float:left; padding:0 30px; height:34px;}
 .utilMenu > li > a{display:block; line-height:34px; font-size:18px; font-family:Myriad Pro; font-weight:200; color:#757575;}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
-.utilMenu .snsWrap{ position:absolute; left:-170px; z-index:-1; opacity:0; top:0; width:195px; height:34px;}
+.utilMenu .snsWrap{ position:absolute; left:-170px; z-index:-1; top:0; width:195px; height:34px;}
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
 
@@ -118,7 +118,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .rolling{position:absolute; right:0px; bottom:12px; height:319px; width:181px; z-index:10; border-left:1px solid #ececec; overflow:hidden;}
 .rolling .rollCont{position:relative;}
 .rolling .rollCont img{position:absolute; left:0; top:0;}
-.rollNavi{position:absolute; left:45%; top:288px; z-index:50; text-align:center;}
+.rollNavi{position:absolute; left:40%; top:288px; z-index:50; text-align:center;}
 .rolling .rollNavi a{float:left; background:url(../images/common/btn_pageNavi.png) no-repeat 0 0; width:8px; height:8px; margin-left:8px;}
 .rolling .rollNavi a:first-child{margin-left:0;}
 .rolling .rollNavi a.active{background-image:url(../images/common/btn_pageNavi_on.png);}

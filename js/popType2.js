@@ -6,8 +6,8 @@ requirejs.config({
         'easing' : 'lib/jquery.easing.1.3',
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',
 		
-        'scroll' : 'ui/scroll',
-        'tab' : 'ui/tab',
+        'scroll' : 'ui/scroll',				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
+        'tab' : 'ui/tab',					// 탭
 
     },
     shim: {
@@ -40,5 +40,5 @@ define(['jquery','scrollBar','scroll','tab'],function($, scrollBar, scroll, tab)
 
     scroll.init();
     tab.init();
-
+ 
 })
