@@ -6,7 +6,8 @@ requirejs.config({
         'easing' : 'lib/jquery.easing.1.3',
 		
         'slide' : 'ui/slide',				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
-        'selectUl' : 'ui/selectUl'			// 상품 선택
+        'selectUl' : 'ui/selectUl',			// 상품 선택
+		'formTag' : 'ui/formTag'			// 체크박스, 라디오 버튼 이미지 변환
 
     },
     shim: {
@@ -25,15 +26,20 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'selectUl'
         }
+		, 'formTag' : {
+            deps : ["jquery"],
+            exports : 'formTag'
+        }
 		
     }
 });
 
 
 
-define(['jquery','slide','selectUl'],function($, slide, selectUl){
+define(['jquery','slide','selectUl','formTag'],function($, slide, selectUl, formTag){
 
     slide.init();
+    formTag.init();
     selectUl.init();
  
 })

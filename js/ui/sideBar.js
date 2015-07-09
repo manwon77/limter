@@ -22,7 +22,7 @@ define(['jquery','easing','scrollBar'],function($,easing){
 				this.oldLayer.animate(
 					{"left" : 0}
 					, "800"
-					, "easeOutBack"
+					, "easeOutQuart"
 					, function(){
 
 					}
@@ -31,7 +31,7 @@ define(['jquery','easing','scrollBar'],function($,easing){
 			tar.animate(
 				{"left" : this.dx*-1}
 				, "800"
-				, "easeOutBack"
+				, "easeOutQuart"
 				, function(){
 					that.oldLayer = tar;
 				}
@@ -45,7 +45,7 @@ define(['jquery','easing','scrollBar'],function($,easing){
 			par.animate(
 				{"left" : 0}
 				, "800"
-				, "easeOutBack"
+				, "easeOutQuart"
 				, function(){
 
 				}

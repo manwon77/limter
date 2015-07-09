@@ -2,28 +2,29 @@ define(['jquery','easing'],function($,easing){
 	var sns = {
 		init : function(){
 		
-			var $btn = $(".utilMenu > li > .link");
+			var $btn = $(".topLink > a");
 			var $sns = $(".snsWrap");
-			
+			var $ico = $(".snsWrap > a");
+
 			$btn.click(function (e) {
-				if ($btn.hasClass("active")){
-					$btn.removeClass("active");
+				if ($sns.hasClass("active")){
+					$sns.removeClass("active");
 					$sns.clearQueue().animate(
-					{"left" : -170, "z-index":"-1"}
+					{"right" : 0}
 					, "800"
 					, "easeOutSine"
 					, function(){
-						$sns.hide();
+						//$sns.hide();
 					})
 					
 				} else {
-					$(this).addClass("active");
+					$sns.addClass("active");
 					$sns.clearQueue().animate(
-					{"left" : -195, "z-index" : "1"}
+					{"right" : 39}
 					, "800"
 					, "easeOutSine"
 					, function(){
-						$sns.show();
+						//$sns.show();
 					})
 				}
 				e.preventDefault();

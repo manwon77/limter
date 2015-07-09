@@ -6,7 +6,7 @@ requirejs.config({
         'easing' : 'lib/jquery.easing.1.3',
 		
         'slide' : 'ui/slide',				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
-        'formTag' : 'ui/formTag'			// 폼관련
+        'formTag' : 'ui/formTag'			// 체크박스, 라디오 버튼 이미지 변환
 
     },
     shim: {

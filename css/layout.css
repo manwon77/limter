@@ -22,14 +22,18 @@
 
 /* TopUtil */
 .topUtilWrap{height:77px;position:relative;z-index:200;width:100%;background:#fff;}
-
 .utilMenu {float:right; color:#d7dade; padding:22px 56px 0 200px;overflow:hidden;}
 .utilMenu li{float:left; padding:0 30px; height:34px;}
-.utilMenu > li > a{display:block; line-height:34px; font-size:18px; font-family:Myriad Pro; font-weight:200; color:#757575;}
+
+.utilMenu > li > a{ line-height:34px; font-size:18px;}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
-.utilMenu .snsWrap{ position:absolute; left:-170px; z-index:-1; top:0; width:195px; height:34px;}
+.topLink{float:right;position:relative;}
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
+.utilMenu .link{width:34px;height:34px;line-height:34px;text-align:center;display:inline-block;}
+.utilMenu .link.active {visibility: visible;}
+.utilMenu .snsWrap{ position:absolute;top:0;z-index:1; width:181px; height:34px;visibility:hidden;}
+.utilMenu .snsWrap.active {width:181px;visibility:visible;}
 
 /* gnb */
 div.gnbWrap{clear:both; position:relative; padding:0 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
@@ -152,6 +156,8 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .asideMenu .menu2 a.on{background-image:url(../images/common/layout/bg_side02_on.png);}
 .asideMenu .menu3 a{background:url(../images/common/layout/bg_side03.png) no-repeat 0 0; width:56px; height:59px;}
 .asideMenu .menu3 a.on{background-image:url(../images/common/layout/bg_side03_on.png);}
+.asideMenu .menu4 a{background:url(../images/common/layout/bg_side03.png) no-repeat 0 0; width:56px; height:59px;}
+.asideMenu .menu4 a.on{background-image:url(../images/common/layout/bg_side03_on.png);}
 
 .asdLayer{width:290px; position:absolute; left:-290px; top:0; bottom:0; height:100%; background-color:#fff; border-left:1px solid #dddddd;}
 .asdLayer > div{ margin:78px 0 0 12px;}
@@ -160,7 +166,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 .asdLayer .asd_close{position:absolute; left:12px; top:24px; background:url(../images/common/btn_asd_close.png) no-repeat 0 0; padding-left:41px; height:31px; line-height:31px; font-size:12px; color:#828282;}
 /* aside search */
 .schForm{background:url(../images/common/layout/bg_sch-form.png) no-repeat 0 0; width:264px; height:49px; font-size:0; position:relative; padding:2px 0 0 2px;}
-.schForm input{height:27px; line-height:27px; border:none; color:#ff757c; padding:0; position:absolute; left:10px; top:15px;}
+.schForm input{height:45px; line-height:45px; border:none; color:#ff757c; padding:0 0 0 5px; position:absolute; left:3px; top:3px;}
 .schForm .btnSch{background:url(../images/common/layout/btn-sch.png) no-repeat 0 0; width:58px; height:51px; position:absolute; right:0; top:0;}
 /* 키워드검색 */
 .schKeyword {margin-top:6px; padding:10px 23px 0 15px; width:225px; background-color:#fcfcfc;}
@@ -203,7 +209,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 /* 배송지등록 */
 .deliveray{width:265px; margin:25px 0 0 0; background:url(../images/common/bg_bd_ty1.png) repeat-x 0 100%; padding:0 0 15px 0;}
 .deliveray > li{padding:0 20px;}
-.deliveray > li > a{display:block; font-size:12px;  color:#a0a0a0; background:url(../images/common/bg_arrow_ty3.gif) no-repeat 100% 0px; line-height:26px;}
+.deliveray > li > a{display:block; font-size:12px;  color:#a0a0a0; background:url(../images/common/bg_arrow_ty3.gif) no-repeat 100% center; line-height:26px;}
 .deliveray > li > a.on{background-image:url(../images/common/bg_arrow_ty3_on.gif); color:#676a75}
 .deliveray > li > a:hover{background-image:url(../images/common/bg_arrow_ty3_hover.gif); color:#676a75;}
 .deliveray .box_ty3{margin:5px 0 15px 0;}
@@ -295,5 +301,26 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 #footer address strong{font-weight:normal; margin-left:18px;}
 #footer address > p strong:first-child{margin-left:0;}
 #footer address .copy{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
