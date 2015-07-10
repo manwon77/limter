@@ -24,7 +24,7 @@
 
 
 html, body {margin:0;padding:0;}
-body { font-family:"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-serif; font-size:12px; line-height:1.5; color:#666;}
+body { font-family:"맑은고딕",MalgumGothic,"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-serif; font-size:12px; line-height:1.5; color:#666;}
 div, span, p, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strike, sub, sup, tt, var, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0;padding:0;border:0;}
 h1,h2,h3,h4,h5,h6 {font-weight:normal; }
 ol, ul {list-style: none;}
@@ -90,7 +90,7 @@ button::-moz-focus-inner{padding:0; margin:0;}
 .strong{font-weight:bold;}
 
 /* input */
-input{font-family:"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-serif;}
+input{font-family:"맑은고딕",MalgumGothic,"돋움",Dotum,"굴림",Gulim,Tahoma,Verdana,AppleGothic,sans-serif;}
 
 /* btnWrap */
 .btnWrap{text-align:center; font-size:0;}
