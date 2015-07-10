@@ -4,10 +4,9 @@ requirejs.config({
     paths: {
         'jquery' : 'lib/jquery-1.10.2.min',
         'easing' : 'lib/jquery.easing.1.3',
-		'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min', // 스크롤 플러그인
+		'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',		// 스크롤 플러그인
 
 		'isotope' : 'ui/isotope',
-        
 		'rolling' : 'ui/rolling',			// 전체메뉴 롤링
 		'shopping' : 'ui/shopping',			// 상품 업다운, 
         'gnb' : 'ui/gnb',					// 전체메뉴 
@@ -15,11 +14,8 @@ requirejs.config({
 		'sns' : 'ui/sns',					// 상단 아이콘열림(페이스북, 트위터 등)
         'tab' : 'ui/tab',					// 탭
         'mainTop' : 'ui/mainTop',			// 상단 공지사항
-		'selectUl' : 'ui/selectUl',			// 상품 선택
-		'viewPort' : 'ui/viewPort',			// 해상도
 		'etc' : 'ui/etc',					//	썸네일 , 장바구니 담기 버튼 체인지, 수량 업다운
 		'slide' : 'ui/slide',				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
-		'scroll' : 'ui/scroll'				// 스크롤
 
     },
     shim: {
@@ -30,7 +26,6 @@ requirejs.config({
             deps : ["jquery"],
              exports: 'easing'
         }
-		
         , 'shopping' : {
             deps : ["jquery"],
             exports: 'shopping'   
@@ -51,10 +46,6 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'sns'
         }
-		, 'selectUl' : {
-            deps : ["jquery"],
-            exports : 'selectUl'
-        }
 		, 'etc' : {
             deps : ["jquery"],
             exports : 'etc'
@@ -71,27 +62,21 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'mainTop'
         }
-		, 'scroll' : {
-            deps : ["jquery"],
-            exports : 'scroll'
-        }
-		
+				
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','selectUl','etc','slide','scrollBar','mainTop','scroll'],function($,shopping, gnb, rolling, sideBar, tab, sns, selectUl, etc, slide, scrollBar,mainTop,scroll){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','etc','slide','scrollBar','mainTop'],function($,shopping, gnb, rolling, sideBar, tab, sns, etc, slide, scrollBar,mainTop){
     shopping.init();
     gnb.init();
     rolling.init();
     sideBar.init();
     tab.init();
     sns.init();
-    selectUl.init();
 	etc.init();
 	slide.init();
-	scroll.init();
 	mainTop.init();
 
 })

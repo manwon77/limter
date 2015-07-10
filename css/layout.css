@@ -30,13 +30,14 @@
 .topLink{float:right;position:relative;}
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
 .utilMenu .snsWrap a:first-child{margin-left:0;}
-.utilMenu .link{width:34px;height:34px;line-height:34px;text-align:center;display:inline-block;}
-.utilMenu .link.active {visibility: visible;}
-.utilMenu .snsWrap{ position:absolute;top:0;z-index:1; width:181px; height:34px;visibility:hidden;}
-.utilMenu .snsWrap.active {width:181px;visibility:visible;}
+.utilMenu .link{width:34px;height:34px;line-height:34px;text-align:center;display:inline-block;position:relative;z-index:10;}
+.utilMenu .link.active {}
+.utilMenu .snsWrap{ position:absolute;top:0;right:0;height:34px;}
+.utilMenu .snsWrap.active {}
+.ico1, .ico2, .ico3, .ico4{right:0;width:34px;position:absolute;}
 
 /* gnb */
-div.gnbWrap{clear:both; position:relative; padding:0 0 0 88px; height:87px; z-index:60; border-bottom:1px solid #}
+div.gnbWrap{clear:both; position:relative; padding:0 0 0 88px; height:87px; z-index:60;}
 div.gnbWrap .menu{clear:both;}
 
 /* allmenu */
@@ -187,7 +188,7 @@ div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClo
 
 /* 로그인 */
 .loginBefore .col{margin-top:5px; display:block; background:url(../images/common/layout/bg_login.png) no-repeat 0 0; width:264px; height:39px; vertical-align:top; padding:1px; position:relative;}
-.loginBefore .col input{height:38px; line-height:38px; border:0; padding:0; position:absolute; left:1px;}
+.loginBefore .col input{height:38px; line-height:38px; border:0; padding:0 0 0 0; position:absolute; left:1px;}
 .loginBefore .col:first-child{margin-top:0;}
 .loginBefore .login-btn{display:block; background:url(../images/common/layout/btn_login.png) no-repeat 0 0; width:266px; height:41px; margin-top:5px;}
 .autoLogin{padding:12px 0 0 8px; display:block;}

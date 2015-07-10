@@ -1,39 +1,51 @@
 define(['jquery','easing'],function($){
 	var slide = {
 		init : function(){
-			
-			//var current = 0;
-			var thumbListSize = 3;
-			var wrap = $('.pro_tab');
-			var popWrap = $();
-			var prev = wrap.find('.pro_prev');
-			var next = wrap.find('.pro_next');
-			var cntWrap = wrap.find('> div > div > ul');
-			var cntThumb = cntWrap.find(' > li');
-			var cntWidth = cntThumb.outerWidth(true);
-			var maxSize = cntThumb.size();
-			cntWrap.data("current", 0)
-			
-			next.on('click',function( e ){
-				var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
-				var current = tar.data("current")
-				if (current < maxSize / thumbListSize -2 ) current++;
-				tar.data("current", current);
-				listMove( tar );
-			});
-			prev.on('click',function( e ){
-				var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
-				var current = tar.data("current");
-				if (current > 0) current--;
-				tar.data("current", current);
-				listMove( tar );
-			});
 
-			function listMove( tar ){
-				var current = tar.data("current");
-				var tl = cntWidth * current * -1;
-				tar.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
-			}
+			$.fn.itemSlide = function(options){
+				var defaults = {
+					cntWrap : " div > div > ul",
+					cntWidth : 292,
+				}
+
+				options = $.extend(defaults, options);
+				return this.each(function(){
+					var o = options;
+					var wrap = $(this);
+					var thumbListSize = 3;
+					var prev = wrap.find('.pro_prev');
+					var next = wrap.find('.pro_next');
+					var cntWrap = wrap.find(o.cntWrap);
+					var cntThumb = cntWrap.find(' > li');
+					var cntWidth = o.cntWidth;
+					var maxSize = cntThumb.size();
+					cntWrap.data("current", 0)
+
+					next.on('click',function( e ){
+						var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
+						var current = tar.data("current")
+						if (current < maxSize-3) current++;
+						tar.data("current", current);
+						listMove( tar );
+					});
+					prev.on('click',function( e ){
+						var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
+						var current = tar.data("current");
+						if (current > 0) current--;
+						tar.data("current", current);
+						listMove( tar );
+					});
+
+					function listMove( tar ){
+						var current = tar.data("current");
+						var tl = cntWidth * current * -1;
+						tar.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
+
+					}
+				});
+			};
+			$(".thumbList ").itemSlide({cntWrap : " div > ul", cntWidth : 292});  
+			
 
 			// ball
 			this.swWrap = $(".switchWrap > .switch");
@@ -57,7 +69,7 @@ define(['jquery','easing'],function($){
 			for (var i = 0; i < this.accBtn.length; i++ ){
 				this.accBtn.eq(i).data("index", i);
 				this.accTar.eq(i).data("index", i);
-			}
+			} 
 			
 		}
 

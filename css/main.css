@@ -1,10 +1,6 @@
 @charset "utf-8";
-/*------------------------------------------------------
- Description : main.css
- Auther : Dam & Ock
- date : 2015.05
- update : 
-  ------------------------------------------------------*/
+
+@import url('jquery.mCustomScrollbar.css');
 
 /* container */
 #container{padding:35px 0 100px 0;}
