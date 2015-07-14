@@ -14,7 +14,8 @@ requirejs.config({
 		'sns' : 'ui/sns',				// 상단 아이콘열림(페이스북, 트위터 등)
 		'etc' : 'ui/etc',				//	썸네일 , 장바구니 담기 버튼 체인지, 수량 업다운
 		'slide' : 'ui/slide',			// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
-		'formTag' : 'ui/formTag'		// 체크박스, 라디오 버튼 이미지 변환
+		'formTag' : 'ui/formTag',		// 체크박스, 라디오 버튼 이미지 변환
+		'scroll' : 'ui/scroll'
 
     },
     shim: {
@@ -65,6 +66,10 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'formTag'
         }
+		, 'scroll' : {
+            deps : ["jquery"],
+            exports : 'scroll'
+        }
 
 
     }
@@ -72,7 +77,7 @@ requirejs.config({
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'sideBar','sns','selectUl','etc','slide','scrollBar','formTag'],function($,shopping, gnb, rolling, sideBar, sns, selectUl, etc, slide, scrollBar, formTag){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar','sns','selectUl','etc','slide','scrollBar','formTag','scroll'],function($,shopping, gnb, rolling, sideBar, sns, selectUl, etc, slide, scrollBar, formTag, scroll){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -82,5 +87,6 @@ define(['jquery','shopping','gnb', 'rolling', 'sideBar','sns','selectUl','etc','
 	etc.init();
 	slide.init();
 	formTag.init();
+	scroll.init();
 
 })

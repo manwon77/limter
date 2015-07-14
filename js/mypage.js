@@ -15,7 +15,8 @@ requirejs.config({
         'tab' : 'ui/tab',
 		'myPage' : 'ui/mypage',
 		'sns' : 'ui/sns',
-		'slide' : 'ui/slide'
+		'slide' : 'ui/slide',
+		'scroll' : 'ui/scroll'
 
     },
     shim: {
@@ -66,13 +67,17 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'scrollBar'
         }
+		, 'scroll' : {
+            deps : ["jquery"],
+            exports : 'scroll'
+        }
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','slide','scrollBar'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, slide, scrollBar){
+define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'calendar','tab','sns','slide','scrollBar','scroll'],function($,shopping, gnb, rolling, mainTop, sideBar, myPage, calendar, tab, sns, slide, scrollBar, scroll){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -82,5 +87,6 @@ define(['jquery','shopping','gnb', 'rolling', 'mainTop', 'sideBar', 'myPage', 'c
     sns.init();
 	slide.init();
     myPage.init();
+	scroll.init();
 
 })

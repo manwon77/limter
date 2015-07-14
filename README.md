@@ -38,3 +38,14 @@ C:\Users\sang\Desktop\martmoa-best\products\list_Category.html
 인풋박스를 체크드한다. 
 반대로 또 클릭이되면 이미지를 off를 해주고 인풋박스의 체크드를 헤제한다.
 
+7/ 14
+
+sideBar.js 에 vClear클래스 추가 ( input value값 날림 )
+전체메뉴 버튼 액션 변경, 이미지 추가
+sns 액션 변경,
+scroll.js 각각의 불러오는 js에 추가 ( scroll.js 없을시 ie 작동 X )
+크로스 브라우징 자체 확인 완료
+css 수정 및 추가
+on/off 백그라운드 이미지 변경
+
+

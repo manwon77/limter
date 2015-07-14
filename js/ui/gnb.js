@@ -4,7 +4,8 @@ define(['jquery'],function($){
 			var gnb = $(".col .dep2List >li > a");
 			var twoTabs = $(".dep3_Layer");
 			var allmenu = $(".allmenu");
-			
+
+			this.open = $(".allmenu.open");
 			this.homeWrap = $(".home_wrap");
 			this.mask = $(".mask_ty1");
 			this.menuAside = $(".menuAside > ul > li > a");
@@ -18,19 +19,17 @@ define(['jquery'],function($){
 
 			this.menuAside.off( "click", $.proxy( this.classifyMenu, this ) ).on( "click", $.proxy( this.classifyMenu, this ) );
 			allmenu.off("click", $.proxy( this.showAllmenu, this ) ).on("click", $.proxy( this.showAllmenu, this ) );
-			
 
 		}
 		, showAllmenu : function( e ){
 			var allmenuLayer = $("#AllmenuLayer");
 			if( $(e.currentTarget).attr("class").match(/open/) != "open" ){
 				$(e.currentTarget).addClass("open");	
-				this.homeWrap.css({ "display":"none" });
 				this.mask.show();
 				allmenuLayer.show();
+
 			}else{
 				$(e.currentTarget).removeClass("open");	
-				this.homeWrap.show();
 				this.mask.hide();	
 				allmenuLayer.hide();
 			}			

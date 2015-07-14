@@ -14,7 +14,8 @@ requirejs.config({
         'tab' : 'ui/tab',					// 탭
 		'selectUl' : 'ui/selectUl',			// 상품 선택
 		'etc' : 'ui/etc',					//	썸네일 , 장바구니 담기 버튼 체인지, 수량 업다운
-		'slide' : 'ui/slide'				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
+		'slide' : 'ui/slide',				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
+		'scroll' : 'ui/scroll'				// 스크롤
 
     },
     shim: {
@@ -62,13 +63,17 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'scrollBar'
         }
+		, 'scroll' : {
+            deps : ["jquery"],
+            exports : 'scroll'
+        }
 		
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','selectUl','etc','slide','scrollBar'],function($,shopping, gnb, rolling, sideBar, tab, sns, selectUl, etc, slide, scrollBar){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','selectUl','etc','slide','scrollBar','scroll'],function($,shopping, gnb, rolling, sideBar, tab, sns, selectUl, etc, slide, scrollBar, scroll){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -78,5 +83,6 @@ define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','selectUl',
     selectUl.init();
 	etc.init();
 	slide.init();
+	scroll.init();
 
 })

@@ -15,7 +15,8 @@ requirejs.config({
 		'isotope' : 'ui/isotope',				// 마트모아 소식 컨텐츠 정렬
 		'noticeLayout' : 'ui/noticeLayout',		// 마트모아 소식 컨텐츠 정렬
 		'slide' : 'ui/slide',					// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
-		'formTag' : 'ui/formTag'				// 체크박스, 라디오 버튼 이미지 변환
+		'formTag' : 'ui/formTag',				// 체크박스, 라디오 버튼 이미지 변환
+		'scroll' : 'ui/scroll'
 
     },
     shim: {
@@ -66,13 +67,17 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'formTag'
         }
+		, 'scroll' : {
+            deps : ["jquery"],
+            exports : 'scroll'
+        }
 
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling','sideBar', 'sns','slide','scrollBar','selectUl','isotope','noticeLayout','formTag'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, selectUl, isotope, noticeLayout, formTag){
+define(['jquery','shopping','gnb', 'rolling','sideBar', 'sns','slide','scrollBar','selectUl','isotope','noticeLayout','formTag','scroll'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, selectUl, isotope, noticeLayout, formTag, scroll){
     shopping.init();
     gnb.init();
     rolling.init();
@@ -82,5 +87,6 @@ define(['jquery','shopping','gnb', 'rolling','sideBar', 'sns','slide','scrollBar
 	slide.init();
 	noticeLayout.init();
 	formTag.init();
+	scroll.init();
 	
 })

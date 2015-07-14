@@ -1,11 +1,6 @@
 @charset "utf-8";
 @import "common.css";
-/*------------------------------------------------------
- Description : layout.css
- Auther : Dam & Ock
- date : 2015.05
- update : 
- ------------------------------------------------------*/
+
 
 /* Contents Shortcut */
 #skipnavi {position:absolute;top:-50px;left:0; z-index:999; width:100%;}
@@ -25,7 +20,7 @@
 .utilMenu {float:right; color:#d7dade; padding:22px 56px 0 200px;overflow:hidden;}
 .utilMenu li{float:left; padding:0 30px; height:34px;}
 
-.utilMenu > li > a{ line-height:34px; font-size:18px;}
+.utilMenu > li > a{ line-height:34px; font-size:18px;font-family:'NanumGothicBold';}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
 .topLink{float:right;position:relative;}
 .utilMenu .snsWrap a{float:left; margin-left:15px;}
@@ -34,16 +29,37 @@
 .utilMenu .link.active {}
 .utilMenu .snsWrap{ position:absolute;top:0;right:0;height:34px;}
 .utilMenu .snsWrap.active {}
-.ico1, .ico2, .ico3, .ico4{right:0;width:34px;position:absolute;}
+.utilMenu .ico1,
+.utilMenu .ico2,
+.utilMenu .ico3,
+.utilMenu .ico4{right:0;width:34px;position:absolute;}
 
 /* gnb */
 div.gnbWrap{clear:both; position:relative; padding:0 0 0 88px; height:87px; z-index:60;}
 div.gnbWrap .menu{clear:both;}
 
-/* allmenu */
-div.gnbWrap .allmenu{background:url(../images/common/layout/btn_amopen.png) no-repeat 0 0; width:88px; height:87px; display:inline-block;
-	position:absolute; left:0; top:0; z-index:20;}
-div.gnbWrap .allmenu.open{background-image:url(../images/common/layout/btn_amClose.png)}
+/* 전체메뉴 라인 */
+.allmenu { position: relative; }
+.allmenu > * { z-index: 2; position: relative; }
+.allmenu > .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1; display: block; -webkit-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); -moz-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); -ms-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); -o-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); }
+
+#bt-menu { width:88px; height:87px; display:block; position:absolute;top:0;left:0;z-index:20;}
+#bt-menu .lines {width:88px;height:87px;display:block;}
+#bt-menu .lines span {position: absolute;top:50%;left:50%;width:40px;margin-left:-20px;height:3px;display:block;background:white;-webkit-transition:all 0.5s cubic-bezier(0.86, 0, 0.07, 1);-moz-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);-ms-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);-o-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1); transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
+#bt-menu .lines span.nth2 { margin-top: -8px; }
+#bt-menu .lines span.nth3 { margin-top: 8px; }
+#bt-menu:hover .lines span.nth2 { margin-top: -18px; }
+#bt-menu:hover .lines span.nth3 { margin-top: 18px; }
+#bt-menu.open .lines span.nth2 { margin-top: -18px; }
+#bt-menu.open .lines span.nth3 { margin-top: 18px; }
+/*
+#bt-menu.open:hover .lines span.nth1 { opacity: 0 !important;}
+#bt-menu.open:hover .lines span.nth2 { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); margin-top: 0; }
+#bt-menu.open:hover .lines span.nth3 { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); margin-top: 0; }
+*/
+#bt-menu.open{background:url(../images/common/layout/btn_amClose1.png) no-repeat 0 0;width:88px;height:87px;display:block;}
+#bt-menu.open:hover{background:url(../images/common/layout/btn_amClose1_on.png) no-repeat 0 0;}
+#bt-menu.open .bg, #bt-menu.open .lines > span{display:none;border:1px solid red;}
 
 .menu{clear:both; border-top:1px solid #7f7f7f; border-bottom:1px solid #7f7f7f; position:relative; z-index:9;}
 .menu:after{content:"";display:block;clear:both;}

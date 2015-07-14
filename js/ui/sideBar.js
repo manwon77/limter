@@ -12,6 +12,11 @@ define(['jquery','easing','scrollBar'],function($,easing){
 
 			btn.on("click", $.proxy( this.slideLayer, this ) );
 			this.closeBtn.on("click", $.proxy( this.offSlide, this ) );
+			
+			// 0714
+			$(".vClear").focus(function(){
+				$(this).val("");
+			});
 
 		}
 		, slideLayer : function( e ){

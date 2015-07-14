@@ -35,6 +35,14 @@
 		 
 		<div class="gnbWrap">
 			<!-- 전체메뉴보기 버튼 open class로 toggle -->
+			<a href="#AllmenuLayer" id="bt-menu" class="allmenu">
+				<span class="bg"></span>
+				<span class="lines">
+					<span class="nth1"></span>
+					<span class="nth2"></span>
+					<span class="nth3"></span>
+				</span>
+			</a>
 			<ul class="menu">
 				<li class="on"><a href="#none"><span>AllMart</span></a></li>
 				<li><a href="#none"><span>Mart</span></a></li>
@@ -345,6 +353,7 @@
 								<div class="qna_cnt">
 									<div class="qna_modify">
 										<h5 class="ico1">문의 정보</h5>	
+										<!-- 0714 클래스 vClear 추가 -->
 										<table width="100%" class="tbForm">
 											<colgroup>
 												<col width="11%" />
@@ -355,7 +364,7 @@
 													<th>문의제목</th>
 													<td>
 														<span class="ipt">
-															<input type="text" class="sp" value="아이디를 입력해주세요" />
+															<input type="text" class="sp vClear" value="아이디를 입력해주세요" />
 														</span>
 													</td>
 												</tr>
@@ -363,7 +372,7 @@
 													<th>문의내용</th>
 													<td>
 														<div class="textarea">
-															<textarea id="" name="" rows="" cols="">문의 내용을 입력해 주세요.</textarea>
+															<textarea id="" name="" rows="" cols="" class="vClear">문의 내용을 입력해 주세요.</textarea>
 														</div>
 													</td>
 												</tr>
@@ -386,6 +395,7 @@
 												</tr>
 											</tbody>
 										</table>
+										<!-- // -->
 										
 										<h5 class="ico2 mt60">고객정보</h5>	
 										<table width="100%" class="tbForm">
@@ -398,7 +408,7 @@
 													<th>고객명</th>
 													<td>
 														<span class="ipt">
-															<input type="text" class="sp" value="홍길동" />
+															<input type="text" class="sp vClear" value="홍길동" />
 														</span>
 													</td>
 												</tr>
@@ -437,7 +447,7 @@
 													<th>이메일</th>
 													<td>
 														<span class="ipt">
-															<input type="text" class="sp" value="hclee@martmoa.com" />
+															<input type="text" class="sp vClear" value="hclee@martmoa.com" />
 														</span>
 													</td>
 												</tr>

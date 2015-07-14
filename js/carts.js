@@ -16,6 +16,8 @@ requirejs.config({
 		'asProgress' : 'ui/asProgress',	// 장바구니 step3 주문완료
 		'slide' : 'ui/slide',			// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
 		'sns' : 'ui/sns',				// 상단 아이콘열림(페이스북, 트위터 등)
+		'scroll' : 'ui/scroll',				// 스크롤
+
 
     },
     shim: {
@@ -66,11 +68,15 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'asPie'
         }
+		, 'scroll' : {
+            deps : ["jquery"],
+            exports : 'scroll'
+        }
 		
     }
 });
 
-define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'sns','slide','scrollBar','order','asProgress','rainbow', 'asPie'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, order, asProgress, rainbow, asPie){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'sns','slide','scrollBar','order','asProgress','rainbow', 'asPie','scroll'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, order, asProgress, rainbow, asPie, scroll){
 
     shopping.init();
     gnb.init();
@@ -80,6 +86,7 @@ define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'sns','slide','scrollBa
 	order.init();
 	asProgress.init();
 	slide.init();
+	scroll.init();
 
 })
 

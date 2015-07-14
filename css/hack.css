@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+#bt-menu.open:hover {background:url(../images/common/btn_amClose.png) no-repeat 0 0;}
+#bt-menu.open:hover .lines > span{display:none;border:1px solid red;}

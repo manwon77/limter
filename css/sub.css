@@ -311,8 +311,8 @@
 .select_bx.active .tit{padding-bottom:1px;}
 .select_bx.active .tit a{color:#ee2e24;}
 
-.select_bx .tit a {background:url(../images/common/bg_arrow_ty4_off.gif) no-repeat right center;margin-right:10px;padding-right:15px;}
-.select_bx.active .tit a {background:url(../images/common/bg_arrow_ty4_on.gif) no-repeat right center;margin-right:10px;}
+.select_bx .tit a {background:url(../images/common/bg_arrow_ty4_off.gif) no-repeat right center;margin-right:10px;padding-right:15px;font-family:"NanumGothic";}
+.select_bx.active .tit a {background:url(../images/common/bg_arrow_ty4_on.gif) no-repeat right center;margin-right:10px;font-family:"NanumGothic";}
 
 .select_bx .bx .tit > a > img {position:absolute;right:19px;top:24px;margin-top:-4px;}
 .select_bx ul li:first-child{padding-top:9px;}
@@ -336,6 +336,9 @@
 .select_bx.set_ty2 .tit a {background:url(../images/common/bg_arrow_ty5_off.gif) no-repeat right center;margin-right:0;padding-right:15px;}
 .select_bx.set_ty2.active .tit a {background:url(../images/common/bg_arrow_ty5_on.gif) no-repeat right center;margin-right:0;}
 
+.home_wrap .select_bx .tit a{ width:150px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.home_wrap .select_bx  ul > li > a{width:169px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+ 
 /* 서브검색 */
 .explain{color:#ee2e24;margin-left:10px;padding-left:10px;background:url(../images/common/bg_line_ty1.gif) no-repeat 0 6px;display:inline-block;font-size:15px;height:30px;line-height:30px;}
 .explain > span{color:#898989;padding-left:10px;}
@@ -413,7 +416,7 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .img_hover .put_ty2 .plus{position:absolute;right:25px;top:25px;background:url(../images/common/bg_line_ty1.gif) no-repeat left center;padding-left:24px;}
 
 .compare{margin-top:40px;margin:0 31px;}
-.compare .tit_cp{font-size:20px;color:#000;margin:40px 0 10px;}
+.compare .tit_cp{font-size:20px;font-family:'NanumGothic';color:#000;margin:40px 0 10px;}
 .compare .tb_cp{border-bottom:1px solid #dbdbdb;color:#999;}
 .compare .tb_cp th, .compare .tb_cp td{border-top:1px solid #dbdbdb;padding:15px;}
 .compare .tb_cp th{text-align:center;}
@@ -707,9 +710,10 @@ padding-top:90px;}
 .pop_container .popForm .red{color:#ff6a71;}
 
 .switchWrap{padding-top:10px;}
-.switchWrap .switch{background:url(../images/common/bg_switch1_on.gif) no-repeat 0 0;height:25px;line-height:25px;padding-left:10px;width:50px;display:inline-block;position:relative;float:left;}
+.switchWrap .switch{background:url(../images/common/bg_switch1_off.gif) no-repeat 0 0;height:25px;line-height:25px;padding-left:10px;width:50px;display:inline-block;position:relative;float:left;}
 .switchWrap .switch > span{position:absolute;left:30px;top:0;color:#fff;}
 .switchWrap .switch > a{position:absolute;left:5px;top:3px;}
+.switchWrap .switch.active{background:url(../images/common/bg_switch1_on.gif);}
 .switchWrap .switch.active > span{position:absolute;left:10px;top:0;color:#fff;}
 .switchWrap .switch.active > a{position:absolute;top:3px;}
 .switchWrap .gray{color:#a5a5a5;line-height:25px;padding-left:10px;}
@@ -1100,7 +1104,7 @@ padding-top:90px;}
 .notice_list .notice_cnt > div.no_bt{border-top:0;}
 .notice_list .notice_cnt .join_cnt .ico1{background:url(../images/common/ico_inq.gif) no-repeat 0 0;height:30px;line-height:30px;padding:0 0 15px 45px;font-size:17px;color:#212324;border-bottom:1px solid #d1d1d5;}
 .join_clause{padding:34px 20px 0 20px;border-bottom:1px solid #d1d1d5;margin-bottom:30px;}
-.join_clause > h5{background:url(../images/common/ico_q2.png) no-repeat 0 0;padding-left:32px;font-size:14px;color:#4f555e;height:23px;line-height:23px;margin-bottom:7px;}
+.join_clause > h5{background:url(../images/common/ico_q2.png) no-repeat 0 0;padding-left:32px;font-size:14px;font-family:'NanumGothic';color:#4f555e;height:23px;line-height:23px;margin-bottom:7px;}
 .join_clause .clau{padding-bottom:40px;}
 .join_clause .clau > div{border:1px solid #808080;position:relative;}
 .join_clause .clau > div > span{position:absolute;z-index:1;width:3px;height:3px;}

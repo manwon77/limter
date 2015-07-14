@@ -6,6 +6,7 @@
 	<title>MartMore</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />	
+
 </head>
 <body class="main">
 	<div class="topContents" style="height:180px; background-color:red;">
@@ -41,13 +42,13 @@
 		
 		<div class="gnbWrap">
 			<!-- 전체메뉴보기 버튼 open class로 toggle -->
-			<a href="#AllmenuLayer" class="allmenu">
-			<span class="lines">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-			<span class="hidden">전체메뉴</span>
+			<a href="#AllmenuLayer" id="bt-menu" class="allmenu">
+				<span class="bg"></span>
+				<span class="lines">
+					<span class="nth1"></span>
+					<span class="nth2"></span>
+					<span class="nth3"></span>
+				</span>
 			</a>
 			<ul class="menu">
 				<li class="on"><a href="#none"><span>AllMart</span></a></li>
@@ -403,7 +404,9 @@
 			<div class="asdSchWrap" style="display:block;">
 				<div class="SchCont">
 					<div class="schForm">
-						<input type="text" class="text" value="여기서 한방에!_" style="width:190px;" />
+						<!-- 0714 -->
+						<input type="text" class="text vClear" value="여기서 한방에!_" style="width:190px;" />
+						<!-- //0714 -->
 						<button class="btnSch"><span class="hidden">검색</span></button>
 					</div>
 					<!-- btype -->
@@ -447,8 +450,10 @@
 
 				<!-- 로그인전 -->
 				<div class="loginBefore" style="display:block;">
-					<span class="col"><input type="text" title="아이디" style="width:264px" /></span>
-					<span class="col"><input type="password" title="비밀번호" style="width:264px" /></span>
+					<!-- 0714 -->
+					<span class="col"><input type="text vClear" title="아이디" style="width:264px" /></span>
+					<span class="col"><input type="password vClear" title="비밀번호" style="width:264px" /></span>
+					<!-- //0714 -->
 					<a href="#" class="login-btn">로그인</a>
 					<span class="autoLogin"><input type="checkbox" /><label for="">자동로그인</label></span>
 					<div class="idFind">
