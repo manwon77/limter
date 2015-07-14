@@ -363,7 +363,7 @@
 													<th>문의제목</th>
 													<td>
 														<span class="ipt">
-															<input type="text" class="sp vClear" value="아이디를 입력해주세요" />
+															<span class="sp"><input type="text" class="intVal" /><label for="id1">아이디를 입력해주세요</label></span>
 														</span>
 													</td>
 												</tr>
@@ -371,7 +371,8 @@
 													<th>문의내용</th>
 													<td>
 														<div class="textarea">
-															<textarea id="" name="" rows="" class="vClear" cols="">문의 내용을 입력해 주세요.</textarea>
+															<textarea id="area" name="" rows="" class="intVal" cols=""></textarea>
+															<label for="area" class="lbl">문의 내용을 입력해 주세요.</label>
 														</div>
 													</td>
 												</tr>
@@ -380,7 +381,7 @@
 													<td>
 														<!-- input file -->
 														<span class="ipt">
-															<input type="text" id="imgFileName" name="imgFileName" class="sp" style="width:260px" />
+															<span class="sp"><input type="text" id="imgFileName" name="imgFileName" style="width:260px" /></span>
 														</span>
 														<input type="file" id="imgFile" name="imgFile" style="position:absolute; width: 96px; height: 32px; filter:alpha(opacity=0); opacity:0; -moz-opacity:0; cursor:pointer;" />
 														<a href="#none"><img src="../images/common/btn_modify1.gif" alt="변경하기" /></a>
@@ -392,7 +393,7 @@
 										</table>
 										
 										<h5 class="ico2 mt60">고객정보</h5>	
-										<!-- 0714 클래스 vClear추가 -->
+										<!-- 0715 -->
 										<table width="100%" class="tbForm">
 											<colgroup>
 												<col width="11%" />
@@ -403,7 +404,7 @@
 													<th>고객명</th>
 													<td>
 														<span class="ipt">
-															<input type="text" class="sp vClear" value="홍길동" />
+															<span class="sp"><input type="text" class="intVal" /><label for="ghd">홍길동</label></span>
 														</span>
 													</td>
 												</tr>
@@ -433,22 +434,25 @@
 															</div>
 														</div>
 														<span class="dash"></span>
-														<span class="ipt"><input type="text" class="sp" style="width:56px;" /></span>
+														<span class="ipt"><span class="sp"><input type="text" style="width:56px;" /></span></span>
 														<span class="dash"></span>
-														<span class="ipt"><input type="text" class="sp" style="width:56px;" /></span>
+														<span class="ipt"><span class="sp"><input type="text" style="width:56px;" /></span></span>
 													</td>
 												</tr>
 												<tr>
 													<th>이메일</th>
 													<td>
 														<span class="ipt">
-															<input type="text" class="sp vClear" value="hclee@martmoa.com" />
+															<span class="sp">
+																<input type="text" class="intVal" />
+																<label for="email">hclee@martmoa.com</label>
+															</span>
 														</span>
 													</td>
 												</tr>
 											</tbody>
 										</table>
-										<!-- // -->
+										<!-- //0715 -->
 										<div class="tc mt10">
 											<a href="#none"><img src="../images/common/btn_cansel1.gif" alt="취소" /></a>
 											<a href="#none"><img src="../images/common/btn_enter1.gif" alt="확인" /></a>

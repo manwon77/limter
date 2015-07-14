@@ -13,11 +13,19 @@ define(['jquery','easing','scrollBar'],function($,easing){
 			btn.on("click", $.proxy( this.slideLayer, this ) );
 			this.closeBtn.on("click", $.proxy( this.offSlide, this ) );
 			
-			// 0714
-			$(".vClear").focus(function(){
-				$(this).val("");
+			var $intVal = $('.intVal');
+
+			$intVal.on('click focus', function () {
+				$(this).siblings('label').hide()
 			});
 
+			$intVal.on('blur', function () {
+				$this = $(this);
+				if ($.trim($this.val()).length === 0) {
+					$this.siblings('label').show()
+				}
+			});
+			
 		}
 		, slideLayer : function( e ){
 			var tar = $(e.currentTarget.hash);
@@ -57,7 +65,6 @@ define(['jquery','easing','scrollBar'],function($,easing){
 			);
 			e.preventDefault();
 		}
-
 
 	}
 	return sideBar;

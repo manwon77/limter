@@ -343,6 +343,7 @@
 								
 								<div class="join_cnt">
 									<h5 class="ico1">회원정보 입력</h5>	
+									<!-- 0715 -->
 									<table width="100%" class="tbForm">
 										<colgroup>
 											<col width="11%" />
@@ -368,7 +369,10 @@
 												<th>이름</th>
 												<td>
 													<span class="ipt">
-														<input type="text" class="sp" value="홍길동" style="width:260px" />
+														<span class="sp">
+															<input type="text" class="intVal" style="width:260px" />
+															<label for="name" class="lbl">홍길동</label>
+														</span>
 														<!-- 이름 있을때 보여짐 -->
 														<span class="ico_chk" style="display:none"><img src="../../images/common/ico_check.gif" alt="" /></span>
 													</span>
@@ -378,7 +382,10 @@
 												<th>아이디</th>
 												<td>
 													<span class="ipt">
-														<input type="text" class="sp" value="아이디를 입력해주세요" style="width:260px" />
+														<span class="sp">
+															<input type="text" class="intVal" value="" style="width:260px" />
+															<label for="id1" class="lbl">아이디를 입력해주세요</label>
+														</span>
 														<!-- 아이디형식에 맞지않을때 보여짐 -->
 														<span class="ico_mk" style="display:none"><img src="../../images/common/ico_mark.gif" alt="" /></span>
 													</span>
@@ -389,8 +396,22 @@
 												<th>비밀번호</th>
 												<td>
 													<ul class="pw">
-														<li><span class="ipt"><input type="text" class="sp" value="새 비밀번호" style="width:260px"></span><span class="red">6~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span></li> 
-														<li><span class="ipt"><input type="text" class="sp" value="새 비밀번호 재 확인" style="width:260px"></span></li>
+														<li>
+															<span class="ipt">
+																<span class="sp">
+																	<input type="text" id="newPw1" class="intVal" value="" style="width:260px" />
+																	<label for="newPw1" class="lbl">새 비밀번호</label>
+																</span>
+															</span>
+															<span class="red">6~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span></li> 
+														<li>
+															<span class="ipt">
+																<span class="sp">
+																	<input type="text" id="newPw2" class="intVal" value="" style="width:260px" />
+																	<label for="newPw2" class="lbl">새 비밀번호 재확인</label>
+																</span>
+															</span>
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -398,7 +419,9 @@
 												<th>이메일</th>
 												<td>
 													<span class="ipt">
-														<input type="text" class="sp" value="hclee@martmoa.com" style="width:260px">
+														<span class="sp">
+															<input type="text" class="" value="hclee@martmoa.com" style="width:260px" />
+														</span>
 													</span>
 													<a href="#none"><img src="../../images/common/btn_modify1.gif" alt="변경하기"></a>
 													<p class="switchWrap">
@@ -436,9 +459,13 @@
 														</div>
 													</div>
 													<span class="dash"></span>
-													<span class="ipt"><input type="text" class="sp" style="width:56px;" /></span>
+													<span class="ipt">
+														<span class="sp"><input type="text" style="width:56px;" /></span>
+													</span>
 													<span class="dash"></span>
-													<span class="ipt"><input type="text" class="sp" style="width:56px;" /></span>
+													<span class="ipt">
+														<span class="sp"><input type="text" style="width:56px;" /></span>
+													</span>
 												</td>
 											</tr>
 											<tr>
@@ -456,6 +483,7 @@
 											</tr>
 										</tbody>
 									</table>
+									<!-- //0715 -->
 									
 									<div class="tc mt10">
 										<a href="#none"><img src="../../images/common/btn_prev1.gif" alt="이전" /></a>

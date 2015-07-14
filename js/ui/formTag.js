@@ -22,6 +22,20 @@ define(['jquery','easing'],function($,easing){
 				this.rdoBtn.eq(i).data("index", i);
 				this.rdoTar.eq(i).data("index", i);
 			}
+
+			var $intVal = $('.intVal');
+
+			$intVal.on('click focus', function () {
+				$(this).siblings('label').hide()
+			});
+
+			$intVal.on('blur', function () {
+				$this = $(this);
+				if ($.trim($this.val()).length === 0) {
+					$this.siblings('label').show()
+				}
+			});
+
 		}
 
 		, intCheck : function( e ){

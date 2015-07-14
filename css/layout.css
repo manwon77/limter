@@ -183,7 +183,8 @@ div.gnbWrap .menu{clear:both;}
 .asdLayer .asd_close{position:absolute; left:12px; top:24px; background:url(../images/common/btn_asd_close.png) no-repeat 0 0; padding-left:41px; height:31px; line-height:31px; font-size:12px; color:#828282;}
 /* aside search */
 .schForm{background:url(../images/common/layout/bg_sch-form.png) no-repeat 0 0; width:264px; height:49px; font-size:0; position:relative; padding:2px 0 0 2px;}
-.schForm input{height:45px; line-height:45px; border:none; color:#ff757c; padding:0 0 0 5px; position:absolute; left:3px; top:3px;}
+.schForm input{height:45px; line-height:45px; border:none; color:#ff757c; padding:0 0 0 5px; position:absolute; left:3px; top:3px;z-index:2;background:transparent;}
+.schForm .lbl {position:absolute;left:3px;top:3px;padding:0 0 0 5px;height:45px;line-height:45px;display:block;font-size:12px;color:#ff757c;}
 .schForm .btnSch{background:url(../images/common/layout/btn-sch.png) no-repeat 0 0; width:58px; height:51px; position:absolute; right:0; top:0;}
 /* 키워드검색 */
 .schKeyword {margin-top:6px; padding:10px 23px 0 15px; width:225px; background-color:#fcfcfc;}
