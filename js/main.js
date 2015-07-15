@@ -12,11 +12,9 @@ requirejs.config({
         'gnb' : 'ui/gnb',					// 전체메뉴 
         'sideBar' : 'ui/sideBar',			// 사이드바
 		'sns' : 'ui/sns',					// 상단 아이콘열림(페이스북, 트위터 등)
-        'tab' : 'ui/tab',					// 탭
         'mainTop' : 'ui/mainTop',			// 상단 공지사항
-		'etc' : 'ui/etc',					//	썸네일 , 장바구니 담기 버튼 체인지, 수량 업다운
-		'slide' : 'ui/slide',				// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
-		'scroll' : 'ui/scroll'				// 스크롤
+		'scroll' : 'ui/scroll',				// 스크롤
+		'mainCnt' : 'ui/mainCnt'
 
     },
     shim: {
@@ -39,21 +37,10 @@ requirejs.config({
             deps : ["jquery"],
             exports: 'sideBar'   
         }
-		, 'tab' : {
-            deps : ["jquery"],
-            exports : 'tab'
-        }
+		
 		, 'sns' : {
             deps : ["jquery"],
             exports : 'sns'
-        }
-		, 'etc' : {
-            deps : ["jquery"],
-            exports : 'etc'
-        }
-		, 'slide' : {
-            deps : ["jquery"],
-            exports : 'slide'
         }
 		, 'scrollBar' : {
             deps : ["jquery"],
@@ -67,20 +54,22 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'scroll'
         }		
+		, 'mainCnt' : {
+            deps : ["jquery"],
+            exports : 'mainCnt'
+        }		
     }
 });
 
 
 
-define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'tab','sns','etc','slide','scrollBar','mainTop','scroll'],function($,shopping, gnb, rolling, sideBar, tab, sns, etc, slide, scrollBar,mainTop,scroll){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar','sns','mainCnt','scrollBar','mainTop','scroll'],function($,shopping, gnb, rolling, sideBar, sns, mainCnt, scrollBar,mainTop,scroll){
     shopping.init();
     gnb.init();
     rolling.init();
     sideBar.init();
-    tab.init();
     sns.init();
-	etc.init();
-	slide.init();
+	mainCnt.init();
 	mainTop.init();
 	scroll.init();
 

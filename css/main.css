@@ -9,3 +9,48 @@
 .smarCnt .col a{float:left; margin-left:14px;}
 .smarCnt .col:first-child{margin-top:0px;}
 .smarCnt .col > a{margin-bottom:15px;}
+
+.main_grid{margin-left:121px;position:relative;}
+.mainWrap{}
+.mainWrap:after{content:"";display:block;clear:both;}
+.mainWrap h3{font-size:20px;font-family:'NanumGothic';}
+.mainWrap .step1, .main_grid .step2, .main_grid .step3{float:left;margin-left:20px;background:#fff;}
+.mainWrap .step1{border:1px solid red;width:300px;margin-left:0;position:relative;z-index:30;}
+.mainWrap .step1 .cnt{height:200px;overflow:hidden;overflow-y:scroll;}
+
+.mainWrap .step2{border:1px solid red;width:300px;position:relative;z-index:30;}
+
+.topCnt {overflow:hidden;overflow-y:scroll;margin-right:1px;height:300px;}
+.topCnt .list{}
+.topCnt .list > li {position:relative;padding:0 20px;} 
+.topCnt .list > li > dl{padding:15px 0 10px 68px;border-bottom:1px solid #dbdbdb;}
+.topCnt .list > li > dl > dd > strong{display:block;text-align:right;padding-top:2px;height:20px;}
+.topCnt .list > li dl dd.img{position:absolute;left:25px;top:15px;}
+.topCnt .list > li dd.img > a{display:block;padding-top:5px;}
+
+
+.mainWrap .step3{width:300px;position:relative;z-index:5;}
+.mainWrap .step3 .head{position:relative;}
+.mainWrap .step3 .head .btnWrap{position:absolute;right:0;top:0;}
+
+.mainWrap .step3 .mbox{width:300px;height:300px;overflow:hidden;border:1px solid red;}
+.mainWrap .step3 .mbox ol{width:10000px;height:300px;}
+.mainWrap .step3 ol li {height:300px;width:290px;margin:auto;}
+
+.step3 .btnWrap {position:relative;}
+.step3 .btnWrap .prev {background:url(../images/common/bg_btns.png) no-repeat -132px -81px;position:absolute;right:45px;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
+.step3 .btnWrap .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -132px -16px;}
+.step3 .btnWrap .next{background:url(../images/common/bg_btns.png) no-repeat -196px -81px;position:absolute;left:-45px;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
+.step3 .btnWrap .next:hover{background:url(../images/common/bg_btns.png) no-repeat -196px -16px;}
+
+.mainWrap table{border-top:1px solid #c1c1c1;border-bottom:1px solid #c1c1c1;text-align:left;margin-top:10px;}
+.mainWrap table th{background:#f8f8f9;padding:10px 0 10px 20px;border-top:1px solid #dededf;}
+.mainWrap table td{padding:10px 0 10px 20px;border-top:1px solid #dededf;}
+
+.leftLayer{border:1px solid red;width:300px;position:absolute;left:0;top:0;z-index:10;background:#fff;}
+.leftLayer .top{position:relative;}
+.leftLayer .top a{position:absolute;right:0;top:0;}
+
+
+
+
