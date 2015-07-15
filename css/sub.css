@@ -729,7 +729,7 @@ padding-top:90px;}
 /* input */
 .pop_container .ipt {background:url(../images/common/bg_input_ty2.png) no-repeat right 0;height:29px;line-height:29px;padding:2px 5px 2px 0;display:inline-block;margin-top:0;position:relative;}
 .pop_container .ipt .sp{background:url(../images/common/bg_input_ty2.png) no-repeat 0 0;line-height:33px;height:33px;display:inline-block;margin:-2px 0 0 -5px;}
-.pop_container .ipt input{border:0;height:25px;line-height:25px;margin-top:4px;position:relative;z-index:2;background:transparent;}
+.pop_container .ipt input{border:0;height:33px;line-height:33px;position:relative;z-index:2;background:transparent;}
 .pop_container .ipt label{position:absolute;left:0;top:0;font-size:12px;height:33px;line-height:33px;}
 .pop_container .popForm td > .ipt{margin-left:5px;}
 .pop_container .popForm .ipt_ch + label{margin-right:30px;}
@@ -1043,7 +1043,7 @@ padding-top:90px;}
 .faq_q .answer > p .string{position:absolute;right:90px;top:0;}
 .faq_q .answer .textarea {position:relative;}
 .faq_q .answer .textarea > div{width:686px;height:113px;background:url(../images/common/bg_textarea.gif) no-repeat 0 0;float:left;margin-right:10px;}
-.faq_q .answer .textarea > div > textarea{width:666px;height:103px;margin:5px;background:none;border:0;}
+.faq_q .answer .textarea > div > textarea{width:676px;height:103px;padding:5px;background:none;border:0;}
 .faq_q .answer .textarea > a{float:left;}
 .faq_q .answer .textarea .intVal{position:relative;z-index:2;background:transparent;color:#666;}
 .faq_q .answer .textarea .lbl{position:absolute;left:5px;top:5px;font-size:12px;display:block;color:#d1d1d1;}
@@ -1081,7 +1081,7 @@ padding-top:90px;}
 
 .tbForm .ipt {background:url(../images/common/bg_input_ty2.png) no-repeat right 0;height:29px;line-height:29px;padding:2px 5px 2px 0;display:inline-block;margin-top:0;position:relative;}
 .tbForm .sp {background:url(../images/common/bg_input_ty2.png) no-repeat 0 0;line-height:33px;height:33px;display:inline-block;margin:-2px 0 0 -5px;}
-.tbForm .ipt input{border:0;height:25px;line-height:25px;margin-top:4px;position:relative;z-index:2;background:transparent;}
+.tbForm .ipt input{border:0;height:33px;line-height:33px;position:relative;z-index:2;background:transparent;}
 .tbForm .ipt label{position:absolute;left:0;top:0;font-size:12px;height:33px;line-height:33px;}
 .tbForm .ipt {background:url(../images/common/bg_input_ty2.png) no-repeat right 0;height:29px;line-height:29px;padding:2px 5px 2px 0;display:inline-block;}
 .tbForm .ipt {position:relative;}
@@ -1090,7 +1090,7 @@ padding-top:90px;}
 .tbForm td > .ipt {margin-left:5px;}
 .tbForm .ipt + .red{padding-left:5px;font-size:11px;}
 .tbForm .textarea {background:url(../images/common/bg_textarea1.gif) no-repeat 0 0;width:726px;height:173px;position:relative;}
-.tbForm .textarea textarea{width:706px;height:163px;margin:5px;border:0;background:transparent;position:relative;z-index:2;}
+.tbForm .textarea textarea{width:716px;height:163px;padding:5px;border:0;background:transparent;position:relative;z-index:2;}
 .tbForm .textarea label{position:absolute;left:5px;top:5px;font-size:12px;}
 
 /* 계정정보 찾기 */
