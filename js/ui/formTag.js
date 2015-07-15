@@ -22,7 +22,7 @@ define(['jquery','easing'],function($,easing){
 				this.rdoBtn.eq(i).data("index", i);
 				this.rdoTar.eq(i).data("index", i);
 			}
-
+			// form label
 			var $intVal = $('.intVal');
 
 			$intVal.on('click focus', function () {
