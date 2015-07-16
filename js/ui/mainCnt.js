@@ -15,8 +15,8 @@ define(['jquery','easing'],function($,easing){
 			// 메인 롤링
 			$.fn.itemSlide = function(options){
 				var defaults = {
-					cntWrap : " div > div > ul",
-					cntWidth : 292,
+					cntWrap : " div > ol",
+					cntWidth : 300,
 				}
 
 				options = $.extend(defaults, options);
@@ -33,14 +33,14 @@ define(['jquery','easing'],function($,easing){
 					cntWrap.data("current", 0)
 
 					next.on('click',function( e ){
-						var tar = $(e.currentTarget).parent().find(".mbox");
-						var current = tar.data("current")
+						var tar = $(e.currentTarget).parent(".step3").find(".mbox > ol");
+						var current = tar.data("current"); //null
 						if (current < maxSize-1) current++;
 						tar.data("current", current);
 						listMove( tar );
 					});
 					prev.on('click',function( e ){
-						var tar = $(e.currentTarget).parent().find(".mbox");
+						var tar = $(e.currentTarget).parent().find(".mbox > ol");
 						var current = tar.data("current");
 						if (current > 0) current--;
 						tar.data("current", current);
@@ -55,9 +55,8 @@ define(['jquery','easing'],function($,easing){
 					}
 				});
 			};
-			$(".mbox ").itemSlide({cntWrap : " div > ul", cntWidth : 290});  
+			$(".step3 ").itemSlide({cntWrap : " div > ol", cntWidth : 300});  
 
-			
 		}
 		, slideLayer : function( e ){
 			var tar = $(e.currentTarget.hash);
