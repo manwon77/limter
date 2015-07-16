@@ -11,12 +11,12 @@
 .smarCnt .col > a{margin-bottom:15px;}
 
 .main_grid{margin-left:121px;position:relative;}
-.mainWrap{}
-.mainWrap:after{content:"";display:block;clear:both;}
-.mainWrap h3{font-size:20px;font-family:'NanumGothic';}
-.mainWrap .step1, .main_grid .step2, .main_grid .step3{float:left;margin-left:20px;background:#fff;}
-.mainWrap .step1{border:1px solid red;width:300px;margin-left:0;position:relative;z-index:30;}
-.mainWrap .step1 .cnt{height:200px;overflow:hidden;overflow-y:scroll;}
+.main_type1{width:1280px;}
+.main_type1:after{content:"";display:block;clear:both;}
+.main_type1 h3{font-size:20px;font-family:'NanumGothic';}
+.main_type1 .step1, .main_grid .step2, .main_grid .step3{float:left;margin-left:20px;background:#fff;}
+.main_type1 .step1{border:1px solid red;width:300px;margin-left:0;position:relative;z-index:30;}
+.main_type1 .step1 .cnt{height:200px;overflow:hidden;overflow-y:scroll;}
 
 .mainWrap .step2{border:1px solid red;width:300px;position:relative;z-index:30;}
 
@@ -29,13 +29,13 @@
 .topCnt .list > li dd.img > a{display:block;padding-top:5px;}
 
 
-.mainWrap .step3{width:300px;position:relative;z-index:5;}
-.mainWrap .step3 .head{position:relative;}
-.mainWrap .step3 .head .btnWrap{position:absolute;right:0;top:0;}
+.main_type1 .step3{width:300px;position:relative;z-index:5;}
+.main_type1 .step3 .head{position:relative;}
+.main_type1 .step3 .head .btnWrap{position:absolute;right:0;top:0;}
 
-.mainWrap .step3 .mbox{width:300px;height:300px;overflow:hidden;border:1px solid red;position:relative;}
-.mainWrap .step3 .mbox ol{width:10000px;position:absolute;}
-.mainWrap .step3 ol li {margin:auto;float:left;width:300px;}
+.main_type1 .step3 .mbox{width:300px;height:300px;overflow:hidden;border:1px solid red;position:relative;}
+.main_type1 .step3 .mbox ol{width:10000px;position:absolute;}
+.main_type1 .step3 ol li {margin:auto;float:left;width:300px;}
 
 .step3 .btnWrap {position:relative;}
 .step3 .btnWrap .prev {background:url(../images/common/bg_btns.png) no-repeat -132px -81px;position:absolute;right:45px;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
@@ -43,14 +43,34 @@
 .step3 .btnWrap .next{background:url(../images/common/bg_btns.png) no-repeat -196px -81px;position:absolute;left:-45px;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
 .step3 .btnWrap .next:hover{background:url(../images/common/bg_btns.png) no-repeat -196px -16px;}
 
-.mainWrap table{border-top:1px solid #c1c1c1;border-bottom:1px solid #c1c1c1;text-align:left;margin-top:10px;}
-.mainWrap table th{background:#f8f8f9;padding:10px 0 10px 20px;border-top:1px solid #dededf;}
-.mainWrap table td{padding:10px 0 10px 20px;border-top:1px solid #dededf;}
+.main_type1 table{border-top:1px solid #c1c1c1;border-bottom:1px solid #c1c1c1;text-align:left;margin-top:10px;}
+.main_type1 table th{background:#f8f8f9;padding:10px 0 10px 20px;border-top:1px solid #dededf;}
+.main_type1 table td{padding:10px 0 10px 20px;border-top:1px solid #dededf;}
 
 .leftLayer{width:302px;position:absolute;left:0;top:0;z-index:10;background:#fff;}
 .leftLayer .top{position:relative;border:1px solid red;}
 .leftLayer .top a{position:absolute;right:0;top:0;}
 
+
+/* mainType2 */
+.main_type2{width:1280px;}
+.main_type2:after{content:"";display:block;clear:both;}
+.main_type2 .btnWrap {position:relative;}
+.main_type2 .btnWrap .prev {background:url(../images/common/bg_btns.png) no-repeat -132px -81px;position:absolute;left:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
+.main_type2 .btnWrap .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -132px -16px;}
+.main_type2 .btnWrap .next{background:url(../images/common/bg_btns.png) no-repeat -196px -81px;position:absolute;right:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
+.main_type2 .btnWrap .next:hover{background:url(../images/common/bg_btns.png) no-repeat -196px -16px;}
+
+.main_type2 > div{margin-left:30px;}
+.main_type2 > div:first-child{margin-left:0;}
+.main_type2 .step1, .main_type2 .step2, .main_type2 .step3{width:200px;float:left;border:1px solid red;}
+.main_type2 .step1 > ul{padding:0 5px;}
+.main_type2 .step1 dt, .main_type2 .step1 dd{float:left;width:89px;text-align:center;padding:3px 0;}
+.main_type2 .step1 dt{border-right:1px solid red;}
+
+.main_type2 .step3 {width:400px;}
+.main_type2 .step3 table {padding:10px;border:1px solid red;}
+.main_type2 .step3 table td{padding:5px;border:1px solid red;}
 
 
 
