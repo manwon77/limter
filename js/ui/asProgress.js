@@ -12,7 +12,7 @@ define(['jquery','easing'],function($,easing){
 				namespace: 'pie_progress',
 				goal: 1000,
 				min: 0,
-				max: 1000,
+	하이미디어컴퓨터학원			max: 1000,
 				speed: 500,
 				step:1,
 				easing: 'linear',

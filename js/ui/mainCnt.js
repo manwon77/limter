@@ -56,6 +56,13 @@ define(['jquery','easing'],function($,easing){
 			};
 			$(".step3").itemSlide({cntWrap : " div > ol", cntWidth : 300}); 
 
+			this.next = $(".main_type2 .next");
+			this.prev = $(".main_type2 .prev");
+			this.cntW1 = $(".cnt_ty1");
+			this.cntW2 = $(".cnt_ty2");
+			this.next.on("click", $.proxy( this.cnt1, this ) );
+			this.prev.on("click", $.proxy( this.cnt2, this ) );
+
 		}
 		, slideLayer : function( e ){
 			var tar = $(e.currentTarget.hash);
@@ -64,7 +71,7 @@ define(['jquery','easing'],function($,easing){
 				if(tar.attr("id") == this.oldLayer.attr("id")) return false;
 				this.oldLayer.animate(
 					{"left" : -500}
-					, "800"
+					, 800
 					, "easeOutQuart"
 					, function(){
 
@@ -73,7 +80,7 @@ define(['jquery','easing'],function($,easing){
 			}
 			tar.animate(
 				{"left" : 644}
-				, "800"
+				, 800
 				, "easeOutQuart"
 				, function(){
 					that.oldLayer = tar;
@@ -87,12 +94,58 @@ define(['jquery','easing'],function($,easing){
 
 			par.animate(
 				{"left" : -500}
-				, "800"
+				, 800
 				, "easeOutQuart"
 				, function(){
 
 				}
 			);
+			e.preventDefault();
+		}
+
+		, cnt1 : function( e ){
+			setTimeout(function(){
+				var cntW1 = $(".cnt_ty1");
+				var cntW2 = $(".cnt_ty2");
+
+				
+
+				cntW1.clearQueue().animate(
+					{"left" : -2000}
+					, 1000
+					, "easeOutExpo"
+					, function(){
+		
+					}
+				),
+				cntW2.clearQueue().animate(
+					{"left" : 0}
+					, 1000
+					, "easeOutExpo"
+					, function(){
+						
+					}
+				)
+			}, 0);
+			e.preventDefault();
+		}
+		, cnt2 : function( e ){
+			this.cntW1.clearQueue().animate(
+				{"left" : 0}
+				, 1000
+				, "easeOutExpo"
+				, function(){
+					
+				}	
+			)
+			this.cntW2.clearQueue().animate(
+				{"left" : 2000}
+				, 1000
+				, "easeOutExpo"
+				, function(){
+					
+				}	
+			)
 			e.preventDefault();
 		}
 

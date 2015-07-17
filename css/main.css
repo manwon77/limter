@@ -11,7 +11,7 @@
 .smarCnt .col > a{margin-bottom:15px;}
 
 .main_grid{margin-left:121px;position:relative;}
-.main_type1{width:1280px;}
+.main_type1{}
 .main_type1:after{content:"";display:block;clear:both;}
 .main_type1 h3{font-size:20px;font-family:'NanumGothic';}
 .main_type1 .step1, .main_grid .step2, .main_grid .step3{float:left;margin-left:20px;background:#fff;}
@@ -53,17 +53,19 @@
 
 
 /* mainType2 */
-.main_type2{width:1280px;}
+.main_type2{position:relative;height:300px;width:1000px;overflow:hidden;}
 .main_type2:after{content:"";display:block;clear:both;}
-.main_type2 .btnWrap {position:relative;}
+.main_type2 .btnWrap {}
 .main_type2 .btnWrap .prev {background:url(../images/common/bg_btns.png) no-repeat -132px -81px;position:absolute;left:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
 .main_type2 .btnWrap .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -132px -16px;}
 .main_type2 .btnWrap .next{background:url(../images/common/bg_btns.png) no-repeat -196px -81px;position:absolute;right:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
 .main_type2 .btnWrap .next:hover{background:url(../images/common/bg_btns.png) no-repeat -196px -16px;}
 
-.main_type2 > div{margin-left:30px;}
-.main_type2 > div:first-child{margin-left:0;}
-.main_type2 .step1, .main_type2 .step2, .main_type2 .step3{width:200px;float:left;border:1px solid red;}
+.main_type2 .cntWrap{width:3000px;position:absolute;}
+.main_type2 .cnt{width:1000px;height:300px;border:1px solid blue;position:relative;float:left;background:white;}
+.main_type2 .cnt:after{content:"";display:block;clear:both;}
+.main_type2 .cnt > div:first-child{margin-left:0;}
+.main_type2 .step1, .main_type2 .step2, .main_type2 .step3, .main_type2 .step4, .main_type2 .step5{width:200px;float:left;border:1px solid red;}
 .main_type2 .step1 > ul{padding:0 5px;}
 .main_type2 .step1 dt, .main_type2 .step1 dd{float:left;width:89px;text-align:center;padding:3px 0;}
 .main_type2 .step1 dt{border-right:1px solid red;}
@@ -72,5 +74,14 @@
 .main_type2 .step3 table {padding:10px;border:1px solid red;}
 .main_type2 .step3 table td{padding:5px;border:1px solid red;}
 
+.main_type2 .cnt_ty1 {background:green;}
+.main_type2 .cnt_ty2{position:absolute;left:2000px;top:0;background:blue;}
 
+.graph_circle {position:absolute;left:50%;top:50%;margin:-131px 0 0 -80px;}
+.graph_circle > div.gray{background:gray;width:158px;height:158px;border-radius:50%;}
+.graph_circle > div.gray.red{background:red;}
+.graph_circle > div > .circle{background:white;width:152px;height:152px;border-radius:50%;position:relative;left:3px;top:3px;}
+.graph_circle .txt .arr{position:absolute;left:50%;top:103px;margin-left:-16px;}
+.graph_circle .txt .nmber{color:red;font-size:30px;font-weight:bold;text-align:center;width:158px;display:block;padding-top:53px;white-space:nowrap;}
+.graph_circle .txt .nmber > span{font-size:16px;}
 
