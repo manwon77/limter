@@ -12,7 +12,7 @@ define(['jquery','easing'],function($,easing){
 				namespace: 'pie_progress',
 				goal: 1000,
 				min: 0,
-	하이미디어컴퓨터학원			max: 1000,
+				max: 1000,
 				speed: 500,
 				step:1,
 				easing: 'linear',
@@ -38,7 +38,6 @@ define(['jquery','easing'],function($,easing){
 				}
 			});
 			$('.pie_progress').asPieProgress('start');
-
 			
 			this.loadingTar = $(".bg2");
 			if (this.loadingTar.hasClass("active")){
