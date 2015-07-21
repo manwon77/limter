@@ -1,11 +1,13 @@
 define(['jquery','easing'],function($){
 	var slide = {
 		init : function(){
-
+			
+			// 0721 start
 			$.fn.itemSlide = function(options){
 				var defaults = {
 					cntWrap : " div > div > ul",
-					cntWidth : 292,
+					cntWidth : 290,
+					cntWidth1 : 580,
 				}
 
 				options = $.extend(defaults, options);
@@ -15,9 +17,12 @@ define(['jquery','easing'],function($){
 					var thumbListSize = 3;
 					var prev = wrap.find('.pro_prev');
 					var next = wrap.find('.pro_next');
+					var prev1 = wrap.find('.prev');
+					var next1 = wrap.find('.next');
 					var cntWrap = wrap.find(o.cntWrap);
 					var cntThumb = cntWrap.find(' > li');
 					var cntWidth = o.cntWidth;
+					var cntWidth1 = o.cntWidth1;
 					var maxSize = cntThumb.size();
 					cntWrap.data("current", 0)
 
@@ -36,16 +41,40 @@ define(['jquery','easing'],function($){
 						listMove( tar );
 					});
 
+					next1.on('click',function( e ){
+						var tar1 = $(e.currentTarget).parent().find(".bx_viewport > ul");
+						var current = tar1.data("current")
+						if (current < maxSize-4) current++;
+
+						console.log(current);
+						tar1.data("current", current);
+						listMove1( tar1 );
+
+					});
+					prev1.on('click',function( e ){
+						var tar1 = $(e.currentTarget).parent().find(".bx_viewport > ul");
+						var current = tar1.data("current");
+						if (current > 0) current--;
+						tar1.data("current", current);
+						listMove1( tar1 );
+					});
+					
 					function listMove( tar ){
 						var current = tar.data("current");
 						var tl = cntWidth * current * -1;
 						tar.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
 
 					}
+
+					function listMove1( tar1 ){
+						var current = tar1.data("current");
+						var tl = cntWidth1 * current * -1;
+						tar1.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
+					}
 				});
 			};
-			$(".thumbList ").itemSlide({cntWrap : " div > ul", cntWidth : 292});  
-			
+			$(".thumbList").itemSlide({cntWrap : " div > ul", cntWidth : 290});  
+			// 0721 end
 
 			// ball
 			this.swWrap = $(".switchWrap > .switch");

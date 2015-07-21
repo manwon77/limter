@@ -15,7 +15,7 @@
 .hdTxt{font-size:15px; color:#444;}
 .listD1{margin-top:50px;}
 .hdTxt + .listD1{margin-top:47px;}
-.listD1 > li > span{font-size:18px; color:#444; font-family:"aritadsb"}
+.listD1 > li > span{font-size:18px; color:#444; font-family:"arial"}
 .listD1 > li{line-height:50px;}
 .listD1 li{color:#797979;}
 .listD2 {padding:0 0 25px 0px;}
@@ -29,12 +29,12 @@
 .textdesc_ty1{font-size:15px; color:#a7a7a7;}
 
 /* 마케팅플랜 type */
-.stit_ty1{font-size:18px; font-family:"aritadsb"; color:#444; margin-top:50px;}
+.stit_ty1{font-size:18px; font-family:"arial"; color:#444; margin-top:50px;}
 .stit_ty1 + .txtDesc{margin-top:23px;}
 .stit_ty1 + .list_ty1,
 .stit_ty1 + .list_ty2{margin-top:23px;}
 .stit_ty1 + .list_ty1 li{font-size:15px; line-height:30px; color:#a7a7a7;}
-.stit_ty1 + .list_ty1 li strong{color:#444444; font-weight:normal; font-family:"aritadsb";}
+.stit_ty1 + .list_ty1 li strong{color:#444444; font-weight:normal; font-family:"arial";}
 
 .listdsc_ty1{color:#1d2088;}
 .dep2_ty1{color:#a7a7a7; font-size:15px; line-height:25px; margin:0 0 10px 15px;}
@@ -101,16 +101,16 @@
 .DetailImg img{width:500px; height:500px;}
 .DetailView{float:left; width:750px;}
 .DetailView .product-tit{margin:0 0 50px 0;}
-.DetailView .product-tit h2{font-family:"aritadsb"; font-size:24px; color:#444; font-weight:normal;}
+.DetailView .product-tit h2{font-family:"arial"; font-size:24px; color:#444; font-weight:normal;}
 .DetailView .product-tit h2 span{font-size:15px; color:#a7a7a7; display:block;}
 .pd-area > li{padding:0 0 20px 0;}
-.pd-area .pdTitle{font-family:"aritadsb"; font-size:15px; color:#444; display:inline-block; background:url(../images/common/ico_grayDot.gif) no-repeat 0 11px; padding-left:10px; width:100px;}
+.pd-area .pdTitle{font-family:"arial"; font-size:15px; color:#444; display:inline-block; background:url(../images/common/ico_grayDot.gif) no-repeat 0 11px; padding-left:10px; width:100px;}
 .pd-area .pfArea,
 .pd-area .pdText{color:#a7a7a7; font-size:15px; line-height:25px;}
 .pd-area .pdText{display:inline-block;}
-.pd-area .pdText .price{font-family:"aritadsb"; font-size:15px; vertical-align:middle; display:inline-block; padding:2px 0 0 0; color:#444;}
+.pd-area .pdText .price{font-family:"arial"; font-size:15px; vertical-align:middle; display:inline-block; padding:2px 0 0 0; color:#444;}
 .pd-area .pdText .price em{font-size:40px; font-weight:bold;}
-.pd-area .pdText .pv{font-family:"aritadsb"; font-size:15px; vertical-align:middle; display:inline-block; padding:2px 0 0 0; color:#1d2088;}
+.pd-area .pdText .pv{font-family:"arial"; font-size:15px; vertical-align:middle; display:inline-block; padding:2px 0 0 0; color:#1d2088;}
 .pd-area .pdText .pv em{font-size:20px; vertical-align:middle; line-height:25px; font-weight:normal;}
 .pd-area .pfArea{padding:5px 0 5px 15px;}
 .pd-area .cntCtrl{overflow:hidden;}
@@ -119,7 +119,7 @@
 .pd-area .cntCtrl .txt{display:inline-block; line-height:30px; padding:0 0 0 10px;}
 .DetailView .total{padding:30px 0; margin-bottom:60px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6;}
 .DetailView .total .pdTitle{font-size:20px; color:#444; display:inline-block; width:100px;}
-.DetailView .total .pdText{font-family:"aritadsb"; font-size:15px; color:#444;}
+.DetailView .total .pdText{font-family:"arial"; font-size:15px; color:#444;}
 .DetailView .total .pdText em{font-size:20px; font-weight:bold; color:#444;}
 
 /* 제품상세정보 */
@@ -161,7 +161,7 @@
 /* 장바구니 */
 .orderStep{overflow: hidden; margin:50px 0 60px 0;}
 .orderStep li{float:left; border:1px solid #e6e6e6; border-left:0; border-right:0; position:relative;}
-.orderStep li span{display:block; width:294px; padding-left:29px; height: 98px; line-height:98px; font-size:15px; color:#444;  font-family:"aritadsb";
+.orderStep li span{display:block; width:294px; padding-left:29px; height: 98px; line-height:98px; font-size:15px; color:#444;  font-family:"arial";
 	border-left:1px solid #e6e6e6; border-right:1px solid #e6e6e6; margin-left:-1px;}
 .orderStep li:first-child span{border-left:1px solid #e6e6e6; margin-left:0;}
 .orderStep li:first-child:before{background:none;}
@@ -172,12 +172,12 @@
 .orderStep li.on + li span{border-left:0;}
 
 /* step 공통 헤딩 */
-.subtit{font-family:"aritadsb"; font-size:20px; color:#444;} 
+.subtit{font-family:"arial"; font-size:20px; color:#444;} 
 .subtit_dsc{font-size:13px; margin-top:8px; color:#a7a7a7;}  
 
 #cartWrap{}
 #cartWrap .cartList{margin-top:40px;}  
-#cartWrap .cartList thead th{border-top:2px solid #444444; border-bottom:1px solid #444; font-family:"aritadsb"; padding:15px 0;
+#cartWrap .cartList thead th{border-top:2px solid #444444; border-bottom:1px solid #444; font-family:"arial"; padding:15px 0;
 	font-size:15px; text-align:center; color:#444;}
 #cartWrap .cartList tbody td{padding:20px 0; font-size:15px; color:#444; text-align:center; border-top:1px solid #e6e6e6;}
 #cartWrap .cartList tbody td.product_image{padding-left:20px;}
@@ -199,10 +199,10 @@
 .payment tbody td{font-size:20px; color:#444; font-weight:bold; padding-bottom:20px;}
 .payment tbody td.payment_sum{font-weight:normal;}
 .payment tbody td.payment_sum span{font-size:15px;}
-.payment tbody td.payment_sum em{font-weight:bold; font-size:20px; font-family:"aritadsb";}
+.payment tbody td.payment_sum em{font-weight:bold; font-size:20px; font-family:"arial";}
 .payment tbody td.payment_sum .imgSum{margin:0 32px;}
-.payment tbody td.payment_price{text-align:right; font-family:"aritadsb"; font-size:40px;}
-.payment tbody td.pv_sum{color:#1d2088;text-align:right; font-family:"aritadsb"; font-size:30px;}
+.payment tbody td.payment_price{text-align:right; font-family:"arial"; font-size:40px;}
+.payment tbody td.pv_sum{color:#1d2088;text-align:right; font-family:"arial"; font-size:30px;}
 .payment tbody td.payment_price span{font-size:15px;}
 
 
@@ -210,7 +210,7 @@
 .orderOkCont{padding:45px 0; text-align:center; line-height:30px; color:#444; font-size:20px;
 	border-top:2px solid #444; border-bottom:1px solid #444; margin:40px 0 60px 0;
 }
-.orderOkCont strong{ font-family:"aritadsb"; font-weight:bold;}
+.orderOkCont strong{ font-family:"arial"; font-weight:bold;}
 .orderOkCont .orderNumber{background-color:#f4f4f4; display:inline-block; height:40px; line-height:40px; padding:0 14px;}
 .orderOkCont .orderNumber strong{color:#1d2088;}
 .orderOkCont .txtex{font-size:15px; color:#a7a7a7; line-height:25px;}
@@ -231,10 +231,10 @@
 
 .tbl_ty3{clear:both;width:100%; margin:40px 0 55px; border-top:2px solid #444; border-bottom:1px solid #444;}
 .tbl_ty3 th,.tbl_ty3 td{text-align:left; border-top:1px solid #e6e6e6; line-height:22px; font-size:15px; color:#444;}
-.tbl_ty3 tbody th{font-weight:normal; font-family:"aritadsb"; padding:18px 0 18px 20px;}
+.tbl_ty3 tbody th{font-weight:normal; font-family:"arial"; padding:18px 0 18px 20px;}
 .tbl_ty3 tbody td{padding:10px 0; color:#a7a7a7;}
-.tbl_ty3 tbody td select{border:1px solid #dddddd; height:28px; line-height:28px; font-family:'aritadm'; color:#a7a7a7;}
-.tbl_ty3 tbody td input{height:28px; line-height:30px; border:1px solid #dddddd; font-family:'aritadm';}
+.tbl_ty3 tbody td select{border:1px solid #dddddd; height:28px; line-height:28px; font-family:'arial'; color:#a7a7a7;}
+.tbl_ty3 tbody td input{height:28px; line-height:30px; border:1px solid #dddddd; font-family:'arial';}
 .tbl_ty3 tbody td input.disable{height:30px; background-color:#f4f4f4; border:none; }
 .tbl_ty3 tbody td input + .md_ty3{margin-left:10px;}
 .tbl_ty3 tbody td .hyphen{margin:0 13px;}
@@ -242,7 +242,7 @@
 .tbl_ty3 tbody td .col input + input{margin-top:12px;display:block;}
 .tbl_ty3 tbody td input + label{display:inline-block; margin:0 40px 0 10px; color:#a7a7a7;}
 .tbl_ty3 tbody td .delivery{}
-.tbl_ty3 tbody td textarea{padding:12px; vertical-align:middle;background-color:#f4f4f4; border:none; font-family:'aritadm';}
+.tbl_ty3 tbody td textarea{padding:12px; vertical-align:middle;background-color:#f4f4f4; border:none; font-family:'arial';}
 .tbl_ty3 tbody td textarea + p{padding-top:5px;}
 .tbl_ty3 tbody td .delivery p{font-size:13px; line-height:20px; color:#a7a7a7;}
 .tbl_ty3 tbody td .txtex{font-size:13px; line-height:20px; color:#a7a7a7; margin-left:10px;}
@@ -258,13 +258,13 @@
 /* 회원가입절차 - step2_회원정보입력*/
 .tbl_form +.form-top {margin:50px 0 30px 0;}
 .form-top {margin:0 0 30px 0;}
-.form-top span{ color:#e42525; font-size:15px; font-family:'aritasb';}
+.form-top span{ color:#e42525; font-size:15px; font-family:'arial';}
 .tbl_form{border-bottom:1px solid #e9e9e9;}
-.tbl_form th, .tbl_form td {text-align:left;line-height:22px; font-size:15px; border-top:1px solid #e6e6e6;font-family:'aritasb';}
+.tbl_form th, .tbl_form td {text-align:left;line-height:22px; font-size:15px; border-top:1px solid #e6e6e6;font-family:'arial';}
 .tbl_form tr:first-child th ,
 .tbl_form tr:first-child td{border-top:2px solid #444444;}
 .tbl_form th{color:#444; font-weight:normal; line-height:15px;}
-.tbl_form th > span{margin:0 5px 0 16px; color:#e42525; font-size:15px; font-family:'aritasb'; vertical-align:middle;}
+.tbl_form th > span{margin:0 5px 0 16px; color:#e42525; font-size:15px; font-family:'arial'; vertical-align:middle;}
 .tbl_form th label, .tbl_form th .label{margin:0 0 0 27px; color:#444; font-weight:normal; }
 .tbl_form th span + label{margin-left:0;}
 .tbl_form td {padding:10px 10px 10px 20px; color:#a7a7a7;}
@@ -272,7 +272,7 @@
 .tbl_form td input[type="password"],
 .tbl_form td input[type="text"] {height:32px; line-height:32px; font-size:1em; background-color:#f4f4f4; border:0;}
 .tbl_form td input + .btn {margin-left:10px;}
-.tbl_form td .info_desc {color:#444; font-size:13px; margin-left:15px; font-family:'aritadm';}
+.tbl_form td .info_desc {color:#444; font-size:13px; margin-left:15px; font-family:'arial';}
 .tbl_form td .addfile .info_desc{display:block; margin:10px 0 0 0;}
 .tbl_form td .fileList{color:#f87806;}
 .tbl_form td .fileList .btn{margin-left:10px;} 
@@ -962,21 +962,28 @@ padding-top:90px;}
 .layer3{width:771px;height:869px;background:url(../images/common/bg_layer3.png) no-repeat 0 0;}
 .layer3 .tit{height:60px;line-height:60px;color:#fff;font-size:18px;padding-left:30px;position:relative;}
 .layer3 .tit .close{position:absolute;right:30px;top:12px;}
-.layer3 .cnt{padding:35px 95px 0;text-align:center; position:relative;}
+.layer3 .cnt{padding:35px 40px 0;text-align:center; position:relative;}
 .layer3 .cnt > img{text-align:center;}
 .layer3 .cnt > p{text-align:center;background:url(../images/common/bg_dot_ty1.gif) repeat-x 0 bottom;padding:20px 0;margin-bottom:20px;font-size:15px;color:#34495e;}
 .layer3 .thumCenter{width:274px;margin:0 auto;}
 .layer3 .present_ch{background:url(../images/common/bg_dot_ty2.gif) repeat-x 0 center;width:100%;margin-top:20px;}
-.layer3 .present_ch > a{display:block;}
-
-.layer3 .btns_ty1 li .prev{background:url(../images/common/bg_btns.png) no-repeat -15px -185px;width:33px;height:151px;position:absolute;left:51px;bottom:186px;z-index:1000;}
-.layer3 .btns_ty1 li .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -15px -16px;}
-.layer3 .btns_ty1 li .next{background:url(../images/common/bg_btns.png) no-repeat -65px -185px;width:33px;height:151px;position:absolute;right:51px;bottom:186px;z-index:1000;}
-.layer3 .btns_ty1 li .next:hover{background:url(../images/common/bg_btns.png) no-repeat -65px -16px;}
-
-.layer3 .paging{background:url(../images/common/bg_dot_ty2.gif) repeat-x 0 bottom;width:100%;padding-bottom:10px;}
+.layer3 .present_ch > a{display:inline-block;}
+.layer3 .paging{background:url(../images/common/bg_dot_ty2.gif) repeat-x 0 bottom;width:100%;padding:18px 0 10px;}
 .layer3 .paging {font-size:15px;color:#34495e;}
 .layer3 .paging > span{font-size:12px;color:#607891;}
+
+/* 추천장바구니-상품변경 */
+.popSlide {margin-top:26px;position:relative;}
+.popSlide .bx_viewport {position:relative;left:50%;width:586px;height:326px;overflow:hidden;margin-left:-298px;}
+.popSlide .bx_viewport .col{width:10000px;position:absolute;}
+.popSlide .bx_viewport .col > li{float:left;height:326px;margin:0 0 23px 16px;}
+.popSlide .bx_viewport .col > li .infobox + .btn_change {margin-top:7px;}
+.popSlide .bx_viewport .infobox{text-align:left;}
+.popSlide .prev{background:url(../images/common/bg_btns.png) no-repeat -15px -185px;width:33px;height:151px;position:absolute;left:10px;top:60px;z-index:1000;}
+.popSlide .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -15px -16px;}
+.popSlide .next{background:url(../images/common/bg_btns.png) no-repeat -65px -185px;width:33px;height:151px;position:absolute;right:10px;top:60px;z-index:1000;}
+.popSlide .next:hover{background:url(../images/common/bg_btns.png) no-repeat -65px -16px;}
+.layer3 .thumCenter .infobox{text-align:left;}
 
 /* customer 마트모아 소식 */
 .customer{position:relative;width:1032px;border:1px solid #f0f0f0;margin-bottom:38px;}
@@ -1246,7 +1253,6 @@ dl.pop_help_detail dt{font-weight:bold;}
 .pie_progress .pie_progress__number{font-size:40px;line-height:40px;color:#fff;text-align:center;background:url(../images/common/bg_cart_sm.gif) no-repeat 0 0;width:105px;height:65px;padding-top:20px;display:inline-block;position:absolute;left:50%;top:-42px;margin-left:-52.5px;}
 .pie_progress__svg{width:396px;height:396px;}
 
-
 /* 체크박스 */
 .cus_ty1{float:left;margin-right:20px;}
 span.btnChk, span.btnRdo {background:url(../images/common/bg_check1.gif) no-repeat 0 0;width:15px;height:7px;display:inline-block;padding:8px 5px 0 0;}
@@ -1257,4 +1263,27 @@ span.btnChk_ty1 {display:block;margin:10px auto 0;}
 span.btnRdo_ty1 {background:url(../images/common/bg_radio1.png) no-repeat 0 0;width:13px;height:6px;display:inline-block;padding:8px 5px 0 0;}
 span.btnRdo_ty1.on {background-position:0 -14px;}
 span.btnRdo_ty1 > input {font-size:0;line-height:0;text-indent:-9999999px;border:0;margin:0;padding:0;width:0;height:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
