@@ -29,8 +29,6 @@ requirejs.config({
     }
 });
 
-
-
 define(['jquery','slide','formTag'],function($, slide, formTag){
 
     slide.init();

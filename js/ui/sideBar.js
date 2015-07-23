@@ -26,6 +26,10 @@ define(['jquery','easing','scrollBar'],function($,easing){
 				}
 			});
 			
+			this.tip = $(".asideBtn");
+			this.tip.off("mouseover", $.proxy( this.tipNone, this) ).on("mouseover", $.proxy( this.tipBlock, this) );
+			//this.tip.off("mouseover", $.proxy( this.tipBlock, this) ).on("mouseover", $.proxy( this.tipBlock, this) );
+			
 		}
 		, slideLayer : function( e ){
 			var tar = $(e.currentTarget.hash);
@@ -64,6 +68,18 @@ define(['jquery','easing','scrollBar'],function($,easing){
 				}
 			);
 			e.preventDefault();
+		}
+
+		, tipNone : function( e ){
+			var current = $(e.currentTarget);
+			var target = current.next(".tip");
+			target.hide();
+					
+		}
+		, tipBlock : function( e ){
+			var current = $(e.currentTarget);
+			var target = current.next(".tip");
+			target.show();
 		}
 
 	}

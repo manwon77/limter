@@ -36,6 +36,26 @@ define(['jquery','easing'],function($,easing){
 				}
 			});
 
+			// 추천장바구니 로딩 팝업
+			this.loadingTar = $(".fnt");
+			if (this.loadingTar.hasClass("active")){
+				this.loadingTar.removeClass("active");
+				this.loadingTar.animate(
+					{"width":0}	
+					, 4000
+					, function(){
+						
+					}
+				)
+			}else{
+				this.loadingTar.addClass("active");
+				this.loadingTar.animate(
+					{"width":438}	
+					, 4000
+					
+				)
+			}
+
 		}
 
 		, intCheck : function( e ){

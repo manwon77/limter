@@ -2,7 +2,7 @@ define(['jquery','easing'],function($){
 	var slide = {
 		init : function(){
 			
-			// 0721 start
+			// 0722 start
 			$.fn.itemSlide = function(options){
 				var defaults = {
 					cntWrap : " div > div > ul",
@@ -24,7 +24,9 @@ define(['jquery','easing'],function($){
 					var cntWidth = o.cntWidth;
 					var cntWidth1 = o.cntWidth1;
 					var maxSize = cntThumb.size();
+					var slidePaging = $('.slidePaging');
 					cntWrap.data("current", 0)
+					
 
 					next.on('click',function( e ){
 						var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
@@ -43,10 +45,9 @@ define(['jquery','easing'],function($){
 
 					next1.on('click',function( e ){
 						var tar1 = $(e.currentTarget).parent().find(".bx_viewport > ul");
-						var current = tar1.data("current")
+						var current = tar1.data("current");
 						if (current < maxSize-4) current++;
-
-						console.log(current);
+						slidePaging.find('span').text( current + 1 );
 						tar1.data("current", current);
 						listMove1( tar1 );
 
@@ -54,16 +55,16 @@ define(['jquery','easing'],function($){
 					prev1.on('click',function( e ){
 						var tar1 = $(e.currentTarget).parent().find(".bx_viewport > ul");
 						var current = tar1.data("current");
+						slidePaging.find('span').text( current );
 						if (current > 0) current--;
 						tar1.data("current", current);
 						listMove1( tar1 );
 					});
-					
+
 					function listMove( tar ){
 						var current = tar.data("current");
 						var tl = cntWidth * current * -1;
 						tar.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
-
 					}
 
 					function listMove1( tar1 ){
@@ -74,7 +75,7 @@ define(['jquery','easing'],function($){
 				});
 			};
 			$(".thumbList").itemSlide({cntWrap : " div > ul", cntWidth : 290});  
-			// 0721 end
+			// 0722 end
 
 			// ball
 			this.swWrap = $(".switchWrap > .switch");
@@ -99,7 +100,6 @@ define(['jquery','easing'],function($){
 				this.accBtn.eq(i).data("index", i);
 				this.accTar.eq(i).data("index", i);
 			} 
-			
 		}
 
 		// ball
@@ -157,7 +157,6 @@ define(['jquery','easing'],function($){
 				this.accTar.slideUp();
 			}
 		}
-		
 		
 	}
 	return slide;
