@@ -2,7 +2,7 @@ define(['jquery','easing'],function($){
 	var slide = {
 		init : function(){
 			
-			// 0722 start
+			// 0724 start
 			$.fn.itemSlide = function(options){
 				var defaults = {
 					cntWrap : " div > div > ul",
@@ -26,7 +26,6 @@ define(['jquery','easing'],function($){
 					var maxSize = cntThumb.size();
 					var slidePaging = $('.slidePaging');
 					cntWrap.data("current", 0)
-					
 
 					next.on('click',function( e ){
 						var tar = $(e.currentTarget).parent().find(".bx_viewport > ul");
@@ -42,40 +41,35 @@ define(['jquery','easing'],function($){
 						tar.data("current", current);
 						listMove( tar );
 					});
-
 					next1.on('click',function( e ){
 						var tar1 = $(e.currentTarget).parent().find(".bx_viewport > ul");
 						var current = tar1.data("current");
 						if (current < maxSize-4) current++;
-						slidePaging.find('span').text( current + 1 );
 						tar1.data("current", current);
 						listMove1( tar1 );
-
 					});
 					prev1.on('click',function( e ){
 						var tar1 = $(e.currentTarget).parent().find(".bx_viewport > ul");
 						var current = tar1.data("current");
-						slidePaging.find('span').text( current );
 						if (current > 0) current--;
 						tar1.data("current", current);
 						listMove1( tar1 );
 					});
-
 					function listMove( tar ){
 						var current = tar.data("current");
 						var tl = cntWidth * current * -1;
 						tar.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
 					}
-
 					function listMove1( tar1 ){
 						var current = tar1.data("current");
 						var tl = cntWidth1 * current * -1;
 						tar1.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
+						slidePaging.find('span').text( current + 1 );
 					}
 				});
 			};
 			$(".thumbList").itemSlide({cntWrap : " div > ul", cntWidth : 290});  
-			// 0722 end
+			// 0724 end
 
 			// ball
 			this.swWrap = $(".switchWrap > .switch");

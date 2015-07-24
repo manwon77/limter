@@ -29,6 +29,7 @@ define(['jquery','easing'],function($,easing){
 					var cntWrap = wrap.find(o.cntWrap);
 					var cntThumb = cntWrap.find(' > li');
 					var cntWidth = o.cntWidth;
+
 					var maxSize = cntThumb.size();
 					cntWrap.data("current", 0)
 
@@ -107,8 +108,6 @@ define(['jquery','easing'],function($,easing){
 			setTimeout(function(){
 				var cntW1 = $(".cnt_ty1");
 				var cntW2 = $(".cnt_ty2");
-
-				
 
 				cntW1.clearQueue().animate(
 					{"left" : -2000}
