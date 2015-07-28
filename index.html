@@ -9,8 +9,13 @@
 
 </head>
 <body class="main">
+
 	<div class="topContents" style="height:180px; background-color:red;">
-		<a href="#" class="close" style="margin:5px;display:inline-block;"><img src="images/common/btn_pop_close1.gif" alt="닫기" /></a>
+		<!--0730 추가 -->
+		<div>
+			<a href="#" class="close" style="margin:5px;display:inline-block;"><img src="images/common/btn_pop_close1.gif" alt="닫기" /></a>
+		</div>
+		<!-- //0730추가 -->
 	</div>
 	<div id="wrap">
 		<div id="skipnavi">
@@ -18,998 +23,1097 @@
 			<a href="#container">본문으로 바로가기</a>
 			<a href="#footer">하단메뉴바로가기</a> 
 		</div>
-	<!-- header -->
-	<div id="header">
-		<!-- 0710 -->
-		<div class="topUtilWrap">
-			<h1><a href="#none"><img src="images/common/layout/logo.png" alt="martMoa" /></a></h1>
-			<ul class="utilMenu">
-				<li>
-					<div class="topLink">
-						<a href="#none" class="link"><img src="images/common/layout/btn_share.png" alt="링크" /></a>
-						<div class="snsWrap ">
-							<a href="#none" class="ico1"><img src="images/common/layout/img_fb.png" alt="페이스북" /></a>
-							<a href="#none" class="ico2"><img src="images/common/layout/img_tw.png" alt="트위터" /></a>
-							<a href="#none" class="ico3"><img src="images/common/layout/img_ka.png" alt="카카오스토리" /></a>
-							<a href="#none" class="ico4"><img src="images/common/layout/img_cl.png" alt="링크카피" /></a>
+		<!-- header -->
+		<div id="header">
+			<!-- 0710 -->
+			<div class="topUtilWrap">
+				<h1><a href="#none"><img src="images/common/layout/logo.png" alt="martMoa" /></a></h1>
+				<ul class="utilMenu">
+					<li>
+						<div class="topLink">
+							<a href="#none" class="link"><img src="images/common/layout/btn_share.png" alt="링크" /></a>
+							<div class="snsWrap ">
+								<a href="#none" class="ico1"><img src="images/common/layout/img_fb.png" alt="페이스북" /></a>
+								<a href="#none" class="ico2"><img src="images/common/layout/img_tw.png" alt="트위터" /></a>
+								<a href="#none" class="ico3"><img src="images/common/layout/img_ka.png" alt="카카오스토리" /></a>
+								<a href="#none" class="ico4"><img src="images/common/layout/img_cl.png" alt="링크카피" /></a>
+							</div>
 						</div>
-					</div>
-				</li>
-				<li><a href="#none">Customer</a></li>
-			</ul>
-		</div>
-		<!-- //0710 -->
-		
-		<div class="gnbWrap">
-			<!-- 전체메뉴보기 버튼 open class로 toggle -->
-			<a href="#AllmenuLayer" id="bt-menu" class="allmenu">
-				<span class="bg"></span>
-				<span class="lines">
-					<span class="nth1"></span>
-					<span class="nth2"></span>
-					<span class="nth3"></span>
-				</span>
-			</a>
-			<ul class="menu">
-				<li class="on"><a href="#none"><span>AllMart</span></a></li>
-				<li><a href="#none"><span>Mart</span></a></li>
-				<li><a href="#none"><span>HomePlus</span></a></li>
-				<li><a href="#none"><span>LotteMart</span></a></li>
-				<li><a href="#none"><span>SmartChoise</span></a></li>
-			</ul>
-			<div id="AllmenuLayer" class="AllmenuLayer" style="display:none;">
-				<span class="arr"></span>
-				<div class="menuAside">
-					<ul> 
-						<li class="ttm on"><a href="#AllMenuText"><span class="hidden">텍스트형</span></a></li>
-						<li class="im"><a href="#AllMenuImg"><span class="hidden">이미지형</span></a></li>
-					</ul>
-				</div>
-				<div class="menuWrap">
-					<div class="menuLayerWrap">
-						<!-- 텍스트형 전체메뉴 -->
-						<div id="AllMenuText">
-							<ul class="col">
-								<li>
-									<h2><a href="#none">농산</a></h2>
-									<ul class="dep2List">
-										<!-- menu hover시 active 생성 -->
-										<li>
-											<a href="#none"><span>과일</span></a>
-											<div class="dep3_Layer" style="display:none;">
-												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-												<ul>
-													<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
-													<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
-													<li><a href="#none"><span>감자/고구마</span></a></li>
-													<li><a href="#none"><span>당근/뿌리채소</span></a></li>
-													<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
-													<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
-													<li><a href="#none"><span>콩나물/시금치</span></a></li>
-													<li><a href="#none"><span>양상추/양배추/브로콜리</span></a></li>
-													<li><a href="#none"><span>새싹/샐러드채소</span></a></li>
-													<li><a href="#none"><span>손질채소/건채소</span></a></li>
-													<li><a href="#none"><span>무/배추/김장채소/버섯</span></a></li>
-													<li><a href="#none"><span>나물/건나물</span></a></li>
-													<li><a href="#none"><span>기타채소</span></a></li>
-												</ul>
-											</div>
-										</li>
-										<li>
-											<a href="#none"><span>채소</span></a>
-											<div class="dep3_Layer" style="display:none;">
-												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-												<ul>
-													<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
-													<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
-													<li><a href="#none"><span>감자/고구마</span></a></li>
-													<li><a href="#none"><span>당근/뿌리채소</span></a></li>
-													<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
-													<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
-												</ul>
-											</div>
-										</li>
-										<li><a href="#none"><span>쌀</span></a></li>
-										<li><a href="#none"><span>잡곡</span></a></li>
-										<li><a href="#none"><span>두부</span></a></li>
-										<li><a href="#none"><span>견과</span></a></li>
-										<li><a href="#none"><span>약재류</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#none">정육</a></h2>
-
-									<ul class="dep2List">
-										<li><a href="#none"><span>소고기</span></a></li>
-										<li><a href="#none"><span>돼지고기</span></a></li>
-										<li><a href="#none"><span>닭/오리/기타</span></a></li>
-										<li><a href="#none"><span>계란</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#none">수산</a></h2>
-									
-									<ul class="dep2List">
-										<li><a href="#none"><span>생선</span></a></li>
-										<li><a href="#none"><span>해산물</span></a></li>
-										<li><a href="#none"><span>김/미역/다시마</span></a></li>
-										<li><a href="#none"><span>건어물</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#none">유제품/냉장</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>우유</span></a></li>
-										<li><a href="#none"><span>요구르트/두유</span></a></li>
-										<li><a href="#none"><span>치즈/버터/마가린</span></a></li>
-										<li><a href="#none"><span>햄/어묵/맛살</span></a></li>
-										<li><a href="#none"><span>냉장면류</span></a></li>
-										<li><a href="#none"><span>국/찌개/죽/스프</span></a></li>
-										<li><a href="#none"><span>만두</span></a></li>
-										<li><a href="#none"><span>간편 가정식</span></a></li>
-										<li><a href="#none"><span>아이스크림/빙과</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#none">간편식</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>라면/면요리</span></a></li>
-										<li><a href="#none"><span>즉석식</span></a></li>
-										<li><a href="#none"><span>캔/통조림</span></a></li>
-										<li><a href="#none"><span>시리얼/선식</span></a></li>
-										<li><a href="#none"><span>국수/면류</span></a></li>
-										<li><a href="#none"><span>베이커리/떡</span></a></li>
-									</ul>
-
-								</li>
-								<li class="last">
-									<h2><a href="#none">소스반찬</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>조미료/장류</span></a></li>
-										<li><a href="#none"><span>소스,/양념</span></a></li>
-										<li><a href="#none"><span>잼/시럽</span></a></li>
-										<li><a href="#none"><span>식용유/참기름</span></a></li>
-										<li><a href="#none"><span>밀가루/요리가루</span></a></li>
-										<li><a href="#none"><span>단무지/반찬</span></a></li>
-										<li><a href="#none"><span>김치</span></a></li>
-										<li>
-											<a href="#none"><span>젓갈류</span></a>
-											<div class="dep3_Layer" style="display:none;">
-												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-												<ul>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-
-								</li>
-							</ul>
-							<ul class="col">
-								<li>
-									<h2><a href="#none">음료/간식</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>생수</span></a></li>
-										<li><a href="#none"><span>주스</span></a></li>
-										<li><a href="#none"><span>탄산/이온/기타음료</span></a></li>
-										<li><a href="#none"><span>커피/차음료</span></a></li>
-										<li><a href="#none"><span>커피/코코아/프림</span></a></li>
-										<li><a href="#none"><span>녹차/차/티</span></a></li>
-										<li><a href="#none"><span>스낵/과자</span></a></li>
-										<li><a href="#none"><span>초콜릿/사탕/껌</span></a></li>
-										<li><a href="#none"><span>안주류</span></a></li>
-									</ul>
-
-								</li>
-								<li>
-									<h2><a href="#none">생활용품</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>화장지/키친타올</span></a></li>
-										<li><a href="#none"><span>세탁세제</span></a></li>
-										<li><a href="#none"><span>주방/청소세제</span></a></li>
-										<li><a href="#none"><span>주방용품/일회용품</span></a></li>
-										<li><a href="#none"><span>욕실용품</span></a></li>
-										<li><a href="#none"><span>치약/칫솔/구강용품</span></a></li>
-										<li><a href="#none"><span>건전지/전기/조명</span></a></li>
-										<li><a href="#none"><span>방향/방충/제습</span></a></li>
-										<li><a href="#none"><span>기타생활용품</span></a></li>
-									</ul>
-
-								</li>
-								<li>
-									<h2><a href="#none">육아</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>분유/이유식</span></a></li>
-										<li><a href="#none"><span>기저귀/물티슈</span></a></li>
-										<li><a href="#none"><span>건강/위생용품</span></a></li>
-										<li><a href="#none"><span>세탁용품</span></a></li>
-										<li><a href="#none"><span>로션/목용용품</span></a></li>
-										<li><a href="#none"><span>수유용품</span></a></li>
-									</ul>
-
-								</li>
-								<li>
-									<h2><a href="#none">뷰티/여성</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>헤어케어</span></a></li>
-										<li><a href="#none"><span>바디/핸드케어</span></a></li>
-										<li><a href="#none"><span>스킨케어</span></a></li>
-										<li><a href="#none"><span>클렌징/선케어</span></a></li>
-										<li><a href="#none"><span>메이크업</span></a></li>
-										<li><a href="#none"><span>향수</span></a></li>
-										<li><a href="#none"><span>화장소품/잡화</span></a></li>
-										<li><a href="#none"><span>여성위생용품</span></a></li>
-										<li><a href="#none"><span>남성화장품</span></a></li>
-									</ul>
-								</li>
-								<li class="last">
-									<h2><a href="#none">건강기능식품</a></h2>
-									<ul class="dep2List">
-										<li><a href="#none"><span>홍삼</span></a></li>
-										<li><a href="#none"><span>꿀/진액/기타</span></a></li>
-										<li><a href="#none"><span>타이어트/헬스</span></a></li>
-										<li>
-											<a href="#none"><span>비타민/영양제</span></a>
-											<div class="dep3_Layer" style="display:none;">
-												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-												<ul>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-													<li><a href="#none"><span>젓갈</span></a></li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<!-- //텍스트형 전체메뉴 -->
-						<!-- 이미지형 전체메뉴 -->
-						<div id="AllMenuImg" style="display:none;">
-							<ul class="col">
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu01.png" alt="농산" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu02.png" alt="정육" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu03.png" alt="수산" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu04.png" alt="유제품/냉장" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu05.png" alt="간편식" /></a></li>
-								<li class="last"><a href="#none"><img src="images/common/layout/img_ImgMenu06.png" alt="소스반찬" /></a></li>
-							</ul>
-							<ul class="col">
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu07.png" alt="음료/간식" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu08.png" alt="생활용품" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu09.png" alt="육아" /></a></li>
-								<li><a href="#none"><img src="images/common/layout/img_ImgMenu10.png" alt="뷰티/여성" /></a></li>
-								<li class="last"><a href="#none"><img src="images/common/layout/img_ImgMenu11.png" alt="건강기능식품" /></a></li>
-							</ul>
-						
-						</div>
-					</div>
-					<!-- //이미지형 전체메뉴 -->
-					<ul class="boardMenu">
-						<li><a href="#none">공지사항</a></li>
-						<li><a href="#none">FAQ</a></li>
-						<li><a href="#none">1:1문의</a></li>
-						<li><a href="#none"></a></li>
-						<li><a href="#none"></a></li>
-					</ul>
-					<!-- 스마트링크 롤링 -->
-					<div class="rolling menuLayer">
-						<div class="rollCont">
-							<img src="images/common/temp/@temp_rollImg01.png" style="z-index:10;" alt="" />
-							<img src="images/common/temp/@temp_rollImg02.png" style="z-index:20;" alt="" />
-							<img src="images/common/temp/@temp_rollImg03.png" style="z-index:30;" alt="" />
-						</div>
-						<div class="rollNavi ">
-							<a href="#none" class="active"></a>
-							<a href="#none"></a>
-							<a href="#none"></a>
-						</div>
-					</div>
-				</div>
+					</li>
+					<li><a href="#none">Customer</a></li>
+				</ul>
 			</div>
-			<div class="mask_ty1" style="display:none;"></div>
-		</div>
-	</div>
-	<!-- //header -->	
-	<div class="visual">
-		<h2 class="hidden">쿨한 마트모아 <strong>쇼핑방법</strong></h2>
-		<ol class="hidden">
-			<li>구매 원하는 상품을 장바구니에 담기</li>
-			<li>추천장바구니와 비교</li>
-			<li>결정한 상품구매</li>
-		</ol>
-	</div>
-	<div id="container">
-		
-		<div class="main_grid">
-			<div class="main_type1" style="display:none">
-				<h3>오늘의 베스트 Quick 장바구니</h3>
-				<div class="step1">
-					<div class="top">
-						<h4>쇼핑항목 리스트 <img src="images/common/ico_put_plus.gif" alt="설정" /></h4>
+			<!-- //0710 -->
+			
+			<div class="gnbWrap">
+				<!-- 전체메뉴보기 버튼 open class로 toggle -->
+				<a href="#AllmenuLayer" id="bt-menu" class="allmenu">
+					<span class="bg"></span>
+					<span class="lines">
+						<span class="nth1"></span>
+						<span class="nth2"></span>
+						<span class="nth3"></span>
+					</span>
+				</a>
+				<ul class="menu">
+					<li class="on"><a href="#none"><span>AllMart</span></a></li>
+					<li><a href="#none"><span>Mart</span></a></li>
+					<li><a href="#none"><span>HomePlus</span></a></li>
+					<li><a href="#none"><span>LotteMart</span></a></li>
+					<li><a href="#none"><span>SmartChoise</span></a></li>
+				</ul>
+				<div id="AllmenuLayer" class="AllmenuLayer" style="display:none;">
+					<span class="arr"></span>
+					<div class="menuAside">
+						<ul> 
+							<li class="ttm on"><a href="#AllMenuText"><span class="hidden">텍스트형</span></a></li>
+							<li class="im"><a href="#AllMenuImg"><span class="hidden">이미지형</span></a></li>
+						</ul>
 					</div>
-					<div class="cnt scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
-						<ol>
-							<li><a href="#none"><span>1</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>2</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>3</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>4</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>5</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>6</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>7</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>8</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>9</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>10</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>11</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>12</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>13</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>14</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-							<li><a href="#none"><span>15</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
-						</ol>
-					</div>
-				</div>
-				<div class="step2" style="width:300px">
-					<div class="top">
-						<h4>오늘의 최저가 장바구니</h4>
-						<div class="topCnt scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
-							<ul class="list">
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="cnt">
-						<table width="100%">
-							<caption></caption>
-							<colgroup>
-								<col width="40%" />
-								<col width="*" />
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>상품가</th>
-									<td>1,000,009원</td>
-								</tr>
-								<tr>
-									<th>배송비</th>
-									<td>100,000원</td>
-								</tr>
-								<tr>
-									<th>예상 구매가</th>
-									<td>1,100,000원</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<a href="#leftBox" class="leftOn"><img src="images/common/btn_order_long.gif" alt="마트모아 추천장바구니 보기" /></a>
-				</div>
-				<div class="step3" style="width:300px"><!-- 롤링 -->
-					<div class="head">
-						<h4>실시간 가격비교</h4>
-						<div class="btnWrap">
-							<a href="#none" class="prev"><span class="hidden">이전</span></a>
-							<a href="#none" class="next"><span class="hidden">다음</span></a>
-						</div>
-					</div>
-					<div class="mbox">
-						<ol>
-							<li>
-								<p><img src="" alt="1" /><span>우유</span></p>
-								<div>
-									<dl>
-										<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
-										<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
-										<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
-									</dl>
-									<table width="100%">
-										<colgroup>
-											<col width="40%" />
-											<col width="*" />
-										</colgroup>
-										<tbody>
-											<tr>
-												<th>이마트</th>
-												<td>1,000,009원</td>
-											</tr>
-											<tr>
-												<th>홈플러스</th>
-												<td>1,000,000원</td>
-											</tr>
-											<tr>
-												<th>롯데마트</th>
-												<td>1,100,000원</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</li>
-							<li>
-								<p><img src="" alt="2" /><span>우유</span></p>
-								<div>
-									<dl>
-										<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
-										<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
-										<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
-									</dl>
-									<table width="100%">
-										<colgroup>
-											<col width="40%" />
-											<col width="*" />
-										</colgroup>
-										<tbody>
-											<tr>
-												<th>이마트</th>
-												<td>1,000,009원</td>
-											</tr>
-											<tr>
-												<th>홈플러스</th>
-												<td>1,000,000원</td>
-											</tr>
-											<tr>
-												<th>롯데마트</th>
-												<td>1,100,000원</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</li>
-							<li>
-								<p><img src="" alt="3" /><span>우유</span></p>
-								<div>
-									<dl>
-										<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
-										<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
-										<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
-									</dl>
-									<table width="100%">
-										<colgroup>
-											<col width="40%" />
-											<col width="*" />
-										</colgroup>
-										<tbody>
-											<tr>
-												<th>이마트</th>
-												<td>1,000,009원</td>
-											</tr>
-											<tr>
-												<th>홈플러스</th>
-												<td>1,000,000원</td>
-											</tr>
-											<tr>
-												<th>롯데마트</th>
-												<td>1,100,000원</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</li>
-							<li>
-								<p><img src="" alt="4" /><span>우유</span></p>
-								<div>
-									<dl>
-										<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
-										<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
-										<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
-									</dl>
-									<table width="100%">
-										<colgroup>
-											<col width="40%" />
-											<col width="*" />
-										</colgroup>
-										<tbody>
-											<tr>
-												<th>이마트</th>
-												<td>1,000,009원</td>
-											</tr>
-											<tr>
-												<th>홈플러스</th>
-												<td>1,000,000원</td>
-											</tr>
-											<tr>
-												<th>롯데마트</th>
-												<td>1,100,000원</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</li>
-							<li>
-								<p><img src="" alt="5" /><span>우유</span></p>
-								<div>
-									<dl>
-										<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
-										<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
-										<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
-									</dl>
-									<table width="100%">
-										<colgroup>
-											<col width="40%" />
-											<col width="*" />
-										</colgroup>
-										<tbody>
-											<tr>
-												<th>이마트</th>
-												<td>1,000,009원</td>
-											</tr>
-											<tr>
-												<th>홈플러스</th>
-												<td>1,000,000원</td>
-											</tr>
-											<tr>
-												<th>롯데마트</th>
-												<td>1,100,000원</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="leftLayer" id="leftBox" style="display:none">
-					<div class="top">
-						<h4>마트모아 추천 장바구니</h4>
-						<div class="topCnt scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
-							<ul class="list">
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
-										<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
-										<strong>5,000,000<span>원</span></strong>
-										</dd>
-										<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
-									</dl>
-								</li>
-							</ul>
-						</div>
-						<a href="#none" class="leftClose"><img src="images/common/btn_pop_close1.gif" alt="닫기" /></a>
-					</div>
-					<div class="cnt">
-						<table width="100%">
-							<caption></caption>
-							<colgroup>
-								<col width="40%" />
-								<col width="*" />
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>상품가</th>
-									<td>1,000,009원</td>
-								</tr>
-								<tr>
-									<th>배송비</th>
-									<td>100,000원</td>
-								</tr>
-								<tr>
-									<th>예상 구매가</th>
-									<td>1,100,000원</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<a href="#leftBox" class="leftOn"><img src="images/common/btn_order_long.gif" alt="마트모아 추천장바구니 보기" /></a>
-				</div>
-				
-				<div class="modalBox">
-					
-				</div>
-			</div>
+					<div class="menuWrap">
+						<div class="menuLayerWrap">
+							<!-- 텍스트형 전체메뉴 -->
+							<div id="AllMenuText">
+								<ul class="col">
+									<li>
+										<h2><a href="#none">농산</a></h2>
+										<ul class="dep2List">
+											<!-- menu hover시 active 생성 -->
+											<li>
+												<a href="#none"><span>과일</span></a>
+												<div class="dep3_Layer" style="display:none;">
+													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+													<ul>
+														<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
+														<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
+														<li><a href="#none"><span>감자/고구마</span></a></li>
+														<li><a href="#none"><span>당근/뿌리채소</span></a></li>
+														<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
+														<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
+														<li><a href="#none"><span>콩나물/시금치</span></a></li>
+														<li><a href="#none"><span>양상추/양배추/브로콜리</span></a></li>
+														<li><a href="#none"><span>새싹/샐러드채소</span></a></li>
+														<li><a href="#none"><span>손질채소/건채소</span></a></li>
+														<li><a href="#none"><span>무/배추/김장채소/버섯</span></a></li>
+														<li><a href="#none"><span>나물/건나물</span></a></li>
+														<li><a href="#none"><span>기타채소</span></a></li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#none"><span>채소</span></a>
+												<div class="dep3_Layer" style="display:none;">
+													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+													<ul>
+														<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
+														<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
+														<li><a href="#none"><span>감자/고구마</span></a></li>
+														<li><a href="#none"><span>당근/뿌리채소</span></a></li>
+														<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
+														<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a href="#none"><span>쌀</span></a></li>
+											<li><a href="#none"><span>잡곡</span></a></li>
+											<li><a href="#none"><span>두부</span></a></li>
+											<li><a href="#none"><span>견과</span></a></li>
+											<li><a href="#none"><span>약재류</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<h2><a href="#none">정육</a></h2>
 
-			<div class="main_type2">
-				<div class="cntWrap">
-					<div class="cnt cnt_ty1">
-						<div class="step1">
-							<ul>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-							</ul>
+										<ul class="dep2List">
+											<li><a href="#none"><span>소고기</span></a></li>
+											<li><a href="#none"><span>돼지고기</span></a></li>
+											<li><a href="#none"><span>닭/오리/기타</span></a></li>
+											<li><a href="#none"><span>계란</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<h2><a href="#none">수산</a></h2>
+										
+										<ul class="dep2List">
+											<li><a href="#none"><span>생선</span></a></li>
+											<li><a href="#none"><span>해산물</span></a></li>
+											<li><a href="#none"><span>김/미역/다시마</span></a></li>
+											<li><a href="#none"><span>건어물</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<h2><a href="#none">유제품/냉장</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>우유</span></a></li>
+											<li><a href="#none"><span>요구르트/두유</span></a></li>
+											<li><a href="#none"><span>치즈/버터/마가린</span></a></li>
+											<li><a href="#none"><span>햄/어묵/맛살</span></a></li>
+											<li><a href="#none"><span>냉장면류</span></a></li>
+											<li><a href="#none"><span>국/찌개/죽/스프</span></a></li>
+											<li><a href="#none"><span>만두</span></a></li>
+											<li><a href="#none"><span>간편 가정식</span></a></li>
+											<li><a href="#none"><span>아이스크림/빙과</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<h2><a href="#none">간편식</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>라면/면요리</span></a></li>
+											<li><a href="#none"><span>즉석식</span></a></li>
+											<li><a href="#none"><span>캔/통조림</span></a></li>
+											<li><a href="#none"><span>시리얼/선식</span></a></li>
+											<li><a href="#none"><span>국수/면류</span></a></li>
+											<li><a href="#none"><span>베이커리/떡</span></a></li>
+										</ul>
+
+									</li>
+									<li class="last">
+										<h2><a href="#none">소스반찬</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>조미료/장류</span></a></li>
+											<li><a href="#none"><span>소스,/양념</span></a></li>
+											<li><a href="#none"><span>잼/시럽</span></a></li>
+											<li><a href="#none"><span>식용유/참기름</span></a></li>
+											<li><a href="#none"><span>밀가루/요리가루</span></a></li>
+											<li><a href="#none"><span>단무지/반찬</span></a></li>
+											<li><a href="#none"><span>김치</span></a></li>
+											<li>
+												<a href="#none"><span>젓갈류</span></a>
+												<div class="dep3_Layer" style="display:none;">
+													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+													<ul>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+
+									</li>
+								</ul>
+								<ul class="col">
+									<li>
+										<h2><a href="#none">음료/간식</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>생수</span></a></li>
+											<li><a href="#none"><span>주스</span></a></li>
+											<li><a href="#none"><span>탄산/이온/기타음료</span></a></li>
+											<li><a href="#none"><span>커피/차음료</span></a></li>
+											<li><a href="#none"><span>커피/코코아/프림</span></a></li>
+											<li><a href="#none"><span>녹차/차/티</span></a></li>
+											<li><a href="#none"><span>스낵/과자</span></a></li>
+											<li><a href="#none"><span>초콜릿/사탕/껌</span></a></li>
+											<li><a href="#none"><span>안주류</span></a></li>
+										</ul>
+
+									</li>
+									<li>
+										<h2><a href="#none">생활용품</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>화장지/키친타올</span></a></li>
+											<li><a href="#none"><span>세탁세제</span></a></li>
+											<li><a href="#none"><span>주방/청소세제</span></a></li>
+											<li><a href="#none"><span>주방용품/일회용품</span></a></li>
+											<li><a href="#none"><span>욕실용품</span></a></li>
+											<li><a href="#none"><span>치약/칫솔/구강용품</span></a></li>
+											<li><a href="#none"><span>건전지/전기/조명</span></a></li>
+											<li><a href="#none"><span>방향/방충/제습</span></a></li>
+											<li><a href="#none"><span>기타생활용품</span></a></li>
+										</ul>
+
+									</li>
+									<li>
+										<h2><a href="#none">육아</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>분유/이유식</span></a></li>
+											<li><a href="#none"><span>기저귀/물티슈</span></a></li>
+											<li><a href="#none"><span>건강/위생용품</span></a></li>
+											<li><a href="#none"><span>세탁용품</span></a></li>
+											<li><a href="#none"><span>로션/목용용품</span></a></li>
+											<li><a href="#none"><span>수유용품</span></a></li>
+										</ul>
+
+									</li>
+									<li>
+										<h2><a href="#none">뷰티/여성</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>헤어케어</span></a></li>
+											<li><a href="#none"><span>바디/핸드케어</span></a></li>
+											<li><a href="#none"><span>스킨케어</span></a></li>
+											<li><a href="#none"><span>클렌징/선케어</span></a></li>
+											<li><a href="#none"><span>메이크업</span></a></li>
+											<li><a href="#none"><span>향수</span></a></li>
+											<li><a href="#none"><span>화장소품/잡화</span></a></li>
+											<li><a href="#none"><span>여성위생용품</span></a></li>
+											<li><a href="#none"><span>남성화장품</span></a></li>
+										</ul>
+									</li>
+									<li class="last">
+										<h2><a href="#none">건강기능식품</a></h2>
+										<ul class="dep2List">
+											<li><a href="#none"><span>홍삼</span></a></li>
+											<li><a href="#none"><span>꿀/진액/기타</span></a></li>
+											<li><a href="#none"><span>타이어트/헬스</span></a></li>
+											<li>
+												<a href="#none"><span>비타민/영양제</span></a>
+												<div class="dep3_Layer" style="display:none;">
+													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+													<ul>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+														<li><a href="#none"><span>젓갈</span></a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- //텍스트형 전체메뉴 -->
+							<!-- 이미지형 전체메뉴 -->
+							<div id="AllMenuImg" style="display:none;">
+								<ul class="col">
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu01.png" alt="농산" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu02.png" alt="정육" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu03.png" alt="수산" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu04.png" alt="유제품/냉장" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu05.png" alt="간편식" /></a></li>
+									<li class="last"><a href="#none"><img src="images/common/layout/img_ImgMenu06.png" alt="소스반찬" /></a></li>
+								</ul>
+								<ul class="col">
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu07.png" alt="음료/간식" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu08.png" alt="생활용품" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu09.png" alt="육아" /></a></li>
+									<li><a href="#none"><img src="images/common/layout/img_ImgMenu10.png" alt="뷰티/여성" /></a></li>
+									<li class="last"><a href="#none"><img src="images/common/layout/img_ImgMenu11.png" alt="건강기능식품" /></a></li>
+								</ul>
+							
+							</div>
 						</div>
-						<div class="step1">
-							<ul>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>이미지</dt>
-										<dd>내용</dd>
-									</dl>
-								</li>
-							</ul>
+						<!-- //이미지형 전체메뉴 -->
+						<ul class="boardMenu">
+							<li><a href="#none">공지사항</a></li>
+							<li><a href="#none">FAQ</a></li>
+							<li><a href="#none">1:1문의</a></li>
+							<li><a href="#none"></a></li>
+							<li><a href="#none"></a></li>
+						</ul>
+						<!-- 스마트링크 롤링 -->
+						<div class="rolling menuLayer">
+							<div class="rollCont">
+								<img src="images/common/temp/@temp_rollImg01.png" style="z-index:10;" alt="" />
+								<img src="images/common/temp/@temp_rollImg02.png" style="z-index:20;" alt="" />
+								<img src="images/common/temp/@temp_rollImg03.png" style="z-index:30;" alt="" />
+							</div>
+							<div class="rollNavi ">
+								<a href="#none" class="active"></a>
+								<a href="#none"></a>
+								<a href="#none"></a>
+							</div>
 						</div>
-						<div class="step3">
+					</div>
+				</div>
+				<div class="mask_ty1" style="display:none;"></div>
+			</div>
+		</div>
+		<!-- //header -->	
+		<div class="visual">
+			<img src="images/common/layout/bg_visual.png" alt="" />
+			<h2 class="hidden">쿨한 마트모아 <strong>쇼핑방법</strong></h2>
+			<ol class="hidden">
+				<li>구매 원하는 상품을 장바구니에 담기</li>
+				<li>추천장바구니와 비교</li>
+				<li>결정한 상품구매</li>
+			</ol>
+		</div>
+		<div id="container">
+			
+			<div class="main_grid">
+				<!-- type1 -->
+				<div class="main_type1" style="display:none">
+					<h3>오늘의 베스트 Quick 장바구니</h3>
+					<div class="step1">
+						<div class="top">
+							<h4>쇼핑항목 리스트 <img src="images/common/ico_put_plus.gif" alt="설정" /></h4>
+						</div>
+						<div class="cnt scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
+							<ol>
+								<li><a href="#none"><span>1</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>2</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>3</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>4</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>5</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>6</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>7</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>8</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>9</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>10</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>11</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>12</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>13</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>14</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+								<li><a href="#none"><span>15</span>우유 <img src="images/common/btn_pop_close2.gif" alt="삭제" /></a></li>
+							</ol>
+						</div>
+					</div>
+					<div class="step2" style="width:300px">
+						<div class="top">
+							<h4>오늘의 최저가 장바구니</h4>
+							<div class="topCnt scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
+								<ul class="list">
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cnt">
 							<table width="100%">
+								<caption></caption>
 								<colgroup>
-									<col width="20%" />
-									<col width="20%" />
-									<col width="20%" />
-									<col width="20%" />
-									<col width="20%" />
+									<col width="40%" />
+									<col width="*" />
 								</colgroup>
 								<tbody>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
-									<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+									<tr>
+										<th>상품가</th>
+										<td>1,000,009원</td>
+									</tr>
+									<tr>
+										<th>배송비</th>
+										<td>100,000원</td>
+									</tr>
+									<tr>
+										<th>예상 구매가</th>
+										<td>1,100,000원</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
-						<div class="btnWrap">
-
-							<a href="#none" class="next"><span class="hidden">다음</span></a>
+						<a href="#leftBox" class="leftOn"><img src="images/common/btn_order_long.gif" alt="마트모아 추천장바구니 보기" /></a>
+					</div>
+					<div class="step3" style="width:300px"><!-- 롤링 -->
+						<div class="head">
+							<h4>실시간 가격비교</h4>
+							<div class="btnWrap">
+								<a href="#none" class="prev"><span class="hidden">이전</span></a>
+								<a href="#none" class="next"><span class="hidden">다음</span></a>
+							</div>
+						</div>
+						<div class="mbox">
+							<ol>
+								<li>
+									<p><img src="" alt="1" /><span>우유</span></p>
+									<div>
+										<dl>
+											<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
+											<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
+											<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
+										</dl>
+										<table width="100%">
+											<colgroup>
+												<col width="40%" />
+												<col width="*" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>이마트</th>
+													<td>1,000,009원</td>
+												</tr>
+												<tr>
+													<th>홈플러스</th>
+													<td>1,000,000원</td>
+												</tr>
+												<tr>
+													<th>롯데마트</th>
+													<td>1,100,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<p><img src="" alt="2" /><span>우유</span></p>
+									<div>
+										<dl>
+											<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
+											<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
+											<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
+										</dl>
+										<table width="100%">
+											<colgroup>
+												<col width="40%" />
+												<col width="*" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>이마트</th>
+													<td>1,000,009원</td>
+												</tr>
+												<tr>
+													<th>홈플러스</th>
+													<td>1,000,000원</td>
+												</tr>
+												<tr>
+													<th>롯데마트</th>
+													<td>1,100,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<p><img src="" alt="3" /><span>우유</span></p>
+									<div>
+										<dl>
+											<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
+											<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
+											<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
+										</dl>
+										<table width="100%">
+											<colgroup>
+												<col width="40%" />
+												<col width="*" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>이마트</th>
+													<td>1,000,009원</td>
+												</tr>
+												<tr>
+													<th>홈플러스</th>
+													<td>1,000,000원</td>
+												</tr>
+												<tr>
+													<th>롯데마트</th>
+													<td>1,100,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<p><img src="" alt="4" /><span>우유</span></p>
+									<div>
+										<dl>
+											<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
+											<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
+											<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
+										</dl>
+										<table width="100%">
+											<colgroup>
+												<col width="40%" />
+												<col width="*" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>이마트</th>
+													<td>1,000,009원</td>
+												</tr>
+												<tr>
+													<th>홈플러스</th>
+													<td>1,000,000원</td>
+												</tr>
+												<tr>
+													<th>롯데마트</th>
+													<td>1,100,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<p><img src="" alt="5" /><span>우유</span></p>
+									<div>
+										<dl>
+											<dt><img src="images/common/logo_emart.gif" alt="" /></dt>
+											<dd><img src="images/common/temp/@temp_reco_88.gif" alt="" /></dd>
+											<dd>[서울우유] 후레쉬 밀크 기획 (900ml*2) 1800ml</dd>
+										</dl>
+										<table width="100%">
+											<colgroup>
+												<col width="40%" />
+												<col width="*" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>이마트</th>
+													<td>1,000,009원</td>
+												</tr>
+												<tr>
+													<th>홈플러스</th>
+													<td>1,000,000원</td>
+												</tr>
+												<tr>
+													<th>롯데마트</th>
+													<td>1,100,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+							</ol>
 						</div>
 					</div>
-					<div class="cnt cnt_ty2">
-						<div class="btnWrap">
-							<a href="#none" class="prev"><span class="hidden">이전</span></a>
+					
+					<div class="leftLayer" id="leftBox" style="display:none">
+						<div class="top">
+							<h4>마트모아 추천 장바구니</h4>
+							<div class="topCnt scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
+								<ul class="list">
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><img src="images/common/logo_e_s_ty1.gif" alt="emart" /></dt>
+											<dd>[홍천축협] 늘푸름 홍천한우 냉장국거리 사태(700g)
+											<strong>5,000,000<span>원</span></strong>
+											</dd>
+											<dd class="img"><img src="images/common/img_product1.gif" alt="" /></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<a href="#none" class="leftClose"><img src="images/common/btn_pop_close1.gif" alt="닫기" /></a>
 						</div>
-						<div class="step4">
-							2
+						<div class="cnt">
+							<table width="100%">
+								<caption></caption>
+								<colgroup>
+									<col width="40%" />
+									<col width="*" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>상품가</th>
+										<td>1,000,009원</td>
+									</tr>
+									<tr>
+										<th>배송비</th>
+										<td>100,000원</td>
+									</tr>
+									<tr>
+										<th>예상 구매가</th>
+										<td>1,100,000원</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<div class="graph_circle">
-							<div class="gray red">
-								<div class="circle">
-									<div class="txt">
-										<span class="nmber">999,999<span>원</span></span>
-										<span class="arr"><img src="images/common/ico_red_arr_b.gif" alt=""></span>
+						<a href="#leftBox" class="leftOn"><img src="images/common/btn_order_long.gif" alt="마트모아 추천장바구니 보기" /></a>
+					</div>
+					
+					<div class="modalBox">
+						
+					</div>
+				</div>
+				<!-- type2 -->
+				<div class="main_type2" style="display:none">
+					<div class="cntWrap">
+						<div class="cnt cnt_ty1">
+							<div class="step1">
+								<ul>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<div class="step1">
+								<ul>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>이미지</dt>
+											<dd>내용</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<div class="step3">
+								<table width="100%">
+									<colgroup>
+										<col width="20%" />
+										<col width="20%" />
+										<col width="20%" />
+										<col width="20%" />
+										<col width="20%" />
+									</colgroup>
+									<tbody>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+										<tr><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td><td>이미지</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="btnWrap">
+
+								<a href="#none" class="next"><span class="hidden">다음</span></a>
+							</div>
+						</div>
+						<div class="cnt cnt_ty2">
+							<div class="btnWrap">
+								<a href="#none" class="prev"><span class="hidden">이전</span></a>
+							</div>
+							<div class="step4">
+								2
+							</div>
+							<div class="graph_circle">
+								<div class="gray red">
+									<div class="circle">
+										<div class="txt">
+											<span class="nmber">999,999<span>원</span></span>
+											<span class="arr"><img src="images/common/ico_red_arr_b.gif" alt=""></span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="step5">
-							2
+							<div class="step5">
+								2
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="smartchoise">
-				<h2 class="tit_ty1">MARTMOA <span>Smart choise</span></h2>
-				<div class="smarCnt">
-					<span class="col">
-						<a href="#none"><img src="images/main/@temp_chose1.gif" alt="" /></a>
-						<a href="#none"><img src="images/main/@temp_chose2.gif" alt="" /></a>
-						<a href="#none"><img src="images/main/@temp_chose3.gif" alt="" /></a>
-						<a href="#none"><img src="images/main/@temp_chose4.gif" alt="" /></a>
-						<a href="#none"><img src="images/main/@temp_chose5.gif" alt="" /></a>
-						<a href="#none"><img src="images/main/@temp_chose6.gif" alt="" /></a>
-					</span>
+				<div class="main_type3">
+					<div class="cnt cnt_ty1">
+						<div class="btnWrap">
+							<a href="#none" class="next"><span class="hidden">next</span></a>
+						</div>
+						<ul class="">
+							<li><span class="count">100000</span><span class="">원</span></li>
+							<li><span class="count">15000</span><span class=""></span></li>
+							<li><span class="count">85000</span><span class=""></span></li>
+						</ul>
+					</div>
+					<div class="cnt cnt_ty2">
+						<div class="btnWrap">
+							<a href="#none" class="prev"><span class="hidden">prev</span></a>
+						</div>
+						<ul>
+							<li><a href="#none">pr</a></li>
+							<li><a href="#none">pr</a></li>
+							<li><a href="#none">pr</a></li>
+							<li><a href="#none">pr</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="smartchoise">
+					<h2 class="tit_ty1">MARTMOA <span>Smart choise</span></h2>
+					<div class="smarCnt">
+						<span class="col">
+							<a href="#none"><img src="images/main/@temp_chose1.gif" alt="" /></a>
+							<a href="#none"><img src="images/main/@temp_chose2.gif" alt="" /></a>
+							<a href="#none"><img src="images/main/@temp_chose3.gif" alt="" /></a>
+							<a href="#none"><img src="images/main/@temp_chose4.gif" alt="" /></a>
+							<a href="#none"><img src="images/main/@temp_chose5.gif" alt="" /></a>
+							<a href="#none"><img src="images/main/@temp_chose6.gif" alt="" /></a>
+						</span>
+					</div>
+				</div> -->
+
+			</div>
+		</div>
+		<div class="asideFixBar">
+			<!-- 0724 -->
+			<ul class="asideMenu">
+				<li class="menu1"><a href="#search" class="asideBtn"><span class="tip">검색</span></a></li>
+				<li class="menu2"><a href="#member" class="asideBtn"><span class="tip">로그인</span></a></li>
+				<li class="menu3"><a href="#cart" class="asideBtn"><span class="tip">장바구니</span></a></li>
+				<li class="menu4"><a href="#alim" class="asideBtn"><span class="tip">알림</span></a></li>
+			</ul>
+			<!-- 윈도우의 하단에 fix -->
+			<div class="asdBtmFix">
+				<span>
+					<a href="#guide" class="asideBtn">guide<span class="tip">사용법 안내</span></a>
+					<a href="#app" class="asideBtn">app<span class="tip">앱다운로드</span></a>
+				</span>
+				<a class="gotop" href="#wrap"><img src="images/common/layout/img_gotop.png" alt="" /><span class="tip">TOP</span></a>
+			</div>
+			<!-- //0724 -->
+
+			
+			<div class="asdLayer" id="search" style="display:none;">
+				<button class="asd_close">닫기</button>
+
+				<!-- 검색영역 -->
+				<div class="asdSchWrap" style="display:block;">
+					<div class="SchCont">
+						<div class="schForm">
+							<!-- 0715 -->
+							<div>
+								<input type="text" id="sch" class="text intVal" style="width:200px;" />
+								<label for="sch" class="lbl">여기서 한방에</label>
+							</div>
+							<!-- //0715 -->
+							<button class="btnSch"><span class="hidden">검색</span></button>
+						</div>
+						<!-- btype -->
+						<ul class="schKeyword">
+							<li><a href="#none">피망</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
+							<li><a href="#none">오뚜기케찹</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
+							<li><a href="#none">해찬들</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
+							<li><a href="#none">에센스</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
+						</ul>
+						<!-- // btype -->
+						<!-- ctype -->
+						<ul class="schcate">
+							<li>
+								<a href="#none">생활용품</a> > <a href="#none">기타생활용품</a> > <a href="#none">여행용품</a> > <br /> <a href="#none"><strong>바디워시</strong></a>
+							</li>
+							<li>
+								<a href="#none">육아 </a> > <a href="#none">로션목용용품</a> > <a href="#none">샴푸/<strong>바디워시</strong></a> ><br /> <a href="#none"><strong>바디워시</strong></a>
+							</li>
+						</ul>
+						<!-- // ctype -->
+
+					</div>
+					<dl class="bestsch">
+						<dt class="box_ty2">
+							<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+							인기 검색어
+						</dt>
+						<dd><a href="#none">1. 햇반</a></dd>
+						<dd><a href="#none">2. 삼겹살</a></dd>
+						<dd><a href="#none">2. 계란</a></dd>
+						<dd><a href="#none">4. 초코파이</a></dd>
+						<dd><a href="#none">5. 코카콜라</a></dd>
+					</dl>
 				</div>
 			</div>
 
-		</div>
-	</div>
-	<div class="asideFixBar">
-		<!-- 0724 -->
-		<ul class="asideMenu">
-			<li class="menu1"><a href="#search" class="asideBtn"><span class="tip">검색</span></a></li>
-			<li class="menu2"><a href="#member" class="asideBtn"><span class="tip">로그인</span></a></li>
-			<li class="menu3"><a href="#cart" class="asideBtn"><span class="tip">장바구니</span></a></li>
-			<li class="menu4"><a href="#alim" class="asideBtn"><span class="tip">알림</span></a></li>
-		</ul>
-		<!-- 윈도우의 하단에 fix -->
-		<div class="asdBtmFix">
-			<span>
-				<a href="#guide" class="asideBtn">guide<span class="tip">사용법 안내</span></a>
-				<a href="#app" class="asideBtn">app<span class="tip">앱다운로드</span></a>
-			</span>
-			<a class="gotop" href="#wrap"><img src="images/common/layout/img_gotop.png" alt="" /><span class="tip">TOP</span></a>
-		</div>
-		<!-- //0724 -->
+			<div class="asdLayer" id="member" style="display:none;">
+				<button class="asd_close">닫기</button>
+				<!-- 로그인영역 -->
+				<div class="loginWrap">
 
-		
-		<div class="asdLayer" id="search" style="display:none;">
-			<button class="asd_close">닫기</button>
-
-			<!-- 검색영역 -->
-			<div class="asdSchWrap" style="display:block;">
-				<div class="SchCont">
-					<div class="schForm">
+					<!-- 로그인전 -->
+					<div class="loginBefore" style="display:block;">
 						<!-- 0715 -->
-						<div>
-							<input type="text" id="sch" class="text intVal" style="width:200px;" />
-							<label for="sch" class="lbl">여기서 한방에</label>
-						</div>
+						<span class="col">
+							<input type="text" title="아이디" class="intVal" style="width:259px" />
+							<label for="id1" class="lbl">아이디</label>
+						</span>
+						<span class="col">
+							<input type="password" title="비밀번호" class="intVal" style="width:259px" />
+							<label for="pw1" class="lbl">비밀번호</label>
+						</span>
 						<!-- //0715 -->
-						<button class="btnSch"><span class="hidden">검색</span></button>
+						<a href="#" class="login-btn">로그인</a>
+						<span class="autoLogin"><input type="checkbox" /><label for="">자동로그인</label></span>
+						<div class="idFind">
+							<span><a href="#">아이디 찾기</a> / <a href="#">비밀번호찾기</a></span>
+							<p class="other">등록되지 않은 아이디 이거나, 아이디 또는 <br />비밀번호를 잘못 입력하셨습니다.</p>
+						</div>
 					</div>
-					<!-- btype -->
-					<ul class="schKeyword">
-						<li><a href="#none">피망</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-						<li><a href="#none">오뚜기케찹</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-						<li><a href="#none">해찬들</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-						<li><a href="#none">에센스</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-					</ul>
-					<!-- // btype -->
-					<!-- ctype -->
-					<ul class="schcate">
-						<li>
-							<a href="#none">생활용품</a> > <a href="#none">기타생활용품</a> > <a href="#none">여행용품</a> > <br /> <a href="#none"><strong>바디워시</strong></a>
-						</li>
-						<li>
-							<a href="#none">육아 </a> > <a href="#none">로션목용용품</a> > <a href="#none">샴푸/<strong>바디워시</strong></a> ><br /> <a href="#none"><strong>바디워시</strong></a>
-						</li>
-					</ul>
-					<!-- // ctype -->
 
+					<!-- 로그인후 -->
+					<div class="loginAfter" style="display:none;">
+						<div class="box_ty1 userInfo">
+							<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+							<span class="profile">
+								<span class="imgMask"></span>
+								<img src="images/common/temp/@tamp_profile_90.png" width="90" alt="" />
+							</span>
+							<span class="user">
+								<strong>이현철</strong>님 안녕하세요.
+							</span>
+							<a href="#none" class="userEdit"><img src="images/common/layout/btn_userEdit.png" alt="회원정보수정" /></a>
+						</div>
+						<ul class="deliveray">
+							<li>
+								<!--  배송지가 등록되어 있지 않을경우
+								<a href="#none">배송지를 등록해주세요.</a>
+								-->
+								<a href="#none" class="on">배송지 : 응암 3동</a>
+								<div class="box_ty3">
+									<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+									<div class="box_ty3_inner">
+										<ul>
+											<li><a href="#none">이마트 (은평점)</a></li>
+											<li><a href="#none">홈플러스 (월드컵점)</a></li>
+											<li><a href="#none">롯데마트 (화정점)</a></li>
+										</ul>
+										<a href="#none" class="btn_deil_change"><img src="images/common/btn_change_deli.png" alt="배송지변경" /></a>
+									</div>
+								</div>
+							</li>
+							<li><a href="#none">구매이력</a></li>
+							<li><a href="#none">마트 계정관리</a></li>
+							<li><a href="#none">1:1 문의하기</a></li>
+						</ul>
+					</div>
+
+					<!-- 추천상품 -->
+					<div class="recoProduct" style="display:none;">
+						<span class="recoText"><strong>'이현철'</strong> 님에게 추천합니다.</span>
+						<div class="recoList">
+							<ul>
+								<li>
+									<span class="discountInfo">80%</span>
+									<div class="thumInfo">
+										<a href="#none" class="thumImg"><img src="images/common/temp/@temp_reco_88.gif" width="88" height="88" alt="" /></a>
+									</div>
+									<div class="txtInfo">
+										<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+										<span class="price" >
+											<strong>6,900원</strong>
+										</span>
+									</div>
+								</li>
+								<li>
+									<span class="discountInfo">80%</span>
+									<div class="thumInfo">
+										<a href="#none" class="thumImg"><img src="images/common/temp/@temp_reco_88.gif" width="88" height="88" alt="" /></a>
+									</div>
+									<div class="txtInfo">
+										<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+										<span class="price" >
+											<strong>6,900원</strong>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<dl class="bestsch">
-					<dt class="box_ty2">
-						<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
-						인기 검색어
-					</dt>
-					<dd><a href="#none">1. 햇반</a></dd>
-					<dd><a href="#none">2. 삼겹살</a></dd>
-					<dd><a href="#none">2. 계란</a></dd>
-					<dd><a href="#none">4. 초코파이</a></dd>
-					<dd><a href="#none">5. 코카콜라</a></dd>
-				</dl>
 			</div>
-		</div>
-
-		<div class="asdLayer" id="member" style="display:none;">
-			<button class="asd_close">닫기</button>
-			<!-- 로그인영역 -->
-			<div class="loginWrap">
-
-				<!-- 로그인전 -->
-				<div class="loginBefore" style="display:block;">
-					<!-- 0715 -->
-					<span class="col">
-						<input type="text" title="아이디" class="intVal" style="width:259px" />
-						<label for="id1" class="lbl">아이디</label>
-					</span>
-					<span class="col">
-						<input type="password" title="비밀번호" class="intVal" style="width:259px" />
-						<label for="pw1" class="lbl">비밀번호</label>
-					</span>
-					<!-- //0715 -->
-					<a href="#" class="login-btn">로그인</a>
-					<span class="autoLogin"><input type="checkbox" /><label for="">자동로그인</label></span>
-					<div class="idFind">
-						<span><a href="#">아이디 찾기</a> / <a href="#">비밀번호찾기</a></span>
-						<p class="other">등록되지 않은 아이디 이거나, 아이디 또는 <br />비밀번호를 잘못 입력하셨습니다.</p>
-					</div>
-				</div>
-
-				<!-- 로그인후 -->
-				<div class="loginAfter" style="display:none;">
+			<div class="asdLayer" id="cart" style="display:none;">
+				<button class="asd_close">닫기</button>
+				<!-- 장바구니 -->
+				<div class="cartWrap">
 					<div class="box_ty1 userInfo">
 						<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
 						<span class="profile">
@@ -1017,58 +1121,178 @@
 							<img src="images/common/temp/@tamp_profile_90.png" width="90" alt="" />
 						</span>
 						<span class="user">
-							<strong>이현철</strong>님 안녕하세요.
+							<strong>이현철</strong><br/>님의 장바구니 입니다.
 						</span>
-						<a href="#none" class="userEdit"><img src="images/common/layout/btn_userEdit.png" alt="회원정보수정" /></a>
+						<a href="#none" class="help"><img src="images/common/layout/btn_guide.png" alt="" /></a>
 					</div>
-					<ul class="deliveray">
-						<li>
-							<!--  배송지가 등록되어 있지 않을경우
-							<a href="#none">배송지를 등록해주세요.</a>
-							-->
-							<a href="#none" class="on">배송지 : 응암 3동</a>
-							<div class="box_ty3">
-								<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
-								<div class="box_ty3_inner">
-									<ul>
-										<li><a href="#none">이마트 (은평점)</a></li>
-										<li><a href="#none">홈플러스 (월드컵점)</a></li>
-										<li><a href="#none">롯데마트 (화정점)</a></li>
-									</ul>
-									<a href="#none" class="btn_deil_change"><img src="images/common/btn_change_deli.png" alt="배송지변경" /></a>
-								</div>
-							</div>
-						</li>
-						<li><a href="#none">구매이력</a></li>
-						<li><a href="#none">마트 계정관리</a></li>
-						<li><a href="#none">1:1 문의하기</a></li>
-					</ul>
-				</div>
-
-				<!-- 추천상품 -->
-				<div class="recoProduct" style="display:none;">
-					<span class="recoText"><strong>'이현철'</strong> 님에게 추천합니다.</span>
-					<div class="recoList">
+					<div class="cartList scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
 						<ul>
 							<li>
-								<span class="discountInfo">80%</span>
 								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_reco_88.gif" width="88" height="88" alt="" /></a>
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
 								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
 									<span class="price" >
 										<strong>6,900원</strong>
 									</span>
 								</div>
 							</li>
 							<li>
-								<span class="discountInfo">80%</span>
 								<div class="thumInfo">
-									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_reco_88.gif" width="88" height="88" alt="" /></a>
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
 								</div>
-								<div class="txtInfo">
-									<a href="#none" class="pdName">배_개_홈플러스좋은상품</a>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
+									<span class="price" >
+										<strong>6,900원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="thumInfo">
+									<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
+									<div class="thumOver">
+										<strong class="item">0</strong>
+										<span class="act">
+											<button class="minus"><span class="hidden">빼기</span></button>
+											<button class="plus"><span class="hidden">담기</span></button>
+										</span>
+										<button class="cartDel"><span class="hidden">삭제</span></button>
+									</div>
+								</div>
+								<div class="textInfo">
+									<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
 									<span class="price" >
 										<strong>6,900원</strong>
 									</span>
@@ -1076,260 +1300,46 @@
 							</li>
 						</ul>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="asdLayer" id="cart" style="display:none;">
-			<button class="asd_close">닫기</button>
-			<!-- 장바구니 -->
-			<div class="cartWrap">
-				<div class="box_ty1 userInfo">
-					<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
-					<span class="profile">
-						<span class="imgMask"></span>
-						<img src="images/common/temp/@tamp_profile_90.png" width="90" alt="" />
-					</span>
-					<span class="user">
-						<strong>이현철</strong><br/>님의 장바구니 입니다.
-					</span>
-					<a href="#none" class="help"><img src="images/common/layout/btn_guide.png" alt="" /></a>
-				</div>
-				<div class="cartList scrBar mCustomScrollbar" data-mcs-theme="minimal-dark">
-					<ul>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div class="thumInfo">
-								<a href="#none" class="thumImg"><img src="images/common/temp/@temp_49x45.png" width="49" height="44" alt="" /></a>
-								<div class="thumOver">
-									<strong class="item">0</strong>
-									<span class="act">
-										<button class="minus"><span class="hidden">빼기</span></button>
-										<button class="plus"><span class="hidden">담기</span></button>
-									</span>
-									<button class="cartDel"><span class="hidden">삭제</span></button>
-								</div>
-							</div>
-							<div class="textInfo">
-								<a href="#none" class="pdName">배_개_홈플러스좋은상품 오메가오메가오메가오메가</a>
-								<span class="price" >
-									<strong>6,900원</strong>
-								</span>
-							</div>
-						</li>
-					</ul>
-				</div>
 
-				<!-- 장바구니 총금액 -->
-				<div class="totalPrice">
-					<div class="box_ty3">
-						<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
-						<dl class="box_ty3_inner">
-							<dt>장바구니 금액</dt>
-							<dd><strong>56,000</strong>원</dd>
-						</dl>
+					<!-- 장바구니 총금액 -->
+					<div class="totalPrice">
+						<div class="box_ty3">
+							<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+							<dl class="box_ty3_inner">
+								<dt>장바구니 금액</dt>
+								<dd><strong>56,000</strong>원</dd>
+							</dl>
+						</div>
+						<a href="#none"><img src="images/common/btn_order.png" alt="주문하러가기" /></a>
 					</div>
-					<a href="#none"><img src="images/common/btn_order.png" alt="주문하러가기" /></a>
 				</div>
 			</div>
-		</div>
 
-		<div class="asdLayer" id="alim" style="display:none">
-			<button class="asd_close">닫기</button>
-			<!-- 알림 -->
-			<div class="alimWrap">
-				
-			</div>
-			<!-- // -->
-		</div>
-
-		<div class="asdLayer" id="guide" style="display:none;">
-			<button class="asd_close">닫기</button>
-			<!-- guide -->
-			<div class="gudeContent guide">
-				<div class="box_ty1">
-					<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
-					<h2>마트모아 <strong>사용방법</strong></h2>
+			<div class="asdLayer" id="alim" style="display:none">
+				<button class="asd_close">닫기</button>
+				<!-- 알림 -->
+				<div class="alimWrap">
+					
 				</div>
-				<ul class="guideList">
-					<li><a href="#none">장바구니 담는법</a></li>
-					<li><a href="#none">추천 장바구니 활용법</a></li>
-					<li><a href="#none">구매하는 방법</a></li>
-					<li><a href="#none">마트모아 사용 팁</a></li>
-				</ul>
+				<!-- // -->
 			</div>
-			<!--// guide -->
-			<!-- 스마트링크는 giude 및 카트일때만 노출 -->
-			<ul class="smartLinkList" style="display:block;">
-				<li><a href="#none"><img src="images/common/temp/@temp_aside_smart01.png" alt="" /></a></li>
-				<li><a href="#none"><img src="images/common/temp/@temp_aside_smart02.png" alt="" /></a></li>
-				<li><a href="#none"><img src="images/common/temp/@temp_aside_smart03.png" alt="" /></a></li>
-			</ul>
-		</div>
 
-		<div class="asdLayer" id="app" style="display:none;">
-			<button class="asd_close">닫기</button>	
-				<!-- app -->
-				<div class="appContent guide">
+			<div class="asdLayer" id="guide" style="display:none;">
+				<button class="asd_close">닫기</button>
+				<!-- guide -->
+				<div class="gudeContent guide">
 					<div class="box_ty1">
-						<h2>마트모아 <strong>APP 다운받기</strong></h2>
+						<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+						<h2>마트모아 <strong>사용방법</strong></h2>
 					</div>
-					<ul class="appList">
-						<li><a href="#none"><img src="images/common/layout/img_applist01.png" alt="" /></a></li>
-						<li><a href="#none"><img src="images/common/layout/img_applist02.png" alt="" /></a></li>
+					<ul class="guideList">
+						<li><a href="#none">장바구니 담는법</a></li>
+						<li><a href="#none">추천 장바구니 활용법</a></li>
+						<li><a href="#none">구매하는 방법</a></li>
+						<li><a href="#none">마트모아 사용 팁</a></li>
 					</ul>
 				</div>
-				<!-- app -->
+				<!--// guide -->
 				<!-- 스마트링크는 giude 및 카트일때만 노출 -->
 				<ul class="smartLinkList" style="display:block;">
 					<li><a href="#none"><img src="images/common/temp/@temp_aside_smart01.png" alt="" /></a></li>
@@ -1337,50 +1347,71 @@
 					<li><a href="#none"><img src="images/common/temp/@temp_aside_smart03.png" alt="" /></a></li>
 				</ul>
 			</div>
-		</div>
-	</div>
-	<div class="useGuideLayer" style="width:960px; display: none; position: fixed; left: 50%; top: 50%; z-index: 99999;
-  margin-left: -480px; margin-top: -372px;">
-		<div class="stepCont">
-			<ul>
-				<li style="display: none; opacity: 0;"><img src="images/common/img_useGuide1.png" alt="" /></li>
-				<li style="display: block; opacity: 1;"><img src="images/common/img_useGuide2.png" alt="" /></li>
-			</ul>
-		</div>
-		<div class="layerFooter">
-			<a href="#none" class="next">Next</a>
-			<span class="pageNum">
-				<a href="#none" class="active"><span class="hidden">1</span></a>
-				<a href="#none"><span class="hidden">2</span></a>
-				<a href="#none"><span class="hidden">3</span></a>
-			</span>
-		</div>
-	</div>
-	<!-- <div class="mask_ty2"></div> -->
-	<div id="footer">
-		<div class="footerinner">
-			<h2 class="logo"><a href="#none"><img src="images/common/layout/logo_footer.png" alt="Martmoa"></a></h2>
-			<div class="footerMenu">
-				<a href="#none">회사소개</a>
-				<a href="#none">제휴문의</a>
-				<a href="#none">이용약관</a>
-				<a href="#none">개인정보취급방침</a>
-				<a href="#none">이메일무단수집거부</a>
-				<a href="#none">공지사항</a>
-				<a href="#none">FAQ</a>
+
+			<div class="asdLayer" id="app" style="display:none;">
+				<button class="asd_close">닫기</button>	
+					<!-- app -->
+					<div class="appContent guide">
+						<div class="box_ty1">
+							<h2>마트모아 <strong>APP 다운받기</strong></h2>
+						</div>
+						<ul class="appList">
+							<li><a href="#none"><img src="images/common/layout/img_applist01.png" alt="" /></a></li>
+							<li><a href="#none"><img src="images/common/layout/img_applist02.png" alt="" /></a></li>
+						</ul>
+					</div>
+					<!-- app -->
+					<!-- 스마트링크는 giude 및 카트일때만 노출 -->
+					<ul class="smartLinkList" style="display:block;">
+						<li><a href="#none"><img src="images/common/temp/@temp_aside_smart01.png" alt="" /></a></li>
+						<li><a href="#none"><img src="images/common/temp/@temp_aside_smart02.png" alt="" /></a></li>
+						<li><a href="#none"><img src="images/common/temp/@temp_aside_smart03.png" alt="" /></a></li>
+					</ul>
+				</div>
 			</div>
-			<p class="footertxt">(주)마트모아 닷컴은 통신판매 정보제공자이며, 상품에 직접 관여 하지 않으며 상품 주문, 배송 및 환불의 의무와 책임은 각 판매 업체에 있습니다.</p>
-			<address>
-				<p>
-					(주)마트모아 닷컴 | 대표이사 양동훈 | 사업자 등록번호 : 215-87-52493 | 통신판매업신고 : 제 2012-서울강남 - 01760호 | 주소 : 강남구 선릉로 86길 37 (대치동) 302호
-				</p>
-				<p>
-					고객센터 : 070-4618-1060 | 제휴문의 : 070-7618-1060 | FAX : 070-7500-3515 | 개인정보관리책임자 : 양동훈 | COPYRIGHT ⓒ 2015 MARTMOA, All RIGHTS RESERVE
-				</p>
-			</address>
+		</div>
+		<div class="useGuideLayer" style="width:960px; display: none; position: fixed; left: 50%; top: 50%; z-index: 99999;margin-left: -480px; margin-top: -372px;">
+			<div class="stepCont">
+				<ul>
+					<li style="display: none; opacity: 0;"><img src="images/common/img_useGuide1.png" alt="" /></li>
+					<li style="display: block; opacity: 1;"><img src="images/common/img_useGuide2.png" alt="" /></li>
+				</ul>
+			</div>
+			<div class="layerFooter">
+				<a href="#none" class="next">Next</a>
+				<span class="pageNum">
+					<a href="#none" class="active"><span class="hidden">1</span></a>
+					<a href="#none"><span class="hidden">2</span></a>
+					<a href="#none"><span class="hidden">3</span></a>
+				</span>
+			</div>
+		</div>
+		<!-- <div class="mask_ty2"></div> -->
+		<div id="footer">
+			<div class="footerinner">
+				<h2 class="logo"><a href="#none"><img src="images/common/layout/logo_footer.png" alt="Martmoa"></a></h2>
+				<div class="footerMenu">
+					<a href="#none">회사소개</a>
+					<a href="#none">제휴문의</a>
+					<a href="#none">이용약관</a>
+					<a href="#none">개인정보취급방침</a>
+					<a href="#none">이메일무단수집거부</a>
+					<a href="#none">공지사항</a>
+					<a href="#none">FAQ</a>
+				</div>
+				<p class="footertxt">(주)마트모아 닷컴은 통신판매 정보제공자이며, 상품에 직접 관여 하지 않으며 상품 주문, 배송 및 환불의 의무와 책임은 각 판매 업체에 있습니다.</p>
+				<address>
+					<p>
+						(주)마트모아 닷컴 | 대표이사 양동훈 | 사업자 등록번호 : 215-87-52493 | 통신판매업신고 : 제 2012-서울강남 - 01760호 | 주소 : 강남구 선릉로 86길 37 (대치동) 302호
+					</p>
+					<p>
+						고객센터 : 070-4618-1060 | 제휴문의 : 070-7618-1060 | FAX : 070-7500-3515 | 개인정보관리책임자 : 양동훈 | COPYRIGHT ⓒ 2015 MARTMOA, All RIGHTS RESERVE
+					</p>
+				</address>
+			</div>
 		</div>
 	</div>
-</div>
- <script data-main="js/main" src="js/lib/require2.1.17.js"></script>
+
+<script data-main="js/main" src="js/lib/require2.1.17.js"></script>
 </body>
 </html>

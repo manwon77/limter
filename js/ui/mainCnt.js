@@ -57,12 +57,27 @@ define(['jquery','easing'],function($,easing){
 			};
 			$(".step3").itemSlide({cntWrap : " div > ol", cntWidth : 300}); 
 
-			this.next = $(".main_type2 .next");
-			this.prev = $(".main_type2 .prev");
+			this.next = $(".main_type3 .next");
+			this.prev = $(".main_type3 .prev");
 			this.cntW1 = $(".cnt_ty1");
 			this.cntW2 = $(".cnt_ty2");
 			this.next.on("click", $.proxy( this.cnt1, this ) );
 			this.prev.on("click", $.proxy( this.cnt2, this ) );
+
+			// count
+			$('.count').each(function () {
+				$(this).prop('Counter',0).animate({
+					Counter: $(this).text()
+				}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+						var aa = Math.ceil(now) // 올림
+						  , ab = aa.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //콤마단위로 자름
+						$(this).text(ab);
+					}
+				});
+			});
 
 		}
 		, slideLayer : function( e ){

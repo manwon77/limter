@@ -10,7 +10,7 @@
 .smarCnt .col:first-child{margin-top:0px;}
 .smarCnt .col > a{margin-bottom:15px;}
 
-.main_grid{margin-left:121px;position:relative;}
+.main_grid{margin:0 auto;width:1184px;position:relative;}
 .main_type1{}
 .main_type1:after{content:"";display:block;clear:both;}
 .main_type1 h3{font-size:20px;font-family:'NanumGothic';}
@@ -56,10 +56,10 @@
 .main_type2{position:relative;height:300px;width:1000px;overflow:hidden;}
 .main_type2:after{content:"";display:block;clear:both;}
 .main_type2 .btnWrap {}
-.main_type2 .btnWrap .prev {background:url(../images/common/bg_btns.png) no-repeat -132px -81px;position:absolute;left:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
-.main_type2 .btnWrap .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -132px -16px;}
-.main_type2 .btnWrap .next{background:url(../images/common/bg_btns.png) no-repeat -196px -81px;position:absolute;right:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
-.main_type2 .btnWrap .next:hover{background:url(../images/common/bg_btns.png) no-repeat -196px -16px;}
+.btnWrap .prev {background:url(../images/common/bg_btns.png) no-repeat -132px -81px;position:absolute;left:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
+.btnWrap .prev:hover{background:url(../images/common/bg_btns.png) no-repeat -132px -16px;}
+.btnWrap .next{background:url(../images/common/bg_btns.png) no-repeat -196px -81px;position:absolute;right:0;top:50%;z-index:1;margin-top:-23px;width:45px;height:45px;font-size:0;}
+.btnWrap .next:hover{background:url(../images/common/bg_btns.png) no-repeat -196px -16px;}
 
 .main_type2 .cntWrap{width:3000px;position:absolute;}
 .main_type2 .cnt{width:1000px;height:300px;border:1px solid blue;position:relative;float:left;background:white;}
@@ -84,4 +84,12 @@
 .graph_circle .txt .arr{position:absolute;left:50%;top:103px;margin-left:-16px;}
 .graph_circle .txt .nmber{color:red;font-size:30px;font-weight:bold;text-align:center;width:158px;display:block;padding-top:53px;white-space:nowrap;}
 .graph_circle .txt .nmber > span{font-size:16px;}
+
+/* main_type3 */
+.main_type3 .cnt_ty1 {height:600px;position:relative;width:794px;margin:auto;border:2px solid black;background:black;}
+.main_type3 .cnt_ty2{position:absolute;left:2000px;top:0;background:blue;}
+.main_type3 .cnt_ty1 > ul > li{padding:0 20px;width:754px;height: 183px;line-height:178px;background:url(../images/main/bg_count.png) no-repeat 0 0;;text-align:center;}
+.count{line-height: 100px;color:white;margin-left:30px;font-size:70px;font-weight:bold;font-family:'GreyscaleBasic';}
+.main_type3 .cnt_ty2{height:600px;width:794px;margin:auto;border:2px solid black;background:black;}
+
 

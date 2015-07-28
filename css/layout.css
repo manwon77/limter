@@ -12,7 +12,7 @@
 #wrap {width:100%;}
 
 /* header */
-#header {position:relative; height:164px; z-index:60;}
+#header {position:relative; height:164px; z-index:60;width:1184px;margin:0 auto;}
 #header h1{float:left; padding:24px 0 0 29px;}
 
 /* TopUtil */
@@ -146,7 +146,7 @@ div.gnbWrap .menu{clear:both;}
 
 
 /* visual */
-.visual{background:url(../images/common/layout/bg_visual.png) no-repeat 0 0; height:179px; width:100%;}
+.visual{background-color:#000;text-align:center; height:179px; width:100%;}
 .visual ol{width:990px; margin:0 auto;}
 .visual ol li{float:left; font-family:Malgun Gothic; font-size:15px; color:#fff;}
 
@@ -317,7 +317,7 @@ div.gnbWrap .menu{clear:both;}
 
 /* footer */
 #footer{background:#f4f4f4 url(../images/common/layout/bg_footer.png) repeat-x 0 0; height:167px;}
-#footer .footerinner{margin-left:126px; position:relative;}
+#footer .footerinner{margin:0 auto;width:1184px; position:relative;}
 #footer .footerinner h2.logo{ position:absolute; left:0; top:65px;}
 #footer .footerMenu{overflow:hidden; position:absolute; left:-18px; top:0; height:36px;}
 #footer .footerMenu a{display:inline-block; color:#7c7d7f; font-size:13px; height:36px; line-height:36px; font-family:'NanumGothicBold'; padding:0 18px; background:url(../images/common/layout/bg_footermenuBar.png) no-repeat 0 50%;}
