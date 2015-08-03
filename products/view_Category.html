@@ -458,14 +458,31 @@
 									</dl>
 								</li>
 								<!-- 옵션이 있을경우에만 보여짐 -->
-								<li class="hidden">
+								<li>
 									<dl>
 										<dt>옵션</dt>
 										<dd>
-											<select id="">
-												<option>불고기</option>
-												<option></option>
-											</select>
+											<div class="select_bx set_ty3" style="width:250px">
+												<div class="bx">
+													<span class="tl"></span>
+													<span class="tr"></span>
+													<span class="bl"></span>
+													<span class="br"></span>
+													<h3 class="tit"><a href="#none">음료/간식</a></h3>
+													<div class="set_list" style="display:none">
+														<ul>
+															<li><a href="#none">간식1</a></li>
+															<li><a href="#none">간식1</a></li>
+															<li><a href="#none">간식1</a></li>
+															<li><a href="#none">간식1</a></li>
+															<li><a href="#none">간식1</a></li>
+															<li><a href="#none">간식1</a></li>
+														</ul>
+														<span class="bl"></span>
+														<span class="br"></span>
+													</div>
+												</div>
+											</div>
 										</dd>
 									</dl>
 								</li>
@@ -477,20 +494,52 @@
 								</li>
 							</ul>
 							<p><span>※</span> 구매 예정 금액은 실제 결제금액과 다를 수 있습니다.</p>
+							<ul class="option_wrap">
+								<li class="choice">
+									<span class="tit">불고기</span>
+									<span class="count_ty1">
+										<a href="#none" class="minus"><span class="hidden">빼기</span></a>
+										<input type="text" value="" class="item" style="width:14px">
+										<a href="#none" class="plus"><span class="hidden">담기</span></a>
+									</span>
+									<a href="#none" class="del"><img src="../images/common/btn_pop_close2.gif" alt="닫기" /></a>
+								</li>
+								<li class="choice">
+									<span class="tit">바나나</span>
+									<span class="count_ty1">
+										<a href="#none" class="minus"><span class="hidden">빼기</span></a>
+										<input type="text" value="" class="item" style="width:14px">
+										<a href="#none" class="plus"><span class="hidden">담기</span></a>
+									</span>
+									<a href="#none" class="del"><img src="../images/common/btn_pop_close2.gif" alt="닫기" /></a>
+								</li>
+							</ul>
 							<span class="sns">
 								<a href="#none"><img src="../images/common/img_fa1.gif" alt="페이스북 공유" /></a>
 								<a href="#none"><img src="../images/common/img_tw1.gif" alt="트위터 공유" /></a>
 								<a href="#none"><img src="../images/common/img_ca1.gif" alt="카카오스토리 공유" /></a>
 								<a href="#none"><img src="../images/common/img_cl1.gif" alt="url복사" /></a>
 							</span>
-							<div class="btns putBtns">
-								<span class="put_ty1"><a href="#none"><img src="../images/common/btn_put_ty2.gif" alt="장바구니 담기" /></a></span>
+							<div class="btns proTip">
+								<!-- <span class="put_ty1"><a href="#none"><img src="../images/common/btn_put_ty2.gif" alt="장바구니 담기" /></a></span>
 								<span class="put_ty2" style="display:none">
 									<a href="#none" class="minus"><img src="../images/common/ico_put_minus.gif" alt="" /></a>
 									<span class="item">0</span>
 									<a href="#none" class="plus"><img src="../images/common/ico_put_plus.gif" alt="" /></a>
-								</span>
-								<span class="views"><a href="#none"><img src="../images/common/btn_put_ty3.gif" alt="장바구니 보기" /></a></span>
+								</span> -->
+								<span class="views"><a href="#none"><img src="../images/common/btn_put_ty1.gif" alt="장바구니 담기" /></a></span>
+								<!-- 툴팁 -->
+								<div class="priceComp box_ty4" style="">
+									<span class="arr"></span>
+									<div class="box_ty4_btm">
+										<div class="box_ty4_mid">
+											<p>장바구니에 담겼습니다.</p>
+											<a href="#none" class="btn">장바구니 페이지 이동&gt;</a>
+											<a href="#none" class="del"><img src="../images/common/btn_pop_close2.gif" alt="" /></a>
+										</div>
+									</div>
+								</div> 
+								<!-- //툴팁  -->
 							</div>
 						</div>
 					</div>
@@ -1002,12 +1051,7 @@
 						-->
 					</div>
 				</div>	
-				<div class="right">
-					<h3>MARTMOA <span>Smart choise</span></h3>
-					<p><img src="../images/common/bner1.gif" alt="" /></p>
-					<p><img src="../images/common/bner2.gif" alt="" /></p>
-					
-				</div>
+				
 			</div>
 		</div>
 		</div>

@@ -7,6 +7,7 @@ requirejs.config({
         'scrollBar' : 'lib/jquery.mCustomScrollbar.concat.min',		// 스크롤 플러그인
 
 		'scroll' : 'ui/scroll',			// 스크롤	
+		'etc' : 'ui/etc',		// 상품 업다움
 		'formTag' : 'ui/formTag',		// 체크박스, 라디오 버튼 이미지 변환
 		'order' : 'ui/order'			// 주문내역 팝업 , 장바구니 step3 주문완료 
         
@@ -35,6 +36,10 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'formTag'
         } 
+		, 'etc' : {
+            deps : ["jquery"],
+            exports : 'etc'
+        } 
 
 
     }
@@ -42,10 +47,11 @@ requirejs.config({
 
 
 
-define(['jquery','scrollBar','scroll','order','formTag'],function($,scrollBar, scroll,order, formTag){
+define(['jquery','scrollBar','scroll','order','formTag', 'etc'],function($,scrollBar, scroll,order, formTag, etc){
 
     scroll.init();
     order.init();
     formTag.init();
+    etc.init();
     
 })

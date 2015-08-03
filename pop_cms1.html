@@ -3,28 +3,41 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
 	<title>MartMore</title>
 	
 	<style type="text/css">
 		*{padding:0;margin:0;}
-		.tableWrap {text-align:center;width:1500px;}
-		.tableWrap table{border-collapse:collapse;width:400px;}
-		.tableWrap table, .tableWrap table th, .tableWrap table td{border:1px solid #cacaca;padding:3px 5px;;text-align:left;}
-		.tableWrap table th{text-align:center;}
-		.tableWrap td > div {position:relative;}
-		.tableWrap td > div > span{position:absolute;right:0;}
-		.tableWrap input[type="text"]{margin-bottom:3px;display:block;}
+		.hidden{font-size:0;height:0;left:-9999px;line-height:0;margin:0;overflow:hidden;position:absolute;text-indent:-9999px;top:-9999px;visibility:hidden;width:0;}
+		.tableWrap {text-align:center;width:1185px;height:520px;overflow:hidden;overflow-y:scroll;position:relative;}
+		.tableWrap table{border-collapse:collapse;border:1px solid #cacaca;table-layout:fixed;}
+		.tableWrap table th {border:1px solid #cacaca;border-bottom:0;padding:0 5px;text-align:left;text-align:center;height:24px;line-height:18px;}
+		.tableWrap table td {border:1px solid #cacaca;border-bottom:0;padding:0 5px;text-align:left;height:24px;line-height:18px;}
+		.tableWrap td > div:first-child {position:relative;float:left;}
+		.tableWrap td > div{float:right;}
+		.tableWrap input[type="text"]{margin-bottom:3px;display:block;height:18px;padding:3px 5px;width:160px;}
 		.tableWrap .tc{text-align:center;}
+		.tableWrap .img{height:50px;}
 		.tableWrap:after{content:"";display:block;clear:both;}
-		.tableWrap .left{float:left;width:400px;margin-right:20px;height:1010px;}
-		.tableWrap .cnt  {overflow:auto;overflow-x:scroll;overflow-y:hidden;width:700px;height:1010px;white-space:nowrap;}
-		.tableWrap .cnt > ul{}
-		.tableWrap .cnt li{width:400px;height:1010px;margin-left:20px;display:inline-block;overflow:hidden;}
-		.tableWrap .cnt li:first-child{margin-left:0;}
-		.tableWrap .cnt li table{width:400px;}
+		.tableWrap .left{float:left;width:370px;margin-right:20px;font-size:12px;}
+		.tableWrap .left > table{}/* 0803 */
+		.tableWrap .left > table .sup{padding:0 5px;}
+		.tableWrap .cnt {width:740px;height:1000px;float:left;overflow:hidden;position:relative;}
+		.tableWrap .cnt > ul{width:10000px;position:absolute;margin-bottom:20px;}
+		.tableWrap .cnt li{float:left;list-style:none;}
+		.tableWrap .cnt li table{font-size:12px;}/* 0803 */
+		/* 0803 */
+		.pop_modi .pro_open, .pop_modi .pro_close{border:1px solid #cacaca;text-decoration:none;padding:5px 25px;font-size:13px;line-height:1.5;position:absolute;top:572px;}
+		.pop_modi .pro_open {left:70px;}
+		.pop_modi .pro_close {left:230px;}
+		/* //0803 */
+		.pop_modi .pro_prev, .pro_next{border:1px solid #cacaca;text-decoration:none;padding:5px 25px;font-size:13px;line-height:1.5;position:absolute;}
+		.pop_modi .pro_prev{top:572px;left:530px;}
+		.pop_modi .pro_next{top:572px;left:730px;}
+		.pop_modi .pro_prev:hover, .pop_modi .pro_next:hover{border:1px solid red;color:red;}
 	</style>
 </head>
-
 <body>
 
 	<!-- layerPopup -->
@@ -51,7 +64,7 @@
 							<tbody>
 								<tr>
 									<td>이미지</td>
-									<td class="tc"><img src="../images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
+									<td class="tc img"><img src="images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
 								</tr>
 								<tr>
 									<td>p_nm</td>
@@ -101,983 +114,785 @@
 									<td>N/A</td>
 								</tr>
 								<tr>
-									<td>3<sup>rd</sup>_cate</td>
-									<td><div>
-										삼겹살/목살/구이용<span>0</span>
-									</div></td>
-								</tr>
-								<tr>
-									<td>4<sup>th</sup>_cate</td>
-									<td>
-										<div>삼겹살<span>15</span></div>
+									<td class="sup open"><div>3<sup>rd</sup>_cate </div><div>0</div></td>
+									<td class="open">
+									<div>삼겹살/목살/구이용</div><div>0</div>
 									</td>
 								</tr>
 								<tr>
-									<td>partYear</td>
-									<td><div>한돈<span>0</span></div></td>
-								</tr>
-								<tr>
-									<td>pType</td>
-									<td><div>삼겹살<span>0</span></div></td>
-								</tr>
-								<tr>
-									<td>usage</td>
-									<td><div>구이<span>0</span></div></td>
-								</tr>
-								<tr>
-									<td>size</td>
-									<td><div>-<span>0</span></div></td>
-								</tr>
-								<tr>
-									<td>organic</td>
-									<td>
-										<div>-<span>0</span></div>
+									<td class="sup open"><div>4<sup>th</sup>_cate </div><div>15</div></td>
+									<td class="open">
+										<div>삼겹살</div><div>15</div>
 									</td>
 								</tr>
 								<tr>
-									<td>grade</td>
-									<td><div>-<span>0</span></div></td>
+									<td class="open"><div>pType </div><div>0</div></td>
+									<td class="open"<div>삼겹살</div><div>0</div></td>
 								</tr>
 								<tr>
-									<td>origin</td>
-									<td><div>국내산<span>2</span></div></td>
+									<td class="open"><div>partYear </div><div>5</div></td>
+									<td class="open"><div>한돈</div><div>0</div></td>
 								</tr>
 								<tr>
-									<td>region</td>
-									<td>
-										<div>-<span>0</span></div>
+									<td class="open"><div>usage</div><div>0</div></td>
+									<td class="open"><div>구이</div><div>0</div></td>
+								</tr>
+								<tr>
+									<td class="open"><div>size</div><div>0</div></td>
+									<td class="open"><div>-</div><div>0</div></td>
+								</tr>
+								<tr>
+									<td class="open"><div>organic</div><div>(유)5</div></td>
+									<td class="open">
+										<div>-</div><div>0</div>
 									</td>
 								</tr>
 								<tr>
-									<td>additive</td>
-									<td><div>-<span>0</span></div></td>
+									<td class="open"><div>grade </div><div>(유)5</div></td>
+									<td class="open"><div>-</div><div>0</div></td>
 								</tr>
 								<tr>
-									<td>brand</td>
-									<td><div>이마트<span>0</span></div></td>
+									<td class="open"><div>origin </div><div>2</div></td>
+									<td class="open"><div>국내산</div><div>2</div></td>
 								</tr>
 								<tr>
-									<td>maker</td>
-									<td><div>이마트<span>0</span></div></td>
+									<td class="open"><div>region</div><div>1</div></td>
+									<td class="open">
+										<div>-</div><div>0</div>
+									</td>
 								</tr>
 								<tr>
-									<td>flavor</td>
-									<td><div>-<span>0</span></div></td>
+									<td class="open"><div>additive</div><div>0</div></td>
+									<td class="open"><div>-</div><div>0</div></td>
 								</tr>
 								<tr>
-									<td>
-										<div>processing 
-											<span>(유동)
+									<td class="open"><div>brand</div><div>2</div></td>
+									<td class="open"><div>이마트</div><div>0</div></td>
+								</tr>
+								<tr>
+									<td class="open"><div>maker </div><div>0</div></td>
+									<td class="open"><div>이마트</div><div>0</div></td>
+								</tr>
+								<tr>
+									<td class="open"><div>flavor </div><div>0</div></td>
+									<td class="open"><div>-</div><div>0</div></td>
+								</tr>
+								<tr>
+									<td class="open">
+										<div>processing </div>
+										<div>
+											(유동)
+												<select>
+													<option>(유동)</option>
+												</select>
+										</div>
+									</td>
+									<td class="open"><div>-</div><div>0</div></td>
+								</tr>
+								<tr>
+									<td class="open">
+										<div>storage</div>
+										<div>
+											(유동)
 												<select>
 													<option></option>
 												</select>
-											</span>
 										</div>
 									</td>
-									<td><div>-<span>0</span></div></td>
+									<td class="open"><div>냉장</div><div>0</div>	</td>
 								</tr>
 								<tr>
-									<td>
-										<div>storage 
-											<span>(유동)
-												<select>
-													<option></option>
-												</select>
-											</span>
-										</div>
-									</td>
-									<td><div>냉장<span>0</span></div></td>
+									<td class="open"><div>package </div><div>0</div></td>
+									<td class="open"><div>-</div><div>0</div></td>
 								</tr>
 								<tr>
-									<td>package</td>
-									<td><div>-<span>0</span></div></td>
+									<td><div>매칭점수 </div><div>(최대)50</div></td>
+									<td><div>&nbsp;</div><div>30</div></td>
 								</tr>
 								<tr>
-									<td>매칭점수</td>
-									<td><div>&nbsp;<span>30</span></div></td>
+									<td><div>매칭율</div></td>
+									<td><div>&nbsp;</div><div>100%</div></td>
 								</tr>
 								<tr>
-									<td>매칭율</td>
-									<td><div>&nbsp;<span>100%</span></div></td>
-								</tr>
-								<tr>
-									<td>대체판단</td>
+									<td><div>대체판단</div></td>
 									<td class="tc">(기준상품)</td>
 								</tr>
 
 							</tbody>
 						</table>
 					</div>
+											
 					<div class="cnt">
 						<ul>
 							<li>
-								<table summary="" width="300px">
-									<colgroup>
-										<col width="50%" />
-										<col width="*%" />
-									</colgroup>
+								<table summary="" width="185px">
 									<thead>
 										<tr>
-											<th>구분</th>
 											<th>기준상품</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>이미지</td>
-											<td class="tc"><img src="../images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
+											<td class="tc img"><img src="images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
 										</tr>
 										<tr>
-											<td>p_nm</td>
 											<td>국내산</td>
 										</tr>
 										<tr>
-											<td>p_id</td>
 											<td>em01000000000</td>
 										</tr>
 										<tr>
-											<td>(옵션)</td>
 											<td>
 												<input type="text" id="" />
 												<input type="text" id="" />
 											</td>
 										</tr>
 										<tr>
-											<td>중량</td>
 											<td>300g</td>
 										</tr>
 										<tr>
-											<td>가격</td>
 											<td>9,000원</td>
 										</tr>
 										<tr>
-											<td>단가</td>
 											<td>(100g 가격: 3,000원)</td>
 										</tr>
 										<tr>
-											<td>판매몰</td>
 											<td>이마트</td>
 										</tr>
 										<tr>
-											<td>배송조건</td>
 											<td>매장배송</td>
 										</tr>
 										<tr>
-											<td>재고</td>
 											<td>판매중</td>
 										</tr>
 										<tr>
-											<td>분류(삽입여부)</td>
 											<td>분류됨(0)</td>
 										</tr>
 										<tr>
-											<td>절약률</td>
 											<td>N/A</td>
 										</tr>
 										<tr>
-											<td>3<sup>rd</sup>_cate</td>
-											<td><div>
-												삼겹살/목살/구이용<span>0</span>
-											</div></td>
-										</tr>
-										<tr>
-											<td>4<sup>th</sup>_cate</td>
-											<td>
-												<div>삼겹살<span>15</span></div>
+											<td class="open">
+											<div>삼겹살/목살/구이용</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>partYear</td>
-											<td><div>한돈<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>pType</td>
-											<td><div>삼겹살<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>usage</td>
-											<td><div>구이<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>size</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>organic</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open">
+												<div>삼겹살</div><div>15</div>
 											</td>
 										</tr>
 										<tr>
-											<td>grade</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>삼겹살</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>origin</td>
-											<td><div>국내산<span>2</span></div></td>
+											<td class="open"><div>한돈</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>region</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open"><div>구이</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>additive</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>brand</td>
-											<td><div>이마트<span>0</span></div></td>
+											<td class="open"><div>국내산</div><div>2</div></td>
 										</tr>
 										<tr>
-											<td>maker</td>
-											<td><div>이마트<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>flavor</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>
-												<div>processing 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
-											<td><div>-<span>0</span></div></td>
 										</tr>
 										<tr>
-											<td>
-												<div>storage 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
-											</td>
-											<td><div>냉장<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>package</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭점수</td>
-											<td><div>&nbsp;<span>30</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭율</td>
-											<td><div>&nbsp;<span>100%</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>대체판단</td>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>냉장</div><div>0</div>	</td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>30</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>100%</div></td>
+										</tr>
+										<tr>
 											<td class="tc">(기준상품)</td>
 										</tr>
-
+					
 									</tbody>
 								</table>
-							</li>
-							<li>
-								<table summary="" width="300px">
-									<colgroup>
-										<col width="50%" />
-										<col width="*%" />
-									</colgroup>
+							</li><!--
+						--><li>
+								<table summary="" width="185px">
 									<thead>
 										<tr>
-											<th>구분</th>
 											<th>기준상품</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>이미지</td>
-											<td class="tc"><img src="../images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
+											<td class="tc img"><img src="images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
 										</tr>
 										<tr>
-											<td>p_nm</td>
 											<td>국내산</td>
 										</tr>
 										<tr>
-											<td>p_id</td>
 											<td>em01000000000</td>
 										</tr>
 										<tr>
-											<td>(옵션)</td>
 											<td>
 												<input type="text" id="" />
 												<input type="text" id="" />
 											</td>
 										</tr>
 										<tr>
-											<td>중량</td>
 											<td>300g</td>
 										</tr>
 										<tr>
-											<td>가격</td>
 											<td>9,000원</td>
 										</tr>
 										<tr>
-											<td>단가</td>
 											<td>(100g 가격: 3,000원)</td>
 										</tr>
 										<tr>
-											<td>판매몰</td>
 											<td>이마트</td>
 										</tr>
 										<tr>
-											<td>배송조건</td>
 											<td>매장배송</td>
 										</tr>
 										<tr>
-											<td>재고</td>
 											<td>판매중</td>
 										</tr>
 										<tr>
-											<td>분류(삽입여부)</td>
 											<td>분류됨(0)</td>
 										</tr>
 										<tr>
-											<td>절약률</td>
 											<td>N/A</td>
 										</tr>
 										<tr>
-											<td>3<sup>rd</sup>_cate</td>
-											<td><div>
-												삼겹살/목살/구이용<span>0</span>
-											</div></td>
-										</tr>
-										<tr>
-											<td>4<sup>th</sup>_cate</td>
-											<td>
-												<div>삼겹살<span>15</span></div>
+											<td class="open">
+											<div>삼겹살/목살/구이용</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>partYear</td>
-											<td><div>한돈<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>pType</td>
-											<td><div>삼겹살<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>usage</td>
-											<td><div>구이<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>size</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>organic</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open">
+												<div>삼겹살</div><div>15</div>
 											</td>
 										</tr>
 										<tr>
-											<td>grade</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>삼겹살</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>origin</td>
-											<td><div>국내산<span>2</span></div></td>
+											<td class="open"><div>한돈</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>region</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open"><div>구이</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>additive</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>brand</td>
-											<td><div>이마트<span>0</span></div></td>
+											<td class="open"><div>국내산</div><div>2</div></td>
 										</tr>
 										<tr>
-											<td>maker</td>
-											<td><div>이마트<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>flavor</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>
-												<div>processing 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
-											<td><div>-<span>0</span></div></td>
 										</tr>
 										<tr>
-											<td>
-												<div>storage 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
-											</td>
-											<td><div>냉장<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>package</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭점수</td>
-											<td><div>&nbsp;<span>30</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭율</td>
-											<td><div>&nbsp;<span>100%</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>대체판단</td>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>냉장</div><div>0</div>	</td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>30</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>100%</div></td>
+										</tr>
+										<tr>
 											<td class="tc">(기준상품)</td>
 										</tr>
-
+					
 									</tbody>
 								</table>
-							</li>
-							<li>
-								<table summary="" width="300px">
-									<colgroup>
-										<col width="50%" />
-										<col width="*%" />
-									</colgroup>
+							</li><!--
+						--><li>
+								<table summary="" width="185px">
 									<thead>
 										<tr>
-											<th>구분</th>
 											<th>기준상품</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>이미지</td>
-											<td class="tc"><img src="../images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
+											<td class="tc img"><img src="images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
 										</tr>
 										<tr>
-											<td>p_nm</td>
 											<td>국내산</td>
 										</tr>
 										<tr>
-											<td>p_id</td>
 											<td>em01000000000</td>
 										</tr>
 										<tr>
-											<td>(옵션)</td>
 											<td>
 												<input type="text" id="" />
 												<input type="text" id="" />
 											</td>
 										</tr>
 										<tr>
-											<td>중량</td>
 											<td>300g</td>
 										</tr>
 										<tr>
-											<td>가격</td>
 											<td>9,000원</td>
 										</tr>
 										<tr>
-											<td>단가</td>
 											<td>(100g 가격: 3,000원)</td>
 										</tr>
 										<tr>
-											<td>판매몰</td>
 											<td>이마트</td>
 										</tr>
 										<tr>
-											<td>배송조건</td>
 											<td>매장배송</td>
 										</tr>
 										<tr>
-											<td>재고</td>
 											<td>판매중</td>
 										</tr>
 										<tr>
-											<td>분류(삽입여부)</td>
 											<td>분류됨(0)</td>
 										</tr>
 										<tr>
-											<td>절약률</td>
 											<td>N/A</td>
 										</tr>
 										<tr>
-											<td>3<sup>rd</sup>_cate</td>
-											<td><div>
-												삼겹살/목살/구이용<span>0</span>
-											</div></td>
-										</tr>
-										<tr>
-											<td>4<sup>th</sup>_cate</td>
-											<td>
-												<div>삼겹살<span>15</span></div>
+											<td class="open">
+											<div>삼겹살/목살/구이용</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>partYear</td>
-											<td><div>한돈<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>pType</td>
-											<td><div>삼겹살<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>usage</td>
-											<td><div>구이<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>size</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>organic</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open">
+												<div>삼겹살</div><div>15</div>
 											</td>
 										</tr>
 										<tr>
-											<td>grade</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>삼겹살</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>origin</td>
-											<td><div>국내산<span>2</span></div></td>
+											<td class="open"><div>한돈</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>region</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open"><div>구이</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>additive</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>brand</td>
-											<td><div>이마트<span>0</span></div></td>
+											<td class="open"><div>국내산</div><div>2</div></td>
 										</tr>
 										<tr>
-											<td>maker</td>
-											<td><div>이마트<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>flavor</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>
-												<div>processing 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
-											<td><div>-<span>0</span></div></td>
 										</tr>
 										<tr>
-											<td>
-												<div>storage 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
-											</td>
-											<td><div>냉장<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>package</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭점수</td>
-											<td><div>&nbsp;<span>30</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭율</td>
-											<td><div>&nbsp;<span>100%</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>대체판단</td>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>냉장</div><div>0</div>	</td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>30</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>100%</div></td>
+										</tr>
+										<tr>
 											<td class="tc">(기준상품)</td>
 										</tr>
-
+					
 									</tbody>
 								</table>
-							</li>
-							<li>
-								<table summary="" width="300px">
-									<colgroup>
-										<col width="50%" />
-										<col width="*%" />
-									</colgroup>
+							</li><!--
+						--><li>
+								<table summary="" width="185px">
 									<thead>
 										<tr>
-											<th>구분</th>
 											<th>기준상품</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>이미지</td>
-											<td class="tc"><img src="../images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
+											<td class="tc img"><img src="images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
 										</tr>
 										<tr>
-											<td>p_nm</td>
 											<td>국내산</td>
 										</tr>
 										<tr>
-											<td>p_id</td>
 											<td>em01000000000</td>
 										</tr>
 										<tr>
-											<td>(옵션)</td>
 											<td>
 												<input type="text" id="" />
 												<input type="text" id="" />
 											</td>
 										</tr>
 										<tr>
-											<td>중량</td>
 											<td>300g</td>
 										</tr>
 										<tr>
-											<td>가격</td>
 											<td>9,000원</td>
 										</tr>
 										<tr>
-											<td>단가</td>
 											<td>(100g 가격: 3,000원)</td>
 										</tr>
 										<tr>
-											<td>판매몰</td>
 											<td>이마트</td>
 										</tr>
 										<tr>
-											<td>배송조건</td>
 											<td>매장배송</td>
 										</tr>
 										<tr>
-											<td>재고</td>
 											<td>판매중</td>
 										</tr>
 										<tr>
-											<td>분류(삽입여부)</td>
 											<td>분류됨(0)</td>
 										</tr>
 										<tr>
-											<td>절약률</td>
 											<td>N/A</td>
 										</tr>
 										<tr>
-											<td>3<sup>rd</sup>_cate</td>
-											<td><div>
-												삼겹살/목살/구이용<span>0</span>
-											</div></td>
-										</tr>
-										<tr>
-											<td>4<sup>th</sup>_cate</td>
-											<td>
-												<div>삼겹살<span>15</span></div>
+											<td class="open">
+											<div>삼겹살/목살/구이용</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>partYear</td>
-											<td><div>한돈<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>pType</td>
-											<td><div>삼겹살<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>usage</td>
-											<td><div>구이<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>size</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>organic</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open">
+												<div>삼겹살</div><div>15</div>
 											</td>
 										</tr>
 										<tr>
-											<td>grade</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>삼겹살</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>origin</td>
-											<td><div>국내산<span>2</span></div></td>
+											<td class="open"><div>한돈</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>region</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open"><div>구이</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>additive</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>brand</td>
-											<td><div>이마트<span>0</span></div></td>
+											<td class="open"><div>국내산</div><div>2</div></td>
 										</tr>
 										<tr>
-											<td>maker</td>
-											<td><div>이마트<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>flavor</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>
-												<div>processing 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
-											<td><div>-<span>0</span></div></td>
 										</tr>
 										<tr>
-											<td>
-												<div>storage 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
-											</td>
-											<td><div>냉장<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>package</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭점수</td>
-											<td><div>&nbsp;<span>30</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭율</td>
-											<td><div>&nbsp;<span>100%</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>대체판단</td>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>냉장</div><div>0</div>	</td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>30</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>100%</div></td>
+										</tr>
+										<tr>
 											<td class="tc">(기준상품)</td>
 										</tr>
-
+					
 									</tbody>
 								</table>
-							</li>
-							<li>
-								<table summary="" width="300px">
-									<colgroup>
-										<col width="50%" />
-										<col width="*%" />
-									</colgroup>
+							</li><!--
+						--><li>
+								<table summary="" width="185px">
 									<thead>
 										<tr>
-											<th>구분</th>
 											<th>기준상품</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>이미지</td>
-											<td class="tc"><img src="../images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
+											<td class="tc img"><img src="images/common/layout/test1.jpg" width="50" height="50" alt="" /></td>
 										</tr>
 										<tr>
-											<td>p_nm</td>
 											<td>국내산</td>
 										</tr>
 										<tr>
-											<td>p_id</td>
 											<td>em01000000000</td>
 										</tr>
 										<tr>
-											<td>(옵션)</td>
 											<td>
 												<input type="text" id="" />
 												<input type="text" id="" />
 											</td>
 										</tr>
 										<tr>
-											<td>중량</td>
 											<td>300g</td>
 										</tr>
 										<tr>
-											<td>가격</td>
 											<td>9,000원</td>
 										</tr>
 										<tr>
-											<td>단가</td>
 											<td>(100g 가격: 3,000원)</td>
 										</tr>
 										<tr>
-											<td>판매몰</td>
 											<td>이마트</td>
 										</tr>
 										<tr>
-											<td>배송조건</td>
 											<td>매장배송</td>
 										</tr>
 										<tr>
-											<td>재고</td>
 											<td>판매중</td>
 										</tr>
 										<tr>
-											<td>분류(삽입여부)</td>
 											<td>분류됨(0)</td>
 										</tr>
 										<tr>
-											<td>절약률</td>
 											<td>N/A</td>
 										</tr>
 										<tr>
-											<td>3<sup>rd</sup>_cate</td>
-											<td><div>
-												삼겹살/목살/구이용<span>0</span>
-											</div></td>
-										</tr>
-										<tr>
-											<td>4<sup>th</sup>_cate</td>
-											<td>
-												<div>삼겹살<span>15</span></div>
+											<td class="open">
+											<div>삼겹살/목살/구이용</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>partYear</td>
-											<td><div>한돈<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>pType</td>
-											<td><div>삼겹살<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>usage</td>
-											<td><div>구이<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>size</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>organic</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open">
+												<div>삼겹살</div><div>15</div>
 											</td>
 										</tr>
 										<tr>
-											<td>grade</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>삼겹살</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>origin</td>
-											<td><div>국내산<span>2</span></div></td>
+											<td class="open"><div>한돈</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>region</td>
-											<td>
-												<div>-<span>0</span></div>
+											<td class="open"><div>구이</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
 										</tr>
 										<tr>
-											<td>additive</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>brand</td>
-											<td><div>이마트<span>0</span></div></td>
+											<td class="open"><div>국내산</div><div>2</div></td>
 										</tr>
 										<tr>
-											<td>maker</td>
-											<td><div>이마트<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>flavor</td>
-											<td><div>-<span>0</span></div></td>
-										</tr>
-										<tr>
-											<td>
-												<div>processing 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
+											<td class="open">
+												<div>-</div><div>0</div>
 											</td>
-											<td><div>-<span>0</span></div></td>
 										</tr>
 										<tr>
-											<td>
-												<div>storage 
-													<span>(유동)
-														<select>
-															<option></option>
-														</select>
-													</span>
-												</div>
-											</td>
-											<td><div>냉장<span>0</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>package</td>
-											<td><div>-<span>0</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭점수</td>
-											<td><div>&nbsp;<span>30</span></div></td>
+											<td class="open"><div>이마트</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>매칭율</td>
-											<td><div>&nbsp;<span>100%</span></div></td>
+											<td class="open"><div>-</div><div>0</div></td>
 										</tr>
 										<tr>
-											<td>대체판단</td>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td class="open"><div>냉장</div><div>0</div>	</td>
+										</tr>
+										<tr>
+											<td class="open"><div>-</div><div>0</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>30</div></td>
+										</tr>
+										<tr>
+											<td><div>&nbsp;</div><div>100%</div></td>
+										</tr>
+										<tr>
 											<td class="tc">(기준상품)</td>
 										</tr>
-
+					
 									</tbody>
 								</table>
 							</li>
 						</ul>
 						
 					</div>
+										
 				</div>
+				<!-- 0803 -->
+				<a href="#none" class="pro_open">open</a>
+				<a href="#none" class="pro_close">close</a>
+				<!-- //0803 -->
+				<a href="#none" class="pro_prev">prev</a>	
+				<a href="#none" class="pro_next">next</a>
 				<!-- //content -->
 			</div>	
 		</div>
 	</div>
+
+	<script type="text/javascript">
+
+		$.fn.itemSlide = function(options){
+			var defaults = {
+				cntWrap : "div > ul",
+				cntWidth : 185,
+			}
+
+			options = $.extend(defaults, options);
+			return this.each(function(){
+				var o = options;
+				var wrap = $(this);
+				var thumbListSize = 3;
+				var prev = wrap.find('.pro_prev');
+				var next = wrap.find('.pro_next');
+				var cntWrap = wrap.find(o.cntWrap);
+				var cntThumb = cntWrap.find('> li');
+				var cntWidth = o.cntWidth;
+				var maxSize = cntThumb.size();
+				cntWrap.data("current", 0)
+				// 0803
+				var op = wrap.find('.pro_open');
+				var cl = wrap.find('.pro_close');
+				// 0803 end
+				next.on('click',function( e ){
+					var tar = $(e.currentTarget).parent().find("div > div > ul");
+					var current = tar.data("current");
+					if (current < maxSize-4) current++;
+					tar.data("current", current);
+					listMove( tar );
+				});
+				prev.on('click',function( e ){
+					var tar = $(e.currentTarget).parent().find("div > div > ul");
+					var current = tar.data("current");
+					if (current > 0) current--;
+					tar.data("current", current);
+					listMove( tar );
+				});
+				//0803
+				op.on('click',function( e ){
+					var tar = $(e.currentTarget).parent().find(".open");
+					tar.show();
+				});
+				cl.on('click', function( e ){
+					var tar = $(e.currentTarget).parent().find(".open");
+					tar.hide();
+				});
+				//0803 end
+				function listMove( tar ){
+					var current = tar.data("current");
+					var tl = cntWidth * current * -1;
+					tar.stop().animate({left:tl}, {duration:300, easing:'easeOutCubic'});
+				}
+			});
+		};
+		$(".pop_modi").itemSlide({cntWrap : "div > ul", cntWidth : 185});  
+	
+	</script>
 
  </body>
 </html>

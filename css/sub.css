@@ -379,7 +379,7 @@ div.gnbWrap.gnbScroll .AllmenuLayer{top:88px;}
 .low_price .detailForm input{height:35px;line-height:35px;border:0;background:none;font-family:'NanumGothicBold';color:#fff;
 font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 
-.img_hover{padding:0 31px;height:540px;background:url(../images/common/bg_bder_ty1.gif) repeat-y 517px 0;}
+.img_hover{padding:0 31px;background:url(../images/common/bg_bder_ty1.gif) repeat-y 517px 0;}
 .img_hover:after{content:"";display:block;clear:both;}
 .img_hover .photo {width:485px;position:relative;float:left;}
 .img_hover .photo ul{position:absolute;right:12px;top:13px;}
@@ -391,7 +391,7 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .img_hover .photo ul li:hover{background:url(../images/common/bg_box_ty7_on.gif) no-repeat 0 0;z-index:10;}
 .img_hover .photo ul li:first-child{margin-top:0;}
 
-.img_hover .txt_detail{float:right;}
+.img_hover .txt_detail{float:right;width:455px;}
 .img_hover .txt_detail ul{margin-top:40px;}
 .img_hover .txt_detail ul li{border-top:1px solid #dbdbdb;padding:14px 0;font-size:15px;}
 .img_hover .txt_detail ul li:after{content:"";display:block;clear:both;}
@@ -409,7 +409,7 @@ font-size:22px;width:139px;padding:5px 20px 5px 5px;text-align:right;}
 .img_hover .txt_detail .btns {margin-top:10px;}
 .img_hover .txt_detail .btns > span{float:left;}
 .img_hover .txt_detail .btns > span > a {display:block;}
-.img_hover .txt_detail .btns .views{margin-left:5px;}
+.img_hover .txt_detail .btns .views{}
 .img_hover .sns{text-align:right;display:block;margin-top:10px;}
 .img_hover .put_ty2{background:url(../images/common/bg_put_ty2.gif) no-repeat 0 0;position:relative;width:273px;height:70px;}
 .img_hover .put_ty2 .minus{position:absolute;left:25px;top:25px;background:url(../images/common/bg_line_ty1.gif) no-repeat right center;padding-right:24px;}
@@ -823,7 +823,14 @@ padding-top:90px;}
 #popWrap .radio_choice ul > li:first-child, #popWrap .radio_choice .mCSB_container > li:first-child{margin-top:0;}
 #popWrap .radio_choice ul > li > label, #popWrap .radio_choice .mCSB_container > li > label {padding-left:5px;}
 #popWrap .radio_choice .btns_ty1{float:right;}
-
+#popWrap .radio_choice ul li {position:relative;overflow:hidden;}
+#popWrap .radio_choice ul li > span{float:left;}
+#popWrap .radio_choice ul li > span.count_ty1{float:right;margin-right:20px;}
+.choice .count_ty1 .plus{background:url(../images/common/bg_btns.png) no-repeat -323px -64px;position:relative;left:0;top:0;z-index:10;width:25px;height:17px;display:inline-block;}
+.choice .count_ty1 .plus:hover{background:url(../images/common/bg_btns.png) no-repeat -323px -30px;}
+.choice .count_ty1 .minus{background:url(../images/common/bg_btns.png) no-repeat -273px -64px;position:relative;left:0;top:0;z-index:10;width:25px;height:17px;display:inline-block;}
+.choice .count_ty1 .minus:hover{background:url(../images/common/bg_btns.png) no-repeat -273px -30px;}
+.choice .count_ty1 > input{text-align:center;}
 /* 상품변경 */
 #popWrap .btn_change{margin-top:10px;text-align:center;}
 #popWrap .thumbList.list_ty1 > ul > li{height:auto;}
@@ -1276,10 +1283,26 @@ span.btnRdo_ty1 > input {font-size:0;line-height:0;text-indent:-9999999px;border
 .img_loding{padding:20px 0 30px;display:block;text-align:center;}
 .txt_loding > p{margin-bottom:10px;}
 
+/* 추가 */
+.option_wrap{margin-top:0 !important;}
+.option_wrap li{border-top:1px solid #cacaca !important;position:relative;padding:10px 0 !important;}
+.option_wrap li:first-child{border-top:0 !important;}
+.option_wrap li span.tit{border:1px solid red;height:25px;line-height:25px;padding:3px 5px;width:280px;display:inline-block;}
+.option_wrap li .del{position:absolute;right:0;top:20px;}
 
+.select_bx.set_ty3{width:250px;font-size:12px;}
+.select_bx.set_ty3 .bx{width:226px;padding:6px 12px 7px;}
+.select_bx.set_ty3 .tit{font-size:12px;}
+.select_bx.set_ty3 .tit a{width:200px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.select_bx.set_ty3 .set_list{width:230px;padding:0 10px 5px 10px;top:32px;}
+.select_bx.set_ty3 .set_list ul{margin-top:0 !important;}
+.select_bx.set_ty3 .set_list ul li {padding:7px 0;}
+.select_bx.set_ty3 .set_list ul li a{font-size:12px;width:200px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 
-
-
+.proTip{position:relative;}
+.proTip .priceComp {position:absolute;left:0;top:75px;display:none;}
+.proTip .priceComp .btn{border:1px solid red;padding:3px 5px;color:red;}
+.proTip .priceComp .close{position:absolute;right:5px;top:5px;}
 
 
 
