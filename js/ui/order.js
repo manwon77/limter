@@ -24,7 +24,7 @@ define(['jquery','easing'],function($,easing){
 			if (!isopen){
 				this.orderTar.removeClass('active');
 				this.orderTar.slideUp();
-				this.orderClose.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_on.gif","_off.gif"));
+				this.orderClose.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_off.gif","_on.gif"));
 				this.orderClose.find(">a>span").text("닫기");
 				Layer.addClass('active');
 				Layer.slideDown();
@@ -33,7 +33,7 @@ define(['jquery','easing'],function($,easing){
 			}else{
 				this.orderTar.removeClass('active')
 				this.orderTar.slideUp();
-				this.orderClose.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_off.gif","_on.gif"));
+				this.orderClose.find('a img').attr('src', this.orderClose.find('a img').attr("src").replace("_on.gif","_off.gif"));
 				this.orderClose.find(">a>span").text("열기");
 			}
 		}

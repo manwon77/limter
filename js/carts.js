@@ -17,6 +17,7 @@ requirejs.config({
 		'slide' : 'ui/slide',			// 좌우 슬라이드, On/Off 볼 움직임, 아코디언메뉴
 		'sns' : 'ui/sns',				// 상단 아이콘열림(페이스북, 트위터 등)
 		'scroll' : 'ui/scroll',				// 스크롤
+		'selectUl' : 'ui/selectUl'				// 
 
 
     },
@@ -72,11 +73,15 @@ requirejs.config({
             deps : ["jquery"],
             exports : 'scroll'
         }
+		, 'selectUl' : {
+            deps : ["jquery"],
+            exports : 'selectUl'
+        }
 		
     }
 });
 
-define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'sns','slide','scrollBar','order','asProgress','rainbow', 'asPie','scroll'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, order, asProgress, rainbow, asPie, scroll){
+define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'sns','slide','scrollBar','order','asProgress','rainbow', 'asPie','scroll','selectUl'],function($,shopping, gnb, rolling, sideBar, sns, slide, scrollBar, order, asProgress, rainbow, asPie, scroll, selectUl){
 
     shopping.init();
     gnb.init();
@@ -87,6 +92,7 @@ define(['jquery','shopping','gnb', 'rolling', 'sideBar', 'sns','slide','scrollBa
 	asProgress.init();
 	slide.init();
 	scroll.init();
+	selectUl.init();
 
 })
 

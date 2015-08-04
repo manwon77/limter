@@ -1,8 +1,5 @@
 @charset "utf-8";
-@import "header.css";
-@import "sidebar.css";
-@import "footer.css";
-@import "common.css";
+
 
 #container{background-color:#f4f4f4;}
 

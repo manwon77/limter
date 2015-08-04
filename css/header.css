@@ -10,13 +10,21 @@
 #wrap {width:100%;}
 
 /* header */
-#header {position:relative; height:164px; z-index:60;width:1184px;margin:0 auto;}
-#header h1{float:left; padding:24px 0 0 29px;}
+#header {position:relative; z-index:60;width:100%;margin:0 auto;}
+
+/* topUser */
+.topUser{width:100%;height:28px;border-bottom:1px solid #eaeaea;}
+.topUser div{text-align:right;width:1200px;padding:0 40px;margin:0 auto;position:relative;}
+.topUser div > a{padding-left:28px;color:#acacac;line-height:28px;height:28px;display:inline-block;}
+.topUser h1{position:absolute;left:40px;top:0;}
 
 /* TopUtil */
-.topUtilWrap{height:77px;position:relative;z-index:200;width:100%;background:#fff;}
-.utilMenu {float:right; color:#d7dade; padding:22px 56px 0 200px;overflow:hidden;}
-.utilMenu li{float:left; padding:0 30px; height:34px;}
+.topUtilWrap{width:100%;border-bottom:1px solid #7f7f7f;height:63px;}
+.topUtilWrap > div{position:relative;z-index:200;width:1200px;padding:0 40px;margin:0 auto;}
+.topUtilWrap h1{position:absolute;left:40px;top:0;}
+
+.utilMenu {float:right; color:#d7dade; padding:13px 0 0 200px;overflow:hidden;}
+.utilMenu li{float:left; padding-left:30px; height:34px;}
 
 .utilMenu > li > a{ line-height:34px; font-size:18px;font-family:'NanumGothicBold';}
 .utilMenu > li:first-child{background:url(../images/common/layout/bg_utilMenuBar.png) no-repeat 100% 50%; position:relative; padding:0 21px 0 0;}
@@ -33,7 +41,7 @@
 .utilMenu .ico4{right:0;width:34px;position:absolute;}
 
 /* gnb */
-div.gnbWrap{clear:both; position:relative; padding:0 0 0 88px; height:87px; z-index:60;}
+div.gnbWrap{clear:both; position:relative; width:1200px;padding:0 40px;margin:0 auto;height:55px; z-index:60;}
 div.gnbWrap .menu{clear:both;}
 
 /* 전체메뉴 라인 */
@@ -41,7 +49,7 @@ div.gnbWrap .menu{clear:both;}
 .allmenu > * { z-index: 2; position: relative; }
 .allmenu > .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1; display: block; -webkit-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); -moz-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); -ms-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); -o-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); }
 
-#bt-menu { width:88px; height:87px; display:block; position:absolute;top:0;left:0;z-index:20;}
+#bt-menu { width:24px; height:23px; display:block; position:absolute;top:17px;left:40px;z-index:20;}
 #bt-menu .lines {width:88px;height:87px;display:block;}
 #bt-menu .lines span {position: absolute;top:50%;left:50%;width:40px;margin-left:-20px;height:3px;display:block;background:white;-webkit-transition:all 0.5s cubic-bezier(0.86, 0, 0.07, 1);-moz-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);-ms-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);-o-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1); transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
 #bt-menu .lines span.nth2 { margin-top: -8px; }
@@ -59,19 +67,21 @@ div.gnbWrap .menu{clear:both;}
 #bt-menu.open:hover{background:url(../images/common/layout/btn_amClose1_on.png) no-repeat 0 0;}
 #bt-menu.open .bg, #bt-menu.open .lines > span{display:none;border:1px solid red;}
 
-.menu{clear:both; border-top:1px solid #7f7f7f; border-bottom:1px solid #7f7f7f; position:relative; z-index:9;}
+.menu{clear:both; position:relative; z-index:9;}
 .menu:after{content:"";display:block;clear:both;}
-.menu > li{float:left; background:url(../images/common/layout/bg_gnbBar.png) no-repeat 0 50%;  height:85px; }
+.menu > li{float:left; height:55px; }
 .menu > li:first-child{background-image:none;}
-.menu > li > a{display:block; padding: 35px 35px 0 35px; font-size:18px; font-family:Myriad Pro;}
+.menu > li:first-child > a{padding-left:34px;}
+.menu > li > a{display:block; padding: 17px 0 0 50px; font-size:14px; font-family:'Malgun Gothic';color:#414141;}
 .menu > li > a:hover,
 .menu > li.on > a{color:#ee2e24;}
 .menu > li > a:hover span,
 .menu > li.on > a span{display:inline-block; padding-bottom:3px; border-bottom:2px solid #ee2e24;}
+.navifirst {position:absolute;right:40px;top:17px;z-index:10;font-size:14px;color:#414141;}
 
 /* 전체메뉴 */
 .allmenuWrap{position:relative;left:-88px;top:-87px;}
-.AllmenuLayer{position:absolute; left:0; top:87px; background-color:#fff; height:600px; width:1184px; z-index:9999; background:url(../images/common/layout/bg_AllmenuLayer.png) repeat-x 0 100%;}
+.AllmenuLayer{position:absolute; left:40px; top:87px; background-color:#fff; height:600px; width:1184px; z-index:9999; background:url(../images/common/layout/bg_AllmenuLayer.png) repeat-x 0 100%;}
 .AllmenuLayer .arr{position:absolute; left:40px; top:-4px; background:url(../images/common/bg_arrow_ty1.png) no-repeat 0 0; width:9px; height:5px; z-index:30; display:inline-block;}
 .menuAside{float:left; height:588px; width:88px; background-color:#ee2e24; border-top:1px solid #000;}
 .menuAside li:first-child{background:url(../images/common/bg_allmenuBar.png) no-repeat 50% 100%; height:85px;}
@@ -142,8 +152,12 @@ div.gnbWrap .menu{clear:both;}
 .rolling .rollNavi a:first-child{margin-left:0;}
 .rolling .rollNavi a.active{background-image:url(../images/common/btn_pageNavi_on.png);}
 
+/* rolling */
+.slideVisual{width:100%;height:859px;background:url(../images/common/layout/bg_visual_slide.png) repeat-x 0 0;}
+.slideVisual .rollSlide{width:1200px;padding:0 40px;margin:0 auto;}
 
 /* visual */
-.visual{background-color:#000;text-align:center; height:179px; width:100%;}
+.visual{text-align:center; height:168px; width:100%;background:url(../images/common/layout/bg_visual_bder.gif) repeat-x 0 100%;}
+.visual > div {width:1200px;padding:0 40px;margin:0 auto;background:url(../images/common/layout/bg_visual.png) #fff no-repeat 0 0;height:168px;position:relative;z-index:-1;}
 .visual ol{width:990px; margin:0 auto;}
 .visual ol li{float:left; font-family:Malgun Gothic; font-size:15px; color:#fff;}

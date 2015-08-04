@@ -2,7 +2,7 @@
 
 /* footer */
 #footer{background:#f4f4f4 url(../images/common/layout/bg_footer.png) repeat-x 0 0; height:167px;}
-#footer .footerinner{margin:0 auto;width:1184px; position:relative;}
+#footer .footerinner{margin:0 auto;width:1200px;padding:0 40px;position:relative;}
 #footer .footerinner h2.logo{ position:absolute; left:0; top:65px;}
 #footer .footerMenu{overflow:hidden; position:absolute; left:-18px; top:0; height:36px;}
 #footer .footerMenu a{display:inline-block; color:#7c7d7f; font-size:13px; height:36px; line-height:36px; font-family:'NanumGothicBold'; padding:0 18px; background:url(../images/common/layout/bg_footermenuBar.png) no-repeat 0 50%;}

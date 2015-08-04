@@ -4,8 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>MartMore</title>
-	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
-	<link rel="stylesheet" type="text/css" href="../css/main.css" />	
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />	
 	<link rel="stylesheet" type="text/css" href="../css/sub.css" />	
 </head>
 <body class="main">
@@ -17,304 +16,315 @@
 		</div>
 	<!-- header -->
 	<div id="header">
-		<div class="topUtilWrap">
-			<h1><a href="#none"><img src="../images/common/layout/logo.png" alt="martMoa" /></a></h1>
-			<ul class="utilMenu">
-				<li>
-					<a href="#none" class="link"><img src="../images/common/layout/btn_share.png" alt="링크" /></a>
-					<div class="snsWrap">
-						<a href="#none"><img src="../images/common/layout/img_fb.png" alt="페이스북"></a>
-						<a href="#none"><img src="../images/common/layout/img_tw.png" alt="트위터"></a>
-						<a href="#none"><img src="../images/common/layout/img_ka.png" alt="카카오스토리"></a>
-						<a href="#none"><img src="../images/common/layout/img_cl.png" alt="링크카피"></a>
-					</div>
-				</li>
-				<li><a href="#none">Customer</a></li>
-			</ul>
+		
+		<div class="topUser">
+			<div>
+				<h1><a href="#none"><img src="../images/common/layout/logo.gif" alt="martMoa" /></a></h1>
+				<a href="#none">로그인</a>
+				<a href="#none">회원가입</a>
+				<a href="#none">장바구니</a>
+				<a href="#none">고객센터</a>
+			</div>
 		</div>
-		 
+		<div class="topUtilWrap">
+			<div>
+				<!-- <ul class="utilMenu">
+					<li>
+						<div class="topLink">
+							<a href="#none" class="link"><img src="../images/common/layout/btn_share.png" alt="링크" /></a>
+							<div class="snsWrap">
+								<a href="#none" class="ico1"><img src="../images/common/layout/img_fb.png" alt="페이스북" /></a>
+								<a href="#none" class="ico2"><img src="../images/common/layout/img_tw.png" alt="트위터" /></a>
+								<a href="#none" class="ico3"><img src="../images/common/layout/img_ka.png" alt="카카오스토리" /></a>
+								<a href="#none" class="ico4"><img src="../images/common/layout/img_cl.png" alt="링크카피" /></a>
+							</div>
+						</div>
+					</li>
+					<li><a href="#none">Customer</a></li>
+				</ul> -->
+			</div>
+		</div>
+	
 		<div class="gnbWrap">
 			<!-- 전체메뉴보기 버튼 open class로 toggle -->
-			<a href="#AllmenuLayer" id="bt-menu" class="allmenu">
+			<!-- <a href="#AllmenuLayer" id="bt-menu" class="allmenu">
 				<span class="bg"></span>
 				<span class="lines">
 					<span class="nth1"></span>
 					<span class="nth2"></span>
 					<span class="nth3"></span>
 				</span>
-			</a>
+			</a> -->
+			<a href="#AllmenuLayer" id="bt-menu" class="allmenu"><img src="../images/common/layout/btn_amopen_ty1.png" alt="" /></a>
 			<ul class="menu">
-				<li class="on"><a href="#none"><span>AllMart</span></a></li>
-				<li><a href="#none"><span>Mart</span></a></li>
-				<li><a href="#none"><span>HomePlus</span></a></li>
-				<li><a href="#none"><span>LotteMart</span></a></li>
-				<li><a href="#none"><span>SmartChoise</span></a></li>
+				<li class="on"><a href="#none"><span>전체 카테고리 보기</span></a></li>
+				<li><a href="#none"><span>ON SALE</span></a></li>
+				<li><a href="#none"><span>최저가</span></a></li>
+				<li><a href="#none"><span>마트모아 소식</span></a></li>
 			</ul>
-			<div class="allmenuWrap">
-				<a href="#AllmenuLayer" class="allmenu"><span class="hidden">전체메뉴</span></a>
-				<div id="AllmenuLayer" class="AllmenuLayer" style="display:none;">
-					<span class="arr"></span>
-					<div class="menuAside">
-						<ul> 
-							<li class="ttm on"><a href="#AllMenuText"><span class="hidden">텍스트형</span></a></li>
-							<li class="im"><a href="#AllMenuImg"><span class="hidden">이미지형</span></a></li>
-						</ul>
-					</div>
-					<div class="menuWrap">
-						<div class="menuLayerWrap">
-							<!-- 텍스트형 전체메뉴 -->
-							<div id="AllMenuText">
-								<ul class="col">
-									<li>
-										<h2><a href="#none">농산</a></h2>
-										<ul class="dep2List">
-											<!-- menu hover시 active 생성 -->
-											<li>
-												<a href="#none"><span>과일</span></a>
-												<div class="dep3_Layer" style="display:none;">
-													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-													<ul>
-														<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
-														<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
-														<li><a href="#none"><span>감자/고구마</span></a></li>
-														<li><a href="#none"><span>당근/뿌리채소</span></a></li>
-														<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
-														<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
-														<li><a href="#none"><span>콩나물/시금치</span></a></li>
-														<li><a href="#none"><span>양상추/양배추/브로콜리</span></a></li>
-														<li><a href="#none"><span>새싹/샐러드채소</span></a></li>
-														<li><a href="#none"><span>손질채소/건채소</span></a></li>
-														<li><a href="#none"><span>무/배추/김장채소/버섯</span></a></li>
-														<li><a href="#none"><span>나물/건나물</span></a></li>
-														<li><a href="#none"><span>기타채소</span></a></li>
-													</ul>
-												</div>
-											</li>
-											<li>
-												<a href="#none"><span>채소</span></a>
-												<div class="dep3_Layer" style="display:none;">
-													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-													<ul>
-														<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
-														<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
-														<li><a href="#none"><span>감자/고구마</span></a></li>
-														<li><a href="#none"><span>당근/뿌리채소</span></a></li>
-														<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
-														<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
-													</ul>
-												</div>
-											</li>
-											<li><a href="#none"><span>쌀</span></a></li>
-											<li><a href="#none"><span>잡곡</span></a></li>
-											<li><a href="#none"><span>두부</span></a></li>
-											<li><a href="#none"><span>견과</span></a></li>
-											<li><a href="#none"><span>약재류</span></a></li>
-										</ul>
-									</li>
-									<li>
-										<h2><a href="#none">정육</a></h2>
-				
-										<ul class="dep2List">
-											<li><a href="#none"><span>소고기</span></a></li>
-											<li><a href="#none"><span>돼지고기</span></a></li>
-											<li><a href="#none"><span>닭/오리/기타</span></a></li>
-											<li><a href="#none"><span>계란</span></a></li>
-										</ul>
-									</li>
-									<li>
-										<h2><a href="#none">수산</a></h2>
-										
-										<ul class="dep2List">
-											<li><a href="#none"><span>생선</span></a></li>
-											<li><a href="#none"><span>해산물</span></a></li>
-											<li><a href="#none"><span>김/미역/다시마</span></a></li>
-											<li><a href="#none"><span>건어물</span></a></li>
-										</ul>
-									</li>
-									<li>
-										<h2><a href="#none">유제품/냉장</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>우유</span></a></li>
-											<li><a href="#none"><span>요구르트/두유</span></a></li>
-											<li><a href="#none"><span>치즈/버터/마가린</span></a></li>
-											<li><a href="#none"><span>햄/어묵/맛살</span></a></li>
-											<li><a href="#none"><span>냉장면류</span></a></li>
-											<li><a href="#none"><span>국/찌개/죽/스프</span></a></li>
-											<li><a href="#none"><span>만두</span></a></li>
-											<li><a href="#none"><span>간편 가정식</span></a></li>
-											<li><a href="#none"><span>아이스크림/빙과</span></a></li>
-										</ul>
-									</li>
-									<li>
-										<h2><a href="#none">간편식</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>라면/면요리</span></a></li>
-											<li><a href="#none"><span>즉석식</span></a></li>
-											<li><a href="#none"><span>캔/통조림</span></a></li>
-											<li><a href="#none"><span>시리얼/선식</span></a></li>
-											<li><a href="#none"><span>국수/면류</span></a></li>
-											<li><a href="#none"><span>베이커리/떡</span></a></li>
-										</ul>
-				
-									</li>
-									<li class="last">
-										<h2><a href="#none">소스반찬</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>조미료/장류</span></a></li>
-											<li><a href="#none"><span>소스,/양념</span></a></li>
-											<li><a href="#none"><span>잼/시럽</span></a></li>
-											<li><a href="#none"><span>식용유/참기름</span></a></li>
-											<li><a href="#none"><span>밀가루/요리가루</span></a></li>
-											<li><a href="#none"><span>단무지/반찬</span></a></li>
-											<li><a href="#none"><span>김치</span></a></li>
-											<li>
-												<a href="#none"><span>젓갈류</span></a>
-												<div class="dep3_Layer" style="display:none;">
-													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-													<ul>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-													</ul>
-												</div>
-											</li>
-										</ul>
-				
-									</li>
-								</ul>
-								<ul class="col">
-									<li>
-										<h2><a href="#none">음료/간식</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>생수</span></a></li>
-											<li><a href="#none"><span>주스</span></a></li>
-											<li><a href="#none"><span>탄산/이온/기타음료</span></a></li>
-											<li><a href="#none"><span>커피/차음료</span></a></li>
-											<li><a href="#none"><span>커피/코코아/프림</span></a></li>
-											<li><a href="#none"><span>녹차/차/티</span></a></li>
-											<li><a href="#none"><span>스낵/과자</span></a></li>
-											<li><a href="#none"><span>초콜릿/사탕/껌</span></a></li>
-											<li><a href="#none"><span>안주류</span></a></li>
-										</ul>
-				
-									</li>
-									<li>
-										<h2><a href="#none">생활용품</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>화장지/키친타올</span></a></li>
-											<li><a href="#none"><span>세탁세제</span></a></li>
-											<li><a href="#none"><span>주방/청소세제</span></a></li>
-											<li><a href="#none"><span>주방용품/일회용품</span></a></li>
-											<li><a href="#none"><span>욕실용품</span></a></li>
-											<li><a href="#none"><span>치약/칫솔/구강용품</span></a></li>
-											<li><a href="#none"><span>건전지/전기/조명</span></a></li>
-											<li><a href="#none"><span>방향/방충/제습</span></a></li>
-											<li><a href="#none"><span>기타생활용품</span></a></li>
-										</ul>
-				
-									</li>
-									<li>
-										<h2><a href="#none">육아</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>분유/이유식</span></a></li>
-											<li><a href="#none"><span>기저귀/물티슈</span></a></li>
-											<li><a href="#none"><span>건강/위생용품</span></a></li>
-											<li><a href="#none"><span>세탁용품</span></a></li>
-											<li><a href="#none"><span>로션/목용용품</span></a></li>
-											<li><a href="#none"><span>수유용품</span></a></li>
-										</ul>
-				
-									</li>
-									<li>
-										<h2><a href="#none">뷰티/여성</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>헤어케어</span></a></li>
-											<li><a href="#none"><span>바디/핸드케어</span></a></li>
-											<li><a href="#none"><span>스킨케어</span></a></li>
-											<li><a href="#none"><span>클렌징/선케어</span></a></li>
-											<li><a href="#none"><span>메이크업</span></a></li>
-											<li><a href="#none"><span>향수</span></a></li>
-											<li><a href="#none"><span>화장소품/잡화</span></a></li>
-											<li><a href="#none"><span>여성위생용품</span></a></li>
-											<li><a href="#none"><span>남성화장품</span></a></li>
-										</ul>
-									</li>
-									<li class="last">
-										<h2><a href="#none">건강기능식품</a></h2>
-										<ul class="dep2List">
-											<li><a href="#none"><span>홍삼</span></a></li>
-											<li><a href="#none"><span>꿀/진액/기타</span></a></li>
-											<li><a href="#none"><span>타이어트/헬스</span></a></li>
-											<li>
-												<a href="#none"><span>비타민/영양제</span></a>
-												<div class="dep3_Layer" style="display:none;">
-													<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
-													<ul>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-														<li><a href="#none"><span>젓갈</span></a></li>
-													</ul>
-												</div>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<!-- //텍스트형 전체메뉴 -->
-							<!-- 이미지형 전체메뉴 -->
-							<div id="AllMenuImg" style="display:none;">
-								<ul class="col">
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu01.png" alt="농산" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu02.png" alt="정육" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu03.png" alt="수산" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu04.png" alt="유제품/냉장" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu05.png" alt="간편식" /></a></li>
-									<li class="last"><a href="#none"><img src="../images/common/layout/img_ImgMenu06.png" alt="소스반찬" /></a></li>
-								</ul>
-								<ul class="col">
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu07.png" alt="음료/간식" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu08.png" alt="생활용품" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu09.png" alt="육아" /></a></li>
-									<li><a href="#none"><img src="../images/common/layout/img_ImgMenu10.png" alt="뷰티/여성" /></a></li>
-									<li class="last"><a href="#none"><img src="../images/common/layout/img_ImgMenu11.png" alt="건강기능식품" /></a></li>
-								</ul>
-							
-							</div>
+			<a href="#none" class="navifirst"><span>처음오셨나요?</span></a>
+			<div id="AllmenuLayer" class="AllmenuLayer" style="display:none;">
+				<span class="arr"></span>
+				<div class="menuAside">
+					<ul> 
+						<li class="ttm on"><a href="#AllMenuText"><span class="hidden">텍스트형</span></a></li>
+						<li class="im"><a href="#AllMenuImg"><span class="hidden">이미지형</span></a></li>
+					</ul>
+				</div>
+				<div class="menuWrap">
+					<div class="menuLayerWrap">
+						<!-- 텍스트형 전체메뉴 -->
+						<div id="AllMenuText">
+							<ul class="col">
+								<li>
+									<h2><a href="#none">농산</a></h2>
+									<ul class="dep2List">
+										<!-- menu hover시 active 생성 -->
+										<li>
+											<a href="#none"><span>과일</span></a>
+											<div class="dep3_Layer" style="display:none;">
+												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+												<ul>
+													<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
+													<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
+													<li><a href="#none"><span>감자/고구마</span></a></li>
+													<li><a href="#none"><span>당근/뿌리채소</span></a></li>
+													<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
+													<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
+													<li><a href="#none"><span>콩나물/시금치</span></a></li>
+													<li><a href="#none"><span>양상추/양배추/브로콜리</span></a></li>
+													<li><a href="#none"><span>새싹/샐러드채소</span></a></li>
+													<li><a href="#none"><span>손질채소/건채소</span></a></li>
+													<li><a href="#none"><span>무/배추/김장채소/버섯</span></a></li>
+													<li><a href="#none"><span>나물/건나물</span></a></li>
+													<li><a href="#none"><span>기타채소</span></a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="#none"><span>채소</span></a>
+											<div class="dep3_Layer" style="display:none;">
+												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+												<ul>
+													<li><a href="#none"><span>상추/깻잎/쌈채소</span></a></li>
+													<li><a href="#none"><span>오이/호박/가지/옥수수</span></a></li>
+													<li><a href="#none"><span>감자/고구마</span></a></li>
+													<li><a href="#none"><span>당근/뿌리채소</span></a></li>
+													<li><a href="#none"><span>고추/피망/파프리카</span></a></li>
+													<li><a href="#none"><span>마늘/생강/파/양파</span></a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a href="#none"><span>쌀</span></a></li>
+										<li><a href="#none"><span>잡곡</span></a></li>
+										<li><a href="#none"><span>두부</span></a></li>
+										<li><a href="#none"><span>견과</span></a></li>
+										<li><a href="#none"><span>약재류</span></a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#none">정육</a></h2>
+
+									<ul class="dep2List">
+										<li><a href="#none"><span>소고기</span></a></li>
+										<li><a href="#none"><span>돼지고기</span></a></li>
+										<li><a href="#none"><span>닭/오리/기타</span></a></li>
+										<li><a href="#none"><span>계란</span></a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#none">수산</a></h2>
+									
+									<ul class="dep2List">
+										<li><a href="#none"><span>생선</span></a></li>
+										<li><a href="#none"><span>해산물</span></a></li>
+										<li><a href="#none"><span>김/미역/다시마</span></a></li>
+										<li><a href="#none"><span>건어물</span></a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#none">유제품/냉장</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>우유</span></a></li>
+										<li><a href="#none"><span>요구르트/두유</span></a></li>
+										<li><a href="#none"><span>치즈/버터/마가린</span></a></li>
+										<li><a href="#none"><span>햄/어묵/맛살</span></a></li>
+										<li><a href="#none"><span>냉장면류</span></a></li>
+										<li><a href="#none"><span>국/찌개/죽/스프</span></a></li>
+										<li><a href="#none"><span>만두</span></a></li>
+										<li><a href="#none"><span>간편 가정식</span></a></li>
+										<li><a href="#none"><span>아이스크림/빙과</span></a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#none">간편식</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>라면/면요리</span></a></li>
+										<li><a href="#none"><span>즉석식</span></a></li>
+										<li><a href="#none"><span>캔/통조림</span></a></li>
+										<li><a href="#none"><span>시리얼/선식</span></a></li>
+										<li><a href="#none"><span>국수/면류</span></a></li>
+										<li><a href="#none"><span>베이커리/떡</span></a></li>
+									</ul>
+
+								</li>
+								<li class="last">
+									<h2><a href="#none">소스반찬</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>조미료/장류</span></a></li>
+										<li><a href="#none"><span>소스,/양념</span></a></li>
+										<li><a href="#none"><span>잼/시럽</span></a></li>
+										<li><a href="#none"><span>식용유/참기름</span></a></li>
+										<li><a href="#none"><span>밀가루/요리가루</span></a></li>
+										<li><a href="#none"><span>단무지/반찬</span></a></li>
+										<li><a href="#none"><span>김치</span></a></li>
+										<li>
+											<a href="#none"><span>젓갈류</span></a>
+											<div class="dep3_Layer" style="display:none;">
+												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+												<ul>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+
+								</li>
+							</ul>
+							<ul class="col">
+								<li>
+									<h2><a href="#none">음료/간식</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>생수</span></a></li>
+										<li><a href="#none"><span>주스</span></a></li>
+										<li><a href="#none"><span>탄산/이온/기타음료</span></a></li>
+										<li><a href="#none"><span>커피/차음료</span></a></li>
+										<li><a href="#none"><span>커피/코코아/프림</span></a></li>
+										<li><a href="#none"><span>녹차/차/티</span></a></li>
+										<li><a href="#none"><span>스낵/과자</span></a></li>
+										<li><a href="#none"><span>초콜릿/사탕/껌</span></a></li>
+										<li><a href="#none"><span>안주류</span></a></li>
+									</ul>
+
+								</li>
+								<li>
+									<h2><a href="#none">생활용품</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>화장지/키친타올</span></a></li>
+										<li><a href="#none"><span>세탁세제</span></a></li>
+										<li><a href="#none"><span>주방/청소세제</span></a></li>
+										<li><a href="#none"><span>주방용품/일회용품</span></a></li>
+										<li><a href="#none"><span>욕실용품</span></a></li>
+										<li><a href="#none"><span>치약/칫솔/구강용품</span></a></li>
+										<li><a href="#none"><span>건전지/전기/조명</span></a></li>
+										<li><a href="#none"><span>방향/방충/제습</span></a></li>
+										<li><a href="#none"><span>기타생활용품</span></a></li>
+									</ul>
+
+								</li>
+								<li>
+									<h2><a href="#none">육아</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>분유/이유식</span></a></li>
+										<li><a href="#none"><span>기저귀/물티슈</span></a></li>
+										<li><a href="#none"><span>건강/위생용품</span></a></li>
+										<li><a href="#none"><span>세탁용품</span></a></li>
+										<li><a href="#none"><span>로션/목용용품</span></a></li>
+										<li><a href="#none"><span>수유용품</span></a></li>
+									</ul>
+
+								</li>
+								<li>
+									<h2><a href="#none">뷰티/여성</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>헤어케어</span></a></li>
+										<li><a href="#none"><span>바디/핸드케어</span></a></li>
+										<li><a href="#none"><span>스킨케어</span></a></li>
+										<li><a href="#none"><span>클렌징/선케어</span></a></li>
+										<li><a href="#none"><span>메이크업</span></a></li>
+										<li><a href="#none"><span>향수</span></a></li>
+										<li><a href="#none"><span>화장소품/잡화</span></a></li>
+										<li><a href="#none"><span>여성위생용품</span></a></li>
+										<li><a href="#none"><span>남성화장품</span></a></li>
+									</ul>
+								</li>
+								<li class="last">
+									<h2><a href="#none">건강기능식품</a></h2>
+									<ul class="dep2List">
+										<li><a href="#none"><span>홍삼</span></a></li>
+										<li><a href="#none"><span>꿀/진액/기타</span></a></li>
+										<li><a href="#none"><span>타이어트/헬스</span></a></li>
+										<li>
+											<a href="#none"><span>비타민/영양제</span></a>
+											<div class="dep3_Layer" style="display:none;">
+												<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span><span class="arr"></span>
+												<ul>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+													<li><a href="#none"><span>젓갈</span></a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
 						</div>
-						<!-- //이미지형 전체메뉴 -->
-						<ul class="boardMenu">
-							<li><a href="#none">공지사항</a></li>
-							<li><a href="#none">FAQ</a></li>
-							<li><a href="#none">1:1문의</a></li>
-							<li><a href="#none"></a></li>
-							<li><a href="#none"></a></li>
-						</ul>
-						<!-- 스마트링크 롤링 -->
-						<div class="rolling menuLayer">
-							<div class="rollCont">
-								<img src="../images/common/temp/@temp_rollImg01.png" style="z-index:10;" alt="" />
-								<img src="../images/common/temp/@temp_rollImg02.png" style="z-index:20;" alt="" />
-								<img src="../images/common/temp/@temp_rollImg03.png" style="z-index:30;" alt="" />
-							</div>
-							<div class="rollNavi ">
-								<a href="#none" class="active"></a>
-								<a href="#none"></a>
-								<a href="#none"></a>
-							</div>
+						<!-- //텍스트형 전체메뉴 -->
+						<!-- 이미지형 전체메뉴 -->
+						<div id="AllMenuImg" style="display:none;">
+							<ul class="col">
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu01.png" alt="농산" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu02.png" alt="정육" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu03.png" alt="수산" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu04.png" alt="유제품/냉장" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu05.png" alt="간편식" /></a></li>
+								<li class="last"><a href="#none"><img src="../images/common/layout/img_ImgMenu06.png" alt="소스반찬" /></a></li>
+							</ul>
+							<ul class="col">
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu07.png" alt="음료/간식" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu08.png" alt="생활용품" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu09.png" alt="육아" /></a></li>
+								<li><a href="#none"><img src="../images/common/layout/img_ImgMenu10.png" alt="뷰티/여성" /></a></li>
+								<li class="last"><a href="#none"><img src="../images/common/layout/img_ImgMenu11.png" alt="건강기능식품" /></a></li>
+							</ul>
+						
+						</div>
+					</div>
+					<!-- //이미지형 전체메뉴 -->
+					<ul class="boardMenu">
+						<li><a href="#none">공지사항</a></li>
+						<li><a href="#none">FAQ</a></li>
+						<li><a href="#none">1:1문의</a></li>
+						<li><a href="#none"></a></li>
+						<li><a href="#none"></a></li>
+					</ul>
+					<!-- 스마트링크 롤링 -->
+					<div class="rolling menuLayer">
+						<div class="rollCont">
+							<img src="../images/common/temp/@temp_rollImg01.png" style="z-index:10;" alt="" />
+							<img src="../images/common/temp/@temp_rollImg02.png" style="z-index:20;" alt="" />
+							<img src="../images/common/temp/@temp_rollImg03.png" style="z-index:30;" alt="" />
+						</div>
+						<div class="rollNavi ">
+							<a href="#none" class="active"></a>
+							<a href="#none"></a>
+							<a href="#none"></a>
 						</div>
 					</div>
 				</div>
-				<div class="mask_ty1" style="display:none;"></div>
 			</div>
+			<div class="mask_ty1" style="display:none;"></div>
 		</div>
 	</div>
-	<!-- //header -->	
+	<!-- //header -->		
 	
 	<div id="container">
 		
@@ -479,11 +489,7 @@
 					
 					
 				</div>	
-				<div class="right">
-					<h3>MARTMOA <span>Smart choise</span></h3>
-					<p><img src="../images/common/bner1.gif" alt="" /></p>
-					<p><img src="../images/common/bner2.gif" alt="" /></p>
-				</div>
+
 			</div>
 		</div>
 		
