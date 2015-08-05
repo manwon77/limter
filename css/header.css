@@ -11,7 +11,7 @@
 
 /* header */
 #header {position:relative; z-index:60;width:100%;margin:0 auto;}
-
+#header + .slideVisual {margin-top:-11px;}
 /* topUser */
 .topUser{width:100%;height:28px;border-bottom:1px solid #eaeaea;}
 .topUser div{text-align:right;width:1200px;padding:0 40px;margin:0 auto;position:relative;}
@@ -41,7 +41,8 @@
 .utilMenu .ico4{right:0;width:34px;position:absolute;}
 
 /* gnb */
-div.gnbWrap{clear:both; position:relative; width:1200px;padding:0 40px;margin:0 auto;height:55px; z-index:60;}
+.gnbContainer{background:url(../images/common/layout/bg_shadow.png) repeat-x 0 100%;width:100%;}
+div.gnbWrap{clear:both; position:relative; width:1200px;padding:0 40px;margin:0 auto;height:66px; z-index:60;}
 div.gnbWrap .menu{clear:both;}
 
 /* 전체메뉴 라인 */
@@ -153,7 +154,7 @@ div.gnbWrap .menu{clear:both;}
 .rolling .rollNavi a.active{background-image:url(../images/common/btn_pageNavi_on.png);}
 
 /* rolling */
-.slideVisual{width:100%;height:859px;background:url(../images/common/layout/bg_visual_slide.png) repeat-x 0 0;}
+.slideVisual{width:100%;height:848px;background:url(../images/common/layout/bg_visual_slide.png) repeat-x 0 0;}
 .slideVisual .rollSlide{width:1200px;padding:0 40px;margin:0 auto;}
 
 /* visual */
