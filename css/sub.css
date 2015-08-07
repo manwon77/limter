@@ -840,7 +840,7 @@ padding-top:90px;}
 
 /* 장바구니 옵션 */
 #popWrap .radio_choice:after{content:"";display:block;clear:both;}
-#popWrap .radio_choice > .scroll{float:left;width:288px;height:151px;overflow:hidden;overflow-y:auto;}
+#popWrap .radio_choice .scroll{float:left;width:288px;height:151px;overflow:hidden;overflow-y:auto;}
 #popWrap .radio_choice ul > li, #popWrap .radio_choice .mCSB_container > li {line-height:27px;margin-top:10px;}
 #popWrap .radio_choice ul > li:first-child, #popWrap .radio_choice .mCSB_container > li:first-child{margin-top:0;}
 #popWrap .radio_choice ul > li > label, #popWrap .radio_choice .mCSB_container > li > label {padding-left:5px;}
