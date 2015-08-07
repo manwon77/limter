@@ -8,6 +8,9 @@
 
 #container{padding:35px 0 100px 0;}
 
+/* main */
+.main_grid{margin:0 auto;width:1200px;padding:0 40px;position:relative;}
+
 /* 오시는길 */
 .map{}
 .map_tit{margin:50px 0 35px 0; overflow:hidden;}
@@ -18,7 +21,7 @@
 /* 비지니스안내 */
 .business{margin:50px 0 0 0;}
 .hdTxt{font-size:15px; color:#444;}
-.hdTxt{font-size:15px; color:#444;}
+.hdTxt{font-size:15px;color:#444;} 
 .listD1{margin-top:50px;}
 .hdTxt + .listD1{margin-top:47px;}
 .listD1 > li > span{font-size:18px; color:#444; font-family:"arial"}
@@ -707,7 +710,7 @@ padding-top:90px;}
 
 /* pop- 마트모아 개인정보 수정 */
 #popWrap .pop_head{background:#f73f48;padding:0 38px 38px;position:relative;}
-#popWrap .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:1px solid #fb9fa4;}
+#popWrap .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:1px solid #fb9fa4;width:80%;}
 #popWrap .pop_head .close{position:absolute;right:38px;top:22px;}
 
 #popWrap .pop_container{position:relative;padding:0 38px 40px;background:#f4f4f4;}
@@ -758,7 +761,7 @@ padding-top:90px;}
 
 /* 팝업유형 */
 #popWrap.popWrap_ty1 .pop_head{padding:0 0 0 16px;position:relative;}
-#popWrap.popWrap_ty1 .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:0;margin-bottom:0;}
+#popWrap.popWrap_ty1 .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:0;margin-bottom:0;width:80%}
 #popWrap.popWrap_ty1 .pop_head .close{position:absolute;right:17px;top:22px;}
 #popWrap.popWrap_ty1 .pop_container {padding:30px 40px;}
 #popWrap.popWrap_ty1 .pop_container .pop_modi {border:1px solid #c7c7c7;background:#fff;padding:25px 40px;}
@@ -766,7 +769,7 @@ padding-top:90px;}
 
 /* 파일첨부 */
 #popWrap.popWrap_ty2 .pop_head{padding:0 0 0 16px;position:relative;}
-#popWrap.popWrap_ty2 .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:0;}
+#popWrap.popWrap_ty2 .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:0;width:80%;}
 #popWrap.popWrap_ty2 .pop_head .close{position:absolute;right:17px;top:22px;}
 #popWrap.popWrap_ty2 .pop_container {padding:19px 16px;}
 #popWrap.popWrap_ty2 .pop_container .pop_top{position:relative;padding:0;background:url(../images/common/bg_layer_top2.png) #f4f4f4 no-repeat 0 0;padding-top:3px;}
@@ -843,13 +846,13 @@ padding-top:90px;}
 #popWrap .radio_choice ul > li > label, #popWrap .radio_choice .mCSB_container > li > label {padding-left:5px;}
 #popWrap .radio_choice .btns_ty1{float:right;}
 #popWrap .radio_choice ul li {position:relative;overflow:hidden;}
-#popWrap .radio_choice ul li > span{float:left;}
-#popWrap .radio_choice ul li > span.count_ty1{float:right;margin-right:20px;}
+#popWrap .radio_choice ul li > span:first-child{width:170px;float:left;}
+#popWrap .radio_choice ul li > span.count_ty1{position:absolute;right:20px;top:50%;height:18px;line-height:18px;margin-top:-10px;}
 .choice .count_ty1 .plus{background:url(../images/common/bg_btns.png) no-repeat -323px -64px;position:relative;left:0;top:0;z-index:10;width:25px;height:17px;display:inline-block;}
 .choice .count_ty1 .plus:hover{background:url(../images/common/bg_btns.png) no-repeat -323px -30px;}
 .choice .count_ty1 .minus{background:url(../images/common/bg_btns.png) no-repeat -273px -64px;position:relative;left:0;top:0;z-index:10;width:25px;height:17px;display:inline-block;}
 .choice .count_ty1 .minus:hover{background:url(../images/common/bg_btns.png) no-repeat -273px -30px;}
-.choice .count_ty1 > input{text-align:center;}
+.choice .count_ty1 > input{text-align:center;height:15px;line-height:15px;}
 /* 상품변경 */
 #popWrap .btn_change{margin-top:10px;text-align:center;}
 #popWrap .thumbList.list_ty1 > ul > li{height:auto;}
@@ -1260,7 +1263,7 @@ dl.pop_help_detail dt{font-weight:bold;}
 
 /* 회원정보확인 */
 #popWrap.popWrap_ty3 .pop_head{padding:0 0 0 16px;position:relative;}
-#popWrap.popWrap_ty3 .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:0;}
+#popWrap.popWrap_ty3 .pop_head h2{color:#fff;font-size:20px;padding:25px 0 29px;border-bottom:0;width:80%;}
 #popWrap.popWrap_ty3 .pop_head .close{position:absolute;right:17px;top:22px;}
 #popWrap.popWrap_ty3 .pop_container {padding:19px 16px;}
 #popWrap.popWrap_ty3 .pop_container .pop_top{position:relative;padding:0;background:url(../images/common/bg_layer_top3.png) #f4f4f4 no-repeat 0 0;padding-top:3px;}
@@ -1323,7 +1326,8 @@ span.btnRdo_ty1 > input {font-size:0;line-height:0;text-indent:-9999999px;border
 .proTip .priceComp .btn{border:1px solid red;padding:3px 5px;color:red;}
 .proTip .priceComp .close{position:absolute;right:5px;top:5px;}
 
-
+.view_option dt{height:33px;line-height:33px;}
+.view_amount li{padding:0 !important;}
 
 
 
