@@ -7,6 +7,8 @@ define(['jquery'],function($){
 			var plusBtn = tar.find(".plus");
 			var minusBtn = tar.find(".minus");
 
+			this.bx = $(".message_bx"); // 0810 
+
 			btnGroup.data({"cnt" : 0});
 
 			tar.off( "mouseenter", $.proxy( this.emerge,this ) ).on( "mouseenter", $.proxy( this.emerge,this ) );
@@ -17,6 +19,7 @@ define(['jquery'],function($){
 
 			plusBtn.off( "click", $.proxy( this.add,this ) ).on( "click", $.proxy( this.add,this ) );
 			minusBtn.off( "click", $.proxy( this.remove,this ) ).on( "click", $.proxy( this.remove,this ) );
+			plusBtn.on( "mouseleave", $.proxy( this.message, this) ); // 0810
 
 		}
 		, emerge : function( e ){
@@ -62,6 +65,7 @@ define(['jquery'],function($){
 			data++;
 			par.data({ "cnt" : data });
 			item.text( data );
+			this.bx.show();
 		}
 		, remove : function( e ){
 			var par = $(e.currentTarget).parents(".act");
@@ -72,6 +76,10 @@ define(['jquery'],function($){
 				par.data({ "cnt" : data });
 				item.text( data );
 			}
+		}
+		// 0810
+		, message : function(){
+			this.bx.fadeOut(1000);
 		}
 	}
 
