@@ -12,9 +12,11 @@ define(['jquery','easing'],function($){
 			this.btn = $('.proTip > .views > a');
 			this.btnView = $('.proTip > .priceComp');
 			this.del = this.btnView.find('.del');
+			this.bx = $(".message_bx"); // 0810 
 
 			this.btn.on( "click", $.proxy( this.proTip, this ) );
 			this.del.on( "click", $.proxy( this.proDel, this ) );
+			this.btn.on( "mouseleave", $.proxy( this.message, this) ); // 0811
 						
 			// 옵션 수량
 			var tarOp = $(".choice");
@@ -39,9 +41,14 @@ define(['jquery','easing'],function($){
 		// 장바구니 담기 툴팁
 		, proTip : function(){
 			this.btnView.fadeIn();
+			this.bx.show();
 		}
 		, proDel : function(){
 			this.btnView.fadeOut();
+		}
+		// 장바구니 메세지 툴팁
+		, message : function(){
+			this.bx.fadeOut(1000);
 		}
 		
 		// 옵션 수량

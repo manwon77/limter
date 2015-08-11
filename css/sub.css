@@ -6,7 +6,7 @@
 @import url('jquery.mCustomScrollbar.css');
 
 
-#container{padding:35px 0 100px 0;}
+#container{padding:20px 0 100px 0;background:#f4f4f4;}
 
 /* main */
 .main_grid{margin:0 auto;width:1200px;padding:0 40px;position:relative;}
@@ -287,7 +287,7 @@
 
 /* home 리스트 검색 */
 .home_wrap{}
-.home_wrap + .fixedLine + .grid{margin-top:37px;}
+.home_wrap + .fixedLine + .grid{margin-top:20px;}
 .home_wrap:after{content:"";display:block;clear:both;}
 .home_wrap h2{float:left;background:url(../images/common/bg_line_ty2.gif) no-repeat right 9px;padding-right:38px;margin-right:20px;margin-top:13px;}
 .fixedLine {display:none;width:100%;border-bottom:1px solid #7a7a7a;background:#fff;position:fixed;top:0;z-index:500;height:86px;}
@@ -371,7 +371,7 @@
 .sch_list ul{float:left;}
 .sch_list ul li{background:url(../images/common/bg_line_ty3.gif) no-repeat 0 11px;float:left;padding:0 15px;height:29px;line-height:29px;color:#84858c;}
 .sch_list ul li:first-child{background:none;}
-.sch_list .schForm {position:relative;float:left;background:none;width:380px;}
+.sch_list .schForm {position:relative;float:left;background:none;width:380px;height:31px;}
 
 .sch_list .schForm input{color:#c1c1c1;height:27px;line-height:27px;position:absolute;left:10px;top:0;z-index:2;background:transparent;border:1px solid #989898;padding:0 5px;}
 .sch_list .schForm label{position:absolute;left:10px;top:0;display:block;font-size:12px;padding:0 5px;height:27px;line-height:27px;color:#c1c1c1;}

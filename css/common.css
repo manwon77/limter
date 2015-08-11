@@ -141,26 +141,33 @@ input{font-family:"맑은고딕",MalgumGothic,"돋움",Dotum,"굴림",Gulim,Taho
 /* 176*176 thumblist ty1 */
 .thumbList.list_ty1{margin-left:-14px;}
 .thumbList.list_ty1:after{content:"";display:block;clear:both;}
-.thumbList.list_ty1 > ul > li{width:274px; height:276px;}
-.thumbList.list_ty1 > ul > li{float:left; margin:0 0 23px 13px;}
+.thumbList.list_ty1 > ul > li{width:222px; height:361px;float:left; margin:0 0 23px 13px;border:1px solid #f0f0f0;}
+.thumbList.list_ty1 > ul > li.on{border:1px solid red;}
+.thumbList.list_ty1 > ul > li > .infobox.on{border:1px solid red;}
+.thumbList.list_ty1 .infobox span.tl,
+.thumbList.list_ty1 .infobox span.tr,
+.thumbList.list_ty1 .infobox span.bl,
+.thumbList.list_ty1 .infobox span.br {position:absolute;z-index:5;width:3px;height:3px;}
+.thumbList.list_ty1 .infobox span.tl{background:url(../images/common/bg_product_tl.png) no-repeat;left:-2px;top:-2px;}
+.thumbList.list_ty1 .infobox span.tr{background:url(../images/common/bg_product_tr.png) no-repeat;right:-2px;top:-2px;}
+.thumbList.list_ty1 .infobox span.bl{background:url(../images/common/bg_product_bl.png) no-repeat;left:-2px;bottom:-2px;}
+.thumbList.list_ty1 .infobox span.br{background:url(../images/common/bg_product_br.png) no-repeat;right:-2px;bottom:-2px;}
 
 
 /* 공통 */
-.thumbWrap{margin-top:70px;}
+.thumbWrap{margin-top:30px;}
 .thumbWrap:first-child{margin-top:0;}
 .thumbList .col{margin-bottom:19px;}
 .thumbList .btn_listMore{display:block; clear:both; height:37px; line-height:37px; background-color:#e9e8ea; font-family:'NanumGothicBold'; color:#979797; font-size:12px; text-align:center; margin:0 14px;}
-.thumbList .infobox{position:relative; background-color:#fff; width:272px; height:274px; border:1px solid #f0f0f0;}
+.thumbList .infobox{position:relative; background-color:#fff; width:216px; height:359px; border:1px solid #e9e9e9; padding:0 2px;}
 .thumbList .infobox .count{display:none;}
 .thumbList .discountInfo{position:absolute; left:0px; top:0px; width:56px; height:34px; line-height:34px; background-color:#a9a9a9; text-align:center; color:#fff;
 	font-family:NanumGothic; font-size:13px; display:inline-block; z-index:2;}
-.thumInfo{margin:34px 0 0 46px;}
+.thumInfo{}
 .thumInfo .thumImg{display:block;}
 
 /* 마우스 오버시 */
-.thumOver{display:none; background:url(../images/common/bg_thumOver.png) repeat 0 0; position:absolute; left:1px; top:1px; bottom:1px; right:1px;
-	padding:94px 0 0 0;
-}
+.thumOver{display:none; background:url(../images/common/bg_thumOver1.png) repeat 0 0; position:absolute; left:1px; top:220px; bottom:1px; right:1px; z-index:10;}
 .thumOver .icoLayer{position:absolute; left:18px; top:50px; }
 .thumOver .item{font-size:36px; display:block; color:#717171; text-align:center; font-family:'NanumGothicBold'; height:40px;}
 .thumOver .act{display:block; text-align:center; height:43px; margin-top:11px;}
@@ -171,14 +178,13 @@ input{font-family:"맑은고딕",MalgumGothic,"돋움",Dotum,"굴림",Gulim,Taho
 /* 장바구니에 담고난후 */
 .thumInfo .count{background:url(../images/common/bg_count.png) no-repeat 0 0; width:75px; height:75px; position:absolute; left:50%; top:50%;
 	margin:-37px 0 0 -37px; font-size:36px; display:block; color:#fff; text-align:center; font-family:'NanumGothicBold'; line-height:75px;}
-.thumbList .txtInfo{padding:0 20px 0 20px;}
-.thumbList .txtInfo .pdName{float:left; color:#a3a3a3; font-size:12px;width:140px;line-height:120%;}
-.thumbList .txtInfo .price{float:right;}
-.thumbList .txtInfo .price{width:81px; height:35px; border-left:1px solid #e9e9e9; text-align:right;}
-.thumbList .txtInfo .price strong,
-.thumbList .txtInfo .price span{display:block;}
-.thumbList .txtInfo .price strong{color:#5a5a5a; font-size:13px;}
-.thumbList .txtInfo .price span{color:#a4a4a4; font-size:11px;}
+.thumbList .txtInfo {border-top:1px solid #f0f0f0;}
+.thumbList .txtInfo > div{padding:10px 20px 0 20px;}
+.thumbList .txtInfo .pdName{color:#666;font-size:12px;display:block;max-height:54px;line-height:18px;display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+.thumbList .txtInfo .price{text-align:right;font-size:16px;font-weight:bold;padding:10px 0;}
+.thumbList .txtInfo .price span{color:#a4a4a4; font-size:14px; font-weight:normal;display:inline-block;padding-left:3px;}
+.thumbList .txtInfo .price_gap{border-top:1px solid #e9e9e9;padding:5px 20px;position:relative;text-align:left;font-size:14px;}
+.thumbList .txtInfo .price_gap > span{float:right;color:#ff757c;font-weight:bold;}
 
 /* 최고가, 최저가 */
 .priceComp{z-index:44; position:absolute; left:0; top:-96px; z-index:50;}
