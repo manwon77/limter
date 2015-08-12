@@ -350,10 +350,8 @@
 		<div class="asideFixBar">
 			<!-- 0724 -->
 			<ul class="asideMenu">
-				<li class="menu1"><a href="#search" class="asideBtn"><span class="tip">검색</span></a></li>
-				<li class="menu2"><a href="#member" class="asideBtn"><span class="tip">로그인</span></a></li>
+				<li class="menu2"><a href="#member" class="asideBtn"><span class="tip">마이페이지</span></a></li>
 				<li class="menu3"><a href="#cart" class="asideBtn"><span class="tip">장바구니</span></a></li>
-				<li class="menu4"><a href="#alim" class="asideBtn"><span class="tip">알림</span></a></li>
 			</ul>
 			<!-- 윈도우의 하단에 fix -->
 			<div class="asdBtmFix">
@@ -368,51 +366,6 @@
 			
 			<div class="asdLayer" id="search" style="display:none;">
 				<button class="asd_close">닫기</button>
-
-				<!-- 검색영역 -->
-				<div class="asdSchWrap" style="display:block;">
-					<div class="SchCont">
-						<div class="schForm">
-							<!-- 0715 -->
-							<div>
-								<input type="text" id="sch" class="text intVal" style="width:200px;" />
-								<label for="sch" class="lbl">여기서 한방에</label>
-							</div>
-							<!-- //0715 -->
-							<button class="btnSch"><span class="hidden">검색</span></button>
-						</div>
-						<!-- btype -->
-						<ul class="schKeyword">
-							<li><a href="#none">피망</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-							<li><a href="#none">오뚜기케찹</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-							<li><a href="#none">해찬들</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-							<li><a href="#none">에센스</a><button class="keywordDel"><span class="hidden">삭제</span></button></li>
-						</ul>
-						<!-- // btype -->
-						<!-- ctype -->
-						<ul class="schcate">
-							<li>
-								<a href="#none">생활용품</a> > <a href="#none">기타생활용품</a> > <a href="#none">여행용품</a> > <br /> <a href="#none"><strong>바디워시</strong></a>
-							</li>
-							<li>
-								<a href="#none">육아 </a> > <a href="#none">로션목용용품</a> > <a href="#none">샴푸/<strong>바디워시</strong></a> ><br /> <a href="#none"><strong>바디워시</strong></a>
-							</li>
-						</ul>
-						<!-- // ctype -->
-
-					</div>
-					<dl class="bestsch">
-						<dt class="box_ty2">
-							<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
-							인기 검색어
-						</dt>
-						<dd><a href="#none">1. 햇반</a></dd>
-						<dd><a href="#none">2. 삼겹살</a></dd>
-						<dd><a href="#none">2. 계란</a></dd>
-						<dd><a href="#none">4. 초코파이</a></dd>
-						<dd><a href="#none">5. 코카콜라</a></dd>
-					</dl>
-				</div>
 			</div>
 
 			<div class="asdLayer" id="member" style="display:none;">
@@ -420,28 +373,8 @@
 				<!-- 로그인영역 -->
 				<div class="loginWrap">
 
-					<!-- 로그인전 -->
-					<div class="loginBefore" style="display:block;">
-						<!-- 0715 -->
-						<span class="col">
-							<input type="text" title="아이디" class="intVal" style="width:259px" />
-							<label for="id1" class="lbl">아이디</label>
-						</span>
-						<span class="col">
-							<input type="password" title="비밀번호" class="intVal" style="width:259px" />
-							<label for="pw1" class="lbl">비밀번호</label>
-						</span>
-						<!-- //0715 -->
-						<a href="#" class="login-btn">로그인</a>
-						<span class="autoLogin"><input type="checkbox" /><label for="">자동로그인</label></span>
-						<div class="idFind">
-							<span><a href="#">아이디 찾기</a> / <a href="#">비밀번호찾기</a></span>
-							<p class="other">등록되지 않은 아이디 이거나, 아이디 또는 <br />비밀번호를 잘못 입력하셨습니다.</p>
-						</div>
-					</div>
-
-					<!-- 로그인후 -->
-					<div class="loginAfter" style="display:none;">
+					<!-- 마이페이지 -->
+					<div class="loginAfter" style="display:block;">
 						<div class="box_ty1 userInfo">
 							<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
 							<span class="profile">
@@ -712,6 +645,7 @@
 							</dl>
 						</div>
 						<a href="#none"><img src="images/common/btn_order.png" alt="주문하러가기" /></a>
+						<a href="#none" class="newBtn" style="width:256px"><span>주문하러가기</span></a>
 					</div>
 				</div>
 			</div>

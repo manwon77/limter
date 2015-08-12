@@ -7,7 +7,7 @@ define(['jquery'],function($){
 			var plusBtn = tar.find(".plus");
 			var minusBtn = tar.find(".minus");
 
-			this.bx = $(".message_bx"); // 0810 
+			this.bx = $(".message_bx"); 
 
 			btnGroup.data({"cnt" : 0});
 
@@ -19,33 +19,21 @@ define(['jquery'],function($){
 
 			plusBtn.off( "click", $.proxy( this.add,this ) ).on( "click", $.proxy( this.add,this ) );
 			minusBtn.off( "click", $.proxy( this.remove,this ) ).on( "click", $.proxy( this.remove,this ) );
-			plusBtn.on( "mouseleave", $.proxy( this.message, this) ); // 0810
+			plusBtn.on( "mouseleave", $.proxy( this.message, this) ); 
 
 		}
 		, emerge : function( e ){
 			var current = $(e.currentTarget);
 			var target = current.find(".thumOver");
-			var countBox = target.next();
-			//var priceBox = current.find(".priceComp");			
 			target.show();
-			countBox.hide();
-			//priceBox.show();
 		}
 		, disappear : function( e ){
 			var current = $(e.currentTarget);
 			var target = current.find(".thumOver");
-			var countBox = target.next();
-			//var priceBox = current.find(".priceComp");
 			var item = target.find(".item");
 			var cnt = item.text();
 			target.hide();
-			//priceBox.hide();
 
-			if(cnt){
-				countBox.text( cnt );
-				countBox.show();
-			}
-						
 		}
 		, centOn : function ( e ){
 			var current = $(e.currentTarget);
@@ -60,8 +48,11 @@ define(['jquery'],function($){
 		}
 		, add : function( e ){
 			var par = $(e.currentTarget).parents(".act");
-			var item = par.prev();
+			var item = par.prev(".item");
 			var data = par.data("cnt");			
+
+			par.parents(".infobox").parent().addClass("on");
+
 			data++;
 			par.data({ "cnt" : data });
 			item.text( data );
@@ -69,15 +60,17 @@ define(['jquery'],function($){
 		}
 		, remove : function( e ){
 			var par = $(e.currentTarget).parents(".act");
-			var item = par.prev();
+			var item = par.prev(".item");
 			var data = par.data("cnt");			
+
+			par.parents(".infobox").parent().removeClass("on");
+
 			if( data > 0 ){
 				data--;
 				par.data({ "cnt" : data });
 				item.text( data );
 			}
 		}
-		// 0810
 		, message : function(){
 			this.bx.fadeOut(1000);
 		}
