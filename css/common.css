@@ -82,8 +82,9 @@ button::-moz-focus-inner{padding:0; margin:0;}
 .btn span{text-indent:-99999px; font-size:0; }
 
 /* button */
-.newBtn, .newBtn > span{background:url(../images/common/bg_btn_ty1.png) no-repeat right 0;height:55px;line-height:55px;padding:0 5px 0 0;display:inline-block;position:relative;margin-top:0; text-align:center;margin-left:5px;}
-.newBtn > span{ background-position:0 0; padding:0 0 0 5px; margin:0 0 0 -5px; font-size:15px; font-weight:bold; color:#fff; display:block;}
+.newBtn.gray1 {width:256px;}
+.newBtn.gray1, .newBtn.gray1 > span{background:url(../images/common/bg_btn_ty1.png) no-repeat right 0;height:55px;line-height:55px;padding:0 5px 0 0;display:inline-block;position:relative;margin-top:0; text-align:center;margin-left:5px;}
+.newBtn.gray1 > span{ background-position:0 0; padding:0 0 0 5px; margin:0 0 0 -5px; font-size:15px; font-weight:bold; color:#fff; display:block;}
 
 .strong{font-weight:bold;}
 

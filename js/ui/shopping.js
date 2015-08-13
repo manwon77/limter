@@ -75,7 +75,5 @@ define(['jquery'],function($){
 			this.bx.fadeOut(1000);
 		}
 	}
-
-
 	 return shopping;
 });
