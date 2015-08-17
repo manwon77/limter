@@ -51,8 +51,6 @@ define(['jquery'],function($){
 			var item = par.prev(".item");
 			var data = par.data("cnt");			
 
-			par.parents(".infobox").parent().addClass("on");
-
 			data++;
 			par.data({ "cnt" : data });
 			item.text( data );
@@ -62,8 +60,6 @@ define(['jquery'],function($){
 			var par = $(e.currentTarget).parents(".act");
 			var item = par.prev(".item");
 			var data = par.data("cnt");			
-
-			par.parents(".infobox").parent().removeClass("on");
 
 			if( data > 0 ){
 				data--;
