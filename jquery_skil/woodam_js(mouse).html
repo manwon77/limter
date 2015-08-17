@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	<title></title>
+<style type="text/css">
+	.aaa {position:relative; width:900px; height:500px; border:1px solid blue; z-index:1;}
+	#pop {border:1px solid red; width:400px; height:400px; position:absolute; top:0; left:100px;  background:#fff; display:none;}
+
+</style>
+
+</head>
+<body>
+	<a href="#pop" class="btn">클릭</a>
+	<div class="aaa">
+		<div id="pop">
+			<a href="#pop" class="close">팝업닫기</a>
+		</div>
+	</div>
+	
+	<div class="img">
+		<img src="gnb5_7_off.png" alt="" />
+	</div>
+	123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />123<br />
+	123<br />
+	<script type="text/javascript">
+	function Woo(){ this.modalBg = 0; }
+
+	Woo.prototype.imgOn = function( $img ){
+		var src = $img.attr("src");
+		if( src.indexOf("_on") == -1 ) $img.attr( "src", src.replace("_off","_on") );
+		return $img;
+	}
+
+	Woo.prototype.imgOff = function( $img ){
+		var src = $img.attr("src");
+		if( src.indexOf("_on") != -1 ) $img.attr( "src", src.replace("_on","_off") );
+		return $img;
+	}
+	
+	Woo.prototype.modal = function(){
+		var div = $("<div>");
+		var he = $(document).outerHeight(true);
+		var wid = $(document).outerWidth(true);
+		div.appendTo( "body" );
+		div.css({ "width" : wid, "height" : he, "background" : "#111", "opacity" : 0.6, "position" : "absolute", "top" : 0, "left" : 0 });
+		this.modalBg = div;
+	}
+
+	Woo.prototype.popAlign = function( tar, modal ){
+		var modal = modal || null;
+		tar.show(); var par = tar.offsetParent(); tar.hide();
+		var pWid = par.outerWidth();
+		var pHei = par.outerHeight();
+		var tWid = tar.outerWidth();
+		var tHei = tar.outerHeight();
+		var xGap = (pWid - tWid) / 2;
+		var yGap = (pHei - tHei) / 2;
+		tar.css({ "left" : xGap, "top" : yGap, "display" : "block" });
+		if(  modal == "modal" ) this.modal();
+		return this;
+	}
+
+	Woo.prototype.popClose = function( tar ){
+		if( this.modalBg ) this.modalBg.hide();
+		tar.hide();
+	}
+	
+	var woodam = new Woo();
+	
+	
+	$(".btn").eq(0).click( function( e ){
+		woodam.popAlign( $(this.hash), "modal" );
+		return false;
+	} );
+
+	$(".close").click( function( e ){
+		woodam.popClose( $(this.hash) );
+		return false;
+	} );
+	
+	$(".img").hover(
+		function(){
+			woodam.imgOn($("img"));
+		}
+		, function(){
+			woodam.imgOff($("img"));
+		}
+	)
+		
+	
+
+		
+		
+	</script>
+</body>
+</html>

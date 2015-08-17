@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="ROBOTS" content="all" />
+	<meta name="description" content="" />
+	<meta name="keyword" content="" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="reply-to" content="" />
+	<meta name="date" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=7" />
+	<style>
+		body, div, p, ul, li {padding:0; margin:0;}
+		img {border:0; font:0; line-height:1; vertical-align:top;}
+		#wrap {width:100%; overflow:hidden;}
+		#wrap p,div {float:left;}
+		.wraper {width:575px; overflow:hidden; position:relative; height:115px;}
+		ul {width:2000px; overflow:hidden; height:115px; position:absolute;}
+		ul li {float:left;}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			rollingWrap();
+			play();
+			stop();
+		});
+		var returnClick = 0;
+		var speed = 400;
+		function rollingWrap(){
+			var wraper = jQuery('#wrap');
+			var leftBtn = wraper.find('>p').eq(0);
+			var rightBtn = wraper.find('>p').eq(1);
+			leftBtn.click(leftRolling);
+			rightBtn.click(rightRolling);
+		}
+		function leftRolling(){
+			if(returnClick == 0){
+				returnClick =1;
+				var ul = jQuery('#wrap > div > ul');
+				var li_width = ul.find('li').width()*-1;
+				ul.find('li:first').clone().appendTo(ul);
+				ul.animate(
+					{left:li_width}
+					,speed
+					,function(){
+						ul.find('li:first').remove();
+						ul.css('left','0');
+						returnClick =0;
+					}
+				);
+			}
+		}
+		function rightRolling(){
+			if(returnClick == 0){
+				returnClick = 1;
+				var ul = jQuery('#wrap > div > ul');
+				var li_width = ul.find('li').width()*-1;
+				ul.find('>li:last').clone().prependTo(ul);
+				ul.css("left",li_width+"px");
+				ul.animate(
+					{left:0}
+					,speed
+					,function(){
+						ul.find('>li:last').remove();
+						returnClick =0;
+					}
+				);
+			}
+		}
+		function play(){
+			times = setInterval(leftRolling,speed);
+			var play_btn = document.getElementById("play");
+			play_btn.onclick = function(){
+				times = setInterval(leftRolling,speed); 
+			}
+			return false;
+		}
+		function stop(){
+			var stop_btn = document.getElementById("stop");
+			stop_btn.onclick = function(){
+				clearInterval(times);
+			}
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<p><a href="#"><img src="../images/img/left_btn.gif" alt="" /></a></p>
+		<div class="wraper">
+			<ul>
+				<li><a href="#"><img src="../images/img/img1.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img2.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img3.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img4.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img5.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img1.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img2.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img3.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img4.gif" alt="" /></a></li>
+				<li><a href="#"><img src="../images/img/img5.gif" alt="" /></a></li>
+			</ul>
+		</div>
+		<p><a href="#"><img src="../images/img/right_btn.gif" alt="" /></a></p>
+		<a href="#" id="play">재생</a>
+		<a href="#" id="stop">정지</a>
+	</div>
+	
+</body>
+</html>
+
+
+
