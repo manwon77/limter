@@ -140,7 +140,7 @@ input{font-family:"맑은고딕",MalgumGothic,"돋움",Dotum,"굴림",Gulim,Taho
 .topContents > div{position:relative;width:1184px;margin:0 auto;}
 
 /* grid */
-.grid{width:1036px;margin:0 auto;}
+.grid{width:1200px;margin:0 auto;}
 .home_grid{width:1184px;margin:0 auto;} 
 
 /* 216*216 thumblist ty1 */
