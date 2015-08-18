@@ -14,8 +14,8 @@
 #header + .slideVisual {margin-top:-11px;}
 /* topUser */
 .topUser{width:100%;height:28px;border-bottom:1px solid #eaeaea;}
-.topUser div{text-align:right;width:1200px;padding:0 40px;margin:0 auto;position:relative;}
-.topUser div > a{padding-left:28px;color:#acacac;line-height:28px;height:28px;display:inline-block;}
+.topUser > div{text-align:right;width:1200px;padding:0 40px;margin:0 auto;position:relative;}
+.topUser > div > a{padding-left:28px;color:#acacac;line-height:28px;height:28px;display:inline-block;}
 .topUser h1{position:absolute;left:40px;top:0;}
 
 /* TopUtil */

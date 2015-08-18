@@ -69,6 +69,8 @@ input[type=text]::-ms-clear {display: none;}
 .mt60{margin-top:60px;}
 .mt30{margin-top:30px !important;}
 
+.pr10{padding-right:10px !important;}/* 0817 */
+
 /* button */
 button {overflow: hidden; margin: 0; padding: 0; border: 0 none; font-family:Nanum Barun Gothic,sans-serif;  cursor: pointer;}
 /* fireFox button */
